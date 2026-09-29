@@ -1,0 +1,138 @@
+/*
+ * Zill design tokens (Tailwind CSS v4 theme).
+ * Colours are phase-aware: `--c-*` variables are defined per [data-phase] from src/lib/brand/palette.ts.
+ * Re-skin by editing palette.ts, this file and src/lib/fonts.ts (see docs/REBRAND.md).
+ */
+
+@theme {
+  /* ---------- Raw swatches (for illustrations, print, emails) ---------- */
+  --color-plaster-50: #faf6ef;
+  --color-plaster-100: #f4ede2;
+  --color-plaster-200: #eadfcd;
+  --color-plaster-300: #dccbb1;
+  --color-clay-400: #c49a6c;
+  --color-clay-500: #a5784d;
+  --color-clay-700: #6b4a2f;
+  --color-shade-300: #b7adbc;
+  --color-shade-500: #7a6e82;
+  --color-shade-600: #574d5f;
+  --color-shade-800: #342d3a;
+  --color-shade-900: #221d27;
+  --color-shade-950: #16131b;
+  --color-saffron-300: #f0c987;
+  --color-saffron-500: #d9982f;
+  --color-saffron-700: #7f5010;
+  --color-henna-400: #e57f5c;
+  --color-henna-600: #a3402a;
+  --color-henna-700: #8a3520;
+  --color-palm-500: #5f6e4a;
+  --color-palm-700: #3e5a33;
+  --color-night-900: #1a1824;
+  --color-night-950: #121119;
+
+  /* ---------- Breakpoints ---------- */
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+  --breakpoint-3xl: 120rem;
+
+  /* ---------- Fluid type scale (375 → 1920 px) ---------- */
+  --text-display-xl: clamp(3.75rem, 2.3rem + 8.5vw, 13rem);
+  --text-display-lg: clamp(3rem, 1.9rem + 5.6vw, 8.5rem);
+  --text-display-md: clamp(2.25rem, 1.6rem + 3.2vw, 5.5rem);
+  --text-heading-lg: clamp(1.75rem, 1.35rem + 1.8vw, 3.25rem);
+  --text-heading-md: clamp(1.375rem, 1.2rem + 0.8vw, 2.125rem);
+  --text-heading-sm: clamp(1.125rem, 1.05rem + 0.35vw, 1.5rem);
+  --text-body-lg: clamp(1.1875rem, 1.1rem + 0.35vw, 1.4375rem);
+  --text-body: 1.125rem;
+  --text-small: 0.9375rem;
+  --text-label: 0.75rem;
+
+  /* ---------- Spacing (4 px base) and layout rhythm ---------- */
+  --spacing: 0.25rem;
+  --spacing-gutter: clamp(1rem, 0.6rem + 1.6vw, 2rem);
+  --spacing-margin: clamp(1rem, 0.2rem + 4.2vw, 6rem);
+  --spacing-section: clamp(5rem, 3.5rem + 7vw, 12rem);
+  --spacing-block: clamp(2.5rem, 1.8rem + 3vw, 5rem);
+
+  /* ---------- Radii: square by default; the arch is the signature shape ---------- */
+  --radius-none: 0;
+  --radius-hair: 2px;
+  --radius-soft: 6px;
+  --radius-pill: 999px;
+
+  /* ---------- Motion ---------- */
+  /* shade: a long deceleration, like a shadow settling — default for reveals */
+  --ease-shade: cubic-bezier(0.16, 1, 0.3, 1);
+  /* sun: symmetrical in-out, for sweeps and looping movements */
+  --ease-sun: cubic-bezier(0.65, 0, 0.35, 1);
+  /* dusk: accelerate away, for exits */
+  --ease-dusk: cubic-bezier(0.7, 0, 0.84, 0);
+  /* breeze: the smallest overshoot, micro-interactions only */
+  --ease-breeze: cubic-bezier(0.34, 1.2, 0.64, 1);
+
+  --animate-shimmer: shimmer 1.6s var(--ease-sun) infinite;
+
+  @keyframes shimmer {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+  }
+}
+
+/* Semantic, phase-aware roles → utilities such as bg-bg, text-ink, border-line, bg-accent, text-on-accent. */
+@theme inline {
+  --color-bg: var(--c-bg);
+  --color-raised: var(--c-raised);
+  --color-surface: var(--c-surface);
+  --color-ink: var(--c-ink);
+  --color-muted: var(--c-muted);
+  --color-link: var(--c-link);
+  --color-accent: var(--c-accent);
+  --color-on-accent: var(--c-on-accent);
+  --color-line: var(--c-line);
+  --color-field: var(--c-field);
+  --color-sun: var(--c-sun);
+  --color-shade: var(--c-shade);
+  --color-success: var(--c-success);
+  --color-warning: var(--c-warning);
+  --color-danger: var(--c-danger);
+
+  --font-display: var(--f-display);
+  --font-text: var(--f-text);
+  --font-label: var(--f-label);
+  --font-mono: var(--f-mono);
+}
+
+:root {
+  /* Durations (ms) — mirrored in src/lib/motion/tokens.ts for GSAP. */
+  --dur-instant: 90ms;
+  --dur-quick: 180ms;
+  --dur-base: 320ms;
+  --dur-calm: 560ms;
+  --dur-slow: 900ms;
+  --dur-sun: 1400ms;
+  --dur-horizon: 2200ms;
+
+  /* Live sun, updated by the atmosphere controller (defaults: late-morning over Jeddah). */
+  --sun-alt: 48;
+  --sun-az: 128;
+  --shade-x: -0.62;
+  --shade-y: 0.35;
+  --shade-len: 0.9;
+
+  --f-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+:root:lang(ar) {
+  --f-display: var(--font-kufi-ar), var(--font-kufi-lat), 'Geeza Pro', sans-serif;
+  --f-text: var(--font-markazi-ar), var(--font-markazi-lat), 'Geeza Pro', serif;
+  --f-label: var(--font-kufi-ar), var(--font-kufi-lat), 'Geeza Pro', sans-serif;
+}
+
+:root:lang(en) {
+  --f-display: var(--font-imbue), var(--font-markazi-lat), 'Times New Roman', serif;
+  --f-text: var(--font-markazi-lat), var(--font-markazi-ar), 'Times New Roman', serif;
+  --f-label: var(--font-plex-mono), ui-monospace, monospace;
+}

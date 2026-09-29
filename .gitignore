@@ -1,0 +1,53 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# next.js / build output
+.next/
+out/
+build/
+dist/
+next-env.d.ts
+*.tsbuildinfo
+
+# environment (the commented template is .env.example)
+.env
+.env.*
+!.env.example
+
+# local database, uploads and generated runtime files
+/data/
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+/storage/
+
+# media pipeline: unprocessed originals never enter git
+/media/originals/
+/media/.cache/
+
+# testing & QA output
+/coverage/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/.lighthouse/
+
+# logs & OS noise
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+*.pem
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# vercel
+.vercel

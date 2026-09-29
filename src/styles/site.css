@@ -234,16 +234,14 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background-image: url('/brand/grain.png');
+    background-image: url('/brand/grain.svg');
     background-size: 220px 220px;
-    opacity: 0.07;
-    mix-blend-mode: multiply;
+    opacity: 0.35;
   }
-  .dark-phase .grain::after,
   [data-phase='dusk'] .grain::after,
   [data-phase='night'] .grain::after {
-    mix-blend-mode: screen;
-    opacity: 0.05;
+    background-image: url('/brand/grain-light.svg');
+    opacity: 0.25;
   }
 
   .hairline { border-color: var(--c-line); }

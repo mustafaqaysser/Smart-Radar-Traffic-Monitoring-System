@@ -299,8 +299,8 @@ export const deliveryZones = sqliteTable(
       .references(() => branches.id, { onDelete: 'cascade' }),
     name: localized('name').notNull(),
     kind: text('kind').$type<'area' | 'radius'>().notNull().default('area'),
-    /** District names served by an 'area' zone. */
-    areas: json<string[]>('areas'),
+    /** Districts served by an 'area' zone. */
+    areas: json<LocalizedText[]>('areas'),
     radiusKm: real('radius_km'),
     fee: integer('fee').notNull(),
     minOrder: integer('min_order').notNull(),

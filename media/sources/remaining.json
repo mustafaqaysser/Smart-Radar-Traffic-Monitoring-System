@@ -1,0 +1,106 @@
+[
+  {
+    "name": "dish-tabbouleh-season",
+    "forItem": "tabbouleh-season",
+    "subject": "Tabbouleh of finely chopped parsley topped with diced tomato, on lettuce leaves with lemon slices, in a white bowl on weathered wood; spoons of paprika and dried herbs behind",
+    "orientation": "landscape",
+    "focal": [
+      0.5,
+      0.45
+    ],
+    "altEn": "Parsley tabbouleh crowned with diced tomato and lemon slices, on lettuce leaves on a wooden table",
+    "altAr": "تبولةُ بقدونسٍ مفروم تعلوها مكعّباتُ الطماطم وشرائحُ الليمون، على أوراق خسٍّ فوق طاولةٍ خشبية",
+    "notes": "Unsplash, Chez Le Libanais. Even soft light; warm wood. 4:5 crop centred on the bowl drops the spice spoons top-right."
+  },
+  {
+    "name": "dish-hassawi-kabsa",
+    "forItem": "hassawi-kabsa",
+    "subject": "Top-down: long-grain spiced rice with a whole roasted, turmeric-yellow meat piece in a large silver tray on dark stone; small bowls of broth, red daqqus sauce and tea; brass spoons, terracotta linen; a bowl of luqaimat top-left",
+    "orientation": "square",
+    "focal": [
+      0.48,
+      0.5
+    ],
+    "altEn": "Spiced rice topped with roasted meat in a silver tray, with small bowls of broth and red tomato sauce",
+    "altAr": "أرزٌّ متبّل تعلوه قطعةُ لحمٍ مشويّة في صينيةٍ فضية، وحولها أوعيةُ مرقٍ وصلصةِ دقّوس",
+    "notes": "Unsplash, aboodi vesakaran. Gulf-style mandi/kabsa styling (tray, daqqus, brass); rice is pale, not the red Hassawi rice, and the meat reads as chicken/lamb - acceptable stand-in. Crop 4:5 centred on tray."
+  },
+  {
+    "name": "dish-eggs-east-wall",
+    "forItem": "eggs-east-wall",
+    "subject": "Top-down: three sunny-side-up eggs in a black speckled cast pan on a white gas hob",
+    "orientation": "square",
+    "focal": [
+      0.5,
+      0.48
+    ],
+    "altEn": "Three sunny-side-up eggs with deep orange yolks in a black pan",
+    "altAr": "ثلاثُ بيضاتٍ مقليّة بصفارٍ برتقاليٍّ عميق في مقلاةٍ سوداء",
+    "notes": "Unsplash, Hasan Almasi. No tomato/sausage visible - plain fried eggs stand-in; hob is cool white, grade warm and crop tight to the pan (4:5 inside the pan rim). Rejected a skillet frame with a breakfast sausage patty (possible pork)."
+  },
+  {
+    "name": "dish-akkawi-manakish",
+    "forItem": "akkawi-manakish",
+    "subject": "Top-down: round white-cheese flatbread cut into eight wedges with flecks of green herb, on a round wooden board over dark slate, woven mat and jute rope to the right",
+    "orientation": "landscape",
+    "focal": [
+      0.45,
+      0.5
+    ],
+    "altEn": "Round cheese flatbread cut into wedges on a wooden board",
+    "altAr": "خبزٌ مستدير بالجبن الأبيض مقطّعٌ أثلاثًا على لوحٍ خشبي",
+    "notes": "Unsplash, Husien Bisky. Cheese manakish stand-in (herb flecks, no visible nigella). Crop 4:5 on the board, dropping the faux plant top-right and the potted plant bottom-left."
+  },
+  {
+    "name": "dish-tamees-foul",
+    "forItem": "tamees-foul",
+    "subject": "Beans simmering in a red, cumin-and-pepper-flecked sauce in a battered pot over an open fire; a flatbread toasting on the griddle behind, steam rising",
+    "orientation": "portrait",
+    "focal": [
+      0.5,
+      0.68
+    ],
+    "altEn": "Beans simmering in a spiced tomato sauce in a blackened pot, flatbread toasting on the griddle behind",
+    "altAr": "فولٌ يغلي في صلصةٍ متبّلة داخل قدرٍ مسودٍّ من النار، وخلفه رغيفٌ يتحمّص على الصاج",
+    "notes": "Unsplash, P.O.sitive Negative. Rustic fire-side foul; filmic warm-muted grade. Beans are rounder/redder than classic Hijazi foul - plausible stand-in. Keep the pot in the lower half of a 4:5 crop."
+  },
+  {
+    "name": "dish-mutabbaq",
+    "forItem": "mutabbaq",
+    "subject": "Close-up of a griddled stuffed bread cut open, showing a filling of egg, greens and chicken, against a dark background",
+    "orientation": "portrait",
+    "focal": [
+      0.5,
+      0.48
+    ],
+    "altEn": "A griddled stuffed pastry cut open to show egg and greens inside",
+    "altAr": "فطيرةٌ محمّرة على الصاج مقطوعةٌ تكشف حشوةً من البيض والخضرة",
+    "notes": "Unsplash, Fatemeh Rz. Stand-in: thicker bread than a true layered mutabbaq; reads as a stuffed griddled pastry. Shallow depth of field - keep focus band (y 0.4-0.6) in crop."
+  },
+  {
+    "name": "dish-gahwa-service",
+    "forItem": "gahwa-service",
+    "subject": "Brass dallah with small cups beside a woven palm-frond basket of dates, on a straw mat in front of a sadu-patterned floor cushion",
+    "orientation": "landscape",
+    "focal": [
+      0.42,
+      0.5
+    ],
+    "altEn": "A brass dallah and small coffee cups beside a woven basket of dates",
+    "altAr": "دلّةٌ نحاسية وفناجينُ صغيرة بجانب سلّةِ خوصٍ ملأى بالتمر",
+    "notes": "Unsplash, L Photography. Authentic Gulf props (dallah, khoos basket, sadu). Warm indoor light, slightly flashy - grade down. Crop 4:5 between x 0.05-0.75 to drop the white artificial flowers (bottom-left) and green/yellow object on right edge."
+  },
+  {
+    "name": "dish-fattoush-sumac",
+    "forItem": "fattoush-sumac",
+    "subject": "Leafy salad with spinach, red-veined sorrel, apple slices, walnuts and pomegranate seeds in a black stoneware bowl on grey marble, in hard low sun with long shadows; small cup of dressing",
+    "orientation": "portrait",
+    "focal": [
+      0.52,
+      0.42
+    ],
+    "altEn": "Leafy salad with pomegranate seeds and walnuts in a black bowl, under hard sunlight",
+    "altAr": "سلطةُ أوراقٍ خضراء بحبّات الرمّان والجوز في وعاءٍ أسود تحت شمسٍ حادّة",
+    "notes": "Unsplash, kimia kazemi. Stand-in for fattoush (no crisp bread or sumac visible) chosen for its hard directional sunlight and long shadow - strongly on-concept. Portrait 2800x4192."
+  }
+]

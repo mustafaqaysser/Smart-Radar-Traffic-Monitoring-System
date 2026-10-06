@@ -1,0 +1,107 @@
+{
+  "video-coffee": {
+    "kind": "video",
+    "src": "/media/video-coffee.mp4",
+    "sources": [
+      {
+        "src": "/media/video-coffee.webm",
+        "type": "video/webm"
+      },
+      {
+        "src": "/media/video-coffee.mp4",
+        "type": "video/mp4"
+      }
+    ],
+    "poster": "/media/video-coffee-poster.webp",
+    "width": 1280,
+    "height": 720,
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkAA4BaJZgCdAD0dcotAAD++GnA5HGcTyr3ghQzrU5xasbcID59lWw8hGwessZtPCk0mHn8ci61Rhj9xq+sh2CAAA==",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "alt": {
+      "ar": "بخار خفيف يتصاعد من كوبٍ فخاري فيه ملعقة، تحت ضوء شمسٍ دافئ مائل على طاولة خشبية",
+      "en": "Faint steam rises from a stoneware cup with a spoon, lit by low, warm sunlight on a wooden table."
+    },
+    "credit": {
+      "author": "Mixkit contributor",
+      "authorUrl": null,
+      "source": "Mixkit",
+      "sourceUrl": "https://mixkit.co/free-stock-video/steaming-mug-808/",
+      "license": "Mixkit Stock Video Free License",
+      "licenseUrl": "https://mixkit.co/license/#videoFree"
+    },
+    "forItem": "atmosphere"
+  },
+  "video-night": {
+    "kind": "video",
+    "src": "/media/video-night.mp4",
+    "sources": [
+      {
+        "src": "/media/video-night.webm",
+        "type": "video/webm"
+      },
+      {
+        "src": "/media/video-night.mp4",
+        "type": "video/mp4"
+      }
+    ],
+    "poster": "/media/video-night-poster.webp",
+    "width": 1280,
+    "height": 720,
+    "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADQAQCdASoQAAkAA4BaJZQAAucVcAibAAD++Q5dzZKrDz7VOqUZPl4A",
+    "focal": [
+      0.55,
+      0.45
+    ],
+    "alt": {
+      "ar": "مصابيح دافئة معلّقة بين أغصان شجرة داكنة تتمايل مع نسيم المساء تحت سماءٍ زرقاء عميقة",
+      "en": "Warm string-light bulbs sway gently in a dark tree canopy against a deep-blue dusk sky."
+    },
+    "credit": {
+      "author": "Coverr contributor",
+      "authorUrl": null,
+      "source": "Coverr",
+      "sourceUrl": "https://coverr.co/videos/lights-swaying-in-the-evening-breeze-e91abi80ky",
+      "license": "Coverr License",
+      "licenseUrl": "https://coverr.co/license"
+    },
+    "forItem": "atmosphere"
+  },
+  "video-palm-shadow": {
+    "kind": "video",
+    "src": "/media/video-palm-shadow.mp4",
+    "sources": [
+      {
+        "src": "/media/video-palm-shadow.webm",
+        "type": "video/webm"
+      },
+      {
+        "src": "/media/video-palm-shadow.mp4",
+        "type": "video/mp4"
+      }
+    ],
+    "poster": "/media/video-palm-shadow-poster.webp",
+    "width": 1280,
+    "height": 720,
+    "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAABwAQCdASoQAAkAA4BaJYgCdABEmAD3BIkmm+ePPQru3z0cJoRBMdwJamAAAA==",
+    "focal": [
+      0.7,
+      0.45
+    ],
+    "alt": {
+      "ar": "سعف نخلة فتية يتمايل ببطء أمام جدارٍ جصّي خشن الملمس",
+      "en": "Young palm fronds sway slowly against a textured, warm-grey plaster wall."
+    },
+    "credit": {
+      "author": "Coverr contributor",
+      "authorUrl": null,
+      "source": "Coverr",
+      "sourceUrl": "https://coverr.co/videos/plant-swaying-in-the-wind-9olgftopus",
+      "license": "Coverr License",
+      "licenseUrl": "https://coverr.co/license"
+    },
+    "forItem": "atmosphere"
+  }
+}

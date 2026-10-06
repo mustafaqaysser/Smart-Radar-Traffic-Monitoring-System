@@ -1,0 +1,74 @@
+[
+  {
+    "name": "video-palm-shadow",
+    "source": "Coverr",
+    "pageUrl": "https://coverr.co/videos/plant-swaying-in-the-wind-9olgftopus",
+    "downloadUrl": "https://cdn.coverr.co/videos/coverr-plant-swaying-in-the-wind-3213/1080p.mp4?download=true",
+    "author": null,
+    "license": "Coverr License",
+    "licenseUrl": "https://coverr.co/license",
+    "durationSec": 26.57,
+    "width": 1920,
+    "height": 1080,
+    "loop": {
+      "inSec": 3.878,
+      "outSec": 17.306
+    },
+    "posterAtSec": 6.0,
+    "focal": [
+      0.7,
+      0.45
+    ],
+    "altEn": "Young palm fronds sway slowly against a textured, warm-grey plaster wall.",
+    "altAr": "سعف نخلة فتية يتمايل ببطء أمام جدارٍ جصّي خشن الملمس",
+    "notes": "COMPROMISE PICK - read before use. No free clip of hard-sun palm/foliage SHADOWS on a wall exists in the allowed pools: Mixkit free-licence items, genuine Coverr uploads (non-AI, non-premium) and Wikimedia Commons were searched exhaustively (~120 queries and tag pages). This is the closest subject match: fan-palm fronds swaying in front of a rough, warm-neutral plaster/render wall (measured wall RGB about 157/147/138, not cold). Locked-off 'still shot', slow sway, no people, text or logos; Coverr flags isPremium=false and isAiGenerated=false; free 1080p (4K source is Coverr+). Caveat: flat, overcast light, so there are no hard shadows. Grade it slightly warmer and more contrasty to sit with the brand, or replace it with a custom or generated shot if moving shadows are essential. The plain wall fills the left ~45% of the frame, which is good negative space for hero text. There is a wind gust at 19-23 s, which the loop excludes. The seam scores about 2.7x a normal frame-to-frame change at 96x54, so a 0.8-1 s crossfade is enough. The poster is inside the loop, so playback can start at posterAtSec. Alternates considered: Coverr 'Desert view' (looking out from under palm-thatch shade over a desert, coverr.co/videos/desert-view-qd2kpxuqy5); Mixkit 3977 'View of a window with a curtain' (warm sun through a sheer curtain, free licence); Wikimedia 'Free video clip - Sunset through Palm Tree.webm' (CC BY 2.0, Johann Mynhardt: needs credit, WebM, download was rate-limited). Rejected: Mixkit 16959 'Palm shadows across the sand' and 21111 'Palm leaves and sunshine' (both Mixkit Restricted licence, personal use only); Coverr 'Shadows on a floor' (grey and cold, the light fades out); Coverr 'Sunny Courtyard Reflections' (AI-generated); handheld or flare-heavy palm-against-sky shots."
+  },
+  {
+    "name": "video-coffee",
+    "source": "Mixkit",
+    "pageUrl": "https://mixkit.co/free-stock-video/steaming-mug-808/",
+    "downloadUrl": "https://assets.mixkit.co/videos/808/808-1080.mp4",
+    "author": null,
+    "license": "Mixkit Stock Video Free License",
+    "licenseUrl": "https://mixkit.co/license/#videoFree",
+    "durationSec": 10.75,
+    "width": 1920,
+    "height": 1080,
+    "loop": {
+      "inSec": 2.792,
+      "outSec": 8.958
+    },
+    "posterAtSec": 5.38,
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "altEn": "Faint steam rises from a stoneware cup with a spoon, lit by low, warm sunlight on a wooden table.",
+    "altAr": "بخار خفيف يتصاعد من كوبٍ فخاري فيه ملعقة، تحت ضوء شمسٍ دافئ مائل على طاولة خشبية",
+    "notes": "Item page says 'Free Download ... for commercial or personal use, under the Mixkit Stock Video Free License' (free 720p/1080p; JSON-LD license=mixkit.co/license/#videoFree). Checked because many Mixkit coffee clips are 'Restricted' (personal use only) and were rejected for that: 45086 steaming tea cinemagraph, 45595 Turkish coffee pour, 36204 Turkish coffee pot, 44956 gold-rim cup, 9267/9369/14908 tea pours, 12074, 7983, 24363. The light is exactly on-brief: hard, low, warm sun raking across a matte sage stoneware cup, with a crisp shadow and a dark background. The camera is locked off and nothing enters the frame. The steam is real but faint. It is strongest from 0 to 6 s and fades after about 8 s as the drink cools, so the loop sits in the steamier part and the poster uses the frame with the most measured steam. A touch of contrast in the grade helps the steam read. The first ~3 s show a slight light/focus settle, so the loop starts after it. The seam is tiny (~0.7 mean abs diff at 96x54), so a 0.5-1 s crossfade is invisible. The source is ~26.5 Mb/s, so re-encode it for the web. Western cup with a spoon, since no free finjan/dallah clip was available. Alternates: Mixkit 100239 'Roasted coffee beans close-up with steam' (clearly visible steam, warm, static, free licence); Mixkit 43935 'steaming cup of coffee' (strong steam but a studio backdrop and a slow camera drift, which is bad for looping); Mixkit 100262 pour into a speckled mug (the fill level changes, so the seam would show)."
+  },
+  {
+    "name": "video-night",
+    "source": "Coverr",
+    "pageUrl": "https://coverr.co/videos/lights-swaying-in-the-evening-breeze-e91abi80ky",
+    "downloadUrl": "https://cdn.coverr.co/videos/coverr-lights-swaying-in-the-evening-breeze-5160/1080p.mp4?download=true",
+    "author": null,
+    "license": "Coverr License",
+    "licenseUrl": "https://coverr.co/license",
+    "durationSec": 12.05,
+    "width": 1920,
+    "height": 1080,
+    "loop": {
+      "inSec": 3.753,
+      "outSec": 9.925
+    },
+    "posterAtSec": 4.0,
+    "focal": [
+      0.55,
+      0.45
+    ],
+    "altEn": "Warm string-light bulbs sway gently in a dark tree canopy against a deep-blue dusk sky.",
+    "altAr": "مصابيح دافئة معلّقة بين أغصان شجرة داكنة تتمايل مع نسيم المساء تحت سماءٍ زرقاء عميقة",
+    "notes": "A near-literal match for the art direction's 'warm lamps against deep blue ambient': vintage bulbs on a string, swaying in a silhouetted feathery tree against a deep-blue dusk sky (sky RGB about 55/65/85). Locked-off 'still shot' with calm motion and no people, text or logos. Coverr flags isPremium=false and isAiGenerated=false. These are electric bulbs, so there is no flame flicker, just a gentle sway. The sky darkens slowly across the clip (mean luma about 30 to 23), so the loop is placed in the flatter second half. At the seam the bulbs sit about 10-20 px apart and the brightness steps about 2/255; use a crossfade of 1 s or more. The poster is inside the loop. Alternates: Coverr 'Tree with fairy lights' (a tree trunk wrapped in warm fairy lights at night; there is a small sign at lower right that must be cropped); Mixkit 3462 'Flame burning coal in detail' (glowing embers under grey ash, free licence, almost static); Coverr 'Burning church candles' (warm tapers on a dark teal ground, with a slight camera drift). Rejected: Mixkit candle and lantern clips 17776, 21114, 22166, 20661, 6925, 34203, 34262, 14675, 7090 and 6969 (all Mixkit Restricted licence); Mixkit 3453 tea lights (moving camera); Mixkit 101565 (Western autumn table, candles are incidental); Mixkit 4109 paper lantern (Japanese signage); Coverr heart-shaped candles, hookah and menorah clips (off-brand); fire and bonfire clips (fast, busy motion)."
+  }
+]

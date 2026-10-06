@@ -1,7 +1,7 @@
 import type { CSSProperties, ReactNode } from 'react';
 import { Body, Button, Column, Container, Head, Hr, Html, Img, Preview, Row, Section, Text } from '@react-email/components';
 import restaurantConfig from '@config';
-import { absoluteUrl } from '@/lib/site';
+import { absoluteUrl } from '@/lib/site/url';
 
 /** Email palette: the morning phase (emails are always read in "daylight"). */
 export const EC = {

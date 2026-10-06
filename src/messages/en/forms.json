@@ -1,0 +1,66 @@
+{
+  "fields": {
+    "name": "Full name",
+    "firstName": "First name",
+    "email": "Email",
+    "phone": "Mobile number",
+    "phoneHint": "With country code if outside Saudi Arabia, e.g. +44 7700 900123",
+    "message": "Message",
+    "date": "Date",
+    "time": "Time",
+    "guests": "Guests",
+    "branch": "House",
+    "occasion": "Occasion",
+    "notes": "Notes for the house",
+    "password": "Password",
+    "newPassword": "New password",
+    "code": "Code",
+    "company": "Company",
+    "budget": "Budget per guest",
+    "package": "Package",
+    "cv": "CV (PDF or Word, up to 5 MB)",
+    "subject": "Subject",
+    "address": "Address",
+    "optional": "optional"
+  },
+  "newsletter": {
+    "sent": "Almost there — we have sent a confirmation link to {email}.",
+    "confirmedTitle": "You are on the list",
+    "confirmedBody": "The next letter arrives with the change of season.",
+    "unsubscribedTitle": "You will not hear from us again",
+    "unsubscribedBody": "You have been removed from the letter. If that was a mistake, you can subscribe again at any time.",
+    "invalidTitle": "This link has expired",
+    "invalidBody": "Subscribe again below and we will send a fresh confirmation."
+  },
+  "errors": {
+    "invalid": "Please check this field.",
+    "required": "This is required.",
+    "email": "Please enter a valid email address.",
+    "phone": "Please enter a valid mobile number.",
+    "tooShort": "This is too short.",
+    "tooLong": "This is too long.",
+    "validation": "Please check the highlighted fields.",
+    "rateLimited": "Too many attempts. Please wait a minute and try again.",
+    "botCheck": "We could not verify the form. Please reload the page and try again.",
+    "disabled": "This is not available right now.",
+    "notFound": "We could not find that.",
+    "unknown": "Something went wrong. Please try again.",
+    "unauthorized": "Please sign in to continue.",
+    "forbidden": "You do not have access to this.",
+    "fileType": "Please upload a PDF or Word document.",
+    "fileTooLarge": "The file is larger than 5 MB.",
+    "fileEmpty": "The file is empty.",
+    "consent": "Please confirm to continue.",
+    "dateInPast": "Please choose a date from today onwards.",
+    "passwordShort": "Use at least 8 characters.",
+    "passwordMismatch": "The passwords do not match."
+  },
+  "consent": {
+    "privacy": "I agree that Zill may use these details to reply to me, as described in the privacy notice.",
+    "marketing": "Send me the seasonal letter (four a year, unsubscribe any time)."
+  },
+  "success": {
+    "sent": "Thank you — your message is with us.",
+    "sentBody": "We reply within one working day, usually sooner. A copy is on its way to {email}."
+  }
+}

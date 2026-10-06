@@ -1,0 +1,8 @@
+{
+  "fields": {
+    "branch": "House",
+    "date": "Day",
+    "party": "Guests",
+    "time": "Time"
+  }
+}

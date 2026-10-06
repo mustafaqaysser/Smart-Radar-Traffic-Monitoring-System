@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "title": "Every hour has its shade",
+    "description": "A courtyard kitchen of the Arabian Peninsula that follows the shade from first coffee to midnight — in Al-Balad, Jeddah, and Wadi Hanifah, Riyadh."
+  },
+  "hero": {
+    "line": "Every hour has its shade.",
+    "intro": "Cooking of the Arabian Peninsula in two courtyard houses, Jeddah and Riyadh. The menu follows the sun: bread and coffee by the east wall, the long lunch under the vine, sweets in the long shade, and the whole courtyard at night.",
+    "servingNow": "What the kitchen is serving now",
+    "holdSun": "Move across the page to hold the sun",
+    "photoCaption": "Now: {menu}"
+  },
+  "concept": {
+    "eyebrow": "The first courtesy",
+    "title": "In a hot land, a host offers shade before coffee.",
+    "body": "The old houses of Jeddah and Najd were built around a courtyard, and the day moved around it with the shade. Zill keeps that rhythm. Each part of the day has its own menu, its own light and its own corner of the house — and this page follows the real sun over the house you choose.",
+    "link": "Read our story"
+  },
+  "day": {
+    "eyebrow": "A day in the courtyard",
+    "title": "From first bread to the last glass of tea",
+    "skip": "Skip the day",
+    "hours": {
+      "dawn": {
+        "title": "Dawn",
+        "body": "The tannour is lit in the dark. By the time the call to prayer ends, the first tamees is cooling on the east wall."
+      },
+      "morning": {
+        "title": "Morning shade",
+        "body": "Families at the long table, foul in clay pots, eggs from the east wall, and coffee pale with cardamom."
+      },
+      "noon": {
+        "title": "The short shade",
+        "body": "The sun stands overhead and the shade draws in under the vine. Lunch is long, shared and unhurried."
+      },
+      "afternoon": {
+        "title": "The long shade",
+        "body": "Shadows stretch across the floor. Pour-over at the bar, luqaimat fried to order, a sweet to share."
+      },
+      "dusk": {
+        "title": "Maghrib",
+        "body": "The plaster turns violet. Lamps are lit one by one, the ember grill wakes, the courtyard fills."
+      },
+      "night": {
+        "title": "Night",
+        "body": "The whole courtyard, open to the sky: ember-grilled fish, the Sundial tasting menu, mint tea at midnight."
+      }
+    }
+  },
+  "signature": {
+    "eyebrow": "The menu of the hour",
+    "title": "Served now at {house}",
+    "titleClosed": "Next at {house}",
+    "body": "A few plates from the menu being served at this moment. The full menu opens on the same hour.",
+    "cta": "See the whole menu",
+    "nothing": "The kitchen is resting. These are the plates it wakes up to."
+  },
+  "room": {
+    "eyebrow": "The houses",
+    "title": "Two courtyards, one clock, two suns",
+    "body": "A coral-stone house in Al-Balad, Jeddah, and a mud-brick courtyard on the edge of the palm groves of Wadi Hanifah. Both keep Riyadh time, but not the same sun: Jeddah's sunset comes some twenty minutes later.",
+    "cta": "Visit the houses"
+  },
+  "chef": {
+    "eyebrow": "The kitchen",
+    "quote": "We cook what the hour asks for. Bread at dawn, nothing heavy at noon, the ember grill when the air cools.",
+    "cta": "Meet the chef and team"
+  },
+  "experiences": {
+    "eyebrow": "Gatherings",
+    "title": "Evenings worth keeping a date for",
+    "cta": "All experiences",
+    "seatsLeft": "{count, plural, =0 {Fully booked} one {{n} seat left} other {{n} seats left}}",
+    "from": "From {price}"
+  },
+  "voices": {
+    "eyebrow": "Guests’ words",
+    "title": "What people say after the shade has moved",
+    "cta": "Read more from our guests",
+    "rating": "{average} of 5 from {count, plural, one {{n} review} other {{n} reviews}}",
+    "stars": "{rating} out of 5"
+  },
+  "reserve": {
+    "eyebrow": "Book your shade",
+    "title": "Choose a house, a day and a corner of it",
+    "body": "Tables open sixty days ahead. For nine guests or more, ask us about the private rooms.",
+    "cta": "Find a table"
+  },
+  "find": {
+    "eyebrow": "Find us",
+    "title": "Where the shade is today",
+    "today": "Today",
+    "details": "House details"
+  }
+}

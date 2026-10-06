@@ -2,6 +2,7 @@ import { hasLocale } from 'next-intl';
 import { getRequestConfig } from 'next-intl/server';
 import { cookies } from 'next/headers';
 import restaurantConfig from '@config';
+import { loadMessages } from '@/messages/load';
 import { routing } from './routing';
 
 /** Cookie that stores a staff member's admin language (the admin is not locale-prefixed). */
@@ -13,11 +14,11 @@ export default getRequestConfig(async ({ requestLocale }) => {
     const store = await cookies();
     locale = store.get(ADMIN_LOCALE_COOKIE)?.value;
   }
-  if (!hasLocale(routing.locales, locale)) locale = routing.defaultLocale;
+  const resolved = hasLocale(routing.locales, locale) ? locale : routing.defaultLocale;
 
   return {
-    locale,
-    messages: (await import(`../messages/${locale}.json`)).default,
+    locale: resolved,
+    messages: await loadMessages(resolved),
     timeZone: restaurantConfig.defaultTimeZone,
   };
 });

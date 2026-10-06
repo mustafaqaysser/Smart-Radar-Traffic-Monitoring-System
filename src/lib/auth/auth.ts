@@ -6,7 +6,7 @@ import { emailOTP } from 'better-auth/plugins/email-otp';
 import { db } from '@/lib/db/client';
 import { accounts, sessions, users, verifications } from '@/lib/db/schema';
 import { mail } from '@/lib/server/mail';
-import { siteUrl } from '@/lib/site';
+import { siteUrl } from '@/lib/site/url';
 import { createId } from '@/lib/utils/id';
 
 type HeaderSource = { headers?: Headers | null; request?: Request | null } | null | undefined;

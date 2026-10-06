@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { matchesSearch, normalizeArabic, normalizeForSearch } from '@/lib/i18n/arabic';
 import { normalizeDigits, parseLocaleNumber, parseMoneyInput } from '@/lib/i18n/digits';
-import { formatDateString, formatMoney, formatWallTime, formatWeekday, intlLocale } from '@/lib/i18n/format';
+import { formatDate, formatDateString, formatHijri, formatMoney, formatWallTime, formatWeekday, intlLocale } from '@/lib/i18n/format';
 
 describe('digits', () => {
   it('normalises Arabic-Indic and Eastern Arabic-Indic digits', () => {
@@ -38,11 +38,17 @@ describe('arabic search', () => {
 
 describe('format', () => {
   it('uses Arabic-Indic digits in Arabic by default and Western digits in English', () => {
-    expect(intlLocale('ar')).toBe('ar-SA-u-nu-arab');
+    expect(intlLocale('ar')).toBe('ar-SA-u-ca-gregory-nu-arab');
     expect(formatMoney(4500, 'ar')).toMatch(/٤٥/);
     expect(formatMoney(4500, 'en')).toMatch(/SAR\s?45$/);
     expect(formatMoney(4550, 'en')).toMatch(/45\.50/);
   });
+  it('always uses the Gregorian calendar (engines differ on the ar-SA default) and offers Hijri explicitly', () => {
+    const d = new Date('2026-10-06T09:00:00Z');
+    expect(formatDate(d, 'ar', 'Asia/Riyadh', { day: 'numeric', month: 'long' })).toBe('٦ أكتوبر');
+    expect(formatHijri(d, 'ar', 'Asia/Riyadh')).toMatch(/ربيع/);
+  });
+
   it('formats wall times and calendar dates without zone drift', () => {
     expect(formatWallTime('19:30', 'en').toLowerCase()).toMatch(/7:30\s?pm/);
     expect(formatWallTime('19:30', 'ar')).toMatch(/٧:٣٠/);

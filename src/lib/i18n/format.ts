@@ -12,10 +12,20 @@ export function numberingSystem(locale: string): string {
   return (restaurantConfig.numerals as Record<string, string>)[locale] ?? 'latn';
 }
 
-/** BCP-47 tag with the configured numbering system, e.g. 'ar-SA-u-nu-arab'. */
+/**
+ * BCP-47 tag with the configured numbering system and the Gregorian calendar, e.g. 'ar-SA-u-ca-gregory-nu-arab'.
+ * The calendar is explicit because engines disagree on ar-SA's default (some use Umm al-Qura), which would
+ * make server and browser render different dates. Hijri dates are shown deliberately via `formatHijri()`.
+ */
 export function intlLocale(locale: string): string {
   const base = BASE[(locale as AppLocale)] ?? locale;
-  return `${base}-u-nu-${numberingSystem(locale)}`;
+  return `${base}-u-ca-gregory-nu-${numberingSystem(locale)}`;
+}
+
+/** An instant's date in the Umm al-Qura calendar (e.g. "٢٥ ربيع الآخر ١٤٤٨"), shown alongside Gregorian dates. */
+export function formatHijri(date: Date, locale: string, timeZone: string): string {
+  const base = BASE[(locale as AppLocale)] ?? locale;
+  return new Intl.DateTimeFormat(`${base}-u-ca-islamic-umalqura-nu-${numberingSystem(locale)}`, { day: 'numeric', month: 'long', year: 'numeric', timeZone }).format(date);
 }
 
 const cache = new Map<string, Intl.NumberFormat | Intl.DateTimeFormat>();

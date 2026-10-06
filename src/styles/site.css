@@ -25,7 +25,6 @@
     transition:
       background-color var(--dur-horizon) var(--ease-sun),
       color var(--dur-horizon) var(--ease-sun);
-    scrollbar-gutter: stable;
   }
 
   body {
@@ -300,5 +299,405 @@
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+/* ---------- Motion: reveals (only when JS is running and motion is allowed) ---------- */
+@layer components {
+  .js:not(.reveal-all) [data-reveal]:not([data-revealed]) {
+    opacity: 0;
+  }
+  .js:not(.reveal-all) [data-reveal='rise']:not([data-revealed]) {
+    transform: translate3d(calc(var(--shade-x) * -10px), 24px, 0);
+  }
+  .js:not(.reveal-all) [data-reveal='shade']:not([data-revealed]) {
+    opacity: 1;
+    clip-path: inset(0 0 100% 0);
+  }
+  .js:not(.reveal-all) [data-reveal='wipe']:not([data-revealed]) {
+    opacity: 1;
+    clip-path: inset(0 100% 0 0);
+  }
+  [dir='rtl'].js:not(.reveal-all) [data-reveal='wipe']:not([data-revealed]),
+  .js:not(.reveal-all) [dir='rtl'] [data-reveal='wipe']:not([data-revealed]) {
+    clip-path: inset(0 0 0 100%);
+  }
+  [data-reveal] {
+    transition:
+      opacity var(--dur-slow) var(--ease-shade) var(--reveal-delay, 0ms),
+      transform var(--dur-sun) var(--ease-shade) var(--reveal-delay, 0ms),
+      clip-path var(--dur-sun) var(--ease-shade) var(--reveal-delay, 0ms);
+  }
+
+  /* Words rise from behind a line mask; Arabic is split by words only. */
+  .split-mask {
+    display: inline-block;
+    overflow: clip;
+    overflow-clip-margin: 0.12em;
+    vertical-align: top;
+    padding-block-end: 0.06em;
+  }
+  .split-word {
+    display: inline-block;
+    transition: transform var(--dur-sun) var(--ease-shade) var(--word-delay, 0ms);
+  }
+  [data-reveal='words'] {
+    opacity: 1 !important;
+  }
+  .js:not(.reveal-all) [data-reveal='words']:not([data-revealed]) .split-word {
+    transform: translate3d(0, 108%, 0);
+  }
+
+  /* Lenis */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-stopped {
+    overflow: clip;
+  }
+}
+
+/* ---------- Shade transitions between pages (View Transitions API) ---------- */
+@keyframes shade-band-out {
+  from { opacity: 1; transform: translate3d(0, 0, 0); }
+  to { opacity: 0; transform: translate3d(calc(var(--shade-x) * 3vw), calc(var(--shade-y) * 1.5vh), 0); }
+}
+@keyframes shade-band-in {
+  from { clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); }
+  to { clip-path: polygon(0 0, 140% 0, 100% 100%, -40% 100%); }
+}
+@keyframes shade-band-in-rev {
+  from { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+  to { clip-path: polygon(-40% 0, 100% 0, 140% 100%, 0 100%); }
+}
+::view-transition-old(root) {
+  animation: var(--dur-calm) var(--ease-dusk) both shade-band-out;
+}
+::view-transition-new(root) {
+  animation: var(--dur-slow) var(--ease-shade) both shade-band-in;
+}
+[data-shade-dir='rev']::view-transition-new(root) {
+  animation-name: shade-band-in-rev;
+}
+::view-transition-group(site-header) {
+  animation: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+@layer base {
+  /* Reserve the scrollbar's space only while locked, so full-bleed scenes reach the edge and nothing shifts. */
+  html[data-scroll-locked] {
+    overflow: hidden;
+    scrollbar-gutter: stable;
+  }
+}
+
+/* ---------- Dialogs ---------- */
+@layer components {
+  .zill-dialog {
+    margin: auto;
+    width: min(36rem, calc(100vw - 2rem));
+    max-height: min(90dvh, 52rem);
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    box-shadow: calc(var(--shade-x) * var(--shade-len) * 14px) calc(var(--shade-y) * var(--shade-len) * 14px) 0 0 var(--c-shade);
+  }
+  .zill-dialog::backdrop {
+    background: color-mix(in oklab, var(--c-shade) 55%, transparent);
+  }
+  .zill-dialog[data-variant='sheet'] {
+    margin-block: 0;
+    margin-inline: auto 0;
+    height: 100dvh;
+    max-height: 100dvh;
+    width: min(32rem, 100vw);
+    box-shadow: none;
+  }
+  .zill-dialog[data-variant='full'] {
+    margin: 0;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100dvh;
+    max-height: 100dvh;
+    box-shadow: none;
+  }
+  @media (max-width: 47.99rem) {
+    .zill-dialog[data-variant='sheet'] {
+      margin: auto 0 0;
+      width: 100vw;
+      max-width: 100vw;
+      height: auto;
+      max-height: 92dvh;
+    }
+  }
+  .zill-dialog[open] {
+    animation: dialog-in var(--dur-calm) var(--ease-shade);
+  }
+  .zill-dialog[data-variant='sheet'][open] {
+    animation: sheet-in var(--dur-calm) var(--ease-shade);
+  }
+  [dir='rtl'] .zill-dialog[data-variant='sheet'][open] {
+    animation-name: sheet-in-rtl;
+  }
+  .zill-dialog[open]::backdrop {
+    animation: fade-in var(--dur-base) var(--ease-shade);
+  }
+  @media (max-width: 47.99rem) {
+    .zill-dialog[data-variant='sheet'][open],
+    [dir='rtl'] .zill-dialog[data-variant='sheet'][open] {
+      animation-name: sheet-up;
+    }
+  }
+}
+@keyframes dialog-in {
+  from { opacity: 0; transform: translateY(12px); }
+}
+@keyframes sheet-in {
+  from { transform: translateX(100%); }
+}
+@keyframes sheet-in-rtl {
+  from { transform: translateX(-100%); }
+}
+@keyframes sheet-up {
+  from { transform: translateY(100%); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+
+/* ---------- Navigation overlay: shade slides across along the sun's angle ---------- */
+@layer components {
+  .nav-overlay::backdrop {
+    background: transparent;
+  }
+  .nav-overlay[open] {
+    animation: nav-shade-in var(--dur-slow) var(--ease-shade) both;
+  }
+  .nav-overlay[open] .nav-group {
+    animation: nav-item-in var(--dur-slow) var(--ease-shade) both;
+    animation-delay: calc(180ms + var(--i) * 70ms);
+  }
+  [data-shade-dir='rev'] .nav-overlay[open] {
+    animation-name: nav-shade-in-rev;
+  }
+}
+@keyframes nav-shade-in {
+  from { clip-path: polygon(0 0, 0 0, -30% 100%, -30% 100%); }
+  to { clip-path: polygon(0 0, 130% 0, 100% 100%, -30% 100%); }
+}
+@keyframes nav-shade-in-rev {
+  from { clip-path: polygon(100% 0, 100% 0, 130% 100%, 130% 100%); }
+  to { clip-path: polygon(-30% 0, 100% 0, 130% 100%, 0 100%); }
+}
+@keyframes nav-item-in {
+  from { opacity: 0; transform: translateY(16px); }
+}
+
+@layer components {
+  /* Inverse surfaces (ink background): focus rings switch to the page colour. */
+  .nav-overlay :focus-visible,
+  .surface-inverse :focus-visible {
+    outline-color: var(--c-bg);
+  }
+}
+
+/* ---------- The Gnomon (first-visit preloader) ---------- */
+@layer components {
+  .gnomon {
+    display: none;
+  }
+  [data-preload] .gnomon {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    display: grid;
+    place-items: center;
+    background: var(--c-bg);
+    color: var(--c-ink);
+    animation: gnomon-exit var(--dur-slow) var(--ease-dusk) 1100ms both;
+  }
+  [data-preload] body {
+    overflow: hidden;
+  }
+  .gnomon-dial {
+    width: min(70vw, 26rem);
+    height: auto;
+    overflow: visible;
+  }
+  .gnomon-shadow-wrap {
+    transform-origin: 200px 300px;
+    transform: scaleY(0.42);
+  }
+  .gnomon-shadow {
+    transform-box: view-box;
+    transform-origin: 200px 300px;
+    animation: gnomon-sweep 1050ms var(--ease-sun) both;
+  }
+  .gnomon-marks {
+    animation: fade-in var(--dur-calm) var(--ease-shade) both;
+  }
+  .gnomon-sun {
+    animation: gnomon-sun var(--dur-sun) var(--ease-shade) both;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .gnomon-skip {
+    position: absolute;
+    inset-block-end: max(1.5rem, env(safe-area-inset-bottom));
+    inset-inline-end: 1.5rem;
+    min-height: 2.75rem;
+    padding-inline: 1rem;
+    color: var(--c-muted);
+  }
+}
+@keyframes gnomon-sweep {
+  from { transform: rotate(170deg) scaleX(1.6); }
+  to { transform: rotate(var(--g-to)) scaleX(var(--g-len)); }
+}
+@keyframes gnomon-sun {
+  from { transform: scale(0); }
+}
+@keyframes gnomon-exit {
+  to { clip-path: inset(0 0 100% 0); }
+}
+
+/* ---------- Home: live-shadow hero ---------- */
+@layer components {
+  .hero {
+    --sx: var(--shade-x);
+    --sy: var(--shade-y);
+    --slen: var(--shade-len);
+  }
+  .hero-title {
+    display: grid;
+  }
+  .hero-title > span {
+    grid-area: 1 / 1;
+  }
+  .hero-shade {
+    color: var(--c-shade);
+    transform: translate3d(calc(var(--sx) * var(--slen) * 0.07em), calc(var(--sy) * var(--slen) * 0.07em), 0);
+    transition: transform var(--dur-calm) var(--ease-shade);
+    animation: shade-settle var(--dur-sun) var(--ease-shade) 200ms backwards;
+    user-select: none;
+  }
+  .hero-ink {
+    position: relative;
+  }
+  .hero-palms {
+    transform: skewX(calc(var(--shade-x) * -14deg));
+    transform-origin: top right;
+    opacity: 0.9;
+    animation: palm-sway 9s var(--ease-sun) infinite alternate;
+  }
+  /* The fronds grow from the inline-end edge in both directions of reading. */
+  [dir='rtl'] .hero-palms {
+    scale: -1 1;
+  }
+  /* At night the courtyard lamp takes over from the sun. */
+  .hero-lamp {
+    display: none;
+  }
+  [data-phase='night'] .hero-lamp,
+  [data-phase='dusk'] .hero-lamp {
+    display: block;
+    inset-block-start: -20vh;
+    inset-inline-end: 8vw;
+    width: 60vw;
+    height: 70vh;
+    background: radial-gradient(closest-side, color-mix(in oklab, var(--c-sun) 22%, transparent), transparent);
+  }
+  [data-phase='night'] .hero-palms,
+  [data-phase='dusk'] .hero-palms {
+    opacity: 0.55;
+  }
+}
+@keyframes shade-settle {
+  from { transform: translate3d(0, 0, 0); }
+}
+@keyframes palm-sway {
+  from { rotate: -1.2deg; }
+  to { rotate: 1.6deg; }
+}
+
+/* ---------- Home: a day in the courtyard ---------- */
+@layer components {
+  .day-scene {
+    position: relative;
+    min-height: 80svh;
+    transition: background-color var(--dur-horizon) var(--ease-sun);
+  }
+  .day-instruments {
+    display: none;
+  }
+  /* Desktop, pinned: scenes stack inside a sticky stage; scroll scrubs them. */
+  .day[data-mode='pinned'] .day-track {
+    height: calc(100svh + (var(--day-count) - 1) * 40svh);
+  }
+  .day[data-mode='pinned'] .day-stage {
+    position: sticky;
+    inset-block-start: 0;
+    height: 100svh;
+    overflow: hidden;
+  }
+  .day[data-mode='pinned'] .day-scene {
+    position: absolute;
+    inset: 0;
+    min-height: 0;
+  }
+  .day[data-mode='pinned'] .day-instruments {
+    display: block;
+    position: absolute;
+    inset-inline: var(--spacing-margin);
+    inset-block-end: 2rem;
+    z-index: 20;
+    color: color-mix(in oklab, #7a6e82 70%, transparent);
+  }
+  .day-dial {
+    width: min(26rem, 40vw);
+    margin-inline-start: auto;
+    overflow: visible;
+  }
+  /* The sun travels in reading order, matching the hour marks beneath it. */
+  [dir='rtl'] .day-dial {
+    scale: -1 1;
+  }
+  .day-marks {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-block-start: 1rem;
+    border-block-start: 1px solid currentColor;
+    padding-block-start: 0.75rem;
+  }
+  .day-mark {
+    opacity: 0.35;
+  }
+}
+
+@layer components {
+  /* Stretched card links show their focus ring on the whole card. */
+  .card-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  .card-link:focus-visible {
+    outline: none;
+  }
+  [data-card]:has(.card-link:focus-visible) {
+    outline: 2px solid var(--c-ink);
+    outline-offset: 6px;
   }
 }

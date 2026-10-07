@@ -6,6 +6,7 @@ import { emailOTP } from 'better-auth/plugins/email-otp';
 import { db } from '@/lib/db/client';
 import { accounts, sessions, users, verifications } from '@/lib/db/schema';
 import { mail } from '@/lib/server/mail';
+import { welcomeMember } from '@/lib/server/welcome';
 import { siteUrl } from '@/lib/site/url';
 import { createId } from '@/lib/utils/id';
 
@@ -37,6 +38,16 @@ export const auth = betterAuth({
     resetPasswordTokenExpiresIn: 3600,
     sendResetPassword: async ({ user, url }, request) => {
       await mail(user.email, { name: 'reset-password', props: { locale: localeFrom({ request }), name: user.name, url } });
+    },
+  },
+  databaseHooks: {
+    user: {
+      create: {
+        // Staff and seeded accounts are written directly to the database, so this runs for guests only.
+        after: async (user, ctx) => {
+          await welcomeMember({ id: user.id, email: user.email, name: user.name ?? '' }, localeFrom(ctx));
+        },
+      },
     },
   },
   user: {

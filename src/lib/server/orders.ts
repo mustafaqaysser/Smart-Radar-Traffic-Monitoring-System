@@ -6,7 +6,7 @@ import { db } from '@/lib/db/client';
 import * as s from '@/lib/db/schema';
 import { pointsEarned } from '@/lib/domain/loyalty';
 import { countInWindow, windowStart } from '@/lib/domain/throttle';
-import { formatDateTime, formatMoney, formatNumber } from '@/lib/i18n/format';
+import { formatDateTime, formatMoney, formatNumber, joinParts } from '@/lib/i18n/format';
 import { tr } from '@/lib/i18n/localized';
 import { getBranch } from '@/lib/queries/branches';
 import { getMenuCatalog } from '@/lib/queries/catalog';
@@ -386,7 +386,7 @@ async function announceOrder(order: Order): Promise<void> {
   if (!branch) return;
   const t = await getTranslations({ locale: order.locale, namespace: 'order' });
   const items = await orderItems(order.id);
-  const address = order.address ? [order.address.area, order.address.street, order.address.building, order.address.floor].filter(Boolean).join('، ') : null;
+  const address = order.address ? joinParts([order.address.area, order.address.street, order.address.building, order.address.floor], order.locale) : null;
   await mail(
     order.email,
     {

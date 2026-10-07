@@ -4,7 +4,8 @@ import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { Icon } from '@/components/brand/icon';
-import { DishMarks } from '@/components/site/menu/badges';
+import { DishMarks, ProfileMark } from '@/components/site/menu/badges';
+import { useProfileLine } from '@/components/site/menu/use-profile-line';
 import { QuickAdd } from '@/components/site/menu/quick-add';
 import { toast } from '@/components/site/ui/toast';
 import { Link } from '@/i18n/navigation';
@@ -15,6 +16,7 @@ import { plural } from '@/lib/i18n/plural';
 import type { ItemView } from '@/lib/menu/view';
 import type { OrderMenu as OrderMenuData } from '@/lib/order/menu-data';
 import { cn } from '@/lib/utils/cn';
+import type { DietProfile } from '@/lib/menu/filter';
 import { basketLines } from './basket-lines';
 import { BasketPanel } from './basket-panel';
 
@@ -24,13 +26,14 @@ interface OrderMenuProps {
   branch: { slug: string; name: string };
   houses: Record<string, string>;
   canOrder: boolean;
+  profile: DietProfile | null;
 }
 
 /**
  * The menu to order from: what is being served now first, every dish one tap from the basket (dishes with
  * choices open a sheet). The basket stays beside the menu on wide screens and in a bar on phones.
  */
-export function OrderMenu({ menus, items, branch, houses, canOrder }: OrderMenuProps) {
+export function OrderMenu({ menus, items, branch, houses, canOrder, profile }: OrderMenuProps) {
   const t = useTranslations('order');
   const tm = useTranslations('menu');
   const tc = useTranslations('common');
@@ -38,6 +41,7 @@ export function OrderMenu({ menus, items, branch, houses, canOrder }: OrderMenuP
   const locale = useLocale();
   const c = useCart();
   const [adding, setAdding] = useState<ItemView | null>(null);
+  const profileLine = useProfileLine(profile);
   const dietLabels = Object.fromEntries(DIETARY_TAGS.map((d) => [d, tc(`dietary.${d}`)]));
   const allergenLabels = Object.fromEntries(ALLERGENS.map((a) => [a, tc(`allergens.${a}`)]));
   const count = c.lines.reduce((n, l) => n + l.qty, 0);
@@ -107,6 +111,7 @@ export function OrderMenu({ menus, items, branch, houses, canOrder }: OrderMenuP
                           </div>
                           <p className="t-small text-muted line-clamp-2">{item.description}</p>
                           <DishMarks dietary={item.dietary} allergens={item.allergens} spice={item.spice} labels={{ diet: dietLabels, allergen: allergenLabels, spice: tc(`spice.${item.spice}`), contains }} />
+                          <ProfileMark line={profileLine(item)} />
                           <span className="t-body tabular">
                             <bdi>{formatMoney(item.price, locale)}</bdi>
                           </span>

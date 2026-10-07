@@ -54,13 +54,14 @@ export function ResetPasswordEmail({ locale, name, url }: ResetPasswordProps) {
 
 export interface WelcomeProps extends Loc {
   name: string;
-  bonusLabel: string;
+  /** The signup bonus, e.g. '100 points'; null when the membership programme is off. */
+  bonusLabel: string | null;
   menuUrl: string;
 }
 export function WelcomeEmail({ locale, name, bonusLabel, menuUrl }: WelcomeProps) {
   return (
     <EmailLayout locale={locale} preview={pick(locale, 'صار لك ظلٌّ عندنا', 'You have a shade with us now')}>
-      <EHeading locale={locale}>{pick(locale, `أهلاً ${name}`, `Hello, ${name}`)}</EHeading>
+      <EHeading locale={locale}>{name ? pick(locale, `أهلاً ${name}`, `Hello, ${name}`) : pick(locale, 'أهلاً بك', 'Hello')}</EHeading>
       <EText locale={locale}>
         {pick(
           locale,
@@ -68,7 +69,7 @@ export function WelcomeEmail({ locale, name, bonusLabel, menuUrl }: WelcomeProps
           'You now have an account at Zill: save your addresses and favourite dishes, and tell us about allergies once — we will remember them every visit.',
         )}
       </EText>
-      <EText locale={locale}>{pick(locale, `أضفنا إلى رصيدك ${bonusLabel} في دائرة الظلّ.`, `We have added ${bonusLabel} to your Shade Circle balance.`)}</EText>
+      {bonusLabel ? <EText locale={locale}>{pick(locale, `أضفنا إلى رصيدك ${bonusLabel} في دائرة الظلّ.`, `We have added ${bonusLabel} to your Shade Circle balance.`)}</EText> : null}
       <EButton href={menuUrl}>{pick(locale, 'ما يُقدَّم الآن', 'What is being served now')}</EButton>
     </EmailLayout>
   );

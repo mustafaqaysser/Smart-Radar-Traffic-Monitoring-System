@@ -4,7 +4,7 @@ import { headers } from 'next/headers';
 import { redirect } from 'next/navigation';
 import { eq } from 'drizzle-orm';
 import { db } from '@/lib/db/client';
-import { users, type Role } from '@/lib/db/schema';
+import { users, type DietaryProfile, type Role } from '@/lib/db/schema';
 import { auth } from './auth';
 import { can, isStaff, type Permission } from './permissions';
 
@@ -16,6 +16,13 @@ export interface CurrentUser {
   phone: string | null;
   locale: string;
   branchId: string | null;
+  emailVerified: boolean;
+  dietary: DietaryProfile | null;
+  marketingEmail: boolean;
+  marketingSms: boolean;
+  loyaltyPoints: number;
+  lifetimePoints: number;
+  createdAt: Date;
 }
 
 /** The signed-in user (fresh from the database so role changes apply immediately), or null. */
@@ -24,7 +31,22 @@ export const getCurrentUser = cache(async (): Promise<CurrentUser | null> => {
   if (!session) return null;
   const row = await db.query.users.findFirst({ where: eq(users.id, session.user.id) });
   if (!row || row.disabled || row.deletedAt) return null;
-  return { id: row.id, name: row.name, email: row.email, role: row.role, phone: row.phone, locale: row.locale, branchId: row.branchId };
+  return {
+    id: row.id,
+    name: row.name,
+    email: row.email,
+    role: row.role,
+    phone: row.phone,
+    locale: row.locale,
+    branchId: row.branchId,
+    emailVerified: row.emailVerified,
+    dietary: row.dietary ?? null,
+    marketingEmail: row.marketingEmail,
+    marketingSms: row.marketingSms,
+    loyaltyPoints: row.loyaltyPoints,
+    lifetimePoints: row.lifetimePoints,
+    createdAt: row.createdAt,
+  };
 });
 
 export class AuthError extends Error {

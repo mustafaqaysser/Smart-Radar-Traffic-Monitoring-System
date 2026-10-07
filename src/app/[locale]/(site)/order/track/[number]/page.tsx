@@ -6,7 +6,7 @@ import { PaymentResume } from '@/components/site/payment-resume';
 import { BookingRows } from '@/components/site/reserve/booking-pieces';
 import { ButtonAnchor, ButtonLink } from '@/components/site/ui/button';
 import { PageHeader } from '@/components/site/ui/page-header';
-import { formatDateTime, formatMoney, formatNumber } from '@/lib/i18n/format';
+import { formatDateTime, formatMoney, formatNumber, joinParts } from '@/lib/i18n/format';
 import { tr } from '@/lib/i18n/localized';
 import { getBranch } from '@/lib/queries/branches';
 import { orderByNumber, orderItems, PAYMENT_WINDOW_MINUTES, totalsRows, trackingPath, trackingSnapshot } from '@/lib/server/orders';
@@ -61,7 +61,7 @@ export default async function TrackOrderPage({ params, searchParams }: { params:
     ? await resumablePayment({ purpose: 'order', referenceId: order.id, amount: order.total - order.giftCardAmount, description: `${branch.shortName.en} · ${order.number}`, email: order.email, locale, returnPath: `/${locale}${trackingPath(order)}` })
     : null;
   const lapsed = order.status === 'cancelled' && order.paymentMethod === 'card' && !order.acceptedAt && order.paymentStatus !== 'paid';
-  const address = order.address ? [order.address.area, order.address.street, order.address.building, order.address.floor].filter(Boolean).join('، ') : null;
+  const address = order.address ? joinParts([order.address.area, order.address.street, order.address.building, order.address.floor], locale) : null;
 
   return (
     <article className="site-grid gap-y-12 pt-10 pb-[var(--spacing-section)] lg:pt-16">

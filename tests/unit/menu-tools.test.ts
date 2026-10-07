@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { activeFilterCount, EMPTY_FILTERS, passesFilters } from '@/lib/menu/filter';
+import { activeFilterCount, EMPTY_FILTERS, passesFilters, profileVerdict, toDietProfile } from '@/lib/menu/filter';
 import { matchDishes, scoreDish, type Matchable } from '@/lib/menu/matchmaker';
 import { normalizeForSearch } from '@/lib/i18n/arabic';
 
@@ -62,5 +62,22 @@ describe('matchmaker', () => {
   it('penalises heat when none is wanted and explains its choices', () => {
     expect(scoreDish(grill, { hunger: 'proper', mood: 'embers', heat: 'none' }).score).toBeLessThan(scoreDish(grill, { hunger: 'proper', mood: 'embers', heat: 'all' }).score);
     expect(scoreDish(cake, { hunger: 'light', mood: 'sweet', heat: 'none' }).reasons).toContain('signature');
+  });
+});
+
+describe('dietary profile', () => {
+  it('ignores unknown tags and treats an empty profile as none', () => {
+    expect(toDietProfile(null)).toBeNull();
+    expect(toDietProfile({ diets: [], avoidAllergens: [] })).toBeNull();
+    expect(toDietProfile({ diets: ['vegan', 'paleo'], avoidAllergens: ['sesame', 'sand'] })).toEqual({ diets: ['vegan'], avoid: ['sesame'], maxSpice: null });
+    expect(toDietProfile({ diets: [], avoidAllergens: [], maxSpice: 0 })).toEqual({ diets: [], avoid: [], maxSpice: 0 });
+    expect(toDietProfile({ diets: [], avoidAllergens: [], maxSpice: 9 })).toBeNull();
+  });
+
+  it('explains why a dish does not suit', () => {
+    const profile = { diets: ['vegetarian'] as const, avoid: ['sesame', 'milk'] as const, maxSpice: 1 };
+    const p = { diets: [...profile.diets], avoid: [...profile.avoid], maxSpice: profile.maxSpice };
+    expect(profileVerdict({ dietary: ['vegetarian'], allergens: ['gluten'], spice: 1 }, p)).toEqual({ suits: true, allergens: [], diets: [], tooHot: false });
+    expect(profileVerdict({ dietary: [], allergens: ['sesame', 'gluten', 'milk'], spice: 2 }, p)).toEqual({ suits: false, allergens: ['sesame', 'milk'], diets: ['vegetarian'], tooHot: true });
   });
 });

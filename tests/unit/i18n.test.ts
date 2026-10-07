@@ -56,3 +56,27 @@ describe('format', () => {
     expect(formatWeekday(5, 'ar')).toBe('الجمعة');
   });
 });
+
+describe('sign-in redirects', () => {
+  it('keeps only paths on this site, without the locale prefix', async () => {
+    const { safeNext } = await import('@/lib/account/next');
+    expect(safeNext('/order/checkout')).toBe('/order/checkout');
+    expect(safeNext('/en/menu/dish/hummus')).toBe('/menu/dish/hummus');
+    expect(safeNext('/ar')).toBe('/');
+    expect(safeNext('https://evil.test/x')).toBe('/account');
+    expect(safeNext('//evil.test')).toBe('/account');
+    expect(safeNext('/\\evil.test')).toBe('/account');
+    expect(safeNext('/api/auth/sign-out')).toBe('/account');
+    expect(safeNext('/account/sign-in?next=/x')).toBe('/account');
+    expect(safeNext(undefined, '/menu')).toBe('/menu');
+    expect(safeNext(['/reserve', '/x'])).toBe('/reserve');
+  });
+
+  it('maps auth errors to messages', async () => {
+    const { authErrorKey } = await import('@/lib/account/next');
+    expect(authErrorKey({ code: 'INVALID_EMAIL_OR_PASSWORD' })).toBe('invalidCredentials');
+    expect(authErrorKey({ code: 'USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL' })).toBe('userExists');
+    expect(authErrorKey({ status: 429 })).toBe('rateLimited');
+    expect(authErrorKey(null)).toBe('unknown');
+  });
+});

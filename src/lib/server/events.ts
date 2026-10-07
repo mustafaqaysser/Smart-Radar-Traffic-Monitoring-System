@@ -12,7 +12,7 @@ import { mail } from '@/lib/server/mail';
 import { linkToken, verifyLinkToken } from '@/lib/server/tokens';
 import { googleDirectionsUrl } from '@/lib/services/maps';
 import { absoluteUrl } from '@/lib/site/url';
-import { createCode, createId } from '@/lib/utils/id';
+import { CODE_PREFIX, createCode, createId } from '@/lib/utils/id';
 import type { StartedPayment } from './payments';
 
 export type EventBooking = typeof s.eventBookings.$inferSelect;
@@ -80,7 +80,7 @@ export async function bookEvent(input: { eventSlug: string; ticketTypeId: string
       .insert(s.eventBookings)
       .values({
         id: createId(),
-        code: createCode('ZT'),
+        code: createCode(CODE_PREFIX.ticket),
         eventId: event.id,
         ticketTypeId: ticket.id,
         quantity: input.quantity,

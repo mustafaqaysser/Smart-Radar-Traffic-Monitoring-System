@@ -28,6 +28,9 @@ export function createId(): string {
 }
 
 /** e.g. 'ZL-7K3M9Q' — reservations, tickets. */
+/** Public code prefixes: bookings read ZL-…, gathering tickets ZT-… (checked by the lookup routes). */
+export const CODE_PREFIX = { reservation: 'ZL', ticket: 'ZT' } as const;
+
 export function createCode(prefix: string, length = 6): string {
   return `${prefix}-${randomString(length, CODE_ALPHABET)}`;
 }

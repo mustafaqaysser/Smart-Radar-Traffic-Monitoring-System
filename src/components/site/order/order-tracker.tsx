@@ -2,19 +2,16 @@
 
 import { useRouter } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
-import { useEffect, useRef, useState, useTransition } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Icon } from '@/components/brand/icon';
 import { SplitWords } from '@/components/motion/split-words';
 import { Button } from '@/components/site/ui/button';
-import { toast } from '@/components/site/ui/toast';
-import { reorderAction } from '@/lib/actions/orders';
 import { cart } from '@/lib/cart/store';
-import { lineKey } from '@/lib/cart/types';
 import { formatClock } from '@/lib/i18n/format';
-import { plural } from '@/lib/i18n/plural';
 import { LAST_ORDER_KEY } from '@/lib/order/types';
 import type { TrackingSnapshot } from '@/lib/server/orders';
 import { cn } from '@/lib/utils/cn';
+import { useReorder } from './use-reorder';
 
 type Channel = 'delivery' | 'pickup' | 'dine_in';
 type Step = 'placed' | 'accepted' | 'preparing' | 'ready' | 'out_for_delivery' | 'completed';
@@ -41,7 +38,7 @@ export function OrderTracker({ number, token, channel, timeZone, initial, canReo
   const locale = useLocale();
   const router = useRouter();
   const [snapshot, setSnapshot] = useState(initial);
-  const [reordering, startReorder] = useTransition();
+  const [reordering, reorder] = useReorder(number, token);
   const startedAs = useRef(initial.status);
 
   useEffect(() => {
@@ -79,19 +76,6 @@ export function OrderTracker({ number, token, channel, timeZone, initial, canReo
   const reached = (s: Step) => snapshot.events.find((e) => e.status === s)?.at ?? null;
   const titleKey = status === 'ready' && channel === 'dine_in' ? 'ready_dine_in' : status;
   const eta = snapshot.promisedAt ? formatClock(new Date(snapshot.promisedAt), locale, timeZone) : null;
-
-  const reorder = () =>
-    startReorder(async () => {
-      const res = await reorderAction({ number, token });
-      if (!res.ok) return;
-      cart.replace(
-        res.data.lines.map((l) => ({ ...l, key: lineKey(l.slug, l.optionIds, l.note) })),
-        res.data.branch,
-        res.data.channel,
-      );
-      if (res.data.skipped) toast(t('reorderSkipped', plural(res.data.skipped, locale)));
-      router.push(`/${locale}/order/cart`);
-    });
 
   return (
     <div className="flex flex-col gap-8">

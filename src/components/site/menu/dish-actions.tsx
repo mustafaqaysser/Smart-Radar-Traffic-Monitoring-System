@@ -56,7 +56,7 @@ export function DishActions({ item, canOrder, branch, signedIn, initialFavourite
           </span>
         </Button>
       ) : (
-        <Link href={`/account?next=/menu/dish/${item.slug}`} className="t-small inline-flex min-h-11 items-center gap-2 underline decoration-line underline-offset-4">
+        <Link href={{ pathname: '/account/sign-in', query: { next: `/menu/dish/${item.slug}` } }} className="t-small inline-flex min-h-11 items-center gap-2 underline decoration-line underline-offset-4">
           <Icon name="heart" size={18} />
           {t('favouriteSignIn')}
         </Link>

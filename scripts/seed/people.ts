@@ -82,7 +82,8 @@ export async function seedPeople(ctx: SeedContext): Promise<{ customers: SeededC
     { userId: demoCustomer.id, itemId: ids.item('khawlani-pour-over') },
   ]);
 
-  const customers: SeededCustomer[] = [demoCustomer];
+  // The demo guest's own history is placed explicitly by the history seed, so it is not in the random pool.
+  const customers: SeededCustomer[] = [];
   const used = new Set<string>();
   for (let i = 0; i < 180; i++) {
     const [firstAr, firstEn] = random.pick(FIRST_NAMES);

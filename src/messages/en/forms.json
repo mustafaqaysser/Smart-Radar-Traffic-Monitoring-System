@@ -58,7 +58,11 @@
     "card_declined": "Your card was declined. Please try another card.",
     "card_expired": "This card has expired.",
     "card_funds": "The card has insufficient funds.",
-    "payment_closed": "This payment can no longer be completed. Please start again."
+    "payment_closed": "This payment can no longer be completed. Please start again.",
+    "passwordAlreadySet": "This account already has a password.",
+    "addressLimit": "You can keep up to twelve addresses; remove one to add another.",
+    "emailMismatch": "That is not the email on this account.",
+    "deletionBlocked": "Some bookings or orders need to finish first."
   },
   "consent": {
     "privacy": "I agree that Zill may use these details to reply to me, as described in the privacy notice.",

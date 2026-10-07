@@ -142,5 +142,18 @@
     "legend": "Allergens: {list}",
     "button": "Print or save as PDF",
     "footer": "Prices in Saudi riyals, including VAT. Please tell us about any allergy."
+  },
+  "profile": {
+    "label": "Your dietary profile",
+    "suits": "Suits you",
+    "contains": "Contains {list}, which you avoid",
+    "notDiet": "Not {list}",
+    "tooHot": "Hotter than you like",
+    "onlyMine": "Only what suits me",
+    "summary": "{count, plural, =0 {Nothing here suits your profile} one {{n} dish here suits you} other {{n} dishes here suit you}}",
+    "edit": "Edit your profile",
+    "save": "Keep these as my profile",
+    "saved": "Saved to your dietary profile.",
+    "signIn": "Sign in to keep these filters as your profile"
   }
 }

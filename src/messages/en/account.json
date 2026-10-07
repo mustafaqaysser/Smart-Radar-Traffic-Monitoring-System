@@ -1,1 +1,379 @@
-{}
+{
+  "meta": {
+    "signIn": "Sign in",
+    "signUp": "Create an account",
+    "reset": "Forgotten password",
+    "resetNew": "Choose a new password",
+    "overview": "Your account",
+    "profile": "Profile",
+    "dietary": "Dietary profile",
+    "addresses": "Addresses",
+    "favourites": "Favourites",
+    "orders": "Orders",
+    "reservations": "Reservations",
+    "giftCards": "Gift cards",
+    "loyalty": "Membership",
+    "preferences": "Messages from us",
+    "privacy": "Privacy",
+    "deleted": "Account deleted"
+  },
+  "auth": {
+    "eyebrow": "Your shade",
+    "signIn": {
+      "title": "Come back into the shade",
+      "body": "Your bookings, your orders and the dishes you avoid, remembered on every visit.",
+      "withPassword": "With a password",
+      "withCode": "With a code by email",
+      "submit": "Sign in",
+      "signingIn": "Signing in…",
+      "forgot": "Forgotten your password?",
+      "noAccount": "New here?",
+      "create": "Create an account"
+    },
+    "code": {
+      "send": "Send me a code",
+      "sending": "Sending…",
+      "sent": "We have sent a six-digit code to {email}. It works for ten minutes.",
+      "label": "The code",
+      "submit": "Sign in",
+      "resend": "Send a new code",
+      "resent": "A new code is on its way.",
+      "otherEmail": "Use a different email",
+      "hint": "No password needed. If you are new, this creates your account."
+    },
+    "signUp": {
+      "title": "Keep a shade of your own",
+      "body": "Save your addresses and favourite dishes, tell us once what you avoid, and collect points on every visit.",
+      "bonus": "{points} to start, from us.",
+      "passwordHint": "At least eight characters.",
+      "marketing": "Send me the seasonal letter (four a year).",
+      "submit": "Create my account",
+      "creating": "Creating your account…",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in"
+    },
+    "reset": {
+      "title": "A new password",
+      "body": "Write your email and we will send a link to choose a new password. The link works for an hour.",
+      "submit": "Send the link",
+      "sending": "Sending…",
+      "sent": "If {email} has an account with us, the link is on its way.",
+      "back": "Back to sign in"
+    },
+    "resetNew": {
+      "title": "Choose a new password",
+      "body": "Use at least eight characters; a short sentence is easier to remember than a code.",
+      "password": "New password",
+      "confirm": "Repeat it",
+      "submit": "Save the new password",
+      "saving": "Saving…",
+      "done": "Your password is changed. Sign in with it now.",
+      "invalid": "This link has expired or has already been used.",
+      "again": "Ask for a new link"
+    },
+    "errors": {
+      "invalidCredentials": "That email and password do not match.",
+      "userExists": "That email already has an account. Sign in instead.",
+      "invalidOtp": "That code is not right. Check the latest email.",
+      "otpExpired": "That code has expired. Ask for a new one.",
+      "tooManyAttempts": "Too many tries with that code. Ask for a new one.",
+      "invalidToken": "This link has expired or has already been used.",
+      "invalidPassword": "Your current password is not right.",
+      "passwordShort": "Use at least eight characters.",
+      "passwordMismatch": "The two passwords do not match.",
+      "rateLimited": "Too many attempts. Please wait a minute and try again.",
+      "unknown": "Something went wrong. Please try again."
+    }
+  },
+  "nav": {
+    "label": "Your account",
+    "overview": "At a glance",
+    "profile": "Profile",
+    "dietary": "Dietary profile",
+    "addresses": "Addresses",
+    "favourites": "Favourites",
+    "orders": "Orders",
+    "reservations": "Reservations",
+    "giftCards": "Gift cards",
+    "loyalty": "Membership",
+    "preferences": "Messages",
+    "privacy": "Privacy",
+    "signOut": "Sign out",
+    "signingOut": "Signing out…",
+    "admin": "Back-office"
+  },
+  "overview": {
+    "greeting": {
+      "dawn": "Good morning, {name}",
+      "morning": "Good morning, {name}",
+      "noon": "Good afternoon, {name}",
+      "afternoon": "Good afternoon, {name}",
+      "dusk": "Good evening, {name}",
+      "night": "Good evening, {name}"
+    },
+    "greetingPlain": {
+      "dawn": "Good morning",
+      "morning": "Good morning",
+      "noon": "Good afternoon",
+      "afternoon": "Good afternoon",
+      "dusk": "Good evening",
+      "night": "Good evening"
+    },
+    "intro": "Everything you keep with us, in one place.",
+    "addName": "Tell us your name",
+    "next": {
+      "title": "Your next visit",
+      "none": "No table booked yet.",
+      "book": "Book a table",
+      "manage": "Change or cancel",
+      "view": "View booking"
+    },
+    "active": {
+      "title": "Orders in progress",
+      "track": "Follow it"
+    },
+    "loyalty": {
+      "title": "Membership",
+      "toNext": "{points} to {tier}",
+      "top": "You are in our highest tier.",
+      "more": "Points and rewards"
+    },
+    "dietary": {
+      "title": "What you avoid",
+      "none": "Tell us once about allergies and diets, and the menu will mark what suits you.",
+      "set": "Set up your profile",
+      "edit": "Edit",
+      "avoids": "You avoid: {list}",
+      "eats": "{list}",
+      "heat": "Heat: up to {level}"
+    },
+    "verify": {
+      "title": "Confirm your email",
+      "body": "Confirm {email} to see the bookings, orders and gift cards you made before you had an account.",
+      "send": "Send me a code",
+      "sending": "Sending…",
+      "sent": "We have sent a code to {email}.",
+      "code": "The code",
+      "confirm": "Confirm",
+      "confirming": "Confirming…",
+      "done": "Your email is confirmed."
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "intro": "How we greet you, and how we reach you about a booking or an order.",
+    "name": "Name",
+    "email": "Email",
+    "emailNote": "To change your email, write to us from the contact page.",
+    "contact": "Contact",
+    "phone": "Mobile number",
+    "language": "Language for emails",
+    "save": "Save",
+    "saving": "Saving…",
+    "saved": "Saved.",
+    "password": {
+      "title": "Password",
+      "current": "Current password",
+      "new": "New password",
+      "confirm": "Repeat it",
+      "change": "Change password",
+      "changing": "Changing…",
+      "changed": "Your password is changed.",
+      "others": "Also sign out of my other devices",
+      "setBody": "You sign in with a code by email. Add a password if you would rather use one.",
+      "set": "Add a password",
+      "setDone": "Password added. You can now sign in with either."
+    },
+    "sessions": {
+      "title": "Devices",
+      "body": "Signed in on a phone or a computer you no longer use?",
+      "revoke": "Sign out of other devices",
+      "revoking": "Signing out…",
+      "revoked": "You are signed out everywhere else."
+    }
+  },
+  "dietary": {
+    "title": "Dietary profile",
+    "intro": "We mark the dishes that suit you on the menu, on the order page and on every dish. The kitchen will still ask at the table, so tell whoever serves you too.",
+    "diets": "How you eat",
+    "avoid": "Allergens you avoid",
+    "avoidHint": "Dishes that contain them are flagged, never hidden, so you always see the whole menu.",
+    "spice": "Heat",
+    "spiceAny": "Any",
+    "spiceUpTo": "Up to {level}",
+    "save": "Save the profile",
+    "saving": "Saving…",
+    "saved": "Saved. The menu now marks what suits you.",
+    "cleared": "Your profile is cleared.",
+    "clear": "Clear the profile",
+    "seeMenu": "See the menu",
+    "summaryEmpty": "Nothing set yet.",
+    "preview": "On today's menus: {suits} of {total} dishes suit you."
+  },
+  "addresses": {
+    "title": "Addresses",
+    "intro": "Saved for delivery, so checkout takes a tap.",
+    "none": "No addresses yet. Add one here, or save it when you order.",
+    "add": "Add an address",
+    "edit": "Edit",
+    "remove": "Remove",
+    "removeConfirm": "Remove “{label}”?",
+    "makeDefault": "Make it the default",
+    "default": "Default",
+    "save": "Save the address",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "saved": "Address saved.",
+    "removed": "Address removed.",
+    "label": "Call it",
+    "labelPlaceholder": "Home, the office, my mother's",
+    "area": "District",
+    "street": "Street and number",
+    "building": "Building",
+    "floor": "Floor or flat",
+    "notes": "Directions for the driver",
+    "notesHint": "A landmark, the gate colour, which entrance."
+  },
+  "favourites": {
+    "title": "Favourites",
+    "intro": "The dishes you have saved. Tap the heart on any dish to add it here.",
+    "none": "Nothing saved yet.",
+    "browse": "Browse the menu",
+    "remove": "Remove {name} from favourites",
+    "removed": "Removed from favourites.",
+    "order": "Add to order"
+  },
+  "orders": {
+    "title": "Orders",
+    "intro": "Every order from your account, newest first.",
+    "none": "No orders yet.",
+    "start": "Start an order",
+    "track": "Follow the order",
+    "receipt": "Details",
+    "reorder": "Order this again",
+    "reordering": "Adding to your basket…",
+    "placed": "Placed {date}"
+  },
+  "reservations": {
+    "title": "Reservations",
+    "intro": "Your tables and your seats at our gatherings.",
+    "upcoming": "Coming up",
+    "past": "Earlier visits",
+    "none": "Nothing booked yet.",
+    "nonePast": "No earlier visits yet.",
+    "book": "Book a table",
+    "manage": "Change or cancel",
+    "view": "View",
+    "tickets": "Gatherings",
+    "ticket": "Your ticket",
+    "noTickets": "No tickets yet.",
+    "browseEvents": "See the gatherings"
+  },
+  "giftCards": {
+    "title": "Gift cards",
+    "intro": "Cards given to you, and cards you have given.",
+    "received": "Given to you",
+    "given": "Given by you",
+    "none": "No gift cards yet.",
+    "noneReceived": "No cards given to you yet.",
+    "noneGiven": "You have not given a card yet.",
+    "from": "From {name}",
+    "to": "For {name}",
+    "balance": "{amount} left of {initial}",
+    "until": "Valid until {date}",
+    "use": "Use it at checkout online, or show the code at the house.",
+    "code": "Code",
+    "copy": "Copy the code",
+    "copied": "Code copied.",
+    "buy": "Give a gift card",
+    "verify": "Confirm your email on the account page to see cards sent to you."
+  },
+  "loyalty": {
+    "title": "Membership",
+    "intro": "The Shade Circle: points on every visit, a tier that grows with you.",
+    "balance": "Your points",
+    "tier": "Your tier",
+    "multiplier": "×{n} points on every riyal",
+    "rewards": "Rewards",
+    "redeem": "Use your points at checkout: every {points} take {amount} off.",
+    "history": "History",
+    "noHistory": "No points yet. They arrive with your first order.",
+    "kinds": {
+      "earn": "Earned",
+      "redeem": "Used",
+      "adjust": "Adjusted",
+      "bonus": "Gift",
+      "reverse": "Reversed"
+    },
+    "about": "How membership works"
+  },
+  "preferences": {
+    "title": "Messages from us",
+    "intro": "We write rarely. Choose what reaches you.",
+    "email": "The seasonal letter by email, four times a year",
+    "sms": "A text message when a gathering opens at your house",
+    "service": "Messages about your bookings and orders always reach you; they are part of the service.",
+    "save": "Save",
+    "saving": "Saving…",
+    "saved": "Saved.",
+    "pending": "Saved. Confirm the letter from the email we have just sent."
+  },
+  "privacy": {
+    "title": "Privacy",
+    "intro": "What we keep is yours to take away or to erase.",
+    "export": {
+      "title": "Download your data",
+      "body": "One file with your profile, addresses, favourites, orders, bookings, tickets, gift cards and points.",
+      "cta": "Download the file (JSON)"
+    },
+    "delete": {
+      "title": "Delete your account",
+      "body": "We remove your profile, addresses, favourites, points and dietary profile, and sign you out everywhere. Past orders and bookings stay in our books without your name or contact details, as tax rules require for invoices.",
+      "cancels": "{count, plural, one {Your upcoming booking will be cancelled.} other {Your {n} upcoming bookings will be cancelled.}}",
+      "blocked": "Some things need to finish first:",
+      "blockOrder": "Order {number} is still in progress.",
+      "blockReservation": "Booking {code} on {date} is inside the change window; call the house to cancel it.",
+      "blockTicket": "Your ticket {code} is for a gathering on {date}.",
+      "confirm": "Type your email to confirm",
+      "cta": "Delete my account",
+      "deleting": "Deleting…",
+      "open": "Delete my account…",
+      "dialogTitle": "Delete your account?",
+      "irreversible": "This cannot be undone.",
+      "done": "Your account is deleted. Thank you for the time you spent in our shade.",
+      "home": "Back to the home page",
+      "doneTitle": "Until another hour"
+    }
+  },
+  "status": {
+    "reservation": {
+      "pending": "Awaiting deposit",
+      "confirmed": "Confirmed",
+      "seated": "At the table",
+      "completed": "Visited",
+      "no_show": "Missed",
+      "cancelled": "Cancelled"
+    },
+    "order": {
+      "pending_payment": "Awaiting payment",
+      "placed": "Received",
+      "accepted": "Accepted",
+      "preparing": "On the fire",
+      "ready": "Ready",
+      "out_for_delivery": "On its way",
+      "completed": "Completed",
+      "rejected": "Not accepted",
+      "cancelled": "Cancelled"
+    },
+    "ticket": {
+      "confirmed": "Confirmed",
+      "checked_in": "Attended"
+    },
+    "giftCard": {
+      "scheduled": "Scheduled",
+      "active": "Active",
+      "redeemed": "Used up",
+      "expired": "Expired"
+    }
+  }
+}

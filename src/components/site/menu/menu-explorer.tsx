@@ -1,26 +1,29 @@
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';
-import { useEffect, useId, useMemo, useState } from 'react';
+import { useEffect, useId, useMemo, useState, useTransition } from 'react';
 import Image from 'next/image';
 import { Icon } from '@/components/brand/icon';
 import { Button } from '@/components/site/ui/button';
 import { Chip, Input, Label } from '@/components/site/ui/field';
 import { Dialog } from '@/components/site/ui/dialog';
-import { Link } from '@/i18n/navigation';
+import { toast } from '@/components/site/ui/toast';
+import { Link, useRouter } from '@/i18n/navigation';
+import { saveDietaryProfile } from '@/lib/actions/account';
 import { ALLERGENS, DIETARY_TAGS, type Allergen, type DietaryTag } from '@/lib/menu/tags';
 import { isServing, minutesUntilServing } from '@/lib/domain/menus';
 import { formatClock, formatList, formatMoney } from '@/lib/i18n/format';
 import { plural } from '@/lib/i18n/plural';
-import { activeFilterCount, EMPTY_FILTERS, passesFilters, type MenuFilters } from '@/lib/menu/filter';
+import { activeFilterCount, EMPTY_FILTERS, passesFilters, profileVerdict, type DietProfile, type MenuFilters } from '@/lib/menu/filter';
 import type { ItemView, MenuView } from '@/lib/menu/view';
 import { localToUtc } from '@/lib/time/zoned';
 import { cn } from '@/lib/utils/cn';
-import { DishMarks } from './badges';
+import { DishMarks, ProfileMark } from './badges';
 import { MatchmakerDialog } from './matchmaker-dialog';
 import { QuickAdd } from './quick-add';
 import { minutesToStep, stepToMinutes, SundialScrubber } from './sundial-scrubber';
 import { TrailingWindow, useTrailingWindow } from './trailing-window';
+import { useProfileLine } from './use-profile-line';
 
 export interface MenuExplorerProps {
   menus: MenuView[];
@@ -31,11 +34,14 @@ export interface MenuExplorerProps {
   nowIso: string;
   nowMinutes: number;
   canOrder: boolean;
+  /** The signed-in guest's dietary profile: dishes are marked against it. */
+  profile: DietProfile | null;
+  signedIn: boolean;
 }
 
 const SPICE_LEVELS = [0, 1, 2] as const;
 
-export function MenuExplorer({ menus, items, initialMenu, branch, today, nowIso, nowMinutes, canOrder }: MenuExplorerProps) {
+export function MenuExplorer({ menus, items, initialMenu, branch, today, nowIso, nowMinutes, canOrder, profile, signedIn }: MenuExplorerProps) {
   const t = useTranslations('menu');
   const tc = useTranslations('common');
   const locale = useLocale();
@@ -47,6 +53,10 @@ export function MenuExplorer({ menus, items, initialMenu, branch, today, nowIso,
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [matchOpen, setMatchOpen] = useState(false);
   const [adding, setAdding] = useState<ItemView | null>(null);
+  const [onlyMine, setOnlyMine] = useState(false);
+  const [savingProfile, startSavingProfile] = useTransition();
+  const router = useRouter();
+  const profileLine = useProfileLine(profile);
   const trailing = useTrailingWindow();
 
   // Keep the chosen menu in the URL so it can be shared (?m=slug), without a navigation.
@@ -90,9 +100,10 @@ export function MenuExplorer({ menus, items, initialMenu, branch, today, nowIso,
   const visible = useMemo(() => {
     if (!menu) return [];
     return menu.categories
-      .map((c) => ({ ...c, items: c.items.map((slug) => items[slug]).filter((i): i is ItemView => Boolean(i) && passesFilters(i as ItemView, filters)) }))
+      .map((c) => ({ ...c, items: c.items.map((slug) => items[slug]).filter((i): i is ItemView => Boolean(i) && passesFilters(i as ItemView, filters) && (!onlyMine || !profile || profileVerdict(i as ItemView, profile).suits)) }))
       .filter((c) => c.items.length > 0);
-  }, [menu, items, filters]);
+  }, [menu, items, filters, onlyMine, profile]);
+  const suitsHere = useMemo(() => (menu && profile ? menu.categories.flatMap((c) => c.items).filter((slug) => items[slug] && profileVerdict(items[slug] as ItemView, profile).suits).length : 0), [menu, items, profile]);
   const count = visible.reduce((n, c) => n + c.items.length, 0);
   const menuItems = useMemo(() => visible.flatMap((c) => c.items), [visible]);
   const nActive = activeFilterCount(filters);
@@ -151,6 +162,32 @@ export function MenuExplorer({ menus, items, initialMenu, branch, today, nowIso,
         <button type="button" className="t-label self-start underline underline-offset-4" onClick={() => setFilters(EMPTY_FILTERS)}>
           {t('filters.clear')}
         </button>
+      ) : null}
+      {filters.diets.length || filters.avoid.length || filters.maxSpice !== null ? (
+        signedIn ? (
+          <button
+            type="button"
+            disabled={savingProfile}
+            className="t-small inline-flex min-h-11 items-center gap-2 self-start underline decoration-line underline-offset-4"
+            onClick={() =>
+              startSavingProfile(async () => {
+                const res = await saveDietaryProfile({ diets: filters.diets, avoid: filters.avoid, maxSpice: filters.maxSpice });
+                if (res.ok) {
+                  toast(t('profile.saved'));
+                  router.refresh();
+                }
+              })
+            }
+          >
+            <Icon name="leaf" size={16} />
+            {t('profile.save')}
+          </button>
+        ) : (
+          <Link href={{ pathname: '/account/sign-in', query: { next: '/menu' } }} className="t-small inline-flex min-h-11 items-center gap-2 self-start underline decoration-line underline-offset-4">
+            <Icon name="leaf" size={16} />
+            {t('profile.signIn')}
+          </Link>
+        )
       ) : null}
     </div>
   );
@@ -227,6 +264,18 @@ export function MenuExplorer({ menus, items, initialMenu, branch, today, nowIso,
             <p className="t-small text-muted" aria-live="polite">
               {t('filters.results', plural(count, locale))}
             </p>
+            {profile ? (
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-line pt-4">
+                <Chip pressed={onlyMine} onClick={() => setOnlyMine((v) => !v)}>
+                  <Icon name="leaf" size={16} />
+                  {t('profile.onlyMine')}
+                </Chip>
+                <span className="t-small text-muted">{t('profile.summary', plural(suitsHere, locale))}</span>
+                <Link href="/account/dietary" className="t-small underline decoration-line underline-offset-4">
+                  {t('profile.edit')}
+                </Link>
+              </div>
+            ) : null}
           </header>
 
           {count === 0 ? <p className="t-body border-t border-line py-10 text-muted">{t('filters.none')}</p> : null}
@@ -273,6 +322,7 @@ export function MenuExplorer({ menus, items, initialMenu, branch, today, nowIso,
                         spice={item.spice}
                         labels={{ diet: dietLabels, allergen: allergenLabels, spice: tc(`spice.${item.spice}`), contains }}
                       />
+                      <ProfileMark line={profileLine(item)} className="col-start-2 lg:col-start-1 lg:col-end-3" />
                       <div className="col-start-3 row-span-3 row-start-1 flex flex-col items-end gap-3">
                         {!menu.isTasting ? (
                           <span className="t-body tabular">

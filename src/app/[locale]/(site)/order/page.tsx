@@ -11,6 +11,8 @@ import { formatClock, formatDate } from '@/lib/i18n/format';
 import { tr } from '@/lib/i18n/localized';
 import { plural } from '@/lib/i18n/plural';
 import { checkoutBranch, orderMenuData } from '@/lib/order/menu-data';
+import { getCurrentUser } from '@/lib/auth/session';
+import { toDietProfile } from '@/lib/menu/filter';
 import { getBranches } from '@/lib/queries/branches';
 import { kitchenStatus } from '@/lib/server/order-quote';
 import { getSettings } from '@/lib/server/settings';
@@ -33,7 +35,7 @@ export default async function OrderPage({ params }: { params: Params }) {
   setRequestLocale(locale);
   const settings = await getSettings();
   if (!settings.features.ordering) notFound();
-  const [t, tb, tu, branches, selected] = await Promise.all([getTranslations('order'), getTranslations('common.branch'), getTranslations('common.units'), getBranches(), getSelectedBranch()]);
+  const [t, tb, tu, branches, selected, user] = await Promise.all([getTranslations('order'), getTranslations('common.branch'), getTranslations('common.units'), getBranches(), getSelectedBranch(), getCurrentUser()]);
   const branch = selected ?? branches[0];
   if (!branch) notFound();
   const now = new Date();
@@ -74,7 +76,7 @@ export default async function OrderPage({ params }: { params: Params }) {
         ) : null}
       </PageHeader>
       {data.menus.length ? (
-        <OrderMenu menus={data.menus} items={data.items} branch={{ slug: branch.slug, name }} houses={Object.fromEntries(branches.map((b) => [b.slug, tr(b.shortName, locale)]))} canOrder={canOrder} />
+        <OrderMenu menus={data.menus} items={data.items} branch={{ slug: branch.slug, name }} houses={Object.fromEntries(branches.map((b) => [b.slug, tr(b.shortName, locale)]))} canOrder={canOrder} profile={toDietProfile(user?.dietary)} />
       ) : (
         <div className="site-grid pb-[var(--spacing-section)]">
           <p className="t-body-lg col-span-full flex items-center gap-3">

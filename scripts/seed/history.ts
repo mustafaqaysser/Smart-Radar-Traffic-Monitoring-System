@@ -12,7 +12,7 @@ import { computeAvailability, type BookingInfo } from '../../src/lib/domain/avai
 import { priceCart } from '../../src/lib/domain/pricing';
 import { pointsEarned } from '../../src/lib/domain/loyalty';
 import { addDays, localToUtc, parseTime, toDateString, weekdayOf, formatTime } from '../../src/lib/time/zoned';
-import { createCode, createGiftCardCode, createId, sha256 } from '../../src/lib/utils/id';
+import { CODE_PREFIX, createCode, createGiftCardCode, createId, sha256 } from '../../src/lib/utils/id';
 import restaurantConfig from '../../restaurant.config';
 import { branches as branchSeeds } from './content/branches';
 import { items as itemSeeds, menus as menuSeeds, modifierGroups } from './content/menu';
@@ -87,8 +87,9 @@ export async function seedHistory(ctx: SeedContext, people: { customers: SeededC
   const counters = new Map<string, number>(branchSeeds.map((b) => [b.slug, 1000]));
   const tokenHash = await sha256('seeded-order-without-a-public-token');
 
-  const pickCustomer = (branch: string): SeededCustomer => {
-    if (random.chance(0.05)) return demo;
+  // The demo guest keeps the history of a real regular: about a dozen orders and a handful of visits in 90 days.
+  const pickCustomer = (branch: string, demoChance = 0.003): SeededCustomer => {
+    if (random.chance(demoChance)) return demo;
     const local = customers.filter((c) => c.branch === branch);
     return random.pick(local.length ? local : customers);
   };
@@ -284,7 +285,7 @@ export async function seedHistory(ctx: SeedContext, people: { customers: SeededC
         if (!slots.length) continue;
         const weighted = slots.map((sl) => [sl, periodWeights[sl.periodKey] ?? 10] as const);
         const slot = random.weighted(weighted);
-        const customer = pickCustomer(branch.slug);
+        const customer = pickCustomer(branch.slug, d > 0 ? 0 : 0.0016);
         const past = slot.endsAt < now;
         const inProgress = slot.startsAt <= now && now < slot.endsAt;
         let status: s.ReservationStatus = 'confirmed';
@@ -296,7 +297,7 @@ export async function seedHistory(ctx: SeedContext, people: { customers: SeededC
         const deposit = partySize >= restaurantConfig.reservations.deposit.minParty ? partySize * restaurantConfig.reservations.deposit.perGuest * 100 : 0;
         reservationRows.push({
           id,
-          code: createCode('Z'),
+          code: createCode(CODE_PREFIX.reservation),
           tokenHash: manageToken,
           branchId,
           userId: accountIds.has(customer.id) ? customer.id : null,
@@ -388,8 +389,8 @@ export async function seedHistory(ctx: SeedContext, people: { customers: SeededC
       createdAt: created,
     });
   }
-  // The demo gift card (used by e2e tests and reviewers) has a fresh, known balance.
-  if (giftRows[0]) giftRows[0].initialAmount = 50000;
+  // The demo gift card (used by e2e tests and reviewers) has a fresh, known balance and was given to the demo guest.
+  if (giftRows[0]) Object.assign(giftRows[0], { initialAmount: 50000, recipientName: demo.name, recipientEmail: demo.email, locale: demo.locale, deliverAt: giftRows[0].createdAt, deliveredAt: giftRows[0].createdAt });
   await insertChunked(giftRows, (chunk) => ctx.db.insert(s.giftCards).values(chunk));
   await insertChunked(giftTx, (chunk) => ctx.db.insert(s.giftCardTransactions).values(chunk));
 
@@ -399,13 +400,15 @@ export async function seedHistory(ctx: SeedContext, people: { customers: SeededC
     const sold = Math.floor(e.capacity * (0.3 + random.next() * 0.5));
     let remaining = sold;
     while (remaining > 0) {
-      const qty = Math.min(remaining, random.weighted([[1, 30], [2, 55], [4, 15]] as const));
+      // The demo guest holds two seats at the first gathering in the programme.
+      const demoSeat = e === eventSeeds[0] && remaining === sold;
+      const qty = Math.min(remaining, demoSeat ? 2 : random.weighted([[1, 30], [2, 55], [4, 15]] as const));
       remaining -= qty;
-      const c = random.pick(customers);
+      const c = demoSeat ? demo : random.pick(customers);
       const ticketIndex = e.tickets.length > 1 && random.chance(0.35) ? 1 : 0;
       const ticket = e.tickets[ticketIndex];
       if (!ticket) break;
-      bookings.push({ id: createId(), code: createCode('T'), eventId: ids.event(e.slug), ticketTypeId: `et_${e.slug}_${ticketIndex}`, quantity: qty, total: ticket.price * qty, name: c.name, email: c.email, phone: c.phone, locale: c.locale, status: 'confirmed', createdAt: new Date(now.getTime() - random.int(1, 20) * 864e5) });
+      bookings.push({ id: createId(), code: createCode(CODE_PREFIX.ticket), eventId: ids.event(e.slug), ticketTypeId: `et_${e.slug}_${ticketIndex}`, quantity: qty, total: ticket.price * qty, name: c.name, email: c.email, phone: c.phone, locale: c.locale, userId: demoSeat ? demo.id : null, status: 'confirmed', createdAt: new Date(now.getTime() - random.int(1, 20) * 864e5) });
     }
   }
   await insertChunked(bookings, (chunk) => ctx.db.insert(s.eventBookings).values(chunk));

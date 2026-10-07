@@ -6,10 +6,12 @@ import { InstrumentLine } from '@/components/site/instrument-line';
 import { SplitWords } from '@/components/motion/split-words';
 import { BranchSwitch } from '@/components/site/chrome/branch-switch';
 import { JsonLd } from '@/components/site/json-ld';
+import { getCurrentUser } from '@/lib/auth/session';
 import { minutesUntilServing } from '@/lib/domain/menus';
 import { tr } from '@/lib/i18n/localized';
 import { getBranches } from '@/lib/queries/branches';
 import { getMenuCatalog } from '@/lib/queries/catalog';
+import { toDietProfile } from '@/lib/menu/filter';
 import { itemView, menuView, visibleItems, type ItemView } from '@/lib/menu/view';
 import { getSettings } from '@/lib/server/settings';
 import { getSelectedBranch } from '@/lib/site/selection';
@@ -28,7 +30,7 @@ export default async function MenuPage({ params, searchParams }: { params: Promi
   const { locale } = await params;
   const { m } = await searchParams;
   setRequestLocale(locale);
-  const [t, branch, branches, catalog, settings] = await Promise.all([getTranslations('menu'), getSelectedBranch(), getBranches(), getMenuCatalog(), getSettings()]);
+  const [t, branch, branches, catalog, settings, user] = await Promise.all([getTranslations('menu'), getSelectedBranch(), getBranches(), getMenuCatalog(), getSettings(), getCurrentUser()]);
   const serving = await getServingContext(branch);
   if (!branch) return null;
 
@@ -97,6 +99,8 @@ export default async function MenuPage({ params, searchParams }: { params: Promi
           items={items}
           initialMenu={initial.slug}
           branch={{ slug: branch.slug, name: tr(branch.shortName, locale), timeZone: branch.timeZone }}
+          profile={toDietProfile(user?.dietary)}
+          signedIn={Boolean(user)}
           today={serving.today}
           nowIso={serving.now.toISOString()}
           nowMinutes={toLocalMinutes(serving.now, branch.timeZone)}

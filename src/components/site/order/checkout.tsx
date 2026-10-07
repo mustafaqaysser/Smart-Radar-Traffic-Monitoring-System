@@ -12,7 +12,7 @@ import { Link } from '@/i18n/navigation';
 import { placeOrderAction, quoteCheckout, type CheckoutRequest } from '@/lib/actions/orders';
 import { cart, useCart } from '@/lib/cart/store';
 import { parseMoneyInput } from '@/lib/i18n/digits';
-import { formatClock, formatDate, formatMoney, formatNumber, formatPercent } from '@/lib/i18n/format';
+import { formatClock, formatDate, formatMoney, formatNumber, formatPercent, joinParts } from '@/lib/i18n/format';
 import { plural } from '@/lib/i18n/plural';
 import { LAST_ORDER_KEY, type CheckoutBranch, type QuoteView, type SavedAddress } from '@/lib/order/types';
 import type { StartedPayment } from '@/lib/server/payments';
@@ -358,7 +358,7 @@ export function Checkout({ branch, houses, user, addresses, tipPresets, loyaltyE
               <fieldset className="flex flex-col gap-3">
                 <legend className="t-label mb-3 text-muted">{t('address.saved')}</legend>
                 <div className="grid gap-2 sm:grid-cols-2">
-                  {[...addresses.map((a) => ({ id: a.id, title: a.label, body: [a.area, a.street].filter(Boolean).join('، ') })), { id: 'new', title: t('address.new'), body: '' }].map((o) => (
+                  {[...addresses.map((a) => ({ id: a.id, title: a.label, body: joinParts([a.area, a.street], locale) })), { id: 'new', title: t('address.new'), body: '' }].map((o) => (
                     <button
                       key={o.id}
                       type="button"

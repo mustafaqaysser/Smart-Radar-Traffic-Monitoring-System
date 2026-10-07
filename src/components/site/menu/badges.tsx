@@ -56,3 +56,14 @@ export function DishMarks({
     </ul>
   );
 }
+
+/** How a dish sits with the guest's dietary profile: a quiet "suits you", or the first reason it does not. */
+export function ProfileMark({ line, className }: { line: { tone: 'suits' | 'warn' | 'note'; text: string } | null; className?: string }) {
+  if (!line) return null;
+  return (
+    <p className={cn('t-small inline-flex items-center gap-1.5', line.tone === 'suits' ? 'text-success' : line.tone === 'warn' ? 'text-danger' : 'text-muted', className)}>
+      <Icon name={line.tone === 'suits' ? 'check' : line.tone === 'warn' ? 'alert' : 'info'} size={15} />
+      {line.text}
+    </p>
+  );
+}

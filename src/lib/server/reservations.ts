@@ -21,7 +21,7 @@ import { linkToken, verifyLinkToken } from '@/lib/server/tokens';
 import { googleDirectionsUrl, whatsappUrl } from '@/lib/services/maps';
 import { absoluteUrl } from '@/lib/site/url';
 import { localToUtc, parseTime, toDateString } from '@/lib/time/zoned';
-import { createCode, createId, sha256 } from '@/lib/utils/id';
+import { CODE_PREFIX, createCode, createId, sha256 } from '@/lib/utils/id';
 
 type Tx = Parameters<Parameters<typeof db.transaction>[0]>[0];
 type Executor = typeof db | Tx;
@@ -218,7 +218,7 @@ export async function bookFromHold(input: { holdId: string; sessionKey: string; 
       .insert(s.reservations)
       .values({
         id,
-        code: createCode('ZL'),
+        code: createCode(CODE_PREFIX.reservation),
         tokenHash: await sha256(linkToken('reservation', id)),
         branchId: branch.id,
         userId: input.details.userId,

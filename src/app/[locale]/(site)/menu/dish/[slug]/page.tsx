@@ -7,12 +7,15 @@ import { Icon, type IconName } from '@/components/brand/icon';
 import { SplitWords } from '@/components/motion/split-words';
 import { Reveal } from '@/components/motion/reveal';
 import { JsonLd } from '@/components/site/json-ld';
+import { ProfileMark } from '@/components/site/menu/badges';
 import { DishActions } from '@/components/site/menu/dish-actions';
 import { DishCard } from '@/components/site/menu/dish-card';
 import { BackLink } from '@/components/site/ui/button';
 import { MediaImage } from '@/components/site/ui/media-image';
 import { Rail } from '@/components/site/ui/rail';
 import { getCurrentUser } from '@/lib/auth/session';
+import { toDietProfile } from '@/lib/menu/filter';
+import { profileLine } from '@/lib/menu/profile-line';
 import { db } from '@/lib/db/client';
 import { favorites } from '@/lib/db/schema';
 import { formatList, formatMoney, formatNumber } from '@/lib/i18n/format';
@@ -144,6 +147,7 @@ export default async function DishPage({ params }: { params: Params }) {
           <h2 id="dish-allergens" className="t-label mb-3 text-muted">
             {t('dish.allergens')}
           </h2>
+          <ProfileMark line={profileLine({ dietary: item.dietary, allergens: item.allergens, spice: item.spiceLevel }, toDietProfile(user?.dietary), (k, v) => t(`profile.${k}`, v), (k, v) => tc(k, v), locale)} className="mb-4" />
           {item.allergens.length ? (
             <ul className="flex flex-col gap-2">
               {item.allergens.map((a, i) => (

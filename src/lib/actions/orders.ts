@@ -131,12 +131,13 @@ export async function placeOrderAction(input: PlaceRequest): Promise<ActionResul
   if (d.channel === 'delivery' && !d.address) return fail('validation', { 'address.street': 'required' });
   const phone = normalizePhone(d.phone, restaurantConfig.country);
   if (!phone) return fail('validation', { phone: 'phone' });
-  const base = await quoteInput({ ...d, email: d.email });
+  const email = d.email.toLowerCase();
+  const base = await quoteInput({ ...d, email });
   if (!base) return fail('notFound');
   const result = await placeOrder({
     ...base,
     name: d.name,
-    email: d.email,
+    email,
     phone,
     notes: d.notes || null,
     paymentMethod: d.paymentMethod,

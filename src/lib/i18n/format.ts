@@ -115,6 +115,11 @@ export function formatRelativeMinutes(minutes: number, locale: string): string {
   return rtf.format(Math.round(minutes / 1440), 'day');
 }
 
+/** Address-style parts ("street, district") joined with the language's own comma. */
+export function joinParts(parts: (string | null | undefined)[], locale: string): string {
+  return parts.filter((p): p is string => Boolean(p && p.trim())).join(locale.startsWith('ar') ? '، ' : ', ');
+}
+
 export function formatList(items: string[], locale: string, type: Intl.ListFormatType = 'conjunction'): string {
   return new Intl.ListFormat(intlLocale(locale), { style: 'long', type }).format(items);
 }

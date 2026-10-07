@@ -11,10 +11,14 @@ function flatten(value: unknown, prefix = ''): Record<string, string> {
   return Object.fromEntries(Object.entries(value).flatMap(([k, v]) => Object.entries(flatten(v, prefix ? `${prefix}.${k}` : k))));
 }
 
-function load(locale: string): Record<string, string> {
+/** Every message file of a locale, including sub-folders (admin/orders.json → admin.orders.*). */
+function load(locale: string, dir = join(root, locale), prefix = ''): Record<string, string> {
   const out: Record<string, string> = {};
-  for (const file of readdirSync(join(root, locale)).filter((f) => f.endsWith('.json'))) {
-    Object.assign(out, flatten(JSON.parse(readFileSync(join(root, locale, file), 'utf8')), file.replace('.json', '')));
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const name = entry.name.replace(/\.json$/, '');
+    const key = prefix ? `${prefix}.${name}` : name;
+    if (entry.isDirectory()) Object.assign(out, load(locale, join(dir, entry.name), key));
+    else if (entry.name.endsWith('.json')) Object.assign(out, flatten(JSON.parse(readFileSync(join(dir, entry.name), 'utf8')), key));
   }
   return out;
 }

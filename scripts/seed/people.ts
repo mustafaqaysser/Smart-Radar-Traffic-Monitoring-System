@@ -3,20 +3,13 @@
  */
 import { hashPassword } from 'better-auth/crypto';
 import * as s from '../../src/lib/db/schema';
+import { DEMO_PASSWORD, DEMO_STAFF } from '../../src/lib/demo';
 import { FAMILY_NAMES, FIRST_NAMES } from './names';
 import { ids } from './world';
 import type { SeedContext } from './types';
 
-export const DEMO_PASSWORD = 'zill-demo-2026';
-
-export const STAFF: { role: s.Role; email: string; name: string; branch: string | null }[] = [
-  { role: 'owner', email: 'owner@zill.test', name: 'Lamees Qutub', branch: null },
-  { role: 'manager', email: 'manager@zill.test', name: 'Reem Bakhsh', branch: null },
-  { role: 'host', email: 'host@zill.test', name: 'Dana Al-Ghamdi', branch: 'al-balad' },
-  { role: 'kitchen', email: 'kitchen@zill.test', name: 'Majid Hawsawi', branch: 'al-balad' },
-  { role: 'waiter', email: 'waiter@zill.test', name: 'Omar Fallatah', branch: 'al-balad' },
-  { role: 'editor', email: 'editor@zill.test', name: 'Sara Al-Qahtani', branch: null },
-];
+export { DEMO_PASSWORD };
+export const STAFF = DEMO_STAFF;
 
 export interface SeededCustomer {
   id: string;

@@ -1,0 +1,10 @@
+{
+  "status": {
+    "pending": "بانتظار العربون",
+    "confirmed": "مؤكّد",
+    "seated": "جالس",
+    "completed": "انتهى",
+    "no_show": "لم يحضر",
+    "cancelled": "ملغى"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "title": "{name} back office",
+  "backOffice": "Back office",
+  "skip": "Skip to content",
+  "openMenu": "Open navigation",
+  "closeMenu": "Close navigation",
+  "search": "Search or jump to…",
+  "roles": {
+    "owner": "Owner",
+    "manager": "Manager",
+    "host": "Host",
+    "kitchen": "Kitchen",
+    "waiter": "Waiter",
+    "editor": "Content editor",
+    "customer": "Guest"
+  },
+  "nav": {
+    "label": "Back office",
+    "groups": {
+      "today": "Today",
+      "menu": "Menu",
+      "guests": "Guests",
+      "commerce": "Sales",
+      "content": "Content",
+      "business": "Business",
+      "system": "System"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "orders": "Orders",
+      "kds": "Kitchen display",
+      "reservations": "Reservations",
+      "tables": "Table calls",
+      "menu": "Menu",
+      "customers": "Customers",
+      "reviews": "Reviews",
+      "inquiries": "Inquiries",
+      "newsletter": "Newsletter",
+      "events": "Events & tickets",
+      "giftCards": "Gift cards",
+      "promotions": "Promotions",
+      "loyalty": "Loyalty",
+      "content": "Pages & sections",
+      "journal": "Journal",
+      "media": "Media library",
+      "privateDining": "Private dining",
+      "careers": "Careers",
+      "locations": "Houses & tables",
+      "seasonal": "Seasons & features",
+      "reports": "Reports",
+      "settings": "Settings",
+      "staff": "Staff",
+      "notifications": "Notifications",
+      "audit": "Audit log",
+      "outbox": "Email outbox"
+    },
+    "counts": {
+      "orders": "new orders",
+      "tables": "open table calls",
+      "notifications": "unread notifications"
+    }
+  },
+  "branch": {
+    "label": "House",
+    "all": "All houses",
+    "switched": "Showing {name}"
+  },
+  "notifications": {
+    "label": "Notifications",
+    "labelUnread": "Notifications ({n} unread)",
+    "title": "Notifications",
+    "markAll": "Mark all as read",
+    "new": "new",
+    "empty": "Nothing new.",
+    "all": "All notifications"
+  },
+  "user": {
+    "label": "Account: {name}",
+    "language": "Language",
+    "appearance": "Appearance",
+    "themes": {
+      "system": "Match this device",
+      "light": "Day",
+      "dark": "Night"
+    },
+    "profile": "Your profile",
+    "shortcuts": "Keyboard shortcuts",
+    "viewSite": "Open the website",
+    "signOut": "Sign out"
+  },
+  "palette": {
+    "title": "Search and go",
+    "placeholder": "A screen, an order number, a booking code or a guest…",
+    "records": "Records",
+    "searching": "Searching…",
+    "empty": "Nothing matches.",
+    "hint": "Arrow keys to move · Enter to open · Esc to close",
+    "kinds": {
+      "order": "Order",
+      "reservation": "Booking",
+      "customer": "Guest",
+      "giftCard": "Gift card",
+      "ticket": "Ticket"
+    }
+  },
+  "shortcuts": {
+    "title": "Keyboard shortcuts",
+    "description": "Everything in the back office works from the keyboard.",
+    "general": "Anywhere",
+    "palette": "Search and go",
+    "search": "Search the list on screen",
+    "help": "Show these shortcuts",
+    "close": "Close a dialog or panel",
+    "goTo": "Go to — press G, then the letter"
+  }
+}

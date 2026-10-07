@@ -134,6 +134,24 @@ export function phaseStylesheet(): string {
   }).join('\n');
 }
 
+/**
+ * The back-office palette: the morning roles by day and the night roles in dark mode (an explicit choice, or the
+ * system setting when the staff member has not chosen). `.admin-dark` forces night for the kitchen display.
+ */
+export function adminThemeStylesheet(): string {
+  const vars = (phase: Phase) =>
+    Object.entries(phaseCssVars(phase))
+      .map(([k, v]) => `${k}:${v}`)
+      .join(';');
+  const light = `${vars('morning')};color-scheme:light`;
+  const dark = `${vars('night')};color-scheme:dark`;
+  return [
+    `:root{${light}}`,
+    `:root[data-theme="dark"],.admin-dark{${dark}}`,
+    `@media (prefers-color-scheme: dark){:root[data-theme="system"]{${dark}}}`,
+  ].join('\n');
+}
+
 /** WCAG 2.x relative luminance of a #RRGGBB colour. */
 export function luminance(hex: string): number {
   const channels = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);

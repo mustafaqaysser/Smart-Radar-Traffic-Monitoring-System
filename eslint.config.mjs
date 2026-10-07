@@ -15,7 +15,6 @@ const config = [
       'playwright-report/**',
       'test-results/**',
       'next-env.d.ts',
-      'src/components/admin/ui/**',
     ],
   },
   ...nextCoreWebVitals,

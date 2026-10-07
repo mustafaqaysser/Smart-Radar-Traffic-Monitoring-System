@@ -1,0 +1,98 @@
+{
+  "title": "Today",
+  "titleAt": "Today at {name}",
+  "intro": "Orders and sales so far today against last {day} at the same hour; bookings for the whole day.",
+  "figures": "Today's figures",
+  "actions": {
+    "newBooking": "New booking",
+    "orders": "Orders board"
+  },
+  "stats": {
+    "covers": "Covers",
+    "reservations": "Bookings",
+    "orders": "Orders",
+    "revenue": "Sales",
+    "averageOrder": "Average order",
+    "noShows": "No-shows"
+  },
+  "compare": {
+    "vs": "{change} on last {day}",
+    "none": "None last {day}",
+    "same": "Same as last {day}"
+  },
+  "channels": {
+    "delivery": "Delivery",
+    "pickup": "Pickup",
+    "dine_in": "At the table"
+  },
+  "charts": {
+    "date": "Date",
+    "hour": "Hour",
+    "sales": {
+      "title": "Sales, last two weeks",
+      "description": "Order sales excluding tips, by day."
+    },
+    "hourly": {
+      "title": "Orders by hour",
+      "description": "Today against last {day}.",
+      "today": "Today",
+      "lastWeek": "Last {day}"
+    },
+    "channels": {
+      "title": "How guests order",
+      "description": "The last 30 days.",
+      "orders": "{count, plural, one {{n} order} other {{n} orders}}"
+    },
+    "visitors": {
+      "title": "Website visits",
+      "description": "Pages viewed and visitors, from cookie-free first-party analytics.",
+      "views": "Pages viewed",
+      "visitors": "Visitors"
+    }
+  },
+  "now": {
+    "title": "Right now",
+    "kitchen": "In the kitchen",
+    "waiting": "{n} waiting to be accepted",
+    "noneWaiting": "None waiting",
+    "tables": "Table calls",
+    "callsOpen": "Waiting for a reply",
+    "callsNone": "All answered"
+  },
+  "upcoming": {
+    "title": "Still to come today",
+    "description": "Bookings that have not finished yet.",
+    "all": "Full day",
+    "notes": "Notes",
+    "empty": "No more bookings today."
+  },
+  "activity": {
+    "title": "Latest",
+    "empty": "Nothing has happened yet today.",
+    "order": {
+      "pending_payment": "Order {number} is waiting for payment",
+      "placed": "New order {number} from {name}",
+      "accepted": "Order {number} accepted",
+      "preparing": "Order {number} is being prepared",
+      "ready": "Order {number} is ready",
+      "out_for_delivery": "Order {number} is on its way",
+      "completed": "Order {number} completed",
+      "rejected": "Order {number} was declined",
+      "cancelled": "Order {number} was cancelled"
+    },
+    "reservation": {
+      "created": "New booking {code} for {name}",
+      "pending": "Booking {code} is waiting for its deposit",
+      "confirmed": "Booking {code} confirmed",
+      "seated": "{name} seated ({code})",
+      "completed": "Booking {code} finished",
+      "no_show": "{name} did not arrive ({code})",
+      "cancelled": "Booking {code} cancelled"
+    },
+    "request": {
+      "waiter": "Table {table} asked for a waiter",
+      "bill": "Table {table} asked for the bill"
+    },
+    "review": "New review from {name}"
+  }
+}

@@ -25,4 +25,17 @@ export const plexSansLatin = localFont({
   declarations: [{ prop: 'unicode-range', value: 'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD' }],
 });
 
-export const adminFontVariables = [plexSansArabic, plexSansLatin].map((font) => font.variable).join(' ');
+/** Order numbers, codes and timers on tickets and the kitchen display. */
+export const plexMonoAdmin = localFont({
+  src: [
+    { path: '../fonts/plex-mono-latin-400.woff2', weight: '400', style: 'normal' },
+    { path: '../fonts/plex-mono-latin-500.woff2', weight: '500', style: 'normal' },
+  ],
+  display: 'swap',
+  preload: false,
+  variable: '--font-plex-mono',
+  adjustFontFallback: false,
+  fallback: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
+});
+
+export const adminFontVariables = [plexSansArabic, plexSansLatin, plexMonoAdmin].map((font) => font.variable).join(' ');

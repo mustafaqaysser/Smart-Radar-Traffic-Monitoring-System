@@ -1,0 +1,239 @@
+@import 'tailwindcss';
+@import './tokens.css';
+
+/* The back-office only: public components and pages are never scanned into this stylesheet. */
+@source not '../../legacy';
+@source not '../../media';
+@source not '../components/site';
+@source not '../components/motion';
+@source not '../app/[locale]';
+
+@custom-variant rtl (&:where([dir='rtl'], [dir='rtl'] *));
+@custom-variant ltr (&:where([dir='ltr'], [dir='ltr'] *));
+@custom-variant hover-capable (@media (hover: hover) and (pointer: fine));
+@custom-variant reduced (@media (prefers-reduced-motion: reduce));
+
+/* IBM Plex Sans in both scripts (each face carries only its own script via unicode-range). */
+:root:lang(ar),
+:root:lang(en) {
+  --f-display: var(--font-plex-ar), var(--font-plex-lat), 'Segoe UI', Tahoma, sans-serif;
+  --f-text: var(--font-plex-ar), var(--font-plex-lat), 'Segoe UI', Tahoma, sans-serif;
+  --f-label: var(--font-plex-ar), var(--font-plex-lat), 'Segoe UI', Tahoma, sans-serif;
+  /* The hard cast shade of popovers and sheets falls toward the reading direction's end. */
+  --cast-x: 4px;
+  --cast-y: 4px;
+}
+:root[dir='rtl'] {
+  --cast-x: -4px;
+}
+
+@layer base {
+  html {
+    background-color: var(--c-bg);
+    color: var(--c-ink);
+    font-family: var(--f-text);
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    min-height: 100dvh;
+    font-size: 0.875rem;
+    line-height: 1.55;
+  }
+
+  :lang(ar) body,
+  body:lang(ar) {
+    font-size: 0.9375rem;
+    line-height: 1.75;
+  }
+
+  /* Arabic is never tracked or uppercased — it breaks letter joining. */
+  :lang(ar) {
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+    text-wrap: balance;
+    line-height: 1.3;
+  }
+
+  a {
+    color: inherit;
+    text-underline-offset: 0.2em;
+  }
+
+  ::selection {
+    background-color: var(--c-sun);
+    color: #221d27;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--c-ink);
+    outline-offset: 2px;
+  }
+  [data-focus-inset]:focus-visible {
+    outline-offset: -2px;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+  /* Lucide icons at the brand's 1.5 px stroke. */
+  svg.lucide {
+    stroke-width: 1.5;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font: inherit;
+    color: inherit;
+  }
+
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']) {
+    cursor: pointer;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* A hard, un-blurred offset shadow — the brand's cast shade, used for floating panels. */
+  .cast {
+    box-shadow: var(--cast-x) var(--cast-y) 0 var(--c-shade);
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .skip-link {
+    position: fixed;
+    inset-block-start: 0.5rem;
+    inset-inline-start: 0.5rem;
+    z-index: 100;
+    padding: 0.5rem 0.75rem;
+    background: var(--c-ink);
+    color: var(--c-bg);
+    transform: translateY(-160%);
+    transition: transform var(--dur-quick) var(--ease-shade);
+  }
+  .skip-link:focus-visible {
+    transform: translateY(0);
+  }
+
+  /* Rich text written in the journal editor (mirrors the public article styles closely enough to edit with). */
+  .admin-prose {
+    line-height: 1.75;
+  }
+  .admin-prose > * + * {
+    margin-block-start: 0.85em;
+  }
+  .admin-prose h2 {
+    font-size: 1.25rem;
+    margin-block-start: 1.4em;
+  }
+  .admin-prose h3 {
+    font-size: 1.0625rem;
+    margin-block-start: 1.2em;
+  }
+  .admin-prose ul,
+  .admin-prose ol {
+    padding-inline-start: 1.4em;
+  }
+  .admin-prose ul {
+    list-style: disc;
+  }
+  .admin-prose ol {
+    list-style: decimal;
+  }
+  .admin-prose blockquote {
+    border-inline-start: 2px solid var(--c-accent);
+    padding-inline-start: 1em;
+    color: var(--c-muted);
+  }
+  .admin-prose a {
+    color: var(--c-link);
+    text-decoration: underline;
+  }
+  .admin-prose p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    color: var(--c-muted);
+    float: inline-start;
+    height: 0;
+    pointer-events: none;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-line) transparent;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+@keyframes from-right {
+  from {
+    transform: translateX(100%);
+  }
+}
+@keyframes from-left {
+  from {
+    transform: translateX(-100%);
+  }
+}
+@keyframes ticket-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Printing from any admin screen prints the page content only (tickets and table tents have their own sheets). */
+@media print {
+  [data-admin-chrome] {
+    display: none !important;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}

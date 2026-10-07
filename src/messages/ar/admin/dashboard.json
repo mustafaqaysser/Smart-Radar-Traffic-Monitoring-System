@@ -1,0 +1,98 @@
+{
+  "title": "اليوم",
+  "titleAt": "اليوم في {name}",
+  "intro": "الطلبات والمبيعات حتى هذه الساعة مقارنةً بالساعة نفسها يوم {day} الماضي، والحجوزات لليوم كاملاً.",
+  "figures": "أرقام اليوم",
+  "actions": {
+    "newBooking": "حجز جديد",
+    "orders": "لوحة الطلبات"
+  },
+  "stats": {
+    "covers": "الضيوف",
+    "reservations": "الحجوزات",
+    "orders": "الطلبات",
+    "revenue": "المبيعات",
+    "averageOrder": "متوسط الطلب",
+    "noShows": "لم يحضروا"
+  },
+  "compare": {
+    "vs": "{change} عن {day} الماضي",
+    "none": "لا شيء يوم {day} الماضي",
+    "same": "كما كان يوم {day} الماضي"
+  },
+  "channels": {
+    "delivery": "توصيل",
+    "pickup": "استلام",
+    "dine_in": "على الطاولة"
+  },
+  "charts": {
+    "date": "التاريخ",
+    "hour": "الساعة",
+    "sales": {
+      "title": "المبيعات في الأسبوعين الأخيرين",
+      "description": "مبيعات الطلبات يوماً بيوم، دون الإكرامية."
+    },
+    "hourly": {
+      "title": "الطلبات حسب الساعة",
+      "description": "اليوم مقارنةً بيوم {day} الماضي.",
+      "today": "اليوم",
+      "lastWeek": "{day} الماضي"
+    },
+    "channels": {
+      "title": "كيف يطلب الضيوف",
+      "description": "آخر ثلاثين يوماً.",
+      "orders": "{count, plural, zero {{n} طلب} one {طلب واحد} two {طلبان} few {{n} طلبات} many {{n} طلباً} other {{n} طلب}}"
+    },
+    "visitors": {
+      "title": "زيارات الموقع",
+      "description": "الصفحات المعروضة والزوّار، من قياسٍ داخليّ بلا ملفات تعريف ارتباط.",
+      "views": "الصفحات المعروضة",
+      "visitors": "الزوّار"
+    }
+  },
+  "now": {
+    "title": "الآن",
+    "kitchen": "في المطبخ",
+    "waiting": "{n} بانتظار القبول",
+    "noneWaiting": "لا شيء بانتظار القبول",
+    "tables": "نداءات الطاولات",
+    "callsOpen": "بانتظار من يلبّيها",
+    "callsNone": "لُبّيت كلها"
+  },
+  "upcoming": {
+    "title": "ما تبقّى من اليوم",
+    "description": "الحجوزات التي لم تنتهِ بعد.",
+    "all": "اليوم كاملاً",
+    "notes": "ملاحظات",
+    "empty": "لا حجوزات أخرى اليوم."
+  },
+  "activity": {
+    "title": "آخر المستجدّات",
+    "empty": "لم يحدث شيء بعدُ اليوم.",
+    "order": {
+      "pending_payment": "الطلب {number} بانتظار الدفع",
+      "placed": "طلب جديد {number} من {name}",
+      "accepted": "قُبل الطلب {number}",
+      "preparing": "الطلب {number} قيد التحضير",
+      "ready": "الطلب {number} جاهز",
+      "out_for_delivery": "الطلب {number} في الطريق",
+      "completed": "اكتمل الطلب {number}",
+      "rejected": "اعتُذر عن الطلب {number}",
+      "cancelled": "أُلغي الطلب {number}"
+    },
+    "reservation": {
+      "created": "حجز جديد {code} باسم {name}",
+      "pending": "الحجز {code} بانتظار العربون",
+      "confirmed": "تأكّد الحجز {code}",
+      "seated": "جلس {name} ({code})",
+      "completed": "انتهت زيارة الحجز {code}",
+      "no_show": "لم يحضر {name} ({code})",
+      "cancelled": "أُلغي الحجز {code}"
+    },
+    "request": {
+      "waiter": "الطاولة {table} تطلب نادلاً",
+      "bill": "الطاولة {table} تطلب الحساب"
+    },
+    "review": "تقييم جديد من {name}"
+  }
+}

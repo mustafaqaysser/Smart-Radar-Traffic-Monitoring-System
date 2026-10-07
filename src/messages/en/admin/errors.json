@@ -1,0 +1,17 @@
+{
+  "notStaff": "This account does not have access to the back office.",
+  "forbidden": "Your role cannot do this. Ask an owner or manager.",
+  "unauthorized": "Your session has ended. Sign in again.",
+  "notFound": "This record no longer exists. Refresh the page.",
+  "conflict": "Someone else changed this a moment ago. Refresh and try again.",
+  "transition": "That step is not possible from the current status.",
+  "inUse": "This is still in use, so it cannot be deleted.",
+  "duplicate": "That is already taken. Choose another.",
+  "capacity": "That does not fit: there is not enough room at that time.",
+  "tableTaken": "One of those tables is already booked then.",
+  "balance": "That would take the balance below zero.",
+  "lastOwner": "There must always be at least one active owner.",
+  "self": "You cannot do this to your own account.",
+  "image": "Upload a JPEG, PNG, WebP or AVIF image under 12 MB.",
+  "validation": "Please check the highlighted fields."
+}

@@ -1,0 +1,10 @@
+{
+  "status": {
+    "pending": "Awaiting deposit",
+    "confirmed": "Confirmed",
+    "seated": "Seated",
+    "completed": "Finished",
+    "no_show": "No-show",
+    "cancelled": "Cancelled"
+  }
+}

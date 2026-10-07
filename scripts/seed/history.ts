@@ -11,7 +11,7 @@ import type { LocalizedText } from '../../src/lib/i18n/localized';
 import { computeAvailability, type BookingInfo } from '../../src/lib/domain/availability';
 import { priceCart } from '../../src/lib/domain/pricing';
 import { pointsEarned } from '../../src/lib/domain/loyalty';
-import { addDays, localToUtc, parseTime, toDateString, weekdayOf, formatTime } from '../../src/lib/time/zoned';
+import { addDays, localToUtc, parseTime, toDateString, toLocalMinutes, weekdayOf, formatTime } from '../../src/lib/time/zoned';
 import { CODE_PREFIX, createCode, createGiftCardCode, createId, sha256 } from '../../src/lib/utils/id';
 import restaurantConfig from '../../restaurant.config';
 import { branches as branchSeeds } from './content/branches';
@@ -102,10 +102,20 @@ export async function seedHistory(ctx: SeedContext, people: { customers: SeededC
     for (const branch of branchSeeds) {
       const base = weekend ? random.int(30, 44) : random.int(18, 30);
       const count = Math.round(base * (branch.slug === 'al-balad' ? 1 : 0.85) * (d > -30 ? 1.08 : 1));
+      const moments: { createdAt: Date; window: (typeof WINDOWS)[number] }[] = [];
       for (let n = 0; n < count; n++) {
         const window = random.weighted(WINDOWS.map((w) => [w, w.weight] as const));
         const minutes = random.int(parseTime(window.start), parseTime(window.end));
-        const createdAt = localToUtc(date, minutes, TZ, true) as Date;
+        moments.push({ createdAt: localToUtc(date, minutes, TZ, true) as Date, window });
+      }
+      // A live service whenever the seed runs, so the orders board and kitchen display open with work on them.
+      if (d === 0) {
+        const nowMinutes = toLocalMinutes(now, TZ);
+        const current = WINDOWS.find((w) => nowMinutes >= parseTime(w.start) && nowMinutes <= parseTime(w.end)) ?? WINDOWS[WINDOWS.length - 1]!;
+        const ages = branch.slug === 'al-balad' ? [1, 3, 6, 11, 15, 19, 26, 34] : [2, 8, 17, 28];
+        for (const age of ages) moments.push({ createdAt: new Date(now.getTime() - age * 60000 - random.int(0, 50) * 1000), window: current });
+      }
+      for (const { createdAt, window } of moments) {
         if (createdAt > now) continue;
         const ageMin = (now.getTime() - createdAt.getTime()) / 60000;
         const channel = random.weighted<s.OrderChannel>([['delivery', 55], ['pickup', 25], ['dine_in', 20]]);
@@ -211,7 +221,9 @@ export async function seedHistory(ctx: SeedContext, people: { customers: SeededC
           const reached = order.indexOf(status);
           for (let k = 0; k <= reached && k < order.length; k++) timeline.push([order[k] as s.OrderStatus, offsets[k] as number]);
         }
-        for (const [st, off] of timeline) orderEvents.push({ id: createId(), orderId: id, status: st, at: new Date(createdAt.getTime() + off * 60000) });
+        for (const [st, off] of timeline) orderEvents.push({ id: createId(), orderId: id, status: st, at: new Date(Math.min(createdAt.getTime() + off * 60000, now.getTime())) });
+        const lastStep = timeline[timeline.length - 1]?.[1] ?? 0;
+        orders[orders.length - 1]!.updatedAt = new Date(Math.min(createdAt.getTime() + lastStep * 60000, now.getTime()));
         if (usePromo) promoUses.push({ id: createId(), promotionId: `pm_${promoSeeds.indexOf(activePromo)}`, orderId: id, email: customer.email, amount: priced.discount, at: createdAt });
         if (accountUser && status === 'completed') {
           const acc = pointsByUser.get(accountUser) ?? { balance: 0, lifetime: 0 };
@@ -295,6 +307,9 @@ export async function seedHistory(ctx: SeedContext, people: { customers: SeededC
         const id = createId();
         if (status !== 'cancelled') bookings.push({ id, startsAt: slot.startsAt, endsAt: slot.endsAt, partySize, tableIds: slot.tableIds });
         const deposit = partySize >= restaurantConfig.reservations.deposit.minParty ? partySize * restaurantConfig.reservations.deposit.perGuest * 100 : 0;
+        // Booked one to three weeks ahead, never later than now; cancellations happen before the seed moment too.
+        const createdAt = new Date(Math.min(slot.startsAt.getTime() - random.int(1, 21) * 864e5, now.getTime() - random.int(10, 4000) * 60000));
+        const cancelledAt = new Date(Math.max(createdAt.getTime() + 3600000, Math.min(slot.startsAt.getTime() - random.int(3, 72) * 3600000, now.getTime() - random.int(5, 600) * 60000)));
         reservationRows.push({
           id,
           code: createCode(CODE_PREFIX.reservation),
@@ -321,8 +336,11 @@ export async function seedHistory(ctx: SeedContext, people: { customers: SeededC
           reminderSentAt: past || d <= 1 ? new Date(slot.startsAt.getTime() - 24 * 3600000) : null,
           seatedAt: status === 'seated' || status === 'completed' ? slot.startsAt : null,
           completedAt: status === 'completed' ? slot.endsAt : null,
-          cancelledAt: status === 'cancelled' ? new Date(slot.startsAt.getTime() - random.int(3, 72) * 3600000) : null,
-          createdAt: new Date(slot.startsAt.getTime() - random.int(1, 21) * 864e5),
+          cancelledAt: status === 'cancelled' ? cancelledAt : null,
+          createdAt,
+          // When the booking last changed: finished, marked as a no-show, cancelled, seated, or simply made.
+          updatedAt:
+            status === 'completed' ? slot.endsAt : status === 'no_show' ? new Date(slot.startsAt.getTime() + 25 * 60000) : status === 'cancelled' ? cancelledAt : status === 'seated' ? slot.startsAt : createdAt,
         });
       }
     }

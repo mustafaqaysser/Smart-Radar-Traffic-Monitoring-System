@@ -11,6 +11,11 @@ export async function fulfilPayment(payment: Payment): Promise<void> {
       await confirmDepositPaid(payment.referenceId, payment.id);
       return;
     }
+    case 'order': {
+      const { confirmOrderPaid } = await import('./orders');
+      await confirmOrderPaid(payment.referenceId, payment.id);
+      return;
+    }
     default:
       throw new Error(`No fulfilment registered for ${payment.purpose} payments.`);
   }

@@ -3,6 +3,7 @@ import { lt } from 'drizzle-orm';
 import { db } from '@/lib/db/client';
 import { reservationHolds } from '@/lib/db/schema';
 import { purgeExpiredRateLimits } from '@/lib/services/rate-limit';
+import { expireUnpaidOrders } from './orders';
 import { expireUnpaidDeposits, processAllWaitlists, sendDueReminders } from './reservations';
 
 /**
@@ -10,10 +11,11 @@ import { expireUnpaidDeposits, processAllWaitlists, sendDueReminders } from './r
  * and can be started by hand from the admin. Every job is idempotent, so overlapping runs are harmless.
  */
 export const JOBS = {
-  /** Hourly: reminder emails, lapsed deposits, waitlist offers. */
+  /** Hourly: reminder emails, lapsed deposits and unpaid orders, waitlist offers. */
   reminders: async () => ({
     reminders: await sendDueReminders(),
     expiredDeposits: await expireUnpaidDeposits(),
+    expiredOrders: await expireUnpaidOrders(),
     waitlistOffers: await processAllWaitlists(),
   }),
   /** Daily: clears expired holds and rate-limit windows. */

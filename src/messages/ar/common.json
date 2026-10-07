@@ -196,7 +196,8 @@
     "points": "{count, plural, one {نقطةٌ واحدة} two {نقطتان} few {{n} نقاط} many {{n} نقطة} other {{n} نقطة}}",
     "items": "{count, plural, one {صنفٌ واحد} two {صنفان} few {{n} أصناف} many {{n} صنفاً} other {{n} صنف}}",
     "hours": "{count, plural, one {ساعةٌ واحدة} two {ساعتان} few {{n} ساعات} many {{n} ساعة} other {{n} ساعة}}",
-    "days": "{count, plural, one {يومٌ واحد} two {يومان} few {{n} أيام} many {{n} يوماً} other {{n} يوم}}"
+    "days": "{count, plural, one {يومٌ واحد} two {يومان} few {{n} أيام} many {{n} يوماً} other {{n} يوم}}",
+    "mins": "{count, plural, one {دقيقةٌ واحدة} two {دقيقتان} few {{n} دقائق} many {{n} دقيقة} other {{n} دقيقة}}"
   },
   "footer": {
     "line": "لكلّ ساعةٍ ظلُّها",

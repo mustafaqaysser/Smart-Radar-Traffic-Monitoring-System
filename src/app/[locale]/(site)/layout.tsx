@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { getLocale } from 'next-intl/server';
 import { SiteHeader } from '@/components/site/chrome/site-header';
 import { SiteFooter } from '@/components/site/chrome/site-footer';
+import { CartSync } from '@/components/site/order/cart-sync';
 import { SeasonBanner } from '@/components/site/season-banner';
 import { getCurrentUser } from '@/lib/auth/session';
 import { tr } from '@/lib/i18n/localized';
@@ -30,6 +31,7 @@ export default async function SiteLayout({ children }: { children: ReactNode }) 
         {children}
       </main>
       <SiteFooter />
+      {settings.features.ordering ? <CartSync signedIn={Boolean(user)} /> : null}
     </>
   );
 }

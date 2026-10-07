@@ -390,26 +390,9 @@ export const menuCategories = sqliteTable(
   (t) => [index('menu_categories_menu_idx').on(t.menuId)],
 );
 
-export const DIETARY_TAGS = ['vegetarian', 'vegan', 'gluten-free', 'dairy-free', 'nut-free'] as const;
-export type DietaryTag = (typeof DIETARY_TAGS)[number];
-
-export const ALLERGENS = [
-  'gluten',
-  'crustaceans',
-  'eggs',
-  'fish',
-  'peanuts',
-  'soybeans',
-  'milk',
-  'nuts',
-  'celery',
-  'mustard',
-  'sesame',
-  'sulphites',
-  'lupin',
-  'molluscs',
-] as const;
-export type Allergen = (typeof ALLERGENS)[number];
+import type { Allergen, DietaryTag } from '../menu/tags';
+export { ALLERGENS, DIETARY_TAGS } from '../menu/tags';
+export type { Allergen, DietaryTag };
 
 export const menuItems = sqliteTable(
   'menu_items',
@@ -729,12 +712,13 @@ export const orderEvents = sqliteTable(
   (t) => [index('order_events_order_idx').on(t.orderId)],
 );
 
+/** Same shape as the browser cart's lines (src/lib/cart/types.ts), so carts move between them unchanged. */
 export interface CartLine {
   key: string;
-  itemId: string;
-  quantity: number;
+  slug: string;
+  qty: number;
   optionIds: string[];
-  notes?: string;
+  note: string;
 }
 
 /** Server-side carts for signed-in guests (anonymous carts live in the browser). */

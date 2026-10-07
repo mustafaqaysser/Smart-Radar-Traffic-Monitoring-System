@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Icon } from '@/components/brand/icon';
 import { SplitWords } from '@/components/motion/split-words';
 import { BookingRows, HourCard } from '@/components/site/reserve/booking-pieces';
-import { DepositResume } from '@/components/site/reserve/deposit-resume';
+import { PaymentResume } from '@/components/site/payment-resume';
 import { ButtonAnchor, ButtonLink } from '@/components/site/ui/button';
 import { PageHeader } from '@/components/site/ui/page-header';
 import { formatMoney, formatNumber } from '@/lib/i18n/format';
@@ -127,7 +127,7 @@ export default async function ReservationConfirmedPage({ params, searchParams }:
           {payment ? (
             <div className="flex flex-col gap-4 border-t border-ink pt-6">
               <h2 className="t-heading-md">{t('confirmed.payNow')}</h2>
-              <DepositResume payment={payment} />
+              <PaymentResume payment={payment} />
             </div>
           ) : (
             <ButtonAnchor href={telUrl(branch.phone)} icon="phone" className="self-start">

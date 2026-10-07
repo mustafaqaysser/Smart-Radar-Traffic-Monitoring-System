@@ -1,1 +1,292 @@
-{}
+{
+  "meta": {
+    "title": "Order online",
+    "description": "Delivery and pickup from Zill in Al-Balad, Jeddah, and Wadi Hanifah, Riyadh — cooked to the hour, from the menu being served."
+  },
+  "eyebrow": "Order online",
+  "title": "Carry the shade home",
+  "intro": "Delivery across our zones, or pickup from the house. The kitchen cooks to the hour, so what you can order follows the menu being served.",
+  "channels": {
+    "delivery": "Delivery",
+    "pickup": "Pickup",
+    "dine_in": "At the table"
+  },
+  "itemsCount": "{count, plural, one {{n} item} other {{n} items}}",
+  "kitchen": {
+    "open": "Kitchen open · ready in about {duration}",
+    "closed": "The kitchen is closed now — order ahead for later.",
+    "opens": "The kitchen opens {when}.",
+    "busy": "A busy kitchen — allow a little longer.",
+    "paused": "{house} is not taking online orders right now. Please call the house.",
+    "noChannel": "{channel} is not available from {house} right now."
+  },
+  "menu": {
+    "sections": "Sections",
+    "servedAt": "Served {window}",
+    "allDay": "All day",
+    "notNow": "Not served right now — schedule your order to include it.",
+    "empty": "Nothing can be ordered from {house} today.",
+    "house": "House",
+    "how": "How"
+  },
+  "basket": {
+    "title": "Your order",
+    "empty": "Your order is empty.",
+    "emptyBody": "Add a dish from the menu — the kitchen cooks to the hour.",
+    "browse": "See what is cooking",
+    "subtotal": "Subtotal",
+    "checkout": "Checkout",
+    "review": "Review your order",
+    "remove": "Remove {dish}",
+    "quantity": "Quantity of {dish}",
+    "from": "From {house}",
+    "upsellTitle": "Complete your meal",
+    "upsellBody": "Something to drink, something sweet — from the same hour.",
+    "removeProblems": "Remove unavailable dishes",
+    "addMore": "Add more",
+    "feesNote": "Delivery, service and tip are added at checkout.",
+    "problems": {
+      "unknown": "This dish is no longer on the menu.",
+      "unavailable": "Not served at this house.",
+      "sold_out": "Sold out today.",
+      "not_served": "Not served at the time you chose.",
+      "modifiers": "Please choose its options again.",
+      "not_orderable": "Served at the house only."
+    },
+    "elsewhere": "Your order is from {house}.",
+    "goTo": "Order from {house}",
+    "startHere": "Start again at {house}",
+    "added": "{dish} added to your order",
+    "view": "View your order",
+    "bar": "Your order · {items} · {total}",
+    "removeShort": "Remove"
+  },
+  "checkout": {
+    "meta": "Checkout",
+    "eyebrow": "Checkout",
+    "title": "Before it goes to the kitchen",
+    "steps": {
+      "how": "How would you like it?",
+      "where": "Where to?",
+      "when": "When?",
+      "who": "Who is it for?",
+      "extras": "Codes, cards and points",
+      "tip": "A tip for the team",
+      "pay": "Payment"
+    },
+    "pickupFrom": "Collect from {house} — {address}",
+    "zone": "Area",
+    "zoneHint": "Choose your district — the delivery fee and minimum depend on it.",
+    "zoneTerms": "Delivery {fee} · minimum {min} · about {eta}",
+    "address": {
+      "area": "District",
+      "street": "Street and house",
+      "building": "Building",
+      "floor": "Floor or flat",
+      "notes": "Directions for the driver",
+      "notesHint": "Gate colour, a landmark…",
+      "save": "Save this address",
+      "saveLabel": "Name it",
+      "saveLabelPlaceholder": "Home, office…",
+      "saved": "Saved addresses",
+      "new": "A new address"
+    },
+    "pin": {
+      "title": "Mark your door on the map",
+      "hint": "Drag the pin or use your location. We deliver within {km} km of the house.",
+      "useLocation": "Use my location",
+      "locating": "Finding you…",
+      "denied": "We could not read your location. Drag the pin instead.",
+      "distance": "{km} km from the house",
+      "outside": "Outside our delivery zone.",
+      "label": "Delivery location",
+      "unavailable": "The map could not load. Use your location instead."
+    },
+    "when": {
+      "asap": "As soon as possible",
+      "asapAt": "About {time}",
+      "asapOff": "Not available right now",
+      "later": "Schedule",
+      "day": "Day",
+      "time": "Time",
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "none": "No times left — the kitchen is full or closed.",
+      "full": "full",
+      "partial": "not every dish is served then",
+      "deliveryAt": "Arrives about {time}",
+      "pickupAt": "Ready about {time}"
+    },
+    "contact": {
+      "notes": "Notes for the kitchen",
+      "signedIn": "Ordering as {name}",
+      "signInPrompt": "Have an account? Sign in to use your points and saved addresses."
+    },
+    "promo": {
+      "label": "Promo code",
+      "applied": "{code}: −{amount}",
+      "errors": {
+        "inactive": "This code is not active.",
+        "not_started": "This code is not active yet.",
+        "expired": "This code has expired.",
+        "min_order": "This code needs an order of at least {amount}.",
+        "branch": "This code is not valid at this house.",
+        "channel": "This code is not valid for this kind of order.",
+        "usage_limit": "This code has been fully used.",
+        "customer_limit": "You have already used this code.",
+        "first_order": "This code is for a first order only.",
+        "unknown": "We do not recognise this code."
+      }
+    },
+    "giftCard": {
+      "label": "Gift card",
+      "applied": "{amount} from the card · {remaining} left after this order",
+      "errors": {
+        "not_found": "We could not find this card.",
+        "not_active": "This card is not active yet.",
+        "expired": "This card has expired.",
+        "empty": "This card has no balance left.",
+        "void": "This card has been cancelled."
+      }
+    },
+    "loyalty": {
+      "title": "Shade Circle points",
+      "balance": "Your balance: {points}",
+      "use": "Use {points} for {amount} off",
+      "none": "Not enough points for this order yet.",
+      "signIn": "Sign in to earn and spend points."
+    },
+    "tip": {
+      "none": "No tip",
+      "custom": "Other amount",
+      "hint": "Every riyal goes to the team on shift."
+    },
+    "payment": {
+      "card": "Card, Apple Pay or Google Pay",
+      "cash": "Cash on delivery",
+      "pay_at_venue": "Pay at the house",
+      "covered": "Your gift card covers the whole order."
+    },
+    "summary": "Summary",
+    "place": "Place the order",
+    "placePay": "Continue to payment",
+    "placing": "Sending…",
+    "terms": "By placing the order you agree to our terms.",
+    "termsLink": "Terms",
+    "updating": "Updating the total…",
+    "problems": {
+      "empty": "Your order is empty.",
+      "channel": "This kind of order is not available from this house right now.",
+      "zone_required": "Choose your area.",
+      "zone_unknown": "Choose your area again.",
+      "zone_location_required": "Mark your location on the map.",
+      "zone_out_of_range": "That location is outside our delivery zone.",
+      "time_paused": "The house is not taking online orders right now.",
+      "time_closed": "Choose another time — the kitchen is closed then.",
+      "time_full": "That time is now full. Please choose another.",
+      "time_not_served": "Some dishes are not served at that time.",
+      "lines": "Some dishes need your attention.",
+      "below_minimum": "The minimum for this area is {amount}.",
+      "payment_method": "Please choose another way to pay.",
+      "promo_limit": "That code has just been used up. Please remove it.",
+      "gift_balance": "Your gift card balance has changed. Please apply it again.",
+      "loyalty_balance": "Your points balance has changed. Please check it again.",
+      "quote": "Something changed while you were ordering. Please check the order."
+    }
+  },
+  "totals": {
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "discountCode": "Code {code}",
+    "loyalty": "Points",
+    "delivery": "Delivery",
+    "service": "Service charge",
+    "tip": "Tip",
+    "total": "Total",
+    "vatIncluded": "Includes VAT ({rate}%)",
+    "vat": "VAT",
+    "giftCard": "Gift card",
+    "due": "To pay"
+  },
+  "payment": {
+    "card": "Card",
+    "cash": "Cash on delivery",
+    "pay_at_venue": "Pay at the house",
+    "gift_card": "Gift card"
+  },
+  "receipt": {
+    "asap": "As soon as possible — around {time}",
+    "scheduled": "Scheduled for {time}"
+  },
+  "track": {
+    "meta": "Order {number}",
+    "eyebrow": "Order {number}",
+    "titles": {
+      "pending_payment": "Waiting for payment",
+      "placed": "Your order is in",
+      "accepted": "The kitchen has it",
+      "preparing": "On the fire",
+      "ready": "Ready to collect",
+      "ready_dine_in": "On its way to your table",
+      "out_for_delivery": "On its way to you",
+      "completed": "Enjoy",
+      "rejected": "We could not take this order",
+      "cancelled": "This order is cancelled"
+    },
+    "steps": {
+      "placed": "Received",
+      "accepted": "Accepted",
+      "preparing": "Preparing",
+      "ready": "Ready",
+      "out_for_delivery": "On the way",
+      "completed_delivery": "Delivered",
+      "completed_pickup": "Collected",
+      "completed_dine_in": "Served"
+    },
+    "deliveryEta": "Expected around {time}",
+    "pickupEta": "Ready around {time}",
+    "live": "This page updates as the kitchen moves.",
+    "reason": "Reason: {reason}",
+    "refunded": "Your payment is being refunded.",
+    "lapsed": "Payment was not completed in time, so the order was cancelled.",
+    "payNow": "Complete the payment",
+    "details": "Your order",
+    "deliverTo": "Delivering to",
+    "collectFrom": "Collect from",
+    "reorder": "Order this again",
+    "reorderSkipped": "{count, plural, one {One dish is} other {{n} dishes are}} no longer available and {count, plural, one {was} other {were}} left out.",
+    "help": "Questions? Call {house}.",
+    "invalid": "This tracking link is not valid. Use the link in your receipt email.",
+    "placedAt": "Placed {time}"
+  },
+  "statusEmail": {
+    "accepted": {
+      "headline": "The kitchen has your order",
+      "message": "{house} has accepted your order, and the kitchen is starting on it."
+    },
+    "ready": {
+      "headline": "Ready to collect",
+      "message": "Your order is ready at {house}. Show the order number at the counter."
+    },
+    "served": {
+      "headline": "On its way to your table",
+      "message": "Your order is ready and on its way to your table."
+    },
+    "out_for_delivery": {
+      "headline": "On its way to you",
+      "message": "Your order has left {house} and is on its way."
+    },
+    "completed": {
+      "headline": "Thank you",
+      "message": "We hope it was good. Tell us how it was — every word reaches the kitchen."
+    },
+    "rejected": {
+      "headline": "We could not take your order",
+      "message": "We are sorry — {house} could not take this order. {reason} Anything you paid is being refunded."
+    },
+    "cancelled": {
+      "headline": "Your order is cancelled",
+      "message": "Your order from {house} has been cancelled. Anything you paid is being refunded."
+    }
+  }
+}

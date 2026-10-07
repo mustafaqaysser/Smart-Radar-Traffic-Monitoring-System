@@ -8,7 +8,7 @@ import { Button } from '@/components/site/ui/button';
 import { Chip, Input, Label } from '@/components/site/ui/field';
 import { Dialog } from '@/components/site/ui/dialog';
 import { Link } from '@/i18n/navigation';
-import { ALLERGENS, DIETARY_TAGS, type Allergen, type DietaryTag } from '@/lib/db/schema';
+import { ALLERGENS, DIETARY_TAGS, type Allergen, type DietaryTag } from '@/lib/menu/tags';
 import { isServing, minutesUntilServing } from '@/lib/domain/menus';
 import { formatClock, formatList, formatMoney } from '@/lib/i18n/format';
 import { plural } from '@/lib/i18n/plural';

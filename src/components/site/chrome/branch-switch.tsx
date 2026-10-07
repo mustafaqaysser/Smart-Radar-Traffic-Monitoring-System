@@ -35,7 +35,8 @@ export function BranchSwitch({ branches, selected, className, tone = 'default' }
                 start(async () => {
                   const res = await selectBranch(b.slug);
                   if (res.ok) {
-                    cart.setBranch(b.slug);
+                    // An order in progress stays with its own house; the order page offers to switch it.
+                    if (!cart.get().lines.length) cart.setBranch(b.slug);
                     router.refresh();
                   }
                 })

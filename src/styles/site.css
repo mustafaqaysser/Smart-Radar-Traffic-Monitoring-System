@@ -740,3 +740,30 @@
     scale: 1;
   }
 }
+
+/* ---------- Print ---------- */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 0;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  .print-hidden,
+  #site-header,
+  footer:not(.print-sheet footer),
+  .skip-link,
+  .gnomon,
+  [role='status'] {
+    display: none !important;
+  }
+  .print-sheet {
+    max-width: none;
+    padding-block: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}

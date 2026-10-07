@@ -2,7 +2,7 @@
   "name": "zill-restaurant-platform",
   "version": "0.1.0",
   "private": true,
-  "description": "Zill · ظل — a bilingual (Arabic/English) restaurant website and operating platform. White-label by design.",
+  "description": "Zill \u00b7 \u0638\u0644 \u2014 a bilingual (Arabic/English) restaurant website and operating platform. White-label by design.",
   "license": "UNLICENSED",
   "type": "module",
   "engines": {
@@ -26,7 +26,7 @@
     "fonts:build": "node scripts/fonts.mjs",
     "brand:check": "tsx scripts/brand/check-contrast.ts",
     "media:build": "node scripts/media/build.mjs",
-    "menu:pdf": "tsx scripts/render/menu-pdf.ts",
+    "menu:pdf": "tsx --conditions=react-server scripts/render/menu-pdf.ts",
     "og:build": "tsx scripts/render/og-images.ts",
     "shots": "tsx scripts/qa/screenshots.ts",
     "lighthouse": "tsx scripts/qa/lighthouse.ts",

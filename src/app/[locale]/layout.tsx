@@ -15,15 +15,12 @@ import { tr } from '@/lib/i18n/localized';
 import { getBranches } from '@/lib/queries/branches';
 import { getSettings } from '@/lib/server/settings';
 import { getSelectedBranch } from '@/lib/site/selection';
-import { getServingContext, servingNames } from '@/lib/site/serving';
+import { getServingContext } from '@/lib/site/serving';
 import { absoluteUrl, siteUrl } from '@/lib/site/url';
 import { MotionProvider } from '@/components/motion/motion-provider';
 import { AtmosphereProvider } from '@/components/site/atmosphere-provider';
-import { SiteHeader } from '@/components/site/chrome/site-header';
-import { SiteFooter } from '@/components/site/chrome/site-footer';
 import { GnomonPreloader } from '@/components/site/gnomon-preloader';
 import { HeadScript } from '@/components/site/head-script';
-import { SeasonBanner } from '@/components/site/season-banner';
 import { MaintenanceView } from '@/components/site/maintenance-view';
 import { Toaster } from '@/components/site/ui/toast';
 import '@/styles/site.css';
@@ -84,10 +81,11 @@ export default async function LocaleLayout({ children, params }: { children: Rea
     getCurrentUser(),
     getTranslations('common'),
   ]);
+  // Children of the (site) group render the header, footer and seasonal notice; bare routes (print, table) do not.
   const serving = await getServingContext(branch);
   const location = branch ?? { lat: 21.4854, lng: 39.1869, timeZone: restaurantConfig.defaultTimeZone };
   const atmosphere = computeAtmosphere(serving.now, { lat: location.lat, lng: location.lng, timeZone: location.timeZone });
-  const season = serving.seasons.find((s) => s.banner && settings.features.seasonalModes);
+  const season = settings.features.seasonalModes ? serving.seasons.find((s) => s.theme && s.theme !== 'none') : undefined;
   const maintenance = settings.maintenance.enabled && !isStaff(user?.role);
 
   // Preloader: the shadow's final angle on the dial (screen degrees, 0 = east, clockwise) and its length.
@@ -95,15 +93,13 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   const shadowAngle = daylight ? atmosphere.sun.azimuth + 90 : 90;
   const shadowLength = daylight ? Math.min(1.6, Math.max(0.3, 1 / Math.tan((Math.max(atmosphere.sun.altitude, 4) * Math.PI) / 180))) : 0.35;
 
-  const branchOptions = branches.map((b) => ({ slug: b.slug, name: tr(b.shortName, locale), city: tr(b.city, locale) }));
-
   return (
     <html
       lang={locale}
       dir={locale === 'ar' ? 'rtl' : 'ltr'}
       data-phase={atmosphere.phase}
       data-shade-dir={atmosphere.shade.x < 0 ? 'rev' : 'fwd'}
-      data-season={season?.theme && season.theme !== 'none' ? season.theme : undefined}
+      data-season={season?.theme}
       className={siteFontVariables}
       style={atmosphereCssVars(atmosphere) as CSSProperties}
       suppressHydrationWarning
@@ -127,18 +123,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
               ) : (
                 <>
                   {settings.features.preloader ? <GnomonPreloader angle={Math.round(shadowAngle)} length={Math.round(shadowLength * 100) / 100} /> : null}
-                  <SiteHeader
-                    features={settings.features}
-                    branches={branchOptions}
-                    selectedBranch={branch?.slug ?? null}
-                    signedIn={Boolean(user)}
-                    servingNow={servingNames(serving, locale)}
-                  />
-                  {season?.banner ? <SeasonBanner slug={season.slug} name={tr(season.name, locale)} text={tr(season.banner, locale)} /> : null}
-                  <main id="main" tabIndex={-1} className="outline-none">
-                    {children}
-                  </main>
-                  <SiteFooter />
+                  {children}
                   <Toaster closeLabel={t('a11y.close')} />
                 </>
               )}

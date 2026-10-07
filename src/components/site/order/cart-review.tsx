@@ -164,7 +164,7 @@ export function CartReview({ items, upsell, branch, houses }: CartReviewProps) {
               return (
                 <li key={slug} className="flex flex-col gap-3">
                   <div className="arch-3x4 relative aspect-[3/4] overflow-hidden bg-surface">
-                    {item.image ? <Image src={item.image.src} alt="" fill sizes="(min-width: 640px) 15vw, 45vw" quality={60} className="object-cover" style={{ objectPosition: `${item.image.focalX * 100}% ${item.image.focalY * 100}%` }} /> : null}
+                    {item.image ? <Image src={item.image.src} alt="" fill sizes="(min-width: 640px) 15vw, 45vw" quality={55} className="object-cover" style={{ objectPosition: `${item.image.focalX * 100}% ${item.image.focalY * 100}%` }} /> : null}
                   </div>
                   <p className="t-body">{item.name}</p>
                   <div className="flex items-center justify-between gap-2">

@@ -24,7 +24,7 @@ export async function SiteFooter() {
   return (
     <footer className="relative mt-[var(--spacing-section)] border-t border-line pb-16 lg:pb-0">
       <VentsBand rows={1} className="text-line" />
-      <div className="site-grid gap-y-16 pt-[var(--spacing-block)]">
+      <div className="site-grid gap-y-16 pt-[var(--spacing-stack)]">
         <p className="t-display-md col-span-full max-w-[14ch] lg:col-span-7" aria-hidden="true">
           {t('footer.line')}
         </p>

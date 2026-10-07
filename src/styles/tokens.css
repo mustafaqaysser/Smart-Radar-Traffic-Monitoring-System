@@ -55,7 +55,7 @@
   --spacing-gutter: clamp(1rem, 0.6rem + 1.6vw, 2rem);
   --spacing-margin: clamp(1rem, 0.2rem + 4.2vw, 6rem);
   --spacing-section: clamp(5rem, 3.5rem + 7vw, 12rem);
-  --spacing-block: clamp(2.5rem, 1.8rem + 3vw, 5rem);
+  --spacing-stack: clamp(2.5rem, 1.8rem + 3vw, 5rem);
 
   /* ---------- Radii: square by default; the arch is the signature shape ---------- */
   --radius-none: 0;

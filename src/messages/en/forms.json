@@ -4,7 +4,7 @@
     "firstName": "First name",
     "email": "Email",
     "phone": "Mobile number",
-    "phoneHint": "With country code if outside Saudi Arabia, e.g. +971 50 123 4567",
+    "phoneHint": "With country code if outside Saudi Arabia, e.g. ⁦+971 50 123 4567⁩",
     "message": "Message",
     "date": "Date",
     "time": "Time",

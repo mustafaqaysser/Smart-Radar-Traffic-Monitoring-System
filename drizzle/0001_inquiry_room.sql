@@ -1,0 +1,1 @@
+ALTER TABLE `inquiries` ADD `room_id` text;

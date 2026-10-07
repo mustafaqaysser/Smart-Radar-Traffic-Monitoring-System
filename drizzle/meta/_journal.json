@@ -8,6 +8,13 @@
       "when": 1790709662350,
       "tag": "0000_init",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1791371123470,
+      "tag": "0001_inquiry_room",
+      "breakpoints": true
     }
   ]
 }

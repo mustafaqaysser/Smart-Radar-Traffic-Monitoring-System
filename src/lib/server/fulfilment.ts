@@ -16,7 +16,15 @@ export async function fulfilPayment(payment: Payment): Promise<void> {
       await confirmOrderPaid(payment.referenceId, payment.id);
       return;
     }
-    default:
-      throw new Error(`No fulfilment registered for ${payment.purpose} payments.`);
+    case 'gift_card': {
+      const { confirmGiftCardPaid } = await import('./gift-cards');
+      await confirmGiftCardPaid(payment.referenceId, payment.id);
+      return;
+    }
+    case 'event': {
+      const { confirmEventBookingPaid } = await import('./events');
+      await confirmEventBookingPaid(payment.referenceId, payment.id);
+      return;
+    }
   }
 }

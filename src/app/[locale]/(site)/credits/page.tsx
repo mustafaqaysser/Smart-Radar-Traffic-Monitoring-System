@@ -82,7 +82,7 @@ export default async function CreditsPage({ params }: { params: Promise<{ locale
           </table>
         </div>
       </section>
-      <section className="site-grid gap-y-4 pt-[var(--spacing-block)]" aria-labelledby="credits-fonts">
+      <section className="site-grid gap-y-4 pt-[var(--spacing-stack)]" aria-labelledby="credits-fonts">
         <h2 id="credits-fonts" className="t-heading-lg col-span-full">
           {t('fonts')}
         </h2>

@@ -81,7 +81,7 @@ export function DayChapter({ locale, eyebrow, title, skipLabel, hours }: DayChap
 
   return (
     <section ref={root} id="day" className="day relative" aria-labelledby="day-title">
-      <div className="site-grid pt-[var(--spacing-section)] pb-[var(--spacing-block)]">
+      <div className="site-grid pt-[var(--spacing-section)] pb-[var(--spacing-stack)]">
         <p className="t-label col-span-full text-muted">{eyebrow}</p>
         <h2 id="day-title" className="t-display-md col-span-full mt-4 lg:col-span-9">
           {title}
@@ -94,7 +94,7 @@ export function DayChapter({ locale, eyebrow, title, skipLabel, hours }: DayChap
         <div className="day-stage">
           {hours.map((h, i) => (
             <article key={h.phase} data-phase={h.phase} className="day-scene bg-bg text-ink" aria-labelledby={`day-${h.phase}`} style={{ zIndex: i + 1 }}>
-              <div className="site-grid h-full content-center gap-y-8 py-[var(--spacing-block)]">
+              <div className="site-grid h-full content-center gap-y-8 py-[var(--spacing-stack)]">
                 <div className="day-copy col-span-full flex flex-col gap-4 md:col-span-4 lg:col-span-5 lg:col-start-1">
                   <p className="t-instrument text-muted">
                     <bdi>{h.time}</bdi>

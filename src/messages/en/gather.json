@@ -1,1 +1,207 @@
-{}
+{
+  "experiences": {
+    "meta": {
+      "title": "Gatherings",
+      "description": "Chef’s tables, tasting nights and classes in the courtyard at Zill — few seats, booked like a table."
+    },
+    "eyebrow": "Gatherings",
+    "title": "Gatherings in the courtyard",
+    "intro": "A long table at maghrib, a class at the ember grill, a tasting that follows the hours. Few seats, booked like any table.",
+    "kinds": {
+      "chefs_table": "Chef’s table",
+      "tasting": "Tasting night",
+      "class": "Class",
+      "gathering": "Gathering"
+    },
+    "all": "All",
+    "calendar": "Calendar",
+    "seatsLeft": "{count, plural, one {One seat left} other {{n} seats left}}",
+    "soldOut": "Sold out",
+    "from": "From {price}",
+    "free": "Free",
+    "book": "Book seats",
+    "none": "No gatherings are scheduled yet — the next season’s calendar is on its way.",
+    "noneFilter": "Nothing of this kind is scheduled yet.",
+    "back": "All gatherings",
+    "when": "When",
+    "where": "Where",
+    "tickets": "Tickets",
+    "seats": "Seats",
+    "total": "Total",
+    "pay": "Continue to payment · {total}",
+    "reserveFree": "Keep my seats",
+    "booking": "Booking…",
+    "started": "This gathering has already begun.",
+    "soldOutBody": "Every seat is taken. The newsletter announces each new gathering first.",
+    "perSeat": "{price} a seat",
+    "errors": {
+      "sold_out": "Not enough seats are left for that many.",
+      "ticket_sold_out": "Not enough of these tickets are left.",
+      "started": "This gathering has already begun.",
+      "not_found": "We could not find this gathering."
+    },
+    "ticket": {
+      "meta": "Your ticket",
+      "title": "Your seats are kept",
+      "pending": "Waiting for payment",
+      "body": "Show this code at the door. We have sent it to {email}.",
+      "code": "Ticket code",
+      "checkedIn": "Checked in at {time}",
+      "cancelled": "This ticket is cancelled.",
+      "lapsed": "Payment was not completed in time, so the seats were released.",
+      "payNow": "Complete the payment",
+      "qrAlt": "QR code for ticket {code}",
+      "invalid": "This ticket link is not valid. Use the link in your ticket email."
+    },
+    "notify": "Hear about the next one"
+  },
+  "privateDining": {
+    "meta": {
+      "title": "Private dining & catering",
+      "description": "Private rooms and the whole roof at Zill, menus written for the occasion, and catering at your place."
+    },
+    "eyebrow": "Private dining",
+    "title": "A courtyard of your own",
+    "intro": "Birthdays, family gatherings, quiet business dinners, the eve of a wedding: a room or the whole roof, a menu written for the occasion, and a host who stays with you all evening.",
+    "rooms": "The rooms",
+    "standing": "Up to {n} standing",
+    "packages": "Menus and packages",
+    "catering": "Catering at your place",
+    "perGuest": "{price} per guest",
+    "minGuests": "Minimum guests: {n}",
+    "ask": "Ask about this room",
+    "inquiry": {
+      "title": "Tell us about the occasion",
+      "body": "Our events host replies within a day with availability, a menu and a quote.",
+      "kind": "What are you planning?",
+      "kinds": {
+        "private_dining": "Private dining at the house",
+        "catering": "Catering at your place"
+      },
+      "house": "House",
+      "date": "Preferred date",
+      "guests": "Number of guests",
+      "package": "Menu or package",
+      "packageAny": "Not sure yet",
+      "message": "Anything we should know?",
+      "messageHint": "The occasion, dietary needs, timings, a budget…",
+      "submit": "Send the request",
+      "done": "Thank you — our events host will write to {email} within a day.",
+      "room": "Room",
+      "roomAny": "Whichever suits the evening",
+      "houseAny": "Either house",
+      "cateringHouse": "Which city?",
+      "dateHint": "Leave empty if the date is not fixed yet.",
+      "sending": "Sending…",
+      "errors": {
+        "roomSize": "{room} holds up to {count, plural, one {{n} guest} other {{n} guests}}.",
+        "minGuests": "{package} starts at {count, plural, one {{n} guest} other {{n} guests}}."
+      },
+      "doneTitle": "Your request is with us"
+    },
+    "seated": "{count, plural, one {{n} seated} other {{n} seated}}",
+    "roomsIntro": "Three rooms across the two houses, each closed to everyone but your table. The host plans the evening with you: the menu, the hour, the flowers, the music or the silence.",
+    "atHouse": "At {house}",
+    "packagesIntro": "Starting points rather than fixed menus: the kitchen adjusts each one to the season, to your guests and to the hour you choose.",
+    "cateringIntro": "When the gathering is at your home, your majlis or your office, the house travels: the pots, the bread, the coffee and the people who serve it.",
+    "askCatering": "Ask about catering",
+    "askPackage": "Ask about this menu",
+    "how": {
+      "title": "How it works",
+      "steps": [
+        {
+          "title": "Tell us",
+          "body": "The date, the number of guests and the occasion. A rough idea is enough."
+        },
+        {
+          "title": "We reply within a day",
+          "body": "With the rooms free that evening, a suggested menu and a quote per guest."
+        },
+        {
+          "title": "Confirm",
+          "body": "A deposit holds the room; the menu is settled a week before, allergies included."
+        },
+        {
+          "title": "The evening",
+          "body": "Your host stays with your table from the first coffee to the last glass of tea."
+        }
+      ]
+    },
+    "host": "Events host"
+  },
+  "giftCards": {
+    "meta": {
+      "title": "Gift cards",
+      "description": "Give an hour of shade: Zill gift cards, delivered by email now or on the day you choose, for either house or online."
+    },
+    "eyebrow": "Gift cards",
+    "title": "Give someone an hour of shade",
+    "intro": "A card for any hour: breakfast in the courtyard, a long lunch, dinner under the vine. Delivered by email now or on the day you choose, and spent in either house or online.",
+    "steps": {
+      "design": "Choose a design",
+      "amount": "Choose an amount",
+      "to": "Who is it for?",
+      "from": "From you",
+      "when": "When should it arrive?"
+    },
+    "designs": {
+      "dawn": "Dawn",
+      "noon": "Noon",
+      "long-shade": "The long shade",
+      "night": "Night"
+    },
+    "designAlt": "Gift card design: {design}",
+    "custom": "Another amount",
+    "range": "Between {min} and {max}",
+    "recipientName": "Their name",
+    "recipientEmail": "Their email",
+    "message": "A message",
+    "messageHint": "Up to 300 characters. It appears in the card’s email.",
+    "yourName": "Your name",
+    "yourEmail": "Your email, for the receipt",
+    "now": "As soon as it is paid",
+    "later": "On a date I choose",
+    "date": "Date",
+    "time": "Time",
+    "preview": "Preview",
+    "toName": "For {name}",
+    "fromName": "From {name}",
+    "validity": "Valid for {months} in both houses and online.",
+    "buy": "Continue to payment · {amount}",
+    "buying": "Preparing…",
+    "pay": "Payment",
+    "balance": {
+      "title": "Check a balance",
+      "code": "Card code",
+      "check": "Check",
+      "result": "{balance} left of {initial}",
+      "until": "Valid until {date}",
+      "errors": {
+        "not_found": "We could not find this card.",
+        "not_active": "This card is not active yet.",
+        "expired": "This card has expired.",
+        "empty": "This card has no balance left.",
+        "void": "This card has been cancelled."
+      }
+    },
+    "sent": {
+      "meta": "Your gift card",
+      "title": "Your gift is on its way",
+      "scheduled": "It will reach {name} on {date}.",
+      "now": "{name} will receive it within a minute.",
+      "pending": "Waiting for payment",
+      "receipt": "A receipt with the card’s code is on its way to {email}.",
+      "another": "Send another",
+      "invalid": "This link is not valid. Use the link in your receipt email."
+    },
+    "receipt": {
+      "now": "within a minute of payment",
+      "on": "on {date}"
+    },
+    "errors": {
+      "amount": "Choose an amount between {min} and {max}.",
+      "deliverAt": "Choose a time in the future (up to a year ahead).",
+      "design": "Choose a design."
+    }
+  }
+}

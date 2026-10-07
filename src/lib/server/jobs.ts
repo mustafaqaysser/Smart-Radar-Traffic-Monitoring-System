@@ -3,6 +3,8 @@ import { lt } from 'drizzle-orm';
 import { db } from '@/lib/db/client';
 import { reservationHolds } from '@/lib/db/schema';
 import { purgeExpiredRateLimits } from '@/lib/services/rate-limit';
+import { expireUnpaidBookings } from './events';
+import { deliverScheduledGiftCards } from './gift-cards';
 import { expireUnpaidOrders } from './orders';
 import { expireUnpaidDeposits, processAllWaitlists, sendDueReminders } from './reservations';
 
@@ -16,8 +18,11 @@ export const JOBS = {
     reminders: await sendDueReminders(),
     expiredDeposits: await expireUnpaidDeposits(),
     expiredOrders: await expireUnpaidOrders(),
+    expiredTickets: await expireUnpaidBookings(),
     waitlistOffers: await processAllWaitlists(),
   }),
+  /** Every 15 minutes: gift cards scheduled for delivery. */
+  'gift-cards': async () => ({ delivered: await deliverScheduledGiftCards() }),
   /** Daily: clears expired holds and rate-limit windows. */
   housekeeping: async () => {
     const holds = await db.delete(reservationHolds).where(lt(reservationHolds.expiresAt, new Date())).returning({ id: reservationHolds.id });

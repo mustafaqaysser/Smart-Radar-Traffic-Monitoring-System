@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import restaurantConfig from '@config';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { MenuExplorer } from '@/components/site/menu/menu-explorer';
 import { InstrumentLine } from '@/components/site/instrument-line';
@@ -67,7 +68,7 @@ export default async function MenuPage({ params, searchParams }: { params: Promi
             name: i.name,
             description: i.description,
             url: absoluteUrl(`/${locale}/menu/dish/${i.slug}`),
-            offers: { '@type': 'Offer', price: (i.price / 100).toFixed(2), priceCurrency: 'SAR' },
+            offers: { '@type': 'Offer', price: (i.price / 100).toFixed(2), priceCurrency: restaurantConfig.currency },
             suitableForDiet: i.dietary.includes('vegan') ? 'https://schema.org/VeganDiet' : i.dietary.includes('vegetarian') ? 'https://schema.org/VegetarianDiet' : i.dietary.includes('gluten-free') ? 'https://schema.org/GlutenFreeDiet' : undefined,
           })),
       ),

@@ -967,6 +967,7 @@ export const inquiries = sqliteTable(
     date: text('date'),
     guests: integer('guests'),
     packageId: text('package_id'),
+    roomId: text('room_id'),
     message: text('message').notNull(),
     locale: text('locale').notNull().default('ar'),
     status: text('status').$type<'new' | 'in_progress' | 'won' | 'lost' | 'closed'>().notNull().default('new'),

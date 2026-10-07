@@ -1,7 +1,7 @@
 import 'server-only';
 import { createHmac, timingSafeEqual } from 'node:crypto';
 
-export type LinkPurpose = 'reservation' | 'order' | 'ticket' | 'waitlist';
+export type LinkPurpose = 'reservation' | 'order' | 'ticket' | 'waitlist' | 'gift';
 
 function secret(): string {
   const value = process.env.BETTER_AUTH_SECRET;

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import restaurantConfig from '@config';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { and, eq } from 'drizzle-orm';
 import { Icon, type IconName } from '@/components/brand/icon';
@@ -91,7 +92,7 @@ export default async function DishPage({ params }: { params: Params }) {
     description: tr(item.description, locale),
     url: absoluteUrl(`/${locale}/menu/dish/${slug}`),
     image: item.image ? absoluteUrl(item.image.src) : undefined,
-    offers: { '@type': 'Offer', price: (view.price / 100).toFixed(2), priceCurrency: 'SAR', availability: view.soldOut ? 'https://schema.org/SoldOut' : 'https://schema.org/InStock' },
+    offers: { '@type': 'Offer', price: (view.price / 100).toFixed(2), priceCurrency: restaurantConfig.currency, availability: view.soldOut ? 'https://schema.org/SoldOut' : 'https://schema.org/InStock' },
     nutrition: item.calories ? { '@type': 'NutritionInformation', calories: `${item.calories} calories` } : undefined,
     suitableForDiet: item.dietary.includes('vegan') ? 'https://schema.org/VeganDiet' : item.dietary.includes('vegetarian') ? 'https://schema.org/VegetarianDiet' : undefined,
   };

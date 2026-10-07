@@ -18,7 +18,7 @@ export class StripeProvider implements PaymentProvider {
         currency: input.currency.toLowerCase(),
         automatic_payment_methods: { enabled: true },
         description: input.description,
-        receipt_email: input.customerEmail,
+        ...(input.customerEmail ? { receipt_email: input.customerEmail } : {}),
         metadata: { paymentId: input.paymentId, purpose: input.purpose, referenceId: input.referenceId },
       },
       { idempotencyKey: `zill-${input.paymentId}` },

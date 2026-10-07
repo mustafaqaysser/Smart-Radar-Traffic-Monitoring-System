@@ -20,6 +20,8 @@ interface QuickAddProps {
   branchSlug: string;
   branchName: string;
   onClose: () => void;
+  /** Add somewhere other than the site basket (the table's own order); the default adds to the basket. */
+  onAdd?: (line: { slug: string; qty: number; optionIds: string[]; note: string }) => void;
 }
 
 function defaults(item: ItemView): string[] {
@@ -27,7 +29,7 @@ function defaults(item: ItemView): string[] {
 }
 
 /** Choose modifiers, a note and a quantity, then add the dish to the order. Prices recalculate as you choose. */
-export function QuickAdd({ item, branchSlug, branchName, onClose }: QuickAddProps) {
+export function QuickAdd({ item, branchSlug, branchName, onClose, onAdd }: QuickAddProps) {
   const t = useTranslations('menu.quickAdd');
   const tc = useTranslations('common');
   const tm = useTranslations('menu.item');
@@ -53,7 +55,7 @@ export function QuickAdd({ item, branchSlug, branchName, onClose }: QuickAddProp
 
   const groups = item.modifierGroups;
   const unit = lineUnitPrice({ unitPrice: item.price, optionIds: selected, groups });
-  const otherBranch = current.lines.length > 0 && current.branchSlug !== null && current.branchSlug !== branchSlug;
+  const otherBranch = !onAdd && current.lines.length > 0 && current.branchSlug !== null && current.branchSlug !== branchSlug;
 
   const toggle = (groupId: string, optionId: string, single: boolean) => {
     setError(null);
@@ -77,6 +79,12 @@ export function QuickAdd({ item, branchSlug, branchName, onClose }: QuickAddProp
     }
     if (errors.length) {
       setError(t('unavailableOption'));
+      return;
+    }
+    if (onAdd) {
+      onAdd({ slug: item.slug, qty, optionIds: selected, note: note.trim() });
+      toast(`${item.name} — ${tm('added')}`);
+      onClose();
       return;
     }
     if (otherBranch) cart.replace([], branchSlug, current.channel);

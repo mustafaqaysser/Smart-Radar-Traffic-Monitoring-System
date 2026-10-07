@@ -1,0 +1,63 @@
+{
+  "meta": "Table {table} · {house}",
+  "eyebrow": "Table {table} · {house}",
+  "title": "Your table, your hour",
+  "intro": "Order from here whenever you like, and call us with a tap. Everything reaches the kitchen and your waiter at once.",
+  "servingNow": "Now serving: {menus}",
+  "resting": "The kitchen is between menus; drinks and sweets are still served.",
+  "language": "العربية",
+  "actions": {
+    "waiter": "Call the waiter",
+    "bill": "Ask for the bill",
+    "sending": "Sending…"
+  },
+  "requests": {
+    "waiter": {
+      "open": "Your waiter has been called.",
+      "acknowledged": "Your waiter is on the way.",
+      "repeated": "We have your call; your waiter is on the way."
+    },
+    "bill": {
+      "open": "Your bill is being prepared.",
+      "acknowledged": "Your bill is on its way.",
+      "repeated": "We have your request; the bill is on its way."
+    }
+  },
+  "menu": {
+    "title": "The menu",
+    "menus": "Menus being served",
+    "add": "Add {name}",
+    "notNow": "Not served at this hour"
+  },
+  "basket": {
+    "open": "Your order · {count}",
+    "title": "Your order",
+    "empty": "Nothing yet. Tap + on any dish.",
+    "remove": "Remove {name}",
+    "name": "Name (optional)",
+    "nameHint": "So we know whose plate is whose.",
+    "notes": "A note for the kitchen (optional)",
+    "pay": "How would you like to pay?",
+    "payAtTable": "With the bill, at the table",
+    "payNow": "Now, by card",
+    "send": "Send to the kitchen · {total}",
+    "sending": "Sending…",
+    "problem": "Something in the order needs a look: {reason}"
+  },
+  "sent": {
+    "title": "With the kitchen",
+    "body": "Order {number} is with the kitchen. We will bring it to your table.",
+    "pay": "Pay for order {number}",
+    "track": "Follow the order",
+    "again": "Order something else"
+  },
+  "orders": {
+    "title": "Ordered at this table"
+  },
+  "closed": "The kitchen is not taking orders from the table right now. You can still call your waiter.",
+  "errors": {
+    "time_full": "The kitchen is full this minute. Try again shortly, or ask your waiter.",
+    "quote": "Something in the order changed. Check the basket and send it again.",
+    "payment_method": "That way of paying is not available here."
+  }
+}

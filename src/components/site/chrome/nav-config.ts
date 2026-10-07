@@ -55,6 +55,7 @@ export const NAV_GROUPS: NavGroup[] = [
       { href: '/locations', key: 'locations' },
       { href: '/contact', key: 'contact' },
       { href: '/faq', key: 'faq' },
+      { href: '/concierge', key: 'concierge', feature: 'aiConcierge' },
       { href: '/careers', key: 'careers', feature: 'careers' },
     ],
   },

@@ -52,7 +52,8 @@
     "home": "Home",
     "language": "Language",
     "switchTo": "العربية",
-    "switchToLabel": "Read this page in Arabic"
+    "switchToLabel": "Read this page in Arabic",
+    "concierge": "Ask the concierge"
   },
   "branch": {
     "label": "House",

@@ -69,6 +69,12 @@ export async function saveSetting<K extends SettingKey>(key: K, value: SiteSetti
     .onConflictDoUpdate({ target: settingsTable.key, set: { value, updatedAt: new Date() } });
 }
 
+/** Every feature flag with its dependencies applied (e.g. the concierge also needs an API key), for navigation. */
+export async function effectiveFeatures(): Promise<SiteSettings['features']> {
+  const s = await getSettings();
+  return { ...s.features, aiConcierge: s.features.aiConcierge && Boolean(process.env.ANTHROPIC_API_KEY) };
+}
+
 /** A feature is on when its flag is on and anything it depends on is configured. */
 export async function featureEnabled(flag: FeatureFlag): Promise<boolean> {
   const s = await getSettings();

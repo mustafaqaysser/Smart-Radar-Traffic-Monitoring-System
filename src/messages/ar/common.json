@@ -52,7 +52,8 @@
     "home": "الرئيسية",
     "language": "اللغة",
     "switchTo": "English",
-    "switchToLabel": "اقرأ هذه الصفحة بالإنجليزية"
+    "switchToLabel": "اقرأ هذه الصفحة بالإنجليزية",
+    "concierge": "اسأل المضيف"
   },
   "branch": {
     "label": "البيت",

@@ -7,20 +7,20 @@ import { SeasonBanner } from '@/components/site/season-banner';
 import { getCurrentUser } from '@/lib/auth/session';
 import { tr } from '@/lib/i18n/localized';
 import { getBranches } from '@/lib/queries/branches';
-import { getSettings } from '@/lib/server/settings';
+import { effectiveFeatures, getSettings } from '@/lib/server/settings';
 import { getSelectedBranch } from '@/lib/site/selection';
 import { getServingContext, servingNames } from '@/lib/site/serving';
 
 /** The public site's chrome: header with navigation, seasonal notice, main landmark and footer. */
 export default async function SiteLayout({ children }: { children: ReactNode }) {
   const locale = await getLocale();
-  const [settings, branch, branches, user] = await Promise.all([getSettings(), getSelectedBranch(), getBranches(), getCurrentUser()]);
+  const [settings, features, branch, branches, user] = await Promise.all([getSettings(), effectiveFeatures(), getSelectedBranch(), getBranches(), getCurrentUser()]);
   const serving = await getServingContext(branch);
   const season = settings.features.seasonalModes ? serving.seasons.find((s) => s.banner) : undefined;
   return (
     <>
       <SiteHeader
-        features={settings.features}
+        features={features}
         branches={branches.map((b) => ({ slug: b.slug, name: tr(b.shortName, locale), city: tr(b.city, locale) }))}
         selectedBranch={branch?.slug ?? null}
         signedIn={Boolean(user)}

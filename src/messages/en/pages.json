@@ -240,5 +240,47 @@
       "cta": "Open an account",
       "signedIn": "See your points"
     }
+  },
+  "concierge": {
+    "meta": {
+      "title": "The concierge",
+      "description": "Ask about the menu, allergies, what is served now, or book a table, in Arabic or English."
+    },
+    "eyebrow": "The concierge",
+    "title": "Ask the house",
+    "intro": "What suits a nut allergy, what is on the fire right now, a table for four on Thursday evening: ask in Arabic or English.",
+    "you": "You",
+    "host": "The concierge",
+    "placeholder": "Ask about a dish, an allergy, or a table…",
+    "label": "Your message",
+    "send": "Send",
+    "stop": "Stop",
+    "thinking": "Thinking…",
+    "tools": {
+      "menu_now": "Checking what the kitchen is serving…",
+      "check_availability": "Looking at the tables…",
+      "create_reservation": "Booking your table…"
+    },
+    "booking": {
+      "title": "Booked · {code}",
+      "detail": "{house} · {date} · {time} · {guests}",
+      "deposit": "Pay the deposit to confirm it",
+      "view": "Open the booking"
+    },
+    "notices": {
+      "refusal": "I can't help with that here. For anything else about the menu or a table, ask away, or call the house.",
+      "truncated": "That answer was cut short. Please ask again.",
+      "busy": "The concierge is busy at the moment. Try again in a minute, or call the house.",
+      "error": "Something went wrong. Please try again.",
+      "rateLimited": "That is a lot of questions in a short time. Please wait a few minutes."
+    },
+    "disclaimer": "The concierge is an AI and can make mistakes. Allergies: always tell your server. Bookings it makes arrive by email like any other.",
+    "suggestions": [
+      "What can I eat if I avoid nuts and sesame?",
+      "What is being served right now at Al-Balad?",
+      "A table for four tomorrow evening?",
+      "Which dishes are vegan?"
+    ],
+    "new": "Start again"
   }
 }

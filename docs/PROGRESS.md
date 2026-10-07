@@ -4,8 +4,7 @@ Live status of the build. Updated at the end of every phase. Resume from here af
 
 ## Current phase
 
-Phase 5 — Reservations, ordering, payments, commerce, customer accounts (reservations, ordering and commerce done;
-accounts, dine-in QR and the AI concierge next).
+Phase 6 — Admin back-office (Phase 5 complete).
 
 ## Done
 
@@ -40,22 +39,25 @@ accounts, dine-in QR and the AI concierge next).
   - Commerce: gift cards (four designed cards rendered as SVG/PNG, custom amount, recipient, message, scheduled
     delivery, balance check), event tickets (calendar, ticket types, capacity in a write transaction, payment, QR ticket
     by email, .ics), private dining and catering (rooms, packages, inquiry with room/package/capacity checks).
+  - Accounts: sign up / sign in by password or email code, verification, password reset, profile and password,
+    dietary and allergen profile marked across menu, dish and order pages ("only what suits me" filter), addresses,
+    favourites, orders with reorder, reservations, tickets, gift cards, loyalty with history, communication
+    preferences, data export (JSON), deletion with clear blockers, welcome bonus and email.
+  - Dine-in QR `/t/CODE`: opens in the phone's language, menus serving now, separate table basket, order to the
+    table (pay at table or card), call a waiter, ask for the bill, live status of requests and orders over SSE,
+    kitchen and waiters notified.
+  - AI concierge (`/concierge`, off unless the flag is on and `ANTHROPIC_API_KEY` is set): streamed answers about the
+    menu that respect allergies, real availability, and bookings through tool calls after explicit confirmation.
 
 ## Next
 
-1. Accounts: sign up / sign in (password or email OTP), password reset, profile, dietary & allergen profile that
-   highlights safe dishes, addresses, favourites, orders + reorder, reservations, gift cards, loyalty, preferences,
-   data export, deletion.
-2. Dine-in QR `/t/[code]`: table menu, order to table, call waiter, request bill, pushed live to staff.
-3. AI concierge behind its flag (off unless an API key is set): menu questions, allergies, availability and booking
-   through tool calls.
-4. Phase 6 admin: dashboard, orders board + KDS, reservations timeline/waitlist, table requests, menu, CRM, events and
+1. Phase 6 admin: dashboard, orders board + KDS, reservations timeline/waitlist, table requests, menu, CRM, events and
    check-in, gift cards (void/adjust), promotions, loyalty, reviews, newsletter export, content, locations + QR tents,
    seasonal modes, flags, settings, reports, audit log, notifications, dev outbox, manual cron.
-5. Live style guide at `/brand` (noindex).
-6. Phase 7: sitemap, robots, llms.txt, OG images (pre-rendered with Chromium for Arabic shaping), PWA, Lighthouse,
+2. Live style guide at `/brand` (noindex).
+3. Phase 7: sitemap, robots, llms.txt, OG images (pre-rendered with Chromium for Arabic shaping), PWA, Lighthouse,
    axe, Turnstile widget when keys are set, analytics.
-7. Phase 8 QA (e2e in both locales, screenshots 375/768/1280/1920 × ar/en, three engines) and Phase 9 docs + `v1.0.0`.
+4. Phase 8 QA (e2e in both locales, screenshots 375/768/1280/1920 × ar/en, three engines) and Phase 9 docs + `v1.0.0`.
 
 ## Known issues
 

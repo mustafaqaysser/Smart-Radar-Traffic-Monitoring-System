@@ -6,7 +6,7 @@ import { Link } from '@/i18n/navigation';
 import { formatDate } from '@/lib/i18n/format';
 import { tr } from '@/lib/i18n/localized';
 import { getBranches, getSeasonalModes, hoursFor } from '@/lib/queries/branches';
-import { getSettings } from '@/lib/server/settings';
+import { effectiveFeatures, getSettings } from '@/lib/server/settings';
 import { describeOpenStatus } from '@/lib/site/open-status';
 import { isDemoMode } from '@/lib/site/url';
 import { telUrl } from '@/lib/services/maps';
@@ -17,7 +17,7 @@ export async function SiteFooter() {
   const locale = await getLocale();
   const t = await getTranslations('common');
   const tb = await getTranslations('common.branch');
-  const [branches, modes, settings] = await Promise.all([getBranches(), getSeasonalModes(), getSettings()]);
+  const [branches, modes, settings, features] = await Promise.all([getBranches(), getSeasonalModes(), getSettings(), effectiveFeatures()]);
   const now = new Date();
   const year = formatDate(now, locale, restaurantConfig.defaultTimeZone, { year: 'numeric' });
 
@@ -72,7 +72,7 @@ export async function SiteFooter() {
             <div key={group.key}>
               <h2 className="t-label mb-4 text-muted">{t(`nav.groups.${group.key}`)}</h2>
               <ul className="space-y-2">
-                {visible(group.items, settings.features).map((item) => (
+                {visible(group.items, features).map((item) => (
                   <li key={item.href}>
                     <Link href={item.href} className="t-small underline decoration-transparent underline-offset-4 hover-capable:hover:decoration-current">
                       {t(`nav.${item.key}`)}

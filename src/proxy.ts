@@ -1,6 +1,7 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
 import { routing } from './i18n/routing';
+import { preferredLocale } from './lib/i18n/negotiate';
 
 const handleI18nRouting = createMiddleware(routing);
 
@@ -54,6 +55,14 @@ function buildCsp(nonce: string): string {
 }
 
 export default function proxy(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+  // A table's QR code (/t/CODE) opens in the language of the guest's phone; the rest of the site defaults to Arabic.
+  if (/^\/t\/[^/]+\/?$/.test(pathname)) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${preferredLocale(request.headers.get('accept-language'), routing.locales, routing.defaultLocale)}${pathname.replace(/\/$/, '')}`;
+    return NextResponse.redirect(url);
+  }
+
   const nonce = btoa(crypto.randomUUID());
   const csp = buildCsp(nonce);
 
@@ -61,7 +70,6 @@ export default function proxy(request: NextRequest) {
   requestHeaders.set('x-nonce', nonce);
   requestHeaders.set('content-security-policy', csp);
 
-  const { pathname } = request.nextUrl;
   const response = pathname === '/admin' || pathname.startsWith('/admin/')
     ? NextResponse.next({ request: { headers: requestHeaders } })
     : handleI18nRouting(new NextRequest(request, { headers: requestHeaders }));

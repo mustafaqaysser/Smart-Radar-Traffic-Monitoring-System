@@ -387,38 +387,42 @@ async function announceOrder(order: Order): Promise<void> {
   const t = await getTranslations({ locale: order.locale, namespace: 'order' });
   const items = await orderItems(order.id);
   const address = order.address ? joinParts([order.address.area, order.address.street, order.address.building, order.address.floor], order.locale) : null;
-  await mail(
-    order.email,
-    {
-      name: 'order-receipt',
-      props: {
-        locale: order.locale,
-        name: order.name,
-        number: order.number,
-        branchName: tr(branch.name, order.locale),
-        channelLabel: t(`channels.${order.channel}`),
-        whenLabel: order.asap ? t('receipt.asap', { time: promisedLabel(order, branch, order.locale) }) : t('receipt.scheduled', { time: promisedLabel(order, branch, order.locale) }),
-        addressLabel: address,
-        lines: items.map((i) => ({
-          name: tr(i.name, order.locale),
-          quantity: formatNumber(i.quantity, order.locale),
-          details: [...i.modifiers.map((m) => tr(m.name, order.locale)), i.notes ? `“${i.notes}”` : null].filter(Boolean).join(' · '),
-          total: formatMoney(i.lineTotal, order.locale),
-        })),
-        totals: await totalsRows(order, order.locale),
-        paymentLabel: t(`payment.${order.paymentMethod}`),
-        trackUrl: trackingUrl(order),
+  // Orders from a table QR may come without an email: the kitchen still hears about them.
+  if (order.email) {
+    await mail(
+      order.email,
+      {
+        name: 'order-receipt',
+        props: {
+          locale: order.locale,
+          name: order.name,
+          number: order.number,
+          branchName: tr(branch.name, order.locale),
+          channelLabel: t(`channels.${order.channel}`),
+          whenLabel: order.asap ? t('receipt.asap', { time: promisedLabel(order, branch, order.locale) }) : t('receipt.scheduled', { time: promisedLabel(order, branch, order.locale) }),
+          addressLabel: address,
+          lines: items.map((i) => ({
+            name: tr(i.name, order.locale),
+            quantity: formatNumber(i.quantity, order.locale),
+            details: [...i.modifiers.map((m) => tr(m.name, order.locale)), i.notes ? `“${i.notes}”` : null].filter(Boolean).join(' · '),
+            total: formatMoney(i.lineTotal, order.locale),
+          })),
+          totals: await totalsRows(order, order.locale),
+          paymentLabel: t(`payment.${order.paymentMethod}`),
+          trackUrl: trackingUrl(order),
+        },
       },
-    },
-    { meta: { order: order.number } },
-  );
+      { meta: { order: order.number } },
+    );
+  }
   const count = items.reduce((n, i) => n + i.quantity, 0);
   const [tar, ten] = await Promise.all([getTranslations({ locale: 'ar', namespace: 'order' }), getTranslations({ locale: 'en', namespace: 'order' })]);
+  const table = order.tableId ? await db.query.diningTables.findFirst({ where: eq(s.diningTables.id, order.tableId), columns: { label: true } }) : null;
   await notifyStaff({
     role: 'kitchen',
     branchId: order.branchId,
     kind: 'order',
-    title: { ar: `طلبٌ جديد ${order.number}`, en: `New order ${order.number}` },
+    title: table ? { ar: `طلبٌ جديد ${order.number} · طاولة ${table.label}`, en: `New order ${order.number} · table ${table.label}` } : { ar: `طلبٌ جديد ${order.number}`, en: `New order ${order.number}` },
     body: {
       ar: `${tar(`channels.${order.channel}`)} · ${tar('itemsCount', { count, n: formatNumber(count, 'ar') })} · ${formatMoney(order.total, 'ar')}`,
       en: `${ten(`channels.${order.channel}`)} · ${ten('itemsCount', { count, n: formatNumber(count, 'en') })} · ${formatMoney(order.total, 'en')}`,
@@ -428,6 +432,7 @@ async function announceOrder(order: Order): Promise<void> {
 }
 
 async function sendStatusEmail(order: Order, status: s.OrderStatus): Promise<void> {
+  if (!order.email) return;
   const t = await getTranslations({ locale: order.locale, namespace: 'order.statusEmail' });
   const key = status === 'ready' && order.channel === 'dine_in' ? 'served' : status;
   if (!t.has(`${key}.headline`)) return;

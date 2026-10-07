@@ -1,1 +1,244 @@
-{}
+{
+  "story": {
+    "meta": {
+      "title": "Our story",
+      "description": "Why a restaurant follows the shade: the courtyard houses of Jeddah and Najd, cooking by the hour, and where our ingredients come from."
+    },
+    "eyebrow": "Our story",
+    "title": "Shade before coffee",
+    "intro": "In a hot country, the first thing a host offers is shade. Zill began with that courtesy, and built a kitchen around the way shade moves through a day.",
+    "chapters": {
+      "courtesy": {
+        "title": "The first courtesy",
+        "body": "Before coffee, before dates, a host in this land would move you out of the sun. The old houses of Jeddah and Najd were built around a courtyard for that reason: there was always a wall in shade, and the day moved from one wall to the next. Bread was baked by the east wall in the morning, lunch was eaten under the vine, the afternoon was spent in the deepest room, and at night the whole courtyard opened to the sky."
+      },
+      "houses": {
+        "title": "Two houses, two suns",
+        "body": "Lamees Qutub opened the first Zill in a coral-stone house in Al-Balad, Jeddah’s old port town, with a menu written by hand for each part of the day. The second house followed on the edge of the palm groves of Wadi Hanifah in Riyadh: a mud-brick courtyard built from the valley it stands in. Both keep Riyadh time, but not the same sun. Jeddah’s sunset comes some twenty minutes later, and Jeddah, south of the Tropic of Cancer, loses its noon shadow altogether twice a year."
+      },
+      "hours": {
+        "title": "Cooking by the hour",
+        "body": "Our menus follow the light, not the clock on the wall. Morning shade is bread from the tannour, foul and eggs. The short shade is a long lunch to share. The long shade is coffee and something sweet. The night courtyard is the ember grill and the sea. On four evenings a week, the Sundial tells the whole day in seven courses."
+      },
+      "sources": {
+        "title": "Where it comes from",
+        "body": "Dates from Unaizah, honey from Al-Baha, ghee from Al-Kharj, wheat from Hail, coffee from the terraces of Jazan, and fish from the Jeddah market before seven. When something leaves its season, it leaves the menu. When it comes back, so does the dish."
+      },
+      "keep": {
+        "title": "What we keep to",
+        "body": "The beverage programme is alcohol-free. We cook what the hour asks for and little more, so very little is wasted, and what remains becomes the staff lunch. Every menu is written in Arabic first."
+      }
+    },
+    "timelineTitle": "The years so far",
+    "timeline": {
+      "alBalad": "The Al-Balad house opens in a coral-stone house off Shade Lane.",
+      "sundial": "The Sundial begins: seven courses, one for each hour of the day.",
+      "bread": "Abu Saleh starts teaching dawn bread at the tannour.",
+      "wadiHanifah": "The Wadi Hanifah house opens in a mud-brick courtyard by the palm groves.",
+      "harvest": "The first date-harvest menu, cooked with the new dates from Unaizah."
+    },
+    "cta": {
+      "title": "Come at the hour you like best",
+      "reserve": "Book your shade",
+      "team": "Meet the people of the houses"
+    }
+  },
+  "team": {
+    "meta": {
+      "title": "Chef & team",
+      "description": "The cooks, bakers and hosts of Zill — photographed, as the kitchen prefers, by their hands."
+    },
+    "eyebrow": "The people",
+    "title": "The people of the houses",
+    "intro": "We photograph our cooks by their hands and their backs. The plates are their faces.",
+    "house": "{house}",
+    "both": "Both houses",
+    "join": {
+      "title": "Work with us",
+      "body": "We look for people who notice the light. See the positions open in both houses.",
+      "cta": "Open positions"
+    }
+  },
+  "press": {
+    "meta": {
+      "title": "Press",
+      "description": "What has been written about Zill, and how to reach us for interviews, photographs and visits."
+    },
+    "eyebrow": "Press",
+    "title": "What has been written",
+    "intro": "A few lines from people who sat in the courtyard for longer than they planned.",
+    "awards": "Awards",
+    "articles": "Articles",
+    "contactTitle": "For journalists",
+    "contactBody": "For interviews, photographs or a visit to the kitchen, write to our press desk. We answer within two working days.",
+    "brand": "Logos and brand guide"
+  },
+  "faq": {
+    "meta": {
+      "title": "Questions",
+      "description": "Opening hours, bookings, children, allergies, ordering, gift cards and access — answered by the host."
+    },
+    "eyebrow": "Questions",
+    "title": "Questions guests ask",
+    "intro": "If the answer is not here, ask the house directly — by phone, WhatsApp or the contact form.",
+    "categories": {
+      "visiting": "Visiting",
+      "reservations": "Bookings",
+      "menu": "The menu",
+      "ordering": "Ordering",
+      "events": "Gatherings",
+      "gift-cards": "Gift cards",
+      "loyalty": "Membership",
+      "accessibility": "Access"
+    },
+    "search": "Search the questions",
+    "noResults": "No question matches. Try another word, or write to us.",
+    "still": "Still wondering?",
+    "contact": "Ask the house"
+  },
+  "links": {
+    "meta": {
+      "title": "Links",
+      "description": "Book, order, see today’s menu and find the houses."
+    },
+    "title": "Every hour has its shade.",
+    "reserve": "Book your shade",
+    "order": "Order for pickup or delivery",
+    "menu": "Today’s menu",
+    "events": "Gatherings and tickets",
+    "giftCards": "Give a gift card",
+    "directions": "Directions to {house}",
+    "whatsapp": "WhatsApp {house}",
+    "newsletter": "The seasonal letter",
+    "site": "The full site"
+  },
+  "credits": {
+    "meta": {
+      "title": "Credits",
+      "description": "Photographers, fonts and licences behind this site."
+    },
+    "eyebrow": "Credits",
+    "title": "Photography and type",
+    "intro": "Every photograph on this site is graded to the same light, so pictures by many photographers read as one. These are the people who made them, and the typefaces we set our words in.",
+    "photos": "Photographs",
+    "photo": "Photograph",
+    "author": "Photographer",
+    "source": "Source",
+    "license": "Licence",
+    "fonts": "Typefaces",
+    "fontsBody": "Reem Kufi, Imbue, Markazi Text, IBM Plex Mono and IBM Plex Sans (Arabic and Latin), all under the SIL Open Font License.",
+    "original": "Logos, the ظ monogram, icons and patterns are original work made for this project."
+  },
+  "gallery": {
+    "meta": {
+      "title": "Gallery",
+      "description": "A day at Zill in photographs, from the first bread to the last lamp."
+    },
+    "eyebrow": "Gallery",
+    "title": "A day, in pictures",
+    "intro": "The photographs sit on a dial, each at the hour it belongs to. Turn it to move through the day.",
+    "hint": "Drag the dial, or use the arrow keys",
+    "previous": "Earlier",
+    "next": "Later",
+    "position": "{current} of {total}",
+    "grid": "See all photographs",
+    "dial": "Back to the dial"
+  },
+  "journal": {
+    "meta": {
+      "title": "Journal",
+      "description": "Notes from the kitchen and the courtyard: producers, seasons, the people of the houses, and recipes to cook at home."
+    },
+    "eyebrow": "Journal",
+    "title": "Notes from the courtyard",
+    "intro": "Producers, seasons and the people of the houses — and now and then a recipe to cook at home.",
+    "all": "All",
+    "articles": "Articles",
+    "recipes": "Recipes",
+    "readingTime": "{count, plural, one {{n} minute read} other {{n} minute read}}",
+    "by": "By {author}",
+    "recipe": "Recipe",
+    "serves": "{count, plural, one {Serves {n}} other {Serves {n}}}",
+    "time": "{count, plural, one {{n} minute} other {{n} minutes}}",
+    "ingredients": "Ingredients",
+    "method": "Method",
+    "more": "More from the journal",
+    "back": "Back to the journal",
+    "share": "Share this",
+    "copied": "Link copied"
+  },
+  "reviews": {
+    "meta": {
+      "title": "Guests’ words",
+      "description": "What guests say about Zill, with replies from the houses — and a place to leave your own."
+    },
+    "eyebrow": "Guests’ words",
+    "title": "What people say after the shade has moved",
+    "intro": "Every review is read by the house it is about. We publish them after a quick look for spam, and we answer the ones that ask for an answer.",
+    "summary": "{average} of 5 · {count, plural, one {{n} review} other {{n} reviews}}",
+    "filterAll": "Both houses",
+    "visited": "Visited {date}",
+    "reply": "The house replies",
+    "original": "Written in {language}",
+    "languages": {
+      "ar": "Arabic",
+      "en": "English"
+    },
+    "write": {
+      "title": "Leave a review",
+      "intro": "Tell the house how it was. Reviews appear after we have checked them, usually within a day.",
+      "rating": "Your rating",
+      "ratingValue": "{n} of 5",
+      "titleField": "A title",
+      "body": "Your review",
+      "bodyHint": "At least 30 characters. Please do not include anyone’s personal details.",
+      "visit": "When did you visit?",
+      "submit": "Send review",
+      "done": "Thank you. Your review is with the house and will appear once it has been checked."
+    },
+    "none": "No reviews for this house yet."
+  },
+  "membership": {
+    "meta": {
+      "title": "Membership",
+      "description": "Earn points with every visit and order, move from morning to night, and spend them at both houses."
+    },
+    "eyebrow": "Membership",
+    "title": "The longer you stay, the longer the shade",
+    "intro": "Membership is free. You earn points at both houses — at the table, for pickup and for delivery — and spend them on any order.",
+    "how": {
+      "title": "How it works",
+      "earn": "{count, plural, one {Earn {n} point for every riyal you spend, more as you move up.} other {Earn {n} points for every riyal you spend, more as you move up.}}",
+      "redeem": "{count, plural, one {Spend {n} point for one riyal off, on up to half of any order.} other {Spend {n} points for one riyal off, on up to half of any order.}}",
+      "bonus": "{count, plural, one {Start with {n} point when you open an account.} other {Start with {n} points when you open an account.}}",
+      "both": "Points work at both houses, for every way you eat with us."
+    },
+    "tiers": {
+      "title": "Three times of day",
+      "threshold": "{count, plural, one {From {n} point earned} other {From {n} points earned}}",
+      "start": "From your first visit",
+      "multiplier": "×{n} points",
+      "morning": {
+        "body": "Every member starts here, earning on every riyal at both houses."
+      },
+      "long-shade": {
+        "body": "A quarter more points on everything, and the rewards kept for regulars."
+      },
+      "night": {
+        "body": "Half again as many points on everything, and the rewards kept for the night."
+      }
+    },
+    "rewards": {
+      "title": "Spend your points",
+      "cost": "{count, plural, one {{n} point} other {{n} points}}",
+      "value": "Worth {price}",
+      "tier": "From {tier}"
+    },
+    "join": {
+      "title": "Open an account",
+      "body": "It takes a minute: your name, your email, and a code we send you.",
+      "cta": "Open an account",
+      "signedIn": "See your points"
+    }
+  }
+}

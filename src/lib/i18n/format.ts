@@ -128,3 +128,8 @@ export function formatDurationMinutes(minutes: number, locale: string): string {
   if (m || !h) parts.push(nf(locale, { style: 'unit', unit: 'minute', unitDisplay: 'long' }).format(m));
   return formatList(parts, locale, 'unit');
 }
+
+/** Wraps a quotation in the language's quotation marks: «…» in Arabic, “…” in English. */
+export function quoted(text: string, locale: string): string {
+  return locale === 'ar' ? `«${text}»` : `“${text}”`;
+}

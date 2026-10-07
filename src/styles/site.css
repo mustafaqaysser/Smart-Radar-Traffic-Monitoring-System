@@ -767,3 +767,89 @@
     text-decoration: none;
   }
 }
+
+/* ---------- Long-form text (journal, legal) ---------- */
+@layer components {
+  .prose-zill {
+    font-size: var(--text-body-lg);
+    line-height: 1.7;
+  }
+  :lang(ar) .prose-zill {
+    font-size: calc(var(--text-body-lg) * 1.06);
+    line-height: 1.95;
+  }
+  .prose-zill > * + * {
+    margin-block-start: 1.1em;
+  }
+  .prose-zill h2 {
+    font-size: var(--text-heading-lg);
+    line-height: 1.15;
+    margin-block-start: 1.8em;
+  }
+  .prose-zill h3 {
+    font-size: var(--text-heading-md);
+    margin-block-start: 1.6em;
+  }
+  :lang(ar) .prose-zill h2,
+  :lang(ar) .prose-zill h3 {
+    line-height: 1.5;
+  }
+  .prose-zill blockquote {
+    font-family: var(--f-display);
+    font-size: var(--text-heading-md);
+    line-height: 1.3;
+    padding-inline-start: 1.2em;
+    border-inline-start: 2px solid var(--c-accent);
+  }
+  :lang(ar) .prose-zill blockquote {
+    line-height: 1.6;
+  }
+  .prose-zill ul,
+  .prose-zill ol {
+    padding-inline-start: 1.4em;
+  }
+  .prose-zill ul {
+    list-style: square;
+  }
+  .prose-zill ol {
+    list-style: decimal;
+  }
+  :lang(ar) .prose-zill ol {
+    list-style: arabic-indic;
+  }
+  .prose-zill a {
+    color: var(--c-link);
+    text-decoration: underline;
+  }
+}
+
+/* ---------- The dial gallery ---------- */
+@layer components {
+  .dial {
+    container-type: inline-size;
+    cursor: grab;
+  }
+  .dial:active {
+    cursor: grabbing;
+  }
+  /*
+   * A dial is a clock face, so its geometry is physical and does not mirror (the order of the photographs
+   * does). Positioned with transforms only (container units), so turning the dial never triggers layout.
+   */
+  .dial-thumb {
+    left: 50%;
+    top: 50%;
+    translate: calc(var(--x) * 1cqi) calc(var(--y) * 1cqi);
+    transform: translate(-50%, -50%);
+    opacity: 0.72;
+    transition: opacity var(--dur-base) var(--ease-shade);
+  }
+  .dial-thumb.is-active {
+    opacity: 1;
+    outline: 2px solid var(--c-accent);
+    outline-offset: 3px;
+  }
+  .dial-center {
+    animation: fade-in var(--dur-calm) var(--ease-shade);
+  }
+}

@@ -8,7 +8,7 @@ import { Rail } from '@/components/site/ui/rail';
 import { SectionHeading } from '@/components/site/ui/section-heading';
 import { DishCard } from '@/components/site/menu/dish-card';
 import { Link } from '@/i18n/navigation';
-import { formatClock, formatDate, formatMoney, formatNumber, formatWallTime } from '@/lib/i18n/format';
+import { formatClock, formatDate, formatMoney, formatNumber, formatWallTime, quoted } from '@/lib/i18n/format';
 import { tr } from '@/lib/i18n/localized';
 import { plural } from '@/lib/i18n/plural';
 import type { EventDTO, PressDTO, ReviewDTO } from '@/lib/queries/content';
@@ -125,7 +125,7 @@ export async function ChefSection({ locale, quote, name, role, photo }: { locale
           {t('eyebrow')}
         </p>
         <blockquote className="t-heading-lg">
-          <SplitWords text={`«${quote}»`} />
+          <SplitWords text={quoted(quote, locale)} />
         </blockquote>
         {name ? (
           <figcaption className="t-small">
@@ -217,7 +217,7 @@ export async function VoicesSection({ locale, reviews, press, stats }: { locale:
           {press.slice(0, 2).map((p) => (
             <li key={p.id}>
               <figure className="flex flex-col gap-3">
-                <blockquote className="t-heading-md">«{tr(p.quote, locale)}»</blockquote>
+                <blockquote className="t-heading-md">{quoted(tr(p.quote, locale), locale)}</blockquote>
                 <figcaption className="t-label text-muted">
                   {tr(p.publication, locale)} · {formatNumber(p.year, locale, { useGrouping: false })}
                 </figcaption>

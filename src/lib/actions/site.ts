@@ -1,11 +1,12 @@
 'use server';
 
-import { eq } from 'drizzle-orm';
+import { and, eq } from 'drizzle-orm';
 import { cookies } from 'next/headers';
 import { z } from 'zod';
 import { routing } from '@/i18n/routing';
 import { db } from '@/lib/db/client';
-import { newsletterSubscribers } from '@/lib/db/schema';
+import { favorites, menuItems, newsletterSubscribers } from '@/lib/db/schema';
+import { getCurrentUser } from '@/lib/auth/session';
 import { getBranch } from '@/lib/queries/branches';
 import { mail } from '@/lib/server/mail';
 import { featureEnabled } from '@/lib/server/settings';
@@ -55,4 +56,21 @@ export async function subscribeNewsletter(form: FormData): Promise<ActionResult<
   }
   await mail(email, { name: 'newsletter-confirm', props: { locale, confirmUrl: absoluteUrl(`/${locale}/newsletter?confirm=${encodeURIComponent(token)}`) } });
   return ok({ email });
+}
+
+/** Adds or removes a dish from the signed-in guest's favourites. */
+export async function toggleFavourite(slug: string): Promise<ActionResult<{ favourite: boolean }>> {
+  const parsed = z.string().min(1).max(80).regex(/^[a-z0-9-]+$/).safeParse(slug);
+  if (!parsed.success) return fail('invalid');
+  const user = await getCurrentUser();
+  if (!user) return fail('unauthorized');
+  const item = await db.query.menuItems.findFirst({ where: eq(menuItems.slug, parsed.data) });
+  if (!item) return fail('notFound');
+  const existing = await db.query.favorites.findFirst({ where: and(eq(favorites.userId, user.id), eq(favorites.itemId, item.id)) });
+  if (existing) {
+    await db.delete(favorites).where(and(eq(favorites.userId, user.id), eq(favorites.itemId, item.id)));
+    return ok({ favourite: false });
+  }
+  await db.insert(favorites).values({ userId: user.id, itemId: item.id });
+  return ok({ favourite: true });
 }

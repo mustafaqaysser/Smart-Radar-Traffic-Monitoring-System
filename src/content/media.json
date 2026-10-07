@@ -1,4 +1,2404 @@
 {
+  "craft-bread-oven": {
+    "kind": "image",
+    "src": "/media/craft-bread-oven.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAsAA4BaJbACdAEVzU67iesAAP70n9vOjQ8hrCet5KRUInlX9LLla3WnPGrliwjNCzBU0ZTldc/lOZ0FYuP8LTcWNhAA",
+    "focal": [
+      0.55,
+      0.55
+    ],
+    "alt": {
+      "ar": "يدٌ بقفّازٍ تُدخل حلقاتِ الخبز بالسمسم إلى فرن حطبٍ مشتعل",
+      "en": "A gloved hand slides sesame bread rings into a blazing wood-fired oven"
+    },
+    "credit": {
+      "author": "Yasin Onus",
+      "authorUrl": "https://unsplash.com/@yasinonus",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/hiqrwWk-hpw",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "craft-bread-oven"
+  },
+  "craft-chef-back": {
+    "kind": "image",
+    "src": "/media/craft-chef-back.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoLABAAA4BaJbACdADcRXhUUhoAAP68m1pgiQyvgRoK/lrw9WcNu91dY2xB3YSRKLt6e34KpKu6dmkTuwiN12BShNhLUeaLIU2OauZBXzFOUdAH6AAAAA==",
+    "focal": [
+      0.4,
+      0.5
+    ],
+    "alt": {
+      "ar": "خبّازٌ من الخلف يقلّب لهيبَ فرن الحطب بملقطٍ طويل",
+      "en": "A baker seen from behind tends the flames of a wood-fired oven with long tongs"
+    },
+    "credit": {
+      "author": "DDP",
+      "authorUrl": "https://unsplash.com/@moino007",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/man-picking-with-long-rod-on-wood-fired-oven-IBCcvkBCrXw",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "craft-chef-back"
+  },
+  "craft-coffee-pour": {
+    "kind": "image",
+    "src": "/media/craft-coffee-pour.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoLABAAA4BaJbACdAEf3TEatIvwQAD+44lHkEYDEwLGhtTiGBEOUrV6bOQkM8W8KtgOjW0zhbI8yKR9UjP9Isg0CuxWkBCXaOf8NYaL7ONaGrrUPAAAAA==",
+    "focal": [
+      0.55,
+      0.55
+    ],
+    "alt": {
+      "ar": "يدٌ تصبّ القهوة من إبريقٍ فخاري في فنجانٍ أبيض صغير على صينيةٍ خشبية",
+      "en": "A hand pours coffee from a clay pot into a small white cup on a wooden tray"
+    },
+    "credit": {
+      "author": "Amanuel Kebede",
+      "authorUrl": "https://unsplash.com/@amanuelet",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/pouring-coffee-from-a-traditional-jug-into-a-cup-v-NdnkoKEQs",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "craft-coffee-pour"
+  },
+  "craft-dates-palm": {
+    "kind": "image",
+    "src": "/media/craft-dates-palm.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoLABAAA4BaJbACdAD5apUuAAD+wj5KDxKbIZXhzX2209BpLii42yRN9gKwg/k5GpIyolnz77aXthnZbTcLcLtfXrS3Nm7ik9XEAAAA",
+    "focal": [
+      0.45,
+      0.45
+    ],
+    "alt": {
+      "ar": "عذوقُ بلحٍ أصفر وكهرماني تتدلّى بين سعف النخيل",
+      "en": "Strands of yellow and amber dates hanging among palm fronds"
+    },
+    "credit": {
+      "author": "Raúl Mermans García",
+      "authorUrl": "https://unsplash.com/@raulmermans",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/clusters-of-ripe-dates-hanging-from-a-palm-tree-Fsmz7vhy-Bs",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "craft-dates-palm"
+  },
+  "craft-embers": {
+    "kind": "image",
+    "src": "/media/craft-embers.webp",
+    "width": 2400,
+    "height": 1108,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAcAA4BaJbACdAEQ/XZdLG/AAP724IVVGhwertY9+1COlQzmlddnqLpDRHQa9DNKube7G/f21442Kd7gf1uAAAA=",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "alt": {
+      "ar": "جمرُ فحمٍ متوهّجٌ في العتمة",
+      "en": "Glowing charcoal embers in the dark"
+    },
+    "credit": {
+      "author": "Gaby Fishman Fosbery",
+      "authorUrl": "https://unsplash.com/@gabyfishmanfosbery",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/glowing-embers-and-hot-coals-in-a-dark-fireplace-uH-Z4erB9fc",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "craft-embers"
+  },
+  "craft-fish-ice": {
+    "kind": "image",
+    "src": "/media/craft-fish-ice.webp",
+    "width": 2400,
+    "height": 1800,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAgCdASoQAAwAA4BaJagCdAYstwTmWli7jrMAAPoD38GByb5M0G6UNRMQxnjeO9lSBRn1zDmK4HaBvhpI6EP73anTEKMbRPa0AEqGZi5ZLLyOtvrO56GHAAA=",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "alt": {
+      "ar": "أسماكُ إسقمريٍّ طازجة كاملة على جريش الثلج",
+      "en": "Whole fresh mackerel laid on crushed ice"
+    },
+    "credit": {
+      "author": "Sam Farallon",
+      "authorUrl": "https://unsplash.com/@farallon",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-pile-of-fresh-mackerel-fish-on-ice-Ed4amMblsAg",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "craft-fish-ice"
+  },
+  "craft-kneading": {
+    "kind": "image",
+    "src": "/media/craft-kneading.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoLABAAA4BaJbACdADZqLPJwAAA/qZzNwMzk3co2XpjchGrUlPxM5RhmIOULttg7nstNYIxZPawZdM6Va9Us7/Z47zsRBngn1IxcnY+cRKrcdSFN/J9VRRAAAA=",
+    "focal": [
+      0.62,
+      0.55
+    ],
+    "alt": {
+      "ar": "يدان مغبّرتان بالطحين تضغطان قرصَ عجينٍ فوق طبقةٍ من الدقيق",
+      "en": "Floured hands press a round of dough into a bed of flour"
+    },
+    "credit": {
+      "author": "Aldward Castillo",
+      "authorUrl": "https://unsplash.com/@aldwardcv31",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-person-kneading-dough-on-top-of-a-table-bPqMD7uSrJg",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "craft-kneading"
+  },
+  "craft-plating": {
+    "kind": "image",
+    "src": "/media/craft-plating.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwAgCdASoLABAAA4BaJQBOgMWgs5BwrKwCQAD9xs8bx+eBufDjSbH+0te9x0d01pQx8ppWko8Ue5eaGZgEvgMQqbk21j/jJXRAwIgPA+W975WEh2QHsIB6XI2ZkNZlK50o+AAA",
+    "focal": [
+      0.42,
+      0.55
+    ],
+    "alt": {
+      "ar": "يدُ طاهٍ تسكب صلصةً داكنة بالملعقة على طبقٍ في وعاءٍ حجري",
+      "en": "A chef's hand spoons dark sauce onto a plated dish in a stoneware bowl"
+    },
+    "credit": {
+      "author": "Ambitious Studio* | Rick Barrett",
+      "authorUrl": "https://unsplash.com/@weareambitious",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-person-is-spooning-something-into-a-plate-MSYKvKnUEYo",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "craft-plating"
+  },
+  "craft-pour-over": {
+    "kind": "image",
+    "src": "/media/craft-pour-over.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoLABAAA4BaJYwCdAELW4XMMQhYAP7o7af+zWprTbOfNywQky/w4NZEu74LIWbqOKT4/mNQP3Cf9m7KwWW848Ox+smfjLRYAAA=",
+    "focal": [
+      0.62,
+      0.4
+    ],
+    "alt": {
+      "ar": "يدٌ تصبّ القهوة المقطّرة من إبريقٍ زجاجي في كوبٍ أسود",
+      "en": "A hand pours brewed coffee from a glass pour-over carafe into a black mug"
+    },
+    "credit": {
+      "author": "Jakob Owens",
+      "authorUrl": "https://unsplash.com/@jakobowens1",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/person-pouring-tea-on-black-ceramic-mug-sXmrTBMkj7M",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "craft-pour-over"
+  },
+  "craft-server-hands": {
+    "kind": "image",
+    "src": "/media/craft-server-hands.webp",
+    "width": 1791,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoMABAAA4BaJQBOiP/wPRJDFnfQAAD+9ozgosp5sSRrnNI7M7074/BDBXLbA9JyX5Xzeyr7x89J4jESPz4Rl67wYSOupKjBd3WdjjI6qSpHAAAA",
+    "focal": [
+      0.55,
+      0.72
+    ],
+    "alt": {
+      "ar": "يدا نادلٍ تحملان طبقًا أبيض من شرائح الطماطم والجبن",
+      "en": "A server's hands carry a white plate of sliced tomatoes and cheese"
+    },
+    "credit": {
+      "author": "gustavo nacht",
+      "authorUrl": "https://unsplash.com/@gnacht",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-person-holding-a-plate-with-food-on-it-LBZFTO816CY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "craft-server-hands"
+  },
+  "craft-spices": {
+    "kind": "image",
+    "src": "/media/craft-spices.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoLABAAA4BaJZACdAELZGN/8Vn4AP71+IAjgljhJL5T6nBhFZO3TnI+5jw3eMw9Hw+fSyXL2TfhzTt9ZyM9Um56sKLriaCilGK1EHSdzlguQAAA",
+    "focal": [
+      0.5,
+      0.62
+    ],
+    "alt": {
+      "ar": "أطباقٌ معدنية من التوابل الكاملة والمطحونة مصفوفةٌ أمام بابٍ خشبيٍّ عتيق",
+      "en": "Metal bowls of whole and ground spices laid out before an old wooden door"
+    },
+    "credit": {
+      "author": "Agnieszka Stankiewicz",
+      "authorUrl": "https://unsplash.com/@dubai_love_story",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/bowl-of-food-lot-obMdrL5pFWI",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "craft-spices"
+  },
+  "dish-akkawi-manakish": {
+    "kind": "image",
+    "src": "/media/dish-akkawi-manakish.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAsAA4BaJZACdAEDH3MZCpNsAAD+6d3MQbWGAwiKLKdQqBbtchEWM5iyxfeWmo13xDgPxagvomt3Xf0nXTDtAQAAAA==",
+    "focal": [
+      0.45,
+      0.5
+    ],
+    "alt": {
+      "ar": "خبزٌ مستدير بالجبن الأبيض مقطّعٌ أثلاثًا على لوحٍ خشبي",
+      "en": "Round cheese flatbread cut into wedges on a wooden board"
+    },
+    "credit": {
+      "author": "Husien Bisky",
+      "authorUrl": "https://unsplash.com/@husien_bisky1",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/round-flatbread-topped-with-herbs-and-cheese-xlTVRqsLrQ4",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "akkawi-manakish"
+  },
+  "dish-areeka": {
+    "kind": "image",
+    "src": "/media/dish-areeka.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoLABAAA4BaJYgCdADbzBghzAAA/ob5pC98JUWaCkXTiuek/TVs77fLaYbdswq8nuVTOLEM4VIKrY93gdIaHMhA6v1ba5YZlbdYXrpQOBgAAA==",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "alt": {
+      "ar": "عسلٌ يُسكب على زبديةِ عصيدةٍ من الحبوب يعلوها لوزٌ مبشور",
+      "en": "Honey poured over a bowl of grain porridge topped with flaked almonds"
+    },
+    "credit": {
+      "author": "K8",
+      "authorUrl": "https://unsplash.com/@_k8_",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/white-and-blue-ceramic-bowl-with-white-and-brown-dish-eHeHidB64IA",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "areeka"
+  },
+  "dish-aubergine-fatteh": {
+    "kind": "image",
+    "src": "/media/dish-aubergine-fatteh.webp",
+    "width": 2400,
+    "height": 1601,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoQAAsAA4BaJbACdAELZWgPLOGOQAD2QS7DqRkJtt4i3phtNpcVpxMaROVnm84yA7+e9eOKFlEMZHEMShH4J4fl39sfa28RtT3xI/8V+nocADx+23frVvQcAAA=",
+    "focal": [
+      0.42,
+      0.55
+    ],
+    "alt": {
+      "ar": "فتّةُ باذنجانٍ تعلوها خطوطُ الطحينة والجوزُ المحمّص في طبقٍ أبيض",
+      "en": "Aubergine fatteh under swirls of tahini and toasted walnuts on a white plate"
+    },
+    "credit": {
+      "author": "Mehran Biabani",
+      "authorUrl": "https://unsplash.com/@mehranbiabani",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-white-plate-topped-with-food-on-top-of-a-wooden-table-kACLfu03Iz0",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "aubergine-fatteh"
+  },
+  "dish-balaleet": {
+    "kind": "image",
+    "src": "/media/dish-balaleet.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsAA4BaJbACdLoAAd+XKgsAAP4IdSr+RzOeF7+A2kNmXQayxUblViE+hXdprJK6r5rPrX1xuJlbLz8YrNU3sOviNKmVOy/XnqY4vxbEq5wAAAA=",
+    "focal": [
+      0.55,
+      0.42
+    ],
+    "alt": {
+      "ar": "أعشاشٌ من الشعيرية الرفيعة تتناثر عليها بتلاتُ الورد المجفّف وبراعمُه",
+      "en": "Nests of fine vermicelli scattered with dried rose petals and rosebuds"
+    },
+    "credit": {
+      "author": "Dad hotel",
+      "authorUrl": null,
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/2Z4xT9wu8jw",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "balaleet"
+  },
+  "dish-basbousa-cream": {
+    "kind": "image",
+    "src": "/media/dish-basbousa-cream.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoQAAsAA4BaJbACdAYq/Q23PYWtYAAA/tzTe4P2temJt96XfgMy/etZzkcvKPozTy2AIYerhJnjOWOmZVb02ug8O/I9h55QyY+rVm7YASRJaAAA",
+    "focal": [
+      0.55,
+      0.5
+    ],
+    "alt": {
+      "ar": "مربّعاتُ بسبوسةٍ تعلو كلَّ واحدةٍ منها لوزة، في طبقٍ أبيض",
+      "en": "Squares of basbousa, each crowned with an almond, on a white plate"
+    },
+    "credit": {
+      "author": "Mohammad Fahim",
+      "authorUrl": "https://unsplash.com/@dischef",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/rectangular-cake-with-nuts-on-top-on-a-white-plate-oyVe1GRV7K8",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "basbousa-cream"
+  },
+  "dish-cauliflower-tahini": {
+    "kind": "image",
+    "src": "/media/dish-cauliflower-tahini.webp",
+    "width": 1590,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoLABAAA4BaJbACdAD0YO7f62rT4AD+S5miiUjEB9l+OVOaVPiXZd8uCF00LmkFzUCw1aGN133KvfjGVc0H4juxYEyXMDwozT8zm21IIzLKIHa0Wzg8AAAA",
+    "focal": [
+      0.5,
+      0.6
+    ],
+    "alt": {
+      "ar": "زهرةُ قرنبيطٍ كاملة محمّصة فوق صلصةِ أعشابٍ خضراء",
+      "en": "A whole roasted cauliflower on a pool of green herb sauce"
+    },
+    "credit": {
+      "author": "Tosca Olivi",
+      "authorUrl": "https://unsplash.com/@cheftosca",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/white-and-yellow-flower-in-tilt-shift-lens-PnWDDGNJzg0",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "cauliflower-tahini"
+  },
+  "dish-date-laban-shake": {
+    "kind": "image",
+    "src": "/media/dish-date-laban-shake.webp",
+    "width": 2400,
+    "height": 1602,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAsAA4BaJaACdADhiikwpqtwAP7opNZcS+uNH1oe4rBoq6BFVUKVpbttuY1AJ6nfLwXXuGNV+nAHKhx71POCcYFxw5rbUApnCYAA",
+    "focal": [
+      0.35,
+      0.5
+    ],
+    "alt": {
+      "ar": "كأسٌ طويلة من مخفوقِ التمر واللبن بجانب صحنِ تمر",
+      "en": "A tall glass of date and laban shake beside a bowl of dates"
+    },
+    "credit": {
+      "author": "novila misastra",
+      "authorUrl": "https://unsplash.com/@sastravila",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-glass-of-milk-and-some-food-on-a-table-7QRGevs0uHI",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "date-laban-shake"
+  },
+  "dish-date-tahini-cake": {
+    "kind": "image",
+    "src": "/media/dish-date-tahini-cake.webp",
+    "width": 1602,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoLABAAA4BaJZQCdAELJ5E8wAD+6Zxgw8E817oq9jQwMLqyT6qmwQVGgHomY+/sUYj/xkepSc2dylhN3Yl/EQfEV2Ap+9JnWlIFUgC3ZixhYHg6LjiwAA==",
+    "focal": [
+      0.5,
+      0.65
+    ],
+    "alt": {
+      "ar": "شريحةُ كعكِ التمر مع حبّاتِ تمرٍ كاملة، وبقيّةُ الكعكة على حاملٍ خلفها",
+      "en": "A slice of date cake with whole dates, the rest of the cake on a stand behind"
+    },
+    "credit": {
+      "author": "mohammed alorabi",
+      "authorUrl": "https://unsplash.com/@i_alorabi",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/brown-bread-on-white-ceramic-plate-72NYilVvRTM",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "date-tahini-cake"
+  },
+  "dish-dates-laban": {
+    "kind": "image",
+    "src": "/media/dish-dates-laban.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAsAA4BaJQBOgBusvhpqTBgA9rfPXZqqbB5DEE0L2QSTetf9/ECzgNj+0+6e8co91AzUchX9JcOzUGINDvPVb+G1Up+wQk83forCMsktwwoAAAA=",
+    "focal": [
+      0.55,
+      0.45
+    ],
+    "alt": {
+      "ar": "تمراتٌ على لوحٍ خشبيٍّ مستدير بجانب كوبٍ خشبيٍّ صغير",
+      "en": "Dates on a round wooden board beside a small wooden cup"
+    },
+    "credit": {
+      "author": "Masjid Pogung Dalangan",
+      "authorUrl": "https://unsplash.com/@masjidmpd",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-plate-of-food-sitting-on-top-of-a-table-i8AA1XlyiB0",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "dates-laban"
+  },
+  "dish-eggs-east-wall": {
+    "kind": "image",
+    "src": "/media/dish-eggs-east-wall.webp",
+    "width": 2268,
+    "height": 2268,
+    "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAgCdASoQABAAA4BaJZgCdH8IIBtoAOR6c0QNf8IAAP7dU5MDCGTbcwbSxntarcKtJzj6s4YTj4mr61BcyB8qXk1yaexGhAMZHjcPWTqjLtIHT1pljuMiMYrDNYtcMazQhMezv5abtEMAAAA=",
+    "focal": [
+      0.5,
+      0.48
+    ],
+    "alt": {
+      "ar": "ثلاثُ بيضاتٍ مقليّة بصفارٍ برتقاليٍّ عميق في مقلاةٍ سوداء",
+      "en": "Three sunny-side-up eggs with deep orange yolks in a black pan"
+    },
+    "credit": {
+      "author": "Hasan Almasi",
+      "authorUrl": "https://unsplash.com/@hasanalmasi",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/sunny-side-up-egg-on-black-frying-pan-HgsqAYgDt9U",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "eggs-east-wall"
+  },
+  "dish-fattoush-sumac": {
+    "kind": "image",
+    "src": "/media/dish-fattoush-sumac.webp",
+    "width": 1603,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoLABAAA4BaJZQCw7Yt9x760aEAAP6mmT7zJnlHp/OdHY36xXmArUfyXwNklAnMmG/sITM6Ce6sBNKe9F99Fi62TrbFP6WC0HeKZBZd2AAAAA==",
+    "focal": [
+      0.52,
+      0.42
+    ],
+    "alt": {
+      "ar": "سلطةُ أوراقٍ خضراء بحبّات الرمّان والجوز في وعاءٍ أسود تحت شمسٍ حادّة",
+      "en": "Leafy salad with pomegranate seeds and walnuts in a black bowl, under hard sunlight"
+    },
+    "credit": {
+      "author": "kimia kazemi",
+      "authorUrl": "https://unsplash.com/@kimick",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-bowl-of-salad-gZI8z-6LxMo",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "fattoush-sumac"
+  },
+  "dish-fruit-cup": {
+    "kind": "image",
+    "src": "/media/dish-fruit-cup.webp",
+    "width": 1920,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoNABAAA4BaJYgAAmcpfbqmAAD+HWl6/KX9yNX5rjWnMl44EyE2XM9pgduajioca+YuToBgjhKvwIdR/Xw1wBx0ftcO7nqAAAA=",
+    "focal": [
+      0.55,
+      0.55
+    ],
+    "alt": {
+      "ar": "أكوابُ زبادي بطبقاتٍ من التوت الأحمر، وملعقةٌ يقطر منها العسل",
+      "en": "Cups of yoghurt layered with red berries as honey drips from a spoon"
+    },
+    "credit": {
+      "author": "Tehzeeb Kazmi",
+      "authorUrl": "https://unsplash.com/@tehzeebkazmi",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/2tFzYKfK9Qk",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "fruit-cup"
+  },
+  "dish-gahwa-service": {
+    "kind": "image",
+    "src": "/media/dish-gahwa-service.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAABQAgCdASoQAAsAA4BaJbACdAYuRnH8Aq7LsAAAyXC5kKR0ucRMSI9OxCiesIrnMH3Wv3czhYFGJ2N6/aBoOh6GsYffNOd0rvW9z9bqZ8TO0JCMs2CrM51i/8Qt14s44NCqcQY8HdnbQs/m1AAAAA==",
+    "focal": [
+      0.42,
+      0.5
+    ],
+    "alt": {
+      "ar": "دلّةٌ نحاسية وفناجينُ صغيرة بجانب سلّةِ خوصٍ ملأى بالتمر",
+      "en": "A brass dallah and small coffee cups beside a woven basket of dates"
+    },
+    "credit": {
+      "author": "L Photography",
+      "authorUrl": "https://unsplash.com/@lphotohraphy",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/dates-in-a-woven-basket-with-arabic-coffee-pot-URncnSvN6Kw",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "gahwa-service"
+  },
+  "dish-halloumi-dates": {
+    "kind": "image",
+    "src": "/media/dish-halloumi-dates.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABQAgCdASoLABAAA4BaJbACdAYvN2hJ4BDJLwAA/sB6MTxC8xMU3gMrG2BO1wo+gab0m2jo45mOxsjL7ueCfGO+y/lLst2S3dEThn4lBsibKO1WW/Gc1jp/cRrhciFVN8DZnRU0jaAAAA==",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "alt": {
+      "ar": "شرائحُ حلّوم مشويّة نُثرت عليها حبّاتُ الرمّان في طبقٍ فخّاري",
+      "en": "Grilled halloumi scattered with pomegranate seeds in a terracotta dish"
+    },
+    "credit": {
+      "author": "Nesnin Shamsheer",
+      "authorUrl": "https://unsplash.com/@nesniin",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-small-bowl-of-food-on-a-table-QAWLLhI2Fyk",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "halloumi-dates"
+  },
+  "dish-harees-lamb": {
+    "kind": "image",
+    "src": "/media/dish-harees-lamb.webp",
+    "width": 2400,
+    "height": 1800,
+    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAAwAA4BaJagCdAYvrlFuR6y95AD+6lYqEqli9dxIYbxGRl0vg0r62YxYU8f45KX5+VgHncZ7Rqzazn/+fOAan1YiM64ZI4Jmi5SbKAfeqo8YuCYvtFS5D5ikPbkwEKKb2AAA",
+    "focal": [
+      0.5,
+      0.45
+    ],
+    "alt": {
+      "ar": "صحنُ هريسٍ يتوسّطه سمنٌ ذائب",
+      "en": "A bowl of harees with melted ghee pooling at its centre"
+    },
+    "credit": {
+      "author": "Ketone16",
+      "authorUrl": null,
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Armenian_Harisa.JPG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "forItem": "harees-lamb"
+  },
+  "dish-hassawi-kabsa": {
+    "kind": "image",
+    "src": "/media/dish-hassawi-kabsa.webp",
+    "width": 2400,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAACwAgCdASoQABAAA4BaJbACdAdwLel5iCOyOmYBC4AA/roequEevQCQr5FBl6gMesfz2ufRmYXCoiODtNZ7RxeapIAmiJ/f39mKPGIALl2bGTVt+QT0rpedf3P+p3mUQfKsYWotQ5v/UV+JDek4REUY+yf119qoEuVwAA==",
+    "focal": [
+      0.48,
+      0.5
+    ],
+    "alt": {
+      "ar": "أرزٌّ متبّل تعلوه قطعةُ لحمٍ مشويّة في صينيةٍ فضية، وحولها أوعيةُ مرقٍ وصلصةِ دقّوس",
+      "en": "Spiced rice topped with roasted meat in a silver tray, with small bowls of broth and red tomato sauce"
+    },
+    "credit": {
+      "author": "aboodi vesakaran",
+      "authorUrl": "https://unsplash.com/@aboodi_vm",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-plate-of-food-with-rice-meat-and-sauces-5DH78QpCR9w",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "hassawi-kabsa"
+  },
+  "dish-hibiscus-cooler": {
+    "kind": "image",
+    "src": "/media/dish-hibiscus-cooler.webp",
+    "width": 1602,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwAgCdASoLABAAA4BaJbACdAD8LnxZArVxgAD+1RPkGtRIw08wo+ikTTqnghYCmHkiUF4lwFDCxykyP4Uhn7AeMe+zXQQXmqZzMTKWGupjLD92SCpkL8ZeXO0yJzkJAihvvN3qebEexyYpBp7AtxR+AAA=",
+    "focal": [
+      0.4,
+      0.45
+    ],
+    "alt": {
+      "ar": "كركديه مثلّج بشريحةِ ليمونٍ وزهرةِ كركديه على طاولةٍ خشبيةٍ عتيقة في الهواء الطلق",
+      "en": "Iced hibiscus with a lime wheel and a hibiscus flower on a weathered outdoor table"
+    },
+    "credit": {
+      "author": "Didi Paul",
+      "authorUrl": "https://unsplash.com/@didipaul",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-red-drink-sitting-on-top-of-a-wooden-table--7oFAavr1Fw",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "hibiscus-cooler"
+  },
+  "dish-hummus-ghee": {
+    "kind": "image",
+    "src": "/media/dish-hummus-ghee.webp",
+    "width": 2400,
+    "height": 1599,
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABwAgCdASoQAAsAA4BaJbACdH8AGEV9JcI9OrWAAP7au6lUJ+QrRQfiwMHJCBsEz6cgW9wU/S+CZu6TAtPu/HqC+3HiGu4p5PGxa4mUA/U0Qw71tSf3USkanTdWruGX5F8L/5xYAAA=",
+    "focal": [
+      0.4,
+      0.55
+    ],
+    "alt": {
+      "ar": "حمّصٌ تعلوه حبّاتُ الحمّص الكاملة والبابريكا والزيت في صحنٍ بحافّةٍ زرقاء",
+      "en": "Hummus topped with whole chickpeas, paprika and oil in a blue-rimmed bowl"
+    },
+    "credit": {
+      "author": "Dror Pikielny",
+      "authorUrl": "https://unsplash.com/@dror_pikielny",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/gmLrPk7BTDw",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "hummus-ghee"
+  },
+  "dish-jareesh": {
+    "kind": "image",
+    "src": "/media/dish-jareesh.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQAgCdASoLABAAA4BaJagCdH8AgtzIOzwe/D6uAAD+voLL6w+h9genhqH8txknfmZ4DYfC7W40m2lRfNNw0mYP/rNpu6QbMerNl3+muBGm5bDZm22ub3+f60xwvCvYmDS/MxJAChdcbWMTxQAAAA==",
+    "focal": [
+      0.5,
+      0.45
+    ],
+    "alt": {
+      "ar": "قدرٌ فخّاريٌّ من الجريش يعلوه بصلٌ مقليٌّ مقرمش، وبجانبه فلفلٌ أخضر",
+      "en": "A clay pot of jareesh crowned with crisp fried onion, green chillies alongside"
+    },
+    "credit": {
+      "author": "Izzah",
+      "authorUrl": "https://unsplash.com/@teaforturmeric",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/epEr6ewYufY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "jareesh"
+  },
+  "dish-karak-chai": {
+    "kind": "image",
+    "src": "/media/dish-karak-chai.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoLABAAA4BaJZACdAEPD/uTt/oAAP7mhL0BzC/uoNxwFgmN0GFqqZrHOdfTepLolX9ir04lpQAAAA==",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "alt": {
+      "ar": "كوبُ شايِ كرك بوجهٍ رغويّ، من الأعلى، على خشبٍ داكن",
+      "en": "A frothy cup of karak tea seen from above on dark wood"
+    },
+    "credit": {
+      "author": "Shubham Dangi",
+      "authorUrl": "https://unsplash.com/@shubham_dangi",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/brown-round-container-on-brown-wooden-table-ynnYEs3NyaY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "karak-chai"
+  },
+  "dish-karak-kaak": {
+    "kind": "image",
+    "src": "/media/dish-karak-kaak.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAAsAA4BaJbACdAD0ZZVOu0AA/vM1nkT+Lth5KPsyQQ/h9z1TNRmjCiFQQkvJR44EEzvd7hyYZoau7Ie4B/G7qUHS3rDpvppFa4vVYqKqL+vCsg99HH09AAA=",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "alt": {
+      "ar": "حلقاتُ كعكٍ بالسمسم خارجةٌ لتوّها من الفرن، مصفوفةٌ على لوحٍ خشبيٍّ داكن",
+      "en": "Freshly baked sesame bread rings stacked on a dark wooden board"
+    },
+    "credit": {
+      "author": "Yasin Onus",
+      "authorUrl": "https://unsplash.com/@yasinonus",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/hq9cnzbpoYQ",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "karak-kaak"
+  },
+  "dish-khawlani-pour-over": {
+    "kind": "image",
+    "src": "/media/dish-khawlani-pour-over.webp",
+    "width": 1920,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoNABAAA4BaJYgCdAEJW9jL/XVwAADN8koWV0Yod8FcfV9fjopW0zm/3ooqryVDIKb/h84GJ5fiaGkEa3ItZlOZ7vteS7gcY8gjjaRQvY+FQjpk1Kwt7UP5qRGHpmTd9hAAAA==",
+    "focal": [
+      0.45,
+      0.45
+    ],
+    "alt": {
+      "ar": "ماءٌ يُصبّ من إبريقٍ رفيعِ العنق في مقطّرةِ قهوةٍ زجاجية، وخلفها مصابيحُ دافئة",
+      "en": "Water poured from a gooseneck kettle into a glass coffee dripper, warm lamps glowing behind"
+    },
+    "credit": {
+      "author": "Yanal Tayyem",
+      "authorUrl": "https://unsplash.com/@yantayyem",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/person-pouring-water-on-jar-CgyObTe1IjQ",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "khawlani-pour-over"
+  },
+  "dish-kleija": {
+    "kind": "image",
+    "src": "/media/dish-kleija.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAAsAA4BaJbACdAC1DtKktNwA/tfwIC0kkKuY5HtYoSZVEpDfmUJwSAhIMqmfJTWOvc51KKauD9/tyvMF+88WdPwMlhJ54IPhll7qmzdQrdL32ax0cY6tAAA=",
+    "focal": [
+      0.53,
+      0.45
+    ],
+    "alt": {
+      "ar": "ثلاثُ قرصاتٍ ذهبية مستديرة مرصّعة بالتمر والمكسّرات في طبقٍ أبيض",
+      "en": "Three round golden cookies studded with dates and nuts on a white plate"
+    },
+    "credit": {
+      "author": "VD Photography",
+      "authorUrl": "https://unsplash.com/@vdphotography",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-white-plate-topped-with-three-cookies-on-top-of-a-table-etGe8_DBUvA",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "kleija"
+  },
+  "dish-kofta-pistachio": {
+    "kind": "image",
+    "src": "/media/dish-kofta-pistachio.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQAgCdASoLABAAA4BaJbACdAEDd8vo88owAP7xH3LkuYgzsZZK3R2acOPO0ULHE1iDgkyF/MTQo+1inTwy7Z6KQ8So38zTFG3o/VRuJoD2vbEjrGiO9OqLsrTTZJ56HVM0xHDvS6m5f5XAAAA=",
+    "focal": [
+      0.6,
+      0.62
+    ],
+    "alt": {
+      "ar": "ثلاثةُ أقراصِ كفتةٍ مشويّة مع الطماطم والفلفل والأعشاب فوق صلصةٍ فاتحة",
+      "en": "Three grilled kofta with tomato, chilli and herbs on a pale sauce"
+    },
+    "credit": {
+      "author": "Razieh Bakhtom",
+      "authorUrl": "https://unsplash.com/@raziii1375",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-white-plate-topped-with-meat-and-veggies-ERIjwQSYLFU",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "kofta-pistachio"
+  },
+  "dish-kofta-sliders": {
+    "kind": "image",
+    "src": "/media/dish-kofta-sliders.webp",
+    "width": 2400,
+    "height": 2021,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoQAA0AA4BaJYgC7AEPC3UZXGIGAAD+9Cw4j7Yd+B6a0WJ9vll7avwroRjSftjpA93XdYSvWO8BTXH7sczTR22BYeHFauwuf3x+qrC665GJh9vEOAA=",
+    "focal": [
+      0.45,
+      0.65
+    ],
+    "alt": {
+      "ar": "ثلاثُ شطائرَ صغيرة من الكفتة مثبّتةٌ بأعوادٍ خشبية على خلفيةٍ داكنة",
+      "en": "Three small kofta sliders pinned with wooden skewers against a dark background"
+    },
+    "credit": {
+      "author": "Kanteen catering",
+      "authorUrl": "https://unsplash.com/@kanteen",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-row-of-hamburgers-with-toothpicks-stuck-in-them-1AQY92PjFcM",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "kofta-sliders"
+  },
+  "dish-kunafa-nabulsi": {
+    "kind": "image",
+    "src": "/media/dish-kunafa-nabulsi.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAsAA4BaJZgCdADwHrRwuAD+Q3cNIuwl/vYnE8HvPKsVvUtm924d2eo5Tvpgv0Klbc6+ZTG8Mykl5Pit0myNWk1UINrZcJ6uw7BxqNj9+zLwMpSgAA==",
+    "focal": [
+      0.45,
+      0.55
+    ],
+    "alt": {
+      "ar": "كنافةٌ تعلوها القشطة والفستقُ المطحون في صحنٍ معدنيٍّ داكن، وشوكةٌ ترفع لقمة",
+      "en": "Kunafa topped with fresh cream and ground pistachio on a dark metal plate, a fork lifting a bite"
+    },
+    "credit": {
+      "author": "Jean Carlo Emer",
+      "authorUrl": "https://unsplash.com/@jeancarloemer",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/cooked-food-on-grey-stainless-steel-sauce-r9DznAVDmUs",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "kunafa-nabulsi"
+  },
+  "dish-labneh-zaatar": {
+    "kind": "image",
+    "src": "/media/dish-labneh-zaatar.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoLABAAA4BaJZACdAELKb4XHZAAAP7EsdQ0+2b/EtdPByFgeMv3Z4r0cUNhtANNIojivcHjWRR8q08AEUmqsZi7xcjrAcmmCa0lAAAA",
+    "focal": [
+      0.5,
+      0.42
+    ],
+    "alt": {
+      "ar": "صحنٌ من غموسٍ كريمي تتخلّله دوّاماتُ زيت الزيتون والأعشاب المجفّفة، وبجانبه شرائحُ خيار",
+      "en": "A creamy dip swirled with olive oil and dried herbs, cucumber wedges on the side"
+    },
+    "credit": {
+      "author": "Andrea Niebuhr",
+      "authorUrl": "https://unsplash.com/@andrea_niebuhr",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/creamy-hummus-with-olive-oil-and-cucumber-gQezj6tMnGY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "labneh-zaatar"
+  },
+  "dish-lamb-chops-samr": {
+    "kind": "image",
+    "src": "/media/dish-lamb-chops-samr.webp",
+    "width": 1602,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwAgCdASoLABAAA4BaJagCdAYt9uK1IjQ7kjauFtAA+VLoO8r3zPReh+Y28XRr1QUnfgNfxMI+2hajo30Pm8LL4mLFEPrypUszT9YP9v/LAootFNv6PyXn9C3SUzxJVas9tk+AMYuzrBP07HR0+5Qs+/gbMywwbdGAsgAA",
+    "focal": [
+      0.55,
+      0.5
+    ],
+    "alt": {
+      "ar": "ريشُ لحمٍ مشويّة على الجمر مكدّسةٌ في مقلاةٍ حديدية سوداء",
+      "en": "Ember-charred lamb chops piled in a black iron pan"
+    },
+    "credit": {
+      "author": "Diego Arenas de Rodrigo",
+      "authorUrl": "https://unsplash.com/@diegoarenasderodrigo",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-close-up-of-grilled-lamb-chops-on-a-platter-V65tvNj3GXI",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "lamb-chops-samr"
+  },
+  "dish-lamb-mandi": {
+    "kind": "image",
+    "src": "/media/dish-lamb-mandi.webp",
+    "width": 2400,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoQABAAA4BaJZgCdAYte2DQceEAAP67HaR98WUbbFzsVqWw9oFKhHQjxh52DmRFj5ezG2xaZd1U29k0yGlDItAPnu2fsEVvHFRAw4EVhtmcfwsdgyOtU4eeVKFpgdklWDYAAA==",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "alt": {
+      "ar": "مندي لحمٍ على الأرز في صينيةٍ فضية، تحيط بها أوعيةُ الصلصة والمرق واللقيمات والليمون",
+      "en": "Lamb mandi on rice in a silver tray, ringed by small bowls of sauce, broth, luqaimat and lime"
+    },
+    "credit": {
+      "author": "aboodi vesakaran",
+      "authorUrl": "https://unsplash.com/@aboodi_vm",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-bowl-of-food-on-a-table-next-to-bowls-of-food-rWbSaPzV_7k",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "lamb-mandi"
+  },
+  "dish-little-shish": {
+    "kind": "image",
+    "src": "/media/dish-little-shish.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoLABAAA4BaJbACdAELJSar8AAA/uoGhBcP0KHpoqbu55Xk9ZXeXBT//OMNXAH7oU7zR6nXPDqRUjqqh6AAknkxTz/r5YkWdG3A1pF33wkbLcH0JoaHAAAA",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "alt": {
+      "ar": "سيخُ دجاجٍ صغير مع أرزٍ بالخضار وبطاطسَ محمّصة وفلفلٍ مشويّ",
+      "en": "A small chicken skewer with vegetable rice, roasted potatoes and a grilled chilli"
+    },
+    "credit": {
+      "author": "Razieh Bakhtom",
+      "authorUrl": "https://unsplash.com/@raziii1375",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/4ByydxYLiZc",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "little-shish"
+  },
+  "dish-luqaimat": {
+    "kind": "image",
+    "src": "/media/dish-luqaimat.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAsAA4BaJbACdAECstamOAAA/s30+Vk2tmDIv7euCaDBlG8yfcnTXnZzn/aB36nxXBO7HskYNOOGDDFq+QUQexvX27DETgSVqzCAAAA=",
+    "focal": [
+      0.42,
+      0.62
+    ],
+    "alt": {
+      "ar": "لقيماتٌ ذهبية مكسوّة بالسمسم في زبديةٍ مزخرفة على طاولةٍ خشبية",
+      "en": "Golden sesame-coated dough balls in a patterned bowl on a wooden table"
+    },
+    "credit": {
+      "author": "Andreas Haubold",
+      "authorUrl": "https://unsplash.com/@andreas_haubold",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-bowl-filled-with-small-yellow-balls-on-top-of-a-wooden-table-jZUTocr63iE",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "luqaimat"
+  },
+  "dish-madhbi-chicken": {
+    "kind": "image",
+    "src": "/media/dish-madhbi-chicken.webp",
+    "width": 2400,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQAgCdASoQABAAA4BaJbACdAYvX2aT6w4bAAAA/n4pS3dVvHcXk7ONjc38DJLCf1eL6PgZYc63WD2GzuBW5hzEjouarlP4gIwnLNmWRxxLWC+XmYjQlzpLDztwtLpxuZrBepTyErZR8814nI7vKuZ54zAW7uXgAAA=",
+    "focal": [
+      0.5,
+      0.45
+    ],
+    "alt": {
+      "ar": "دجاجٌ مضبي على الأرز في صينيةٍ فضية، وحوله السلطة والصلصات واللقيمات",
+      "en": "Madhbi chicken on rice in a silver tray, with salad, sauces and luqaimat around it"
+    },
+    "credit": {
+      "author": "aboodi vesakaran",
+      "authorUrl": "https://unsplash.com/@aboodi_vm",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/k47yJEApCPk",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "madhbi-chicken"
+  },
+  "dish-manakish-bites": {
+    "kind": "image",
+    "src": "/media/dish-manakish-bites.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoLABAAA4BaJaACdAEUrvrRfbiAAP40T1MdySXodE5ZTDQb/ZdIr/WgZ/QhIxy4xnP7caNOieAvCvG/hUA5dnFUJaXz2Sv+o/ZrzQvyNYfX54xp54AAAA==",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "alt": {
+      "ar": "أربعُ مناقيش صغيرة بالجبن والبابريكا والطماطم على ألواحٍ خشبية",
+      "en": "Four small manakish with cheese, paprika and tomato on wooden boards"
+    },
+    "credit": {
+      "author": "Rodrigo Rodrigues",
+      "authorUrl": "https://unsplash.com/@wolfart32",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/four-different-mini-pizzas-are-shown-KKuIurumyWQ",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "manakish-bites"
+  },
+  "dish-masoub": {
+    "kind": "image",
+    "src": "/media/dish-masoub.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsAA4BaJQBOgBuUCkBv9AgA/sciwqmDZJaGz0qA4py7wi91+PxO2ksMg/tzm0ZSXWL1nkp4sb8ZUhld1xzXGIsPJFVFJyAAAA==",
+    "focal": [
+      0.4,
+      0.5
+    ],
+    "alt": {
+      "ar": "فطائرُ ذهبية صغيرة تعلوها شرائحُ الموز، وبجانبها كأسٌ من حليب الموز",
+      "en": "Golden pancakes topped with banana slices beside a glass of banana milk"
+    },
+    "credit": {
+      "author": "Trinh Le Nguyen Ai",
+      "authorUrl": "https://unsplash.com/@sinoolee",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/white-ceramic-bowl-beside-stainless-steel-fork-IfGUEZGw2q0",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "masoub"
+  },
+  "dish-mataziz": {
+    "kind": "image",
+    "src": "/media/dish-mataziz.webp",
+    "width": 2400,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwAgCdASoQABAAA4BaJbACdAD6RdmW1rQcgAD+wGi7BwnXYADzYEeE3YiNIdyLVPpxO1+73X1GWt8qW6thJATWehCQxgGUF07c5Lj1LUsYJQXXIJfpsEm0gvV6ogyvQ3GItWadl0caHMPw7c3I/vusPrXn7xjISwAAAA==",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "alt": {
+      "ar": "زبديةُ مرقِ لحمٍ أحمر مع البطاطس على طاولةٍ خشبية",
+      "en": "A bowl of red lamb stew with potatoes on a wooden table"
+    },
+    "credit": {
+      "author": "Rimsha Noor",
+      "authorUrl": "https://unsplash.com/@rimshaj123",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-bowl-of-stew-on-a-wooden-table-RVWHhDVjBNI",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "mataziz"
+  },
+  "dish-mint-tea": {
+    "kind": "image",
+    "src": "/media/dish-mint-tea.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoLABAAA4BaJYwCdAD0oU2PK8tAAP7KleG4WmelTxz9psOugwCg8gexio2uFjap4PlfTic6tbq4dEBzZYhkPMb8b1eLNwNNH51uohRb6ZviA1EfYqoAAA==",
+    "focal": [
+      0.4,
+      0.45
+    ],
+    "alt": {
+      "ar": "شايٌ بالنعناع يُصبّ من علٍ في كأسٍ صغيرة على حافّةٍ مشمسة قرب البحر",
+      "en": "Mint tea poured from a height into a small glass on a sunlit sea wall"
+    },
+    "credit": {
+      "author": "Vincent Riszdorfer",
+      "authorUrl": "https://unsplash.com/@theguywithacamera",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/3M6he8o4yvg",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "mint-tea"
+  },
+  "dish-muhallabia-rose": {
+    "kind": "image",
+    "src": "/media/dish-muhallabia-rose.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoLABAAA4BaJQBOgCHYuwstAAD+9CAlnobKyqeO3xUdxDX70k/OjIgpL4+Ni19FAt8r5WDA1yo41tbTAxYAAA==",
+    "focal": [
+      0.5,
+      0.45
+    ],
+    "alt": {
+      "ar": "مهلّبيةٌ في برطمانٍ زجاجي يعلوها الفستق، وأمامها ملعقةٌ خشبية",
+      "en": "Muhallabia in a glass jar topped with pistachio, a wooden spoon in front"
+    },
+    "credit": {
+      "author": "Kouji Tsuru",
+      "authorUrl": "https://unsplash.com/@pafuxu",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-spoon-and-a-jar-of-food-on-a-table-XdNnXWh2ipY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "muhallabia-rose"
+  },
+  "dish-muhammara": {
+    "kind": "image",
+    "src": "/media/dish-muhammara.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAsAA4BaJQBOgMXNzUa9vwvgAAD+6dhVN7OkAtrx5QE/yiDGM9belceZfl1XwnnnC8hznubge2Pxf2hKJlF59Bta2fEBUthTDHCOGIZ93o1lIZoUsAAA",
+    "focal": [
+      0.55,
+      0.45
+    ],
+    "alt": {
+      "ar": "ستّةُ أطباقِ مقبّلات من الأعلى: محمّرة وحمّص ومتبّل ولبنة وغموسُ الشمندر",
+      "en": "Six mezze bowls from above: muhammara, hummus, mutabal, labneh and a beetroot dip"
+    },
+    "credit": {
+      "author": "Husien Bisky",
+      "authorUrl": "https://unsplash.com/@husien_bisky1",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/assortment-of-dips-and-dessert-with-walnuts--AlYYc8JRAs",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "muhammara"
+  },
+  "dish-mutabal-embers": {
+    "kind": "image",
+    "src": "/media/dish-mutabal-embers.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoLABAAA4BaJZACdAEOcq33IZiAAP7F8uWrIL8k7Y9c9Vuq2LBBdjV45bH9X7phTOQoQNoSGXuHsglORbSnPV0ShaDPIjBxvI2aEAWLlt6AAA==",
+    "focal": [
+      0.45,
+      0.5
+    ],
+    "alt": {
+      "ar": "باذنجانٌ مشويّ على الجمر فوق غموسٍ مدخّن، نُثرت عليه الأعشاب والبصلُ الأحمر واللوز",
+      "en": "Ember-charred aubergine over a smoky dip, scattered with herbs, red onion and almonds"
+    },
+    "credit": {
+      "author": "Amy Vann",
+      "authorUrl": "https://unsplash.com/@girl_behindthelens",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/k53TaqYkG-U",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "mutabal-embers"
+  },
+  "dish-mutabbaq": {
+    "kind": "image",
+    "src": "/media/dish-mutabbaq.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoLABAAA4BaJZACdAD0PGhcVm6gAP72r3Cq5LOktCqk2Eh3fKwxskEQQJzALfmyYLrk7G5A3sBXnBZAqz13gbRFyu+DfKhgQ5QAAA==",
+    "focal": [
+      0.5,
+      0.48
+    ],
+    "alt": {
+      "ar": "فطيرةٌ محمّرة على الصاج مقطوعةٌ تكشف حشوةً من البيض والخضرة",
+      "en": "A griddled stuffed pastry cut open to show egg and greens inside"
+    },
+    "credit": {
+      "author": "Fatemeh Rz",
+      "authorUrl": "https://unsplash.com/@dino_trexx",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-close-up-of-a-sandwich-on-a-plate-1UKLwfzbOkg",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "mutabbaq"
+  },
+  "dish-najil-salt": {
+    "kind": "image",
+    "src": "/media/dish-najil-salt.webp",
+    "width": 2400,
+    "height": 1602,
+    "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQAAsAA4BaJZQCw7CAgpAAAP7pHfc768uQcMzyk9tJNmmhizGrmakMANILA+jhhAAAAA==",
+    "focal": [
+      0.47,
+      0.5
+    ],
+    "alt": {
+      "ar": "سمكةٌ كاملة مشويّة مع الليمون على طبقٍ فضيٍّ مزخرف فوق حجرٍ داكن",
+      "en": "A whole roasted fish with lemon on an ornate silver platter over dark stone"
+    },
+    "credit": {
+      "author": "David Foodphototasty",
+      "authorUrl": "https://unsplash.com/@phototastyfood",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/fried-fish-with-lemon-in-plate-Sz0sTpO8U6g",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "najil-salt"
+  },
+  "dish-octopus-tahini": {
+    "kind": "image",
+    "src": "/media/dish-octopus-tahini.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoLABAAA4BaJbACdAD5hbJYBSwAAP5HSymX4pibrhbBLHHi4UuxYMzU3+kbX/HU/nNEI8yAPlwwpuEKQTuppN2aasWQsAzEQEMLLSLK63kUVn9uj27u/4edOHh9cMYNQAA=",
+    "focal": [
+      0.5,
+      0.35
+    ],
+    "alt": {
+      "ar": "أخطبوطٌ مشويّ تعلوه أوراقُ الجرجير مع الليمون وزيت الزيتون",
+      "en": "Grilled octopus beneath a heap of rocket, with lemon and olive oil"
+    },
+    "credit": {
+      "author": "Tomi Saputra",
+      "authorUrl": "https://unsplash.com/@udatommo",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/grilled-octopus-with-arugula-and-lemon-slice-zgHUr3km_3U",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "octopus-tahini"
+  },
+  "dish-pomegranate-juice": {
+    "kind": "image",
+    "src": "/media/dish-pomegranate-juice.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoLABAAA4BaJbACdAEf916luoAA/u0Vg849m8byBqbG6eH0wgnX62BuDEKQRhti9Th7Q+eJ6bJIuJnPPNY8M0CzxUIKi5a+DAy3cW/etkYxVaNg7AAAAA==",
+    "focal": [
+      0.45,
+      0.7
+    ],
+    "alt": {
+      "ar": "كأسُ عصيرِ رمّانٍ طازج بجانب رمّانةٍ مشقوقة",
+      "en": "A glass of fresh pomegranate juice beside a split pomegranate"
+    },
+    "credit": {
+      "author": "SO Creative",
+      "authorUrl": "https://unsplash.com/@socreativeagy",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/pomegranate-juice-served-with-a-cut-pomegranate-Hkp2mL4befc",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "pomegranate-juice"
+  },
+  "dish-prawns-loomi": {
+    "kind": "image",
+    "src": "/media/dish-prawns-loomi.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAQCdASoQAAsAA4BaJZgCdADwTJPoCAD+8zWl24x/hu2JODZv0BgVZpgv/fLjwkYzngOZqJHDZVxx7ChgnkNDHNQeG8ptbBi3K/SpIiLJA8op9XReUDWFauqD1AOcXDrAAA==",
+    "focal": [
+      0.45,
+      0.55
+    ],
+    "alt": {
+      "ar": "روبيانٌ مشويّ يئزّ مع الأعشاب والزبدة في مقلاةٍ داكنة",
+      "en": "Grilled prawns sizzling with herbs and butter in a dark pan"
+    },
+    "credit": {
+      "author": "Mika Baumeister",
+      "authorUrl": "https://unsplash.com/@kommumikation",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-frying-pan-filled-with-cooked-shrimp-MfGOZ4EhSsM",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "prawns-loomi"
+  },
+  "dish-qursan": {
+    "kind": "image",
+    "src": "/media/dish-qursan.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoQAAsAA4BaJaACdADQl7BXrgAA/t35t36Mtf47kuxg/jaP+P/33r6ZZfzPBq+EVX77c8wf6SDg/x/wpoWjFfmm1kSkVKM09uvZcqK3SbWs1lygAAA=",
+    "focal": [
+      0.48,
+      0.55
+    ],
+    "alt": {
+      "ar": "زبديةُ مرقِ لحمٍ وخضار بجانب قطعٍ من الخبز المقطّع",
+      "en": "A bowl of meat and vegetable stew beside torn pieces of bread"
+    },
+    "credit": {
+      "author": "Laura Ohlman",
+      "authorUrl": "https://unsplash.com/@ohlmanphotography",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-bowl-of-food-y_7KLDoPlAc",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "qursan"
+  },
+  "dish-saffron-ice-cream": {
+    "kind": "image",
+    "src": "/media/dish-saffron-ice-cream.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAsAA4BaJZQC7AELXbCfYD4AAP712kztRYEBw5VT8hEdluDiTZJw2wqwebGaZ+OSTSop0PqxKw1uzS2ZTIwAAAA=",
+    "focal": [
+      0.38,
+      0.45
+    ],
+    "alt": {
+      "ar": "كراتُ آيس كريم الزعفران في أوعيةٍ بيضاء مكدّسة",
+      "en": "Scoops of saffron ice cream in stacked white ramekins"
+    },
+    "credit": {
+      "author": "Prchi Palwe",
+      "authorUrl": "https://unsplash.com/@prachipalwe",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/ice-cream-in-white-cup-qkmliasV0-E",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "saffron-ice-cream"
+  },
+  "dish-saleeg": {
+    "kind": "image",
+    "src": "/media/dish-saleeg.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABwAgCdASoQAAsAA4BaJbACdG1/Arq3OfqjKoIAAN31oVBs5BCPPv2SfsslVCAat1DNjcHOj5A03RNzjaSkbvgybDtRYgYxGiUNPlaEwwG4ZVcO/HMTw4AA",
+    "focal": [
+      0.53,
+      0.45
+    ],
+    "alt": {
+      "ar": "طبقٌ كريميٌّ أبيض بالحليب في وعاءٍ زجاجيٍّ رُفع غطاؤه",
+      "en": "A creamy, milk-white dish in a glass bowl with its lid lifted"
+    },
+    "credit": {
+      "author": "Adil Murshed",
+      "authorUrl": null,
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/9Gm-wNAaWzg",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "saleeg"
+  },
+  "dish-samak-harra": {
+    "kind": "image",
+    "src": "/media/dish-samak-harra.webp",
+    "width": 2400,
+    "height": 1350,
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAkAA4BaJZACdAEfnRfaDuKKAAD+8YGxyyB50zMeesjYM72IA47zLbYCVtzrN1nt3oPDiwrIC4550Xy0OYHkOfxAAA==",
+    "focal": [
+      0.45,
+      0.45
+    ],
+    "alt": {
+      "ar": "سمكتان كاملتان متبّلتان بخلطةٍ حمراء حارّة، تعلوهما شرائحُ الليمون والكزبرة",
+      "en": "Two whole fish rubbed with red spice paste, topped with lime and coriander"
+    },
+    "credit": {
+      "author": "Abhijit Biswas",
+      "authorUrl": "https://unsplash.com/@bantisona",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/two-seasoned-fish-with-lime-slices-and-cilantro-6fmwFzYbLqk",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "samak-harra"
+  },
+  "dish-sambousek": {
+    "kind": "image",
+    "src": "/media/dish-sambousek.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABQAgCdASoQAAsAA4BaJZQCdH8AGEv4uLlEKEgA/vhVFbQTStV4pij4Z9tm3A7l+i57+r8ZRVEZxTOKuYm9AAAA",
+    "focal": [
+      0.45,
+      0.5
+    ],
+    "alt": {
+      "ar": "سمبوسةٌ ذهبية في سلّةٍ مبطّنة بالورق بجانب كأسِ كرك",
+      "en": "Golden sambousek in a paper-lined basket beside a glass of karak"
+    },
+    "credit": {
+      "author": "Prajakta Bagade",
+      "authorUrl": "https://unsplash.com/@coraljasmine",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/Vzvkp94lk_4",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "sambousek"
+  },
+  "dish-saudi-coffee": {
+    "kind": "image",
+    "src": "/media/dish-saudi-coffee.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoLABAAA4BaJQBOgCLHcgjiXyAAzezaLbG620ULvN63uQEQchfDspAijNC1Ssov2sHEO7PdJvCVEXGQ80exj4Ph5zah11U1QyAAAA==",
+    "focal": [
+      0.6,
+      0.4
+    ],
+    "alt": {
+      "ar": "قهوةٌ تُصبّ من دلّةٍ فضية في فناجينَ صغيرة على حامل، وبجانبها صحنُ لقيمات",
+      "en": "Coffee poured from a silver dallah into small cups on a stand, beside a bowl of luqaimat"
+    },
+    "credit": {
+      "author": "Abdul Raheem Kannath",
+      "authorUrl": "https://unsplash.com/@raheemblacksnows",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/pouring-coffee-into-small-cups-from-a-silver-pot-iYUdNo8lHOo",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "saudi-coffee"
+  },
+  "dish-sayadiyah": {
+    "kind": "image",
+    "src": "/media/dish-sayadiyah.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACQAgCdASoQAAsAA4BaJagCdAYtB2406rPy0mAOAAD9eMQzZ7d7wPp4OUSALmJMMe9ZdbyvjQD7ZxveZ0oWO6fZhLzhKEvDaNHtO5s4OM2DDtVklaoW2ACv9dZ6TubtBobZJt0NxkoYVwpLh0PRTauiQYAAAA==",
+    "focal": [
+      0.4,
+      0.5
+    ],
+    "alt": {
+      "ar": "سمكٌ مشويّ على أرزٍ متبّل مع الطماطم والليمون، وحوله أوعيةُ الصلصات",
+      "en": "Grilled fish on spiced rice with tomato and lemon, small bowls of sauce around it"
+    },
+    "credit": {
+      "author": "Design Wala",
+      "authorUrl": "https://unsplash.com/@designwala",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/lDbGDnNe0CI",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "sayadiyah"
+  },
+  "dish-shakshuka-loomi": {
+    "kind": "image",
+    "src": "/media/dish-shakshuka-loomi.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwAgCdASoQAAsAA4BaJZgCdADD1Cn5yALwAAD+3OUo7TZ4qXGkj5gzam4zvUaYMNDujrSMnrWxDKvEyZhcGL318qNs1+iACGvxCVVAHNmsK/oVSZWrSeoeiG6YAQ0zxkFcAA==",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "alt": {
+      "ar": "شكشوكةٌ بالبيض واللبنة وفلفلٍ طويل في مقلاةٍ من الحديد الزهر",
+      "en": "Shakshuka with eggs, labneh and a long pepper in a cast-iron pan"
+    },
+    "credit": {
+      "author": "Bigwig Photography",
+      "authorUrl": "https://unsplash.com/@bigwigphotography",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/Uv0l0WKBBQI",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "shakshuka-loomi"
+  },
+  "dish-shish-tawook": {
+    "kind": "image",
+    "src": "/media/dish-shish-tawook.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoQAAsAA4BaJaACdAYulnXZl9lTxWAA/oj1JKt23rMFPHcL4b++1zx6CfwzvLNFDLxFAQwgtbrEETUYWOt4Urj9LcrcYbGDtDwB3rReb4ptzhgAAAA=",
+    "focal": [
+      0.6,
+      0.4
+    ],
+    "alt": {
+      "ar": "أسياخُ دجاجٍ مشويّ على طبقٍ أسود فوق طاولةٍ خشبية",
+      "en": "Chicken skewers on a black slate dish on a wooden table"
+    },
+    "credit": {
+      "author": "Fabio Sasso",
+      "authorUrl": "https://unsplash.com/@abduzeedo",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/grilled-meat-on-black-tray-JzzfQtm-iNg",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "shish-tawook"
+  },
+  "dish-sobia": {
+    "kind": "image",
+    "src": "/media/dish-sobia.webp",
+    "width": 2400,
+    "height": 1599,
+    "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAsAA4BaJZgCdAYvDNDuXVYAAPQ5E34tTgb6ql7fXMrjf9xXFPj0+uPF+6akr2/ctKrpr0jRrRxe09KAOye41vroN75uNCvEc2zJ7JjvsQhPIGGfum5xFQAAAA==",
+    "focal": [
+      0.3,
+      0.55
+    ],
+    "alt": {
+      "ar": "إبريقٌ وكأسٌ من السوبيا بجانب أوعيةِ الأرز على حصيرةِ قصب",
+      "en": "A carafe and glass of sobia beside jars of rice on a reed mat"
+    },
+    "credit": {
+      "author": "Moamen Ali",
+      "authorUrl": "https://unsplash.com/@moamen_photography",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-table-topped-with-a-pitcher-of-milk-next-to-a-glass-of-milk-_nXk3jBNYks",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "sobia"
+  },
+  "dish-sundial-dawn": {
+    "kind": "image",
+    "src": "/media/dish-sundial-dawn.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoLABAAA4BaJYwAAlxE36e7IAD+5vvLeZhG7lkFqUHRCtyLY/A0yg42Uu6t32/VpMUTdjJc7fSFEIMFvj/fE7TZ8ThZRNe4UcMYK/0AAAA=",
+    "focal": [
+      0.45,
+      0.65
+    ],
+    "alt": {
+      "ar": "نادلٌ بقميصٍ أبيض يقدّم طبقاً من رقائق الشوكولاتة فوق الكريمة",
+      "en": "A server in white holds out a plate of chocolate shards over cream"
+    },
+    "credit": {
+      "author": "Tommaso Ubezio",
+      "authorUrl": "https://unsplash.com/@tommasoubezio",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/GBluiRmJqls",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "sundial-dawn"
+  },
+  "dish-sundial-long-shade": {
+    "kind": "image",
+    "src": "/media/dish-sundial-long-shade.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABQAgCdASoQAAsAA4BaJaACdAYvDzpeA9MEAugA/rWgoWS/FXuQGBkv8hoGw2z81Gitdr0X5gymaQ3i27lBsjua3nq9HROS/P09cLT2bo5/CQAA",
+    "focal": [
+      0.5,
+      0.45
+    ],
+    "alt": {
+      "ar": "كعكةُ زعفران يعلوها الفستقُ والزرشك على مفرشٍ مزخرف",
+      "en": "Saffron cake topped with pistachio and barberries on a patterned cloth"
+    },
+    "credit": {
+      "author": "Shiva Mardahi",
+      "authorUrl": "https://unsplash.com/@sshiva",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-plate-of-food-that-is-on-a-table-B4vm5J-0x2I",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "sundial-long-shade"
+  },
+  "dish-sundial-maghrib": {
+    "kind": "image",
+    "src": "/media/dish-sundial-maghrib.webp",
+    "width": 2400,
+    "height": 1596,
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoQAAsAA4BaJQBWACHfmOCAAP73dNx0dsT82TE8P86d1wIgc7pVvfkcW0wE/2pw2teU8GZpRXwAAA==",
+    "focal": [
+      0.45,
+      0.55
+    ],
+    "alt": {
+      "ar": "موزةُ لحمٍ مع خضارٍ محمّصة في صحنٍ داكن، يضيئها ضوءٌ جانبيٌّ خافت",
+      "en": "A lamb shank with roasted vegetables in a dark bowl, lit low from the side"
+    },
+    "credit": {
+      "author": "Ethan Smith",
+      "authorUrl": "https://unsplash.com/@smithy_512",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-plate-of-food-on-a-wooden-table-3B_Vlmcd-dY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "sundial-maghrib"
+  },
+  "dish-sundial-midnight": {
+    "kind": "image",
+    "src": "/media/dish-sundial-midnight.webp",
+    "width": 1800,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoMABAAA4BaJbACdLoAAiwtJOsYAP7Vj7GVOSZnh/sxDyPi4WMB6Jp8nrxqlX+LeT/xC72hp3eRSLC8AAA=",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "alt": {
+      "ar": "كأسُ شايٍ كهرمانيّةٌ صغيرة تُلقي ظلاً طويلاً على ورقٍ مجعّد",
+      "en": "A small glass of amber tea casting a long shadow across crumpled paper"
+    },
+    "credit": {
+      "author": "Leylâ",
+      "authorUrl": "https://unsplash.com/@birleylii",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-glass-of-dark-liquid-on-a-textured-surface-jOWTGHz_Ams",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "sundial-midnight"
+  },
+  "dish-sundial-morning": {
+    "kind": "image",
+    "src": "/media/dish-sundial-morning.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoLABAAA4BaJZgCdAELVk5djIAA/e1anlp9M5A46dOzNbWq6whFvHuGIfc9Pml+iBpLkFkoE1n7H2IeEz2UgzS5+vBoIwPGKvZLmkAA",
+    "focal": [
+      0.55,
+      0.45
+    ],
+    "alt": {
+      "ar": "شريحتا خبزٍ ريفي فوق ثلاث ملاعق: زبدةٌ ومربّى كهرماني وفتاتٌ ذهبي",
+      "en": "Two slices of rustic bread above three spoons of butter, amber preserve and golden crumble"
+    },
+    "credit": {
+      "author": "Alice Pasqual",
+      "authorUrl": "https://unsplash.com/@stri_khedonia",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/brown-bread-beside-three-spoons-k8_JczDzSjY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "sundial-morning"
+  },
+  "dish-sundial-night": {
+    "kind": "image",
+    "src": "/media/dish-sundial-night.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoLABAAA4BaJQAASzKE6QIW7AD+50GGSRYuXHD2nGU9Lm3KQmDclaJkMKv6nL/PncHSZOqHdX0arM9UYUX3AN8MZXAAAA==",
+    "focal": [
+      0.5,
+      0.7
+    ],
+    "alt": {
+      "ar": "كعكةٌ صغيرة مستديرة بجوز الهند والفستق وبتلات الورد المجفّفة في طبقٍ أخضر",
+      "en": "A small round cake with coconut, pistachio and dried rose petals on a green plate"
+    },
+    "credit": {
+      "author": "Emre ÇOBAN",
+      "authorUrl": "https://unsplash.com/@emrecob",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-round-dessert-topped-with-coconut-pistachios-and-rose-petals-Rw1xvO1CO7g",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "sundial-night"
+  },
+  "dish-sundial-noon": {
+    "kind": "image",
+    "src": "/media/dish-sundial-noon.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoLABAAA4BaJQBOgB58y0bSIAD+7J7L+uCDDM314gvYB1WaexIkfYbv2K3X/qq/9HRhuk3tDayq/JBawjsOFkTfI/J0LL4EqkedAAAA",
+    "focal": [
+      0.5,
+      0.45
+    ],
+    "alt": {
+      "ar": "سمكٌ نيّء في مرقٍ حمضيٍّ فاتح مع البصل والأعشاب، والوعاءُ الداكن نصفُه في الظل",
+      "en": "Raw fish in a pale citrus broth with onion and herbs, the dark bowl half in shade"
+    },
+    "credit": {
+      "author": "Martin Baron",
+      "authorUrl": "https://unsplash.com/@elmartinbaron",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-bowl-of-food-on-a-wooden-table-1P81hKRBzrg",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "sundial-noon"
+  },
+  "dish-tabbouleh-season": {
+    "kind": "image",
+    "src": "/media/dish-tabbouleh-season.webp",
+    "width": 2400,
+    "height": 1599,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsAA4BaJbACdAEXTw94mGwAAP3Z3MtNrxlSN09vynseWonIGz00czwmuySMCudvcYLg8kuUUoyBzpH3JI9lvX+ozTSHXbqvJtX6DLeHnoHZXAAAAA==",
+    "focal": [
+      0.5,
+      0.45
+    ],
+    "alt": {
+      "ar": "تبولةُ بقدونسٍ مفروم تعلوها مكعّباتُ الطماطم وشرائحُ الليمون، على أوراق خسٍّ فوق طاولةٍ خشبية",
+      "en": "Parsley tabbouleh crowned with diced tomato and lemon slices, on lettuce leaves on a wooden table"
+    },
+    "credit": {
+      "author": "Chez Le Libanais",
+      "authorUrl": "https://unsplash.com/@chezlelibanais",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/tabbouleh-salad-with-tomatoes-and-lemon-m5YZbsHYeWk",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "tabbouleh-season"
+  },
+  "dish-taif-rose-lemonade": {
+    "kind": "image",
+    "src": "/media/dish-taif-rose-lemonade.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoLABAAA4BaJbACdAD0jqSTHsjaAAD+t6cngaHNfpEmzGRyMsDEBHYblGZ2G6YafxggrUZSKOLzE+wM+EcUrxObxucG/xhNK9lOr5lM5U5LAAAA",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "alt": {
+      "ar": "ليموناضةُ الورد على لوحٍ خشبيٍّ مستدير تتناثر حوله براعمُ الورد المجفّفة",
+      "en": "Rose lemonade on a round wooden board scattered with dried rosebuds"
+    },
+    "credit": {
+      "author": "Mohammad Abbasi",
+      "authorUrl": "https://unsplash.com/@mohammad_abbasi",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-glass-of-red-liquid-with-a-pink-substance-on-a-wooden-surface-skebCI4wWIQ",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "taif-rose-lemonade"
+  },
+  "dish-tamarind-lime": {
+    "kind": "image",
+    "src": "/media/dish-tamarind-lime.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAgCdASoQAAsAA4BaJYgCdAEPfrHYwETgAP7zIDkPBz5AhRjIi7EpWCeGQe5+4/JGBAJHRGjkmtL+yttZoAAA",
+    "focal": [
+      0.6,
+      0.45
+    ],
+    "alt": {
+      "ar": "تمرٌ هنديٌّ مثلّج بنصفِ ليمونةٍ ونعناع في كأسٍ مضلّعة",
+      "en": "Iced tamarind with half a lime and mint in a faceted glass"
+    },
+    "credit": {
+      "author": "Kashish Lamba",
+      "authorUrl": "https://unsplash.com/@drunkenchimp",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-close-up-of-a-drink-on-a-table-GkJ3LNyqwDk",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "tamarind-lime"
+  },
+  "dish-tamees-foul": {
+    "kind": "image",
+    "src": "/media/dish-tamees-foul.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABwAgCdASoLABAAA4BaJYwCdIDfJ/gZbAP0O58oAP58pctWbDy0ntJOpQ6jCr3dE1XYfs3jro2fTImtFvgF0f6OPfuBh4L2yglOqAFihmXApLqAAAA=",
+    "focal": [
+      0.5,
+      0.68
+    ],
+    "alt": {
+      "ar": "فولٌ يغلي في صلصةٍ متبّلة داخل قدرٍ مسودٍّ من النار، وخلفه رغيفٌ يتحمّص على الصاج",
+      "en": "Beans simmering in a spiced tomato sauce in a blackened pot, flatbread toasting on the griddle behind"
+    },
+    "credit": {
+      "author": "P.O.sitive Negative",
+      "authorUrl": "https://unsplash.com/@omidopari",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/cooked-food-in-black-cooking-pot-6mCyvI55hTY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "tamees-foul"
+  },
+  "dish-umm-ali": {
+    "kind": "image",
+    "src": "/media/dish-umm-ali.webp",
+    "width": 2400,
+    "height": 1350,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAkAA4BaJQBOgB+OmUoLt3tkAP7n6uohMvR45kCzKsUZNPF1iXmkrA72RpQFdvnbqoPfYDT7KJW5Wgw3Axsj4A4ghyX+QSMN1q1fiim9gAAA",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "alt": {
+      "ar": "قشطةٌ تُسكب فوق طبقِ أمّ علي الخارج لتوّه من الفرن",
+      "en": "Cream poured over a freshly baked dish of umm ali"
+    },
+    "credit": {
+      "author": "Charles Betito Filho",
+      "authorUrl": "https://unsplash.com/@cbetito",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-plate-with-food-on-it-jVepsnJe-oU",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "umm-ali"
+  },
+  "dish-warak-enab": {
+    "kind": "image",
+    "src": "/media/dish-warak-enab.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAsAA4BaJQBWACF5Fvp0sjvAAP7qNDEghRsfACp3cCfOjPuyCNlqxoMIG+sOKPW0MsU1c24OkbqHVRNzWQKDj/Pf0m5PAo9NH/twtwNmYbY7QAA=",
+    "focal": [
+      0.5,
+      0.6
+    ],
+    "alt": {
+      "ar": "ورقُ عنبٍ محشيّ مع مكعّبات الطماطم والفجل الوردي، وأطباقٌ أخرى خلفه",
+      "en": "Stuffed vine leaves with diced tomato and pink radish, more plates behind"
+    },
+    "credit": {
+      "author": "Tricia Timney",
+      "authorUrl": "https://unsplash.com/@triciatimney",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-plate-of-food-on-a-table-with-other-plates-of-food-RH48royCZyM",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "warak-enab"
+  },
+  "ing-coffee-beans": {
+    "kind": "image",
+    "src": "/media/ing-coffee-beans.webp",
+    "width": 2400,
+    "height": 1599,
+    "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAsAA4BaJZQCw7EPC4eQOcXRAAD+8SMTZbKIkBjcc4aRNmFqYSrHfFrk05ekPn6fnF61QQo6wp/SATCj2J0yJk1ICAAA",
+    "focal": [
+      0.4,
+      0.55
+    ],
+    "alt": {
+      "ar": "حبوبُ قهوةٍ محمّصة في كيسٍ من الخيش",
+      "en": "Roasted coffee beans in an open burlap sack"
+    },
+    "credit": {
+      "author": "Tina Guina",
+      "authorUrl": "https://unsplash.com/@kittinskie",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/shallow-focus-photography-of-coffee-beans-in-sack-obV_LM0KjxY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "ing-coffee-beans"
+  },
+  "ing-dates": {
+    "kind": "image",
+    "src": "/media/ing-dates.webp",
+    "width": 2400,
+    "height": 1599,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoQAAsAA4BaJZACdAEPeu7l5/AA/u1RBCNPQAJHctxqkGQNlwyxDHVnXQfqRJmRB118r65+RsajOA9l6iPo5hknYYI3lW3uzdywyh2oYhEfLzslXw3ewAAA",
+    "focal": [
+      0.62,
+      0.5
+    ],
+    "alt": {
+      "ar": "تمراتٌ داكنة لامعة في وعاءٍ أبيض صغير، وبعضها منثورٌ أمامه",
+      "en": "Glossy dark dates in a small white bowl, a few scattered in front"
+    },
+    "credit": {
+      "author": "VD Photography",
+      "authorUrl": "https://unsplash.com/@vdphotography",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/brown-round-fruit-on-white-ceramic-bowl-5t6D43cwOcY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "ing-dates"
+  },
+  "ing-dried-lime": {
+    "kind": "image",
+    "src": "/media/ing-dried-lime.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQAgCdASoQAAsAA4BaJZACdAYtU8sSlTtAAP6f6ZgFTZnC4dFP8BvvunIvXMYIA1V0q3kQKNST+93YYxH6YYVIn+F1dHyScxbeuMSicRcGt8heX437oBhLjjkbmjeNSXjxLY8Yv4jYxZIP3rRZFBltsEAAAA==",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "alt": {
+      "ar": "كومةٌ من حبّات اللومي المجفّف بقشورها البنّية المتجعّدة",
+      "en": "A pile of whole dried limes with wrinkled brown skins"
+    },
+    "credit": {
+      "author": "Ashkan Forouzani",
+      "authorUrl": "https://unsplash.com/@ashkfor121",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/dried-round-fruits-CKA2K2J4IJE",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "ing-dried-lime"
+  },
+  "ing-honey": {
+    "kind": "image",
+    "src": "/media/ing-honey.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoLABAAA4BaJbACdADp8Sl76TVgAP7wPjUhgeXJnqSYqjHgc6OKYjuoWzNN453qO7YEM238z/nZzZb9Wvf83l4LD6f8xY/Y9lKB7AAA",
+    "focal": [
+      0.6,
+      0.45
+    ],
+    "alt": {
+      "ar": "قطعةُ شهدٍ تلمع وسط بركةٍ من العسل الذهبي",
+      "en": "A piece of honeycomb glistening in a pool of golden honey"
+    },
+    "credit": {
+      "author": "Giorgio Trovato",
+      "authorUrl": "https://unsplash.com/@giorgiotrovato",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/close-up-of-honeycomb-dripping-with-golden-honey-aHar1sfy9co",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "ing-honey"
+  },
+  "ing-roses": {
+    "kind": "image",
+    "src": "/media/ing-roses.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAsAA4BaJbACdADpNK1bHaKQAPu8V6cAOhEs3XH77zuUOh8t5ZD2UdsuUipPIVNsgglWf+CbJK4ByaqwIkdLnIabZ2YuGQxH8OfbIG8/H8zQULAAAA==",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "alt": {
+      "ar": "بتلاتُ وردٍ وردية وبراعمُ متراكمة تملأ الإطار",
+      "en": "Loose pink rose petals and buds filling the frame"
+    },
+    "credit": {
+      "author": "Zulfugar Karimov",
+      "authorUrl": "https://unsplash.com/@zulfugarkarimov",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/close-up-of-pink-rose-petals-and-buds-DfEwgXjEyh4",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "ing-roses"
+  },
+  "ing-saffron": {
+    "kind": "image",
+    "src": "/media/ing-saffron.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABQAgCdASoQAAsAA4BaJagCdAYtLjYhqRkmSgAA/q2Yn+Zcx7moLIHt42wLDMPemj4Tq8OPmXxohTdWJ7Y0TNO6w0rSVlrk3OH2SOBqgMjQmFy1T1VFzMbXrq6Ksn0+MJle6MVorQ83gAAA",
+    "focal": [
+      0.65,
+      0.55
+    ],
+    "alt": {
+      "ar": "خيوطُ زعفرانٍ في صحنٍ صغيرٍ مزخرف، وبجانبها حبّاتُ هيلٍ أخضر منثورة على الخشب",
+      "en": "Saffron threads in a small ornate dish beside spilled green cardamom pods on wood"
+    },
+    "credit": {
+      "author": "Mohammad Amiri",
+      "authorUrl": "https://unsplash.com/@iranskids",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/white-ceramic-container-4v_fCBw_kqg",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "ing-saffron"
+  },
+  "place-arch-shadow": {
+    "kind": "image",
+    "src": "/media/place-arch-shadow.webp",
+    "width": 1350,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoJABAAA4BaJQBOgBs3HpyKAAD+3G25CJUpRgJ8iPqaRLUGogWu/RvXpt0rZBo4NTPEZgTlxWQAAA==",
+    "focal": [
+      0.55,
+      0.45
+    ],
+    "alt": {
+      "ar": "نظرةٌ عبر قوسٍ من الطين المليّس إلى ممرٍّ مشمس ينتهي ببابٍ خشبيٍّ منقوش",
+      "en": "Looking through a mud-plaster arch into a sunlit passage that ends at a carved wooden door"
+    },
+    "credit": {
+      "author": "Amalia Peigneux",
+      "authorUrl": "https://unsplash.com/@amaliapeigneux",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/CNb-vraS55U",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
+  "place-candle-table": {
+    "kind": "image",
+    "src": "/media/place-candle-table.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoLABAAA4BaJbACdAEUo7OqE01oAAD+9YJ9Zj32n+6sa09LlsPXgZPK/KotGK8N0EjuC71n/GA8XKjRU+yS7LNmvwFIxTp33IQAAA==",
+    "focal": [
+      0.4,
+      0.48
+    ],
+    "alt": {
+      "ar": "شمعةٌ واحدة تتوهّج على مائدةٍ بمفرشٍ أبيض في قاعةٍ خافتةٍ مكسوّةٍ بالخشب",
+      "en": "A single candle glowing on a white-clothed table in a dim, wood-panelled room"
+    },
+    "credit": {
+      "author": "Sara Abilova",
+      "authorUrl": "https://unsplash.com/@sarahabilova",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/a-dimly-lit-restaurant-table-with-a-single-candle-9jNYTFpa2gs",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place-candle-table"
+  },
+  "place-coral-house": {
+    "kind": "image",
+    "src": "/media/place-coral-house.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoLABAAA4BaJbACdADLvdN+UYKAAPZfkt+JwxIRaKT8YAEsHLhkGnvjXZeqYM3ljeEkZcU4nXn0T5o4gCRAsQOU17IiwiktZrYWU0v7izOUNriGYZbHxgAA",
+    "focal": [
+      0.5,
+      0.4
+    ],
+    "alt": {
+      "ar": "بيتٌ من الحجر المنقبي برواشين خشبية، تتوهّج على واجهته أضواءٌ معلّقة عند الغسق",
+      "en": "A coral-stone house with wooden rawasheen balconies, strung lights glowing at dusk"
+    },
+    "credit": {
+      "author": "muhammad ahkamul hakim",
+      "authorUrl": "https://unsplash.com/@chraga",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/FDGA5A7IQF4",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
+  "place-courtyard-sun": {
+    "kind": "image",
+    "src": "/media/place-courtyard-sun.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsAA4BaJQBOgBh7x2EZ9gAA/nkpFMJFNe5tFhSSiAUclUKqfgMIqJ4nc59PTrib1FxzDMa/YQYB4ZjRmaLoQfEysY3YAAA=",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "alt": {
+      "ar": "فناءٌ بلون الرمل تحيط أقواسُه ببركةٍ ساكنة، تعلوه أشجارُ النخيل في شمس آخر النهار",
+      "en": "A sand-coloured courtyard of arches around a still pool, palms overhead in late sun"
+    },
+    "credit": {
+      "author": "Agnieszka Stankiewicz",
+      "authorUrl": "https://unsplash.com/@dubai_love_story",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/SBcKyJETLxE",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
+  "place-desert-dusk": {
+    "kind": "image",
+    "src": "/media/place-desert-dusk.webp",
+    "width": 2400,
+    "height": 1602,
+    "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQAAsAA4BaJQBOgB6yP+hePgAAydw224Z9QyvMWLhcpsA2NvcPOoXysxMMe3oAAAA=",
+    "focal": [
+      0.5,
+      0.4
+    ],
+    "alt": {
+      "ar": "حافّةُ كثيبٍ رمليّ على سماءٍ بلون المشمش بعد الغروب",
+      "en": "A dune ridge against an apricot sky after sunset"
+    },
+    "credit": {
+      "author": "Daniel Olah",
+      "authorUrl": "https://unsplash.com/@danesduet",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/qsuiCIY64Ig",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
+  "place-door": {
+    "kind": "image",
+    "src": "/media/place-door.webp",
+    "width": 1800,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoMABAAA4BaJbACdADO+MSa8AAAzT+doR2yTC96JAOvc6iLbNz/fiogpVqy49lZ89Q21YqS5sslMBnh3uzQvAvqJ7CMMIyeAAA=",
+    "focal": [
+      0.45,
+      0.55
+    ],
+    "alt": {
+      "ar": "بابٌ خشبيٌّ منقوش في جدارٍ طينيٍّ بلون المغرة تعلوه فتحاتٌ مثلّثة",
+      "en": "A carved wooden door in an ochre mud wall pierced with triangular openings"
+    },
+    "credit": {
+      "author": "Amit Shende",
+      "authorUrl": "https://unsplash.com/@ashende1977",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/OXRShOlAIFg",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
+  "place-lantern": {
+    "kind": "image",
+    "src": "/media/place-lantern.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoLABAAA4BaJZgCdADdHAWrXAAA/vS2S5LpF1AdRAIkMUE2p8+TdQ80moR6+Fyp1ggTkLrDpeX1Cfn57h9LlkvWRD2LQKChGekyu+TkAAA=",
+    "focal": [
+      0.55,
+      0.35
+    ],
+    "alt": {
+      "ar": "فانوسٌ نحاسيٌّ معلّق في ممرٍّ مقبّب، وتحته جرّةٌ فخّارية طويلة",
+      "en": "A brass lantern hanging in a vaulted archway, a tall clay jar beneath it"
+    },
+    "credit": {
+      "author": "Craig Manners",
+      "authorUrl": "https://unsplash.com/@craigmanners_com",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/_4Yzh_Zij7s",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
+  "place-lattice-light": {
+    "kind": "image",
+    "src": "/media/place-lattice-light.webp",
+    "width": 2400,
+    "height": 1602,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsAA4BaJQBOgB9S5x+sMwAA/uzSGfXAW+U2MlUYt7Oble07p6rXYf8YOo/2cPO5sXNb6M+PQnqxhaM74uOi0QA0c5BlM2IAAA==",
+    "focal": [
+      0.5,
+      0.4
+    ],
+    "alt": {
+      "ar": "مشربيّاتٌ وبابٌ من الخشب المنقوش تُلقي ظلالها على جدارٍ مليّس",
+      "en": "Carved wooden lattice screens and a door casting shadows on a plaster wall"
+    },
+    "credit": {
+      "author": "Dmitriy Ilkevich",
+      "authorUrl": "https://unsplash.com/@ilkvch",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/mrk1ZKgkZDM",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
+  "place-long-table": {
+    "kind": "image",
+    "src": "/media/place-long-table.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsAA4BaJZQCsAC9VPVHW0AA/vSZGxK7v4Me6oNOZWzUE0ZdWkK0aFhNzFWy3uC6XKfqMCHsE6PGQeiTJ73IvZK+FqLwAAA=",
+    "focal": [
+      0.5,
+      0.62
+    ],
+    "alt": {
+      "ar": "موائدُ خشبية طويلة في فناءٍ هادئ بجدارٍ جصّيٍّ عتيق ونباتاتٍ في الأصص",
+      "en": "Long wooden tables in a quiet courtyard with a weathered plaster wall and potted plants"
+    },
+    "credit": {
+      "author": "Elist Nguyen",
+      "authorUrl": "https://unsplash.com/@hieuanhcauam",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/two-wooden-tables-and-chairs-in-an-outdoor-courtyard-ITG6-b_8_h4",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place-long-table"
+  },
+  "place-majlis": {
+    "kind": "image",
+    "src": "/media/place-majlis.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoLABAAA4BaJaACdAEPSzbGoTp2oAD+rXAeNa9uPsqSvw9xRVn8zlpImWk3gLiKYg1U3i60obbRlI3wXQ8I6ktWHi5kBaJ/zwJRyPDuqRpVYpLWk0UCgAAA",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "alt": {
+      "ar": "مجلسٌ طويل تصطفّ على جانبيه الجلساتُ الأرضية، بسجّادٍ أحمر وسقفٍ خشبيٍّ منقوش",
+      "en": "A long majlis hall with floor cushions along both walls, red carpets and a carved wooden ceiling"
+    },
+    "credit": {
+      "author": "Rafael Peier",
+      "authorUrl": "https://unsplash.com/@rafaelpeier",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/long-room-with-red-carpets-x1zKWzhrPQE",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place-majlis"
+  },
+  "place-mudbrick": {
+    "kind": "image",
+    "src": "/media/place-mudbrick.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAQCdASoLABAAA4BaJbACdAELhQN+nYAA/Y9Iq9dKzy7pjRgY8XbOPCBjXjj0C/NX6JvBx3sbmAEzGEZC1Ib06J10jv01IoS/9gl8pbVSPqIzOI5iK5AzP0x24sR20QycAAAA",
+    "focal": [
+      0.5,
+      0.62
+    ],
+    "alt": {
+      "ar": "سورٌ طينيٌّ لوّحته الشمس بشرفاتٍ مستديرة تحت سماءٍ زرقاء",
+      "en": "Sun-baked mud-brick parapet with rounded crenellations against a blue sky"
+    },
+    "credit": {
+      "author": "mathieu gauzy",
+      "authorUrl": "https://unsplash.com/@gozstudio",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/ancient-earthen-wall-with-crenellations-under-blue-sky-zjX_Kr5oquI",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place-mudbrick"
+  },
+  "place-night-courtyard": {
+    "kind": "image",
+    "src": "/media/place-night-courtyard.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAsAA4BaJYwCdAD0YsOfosAA/vGBDw9QkoYru+FxN2+bYxzdzpthP9o8oKqh2WU8Y7p3n4Ed75gegAA=",
+    "focal": [
+      0.5,
+      0.45
+    ],
+    "alt": {
+      "ar": "ممرٌّ تصطفّ فيه فوانيسُ الشموع ليلاً، وشخصٌ يمضي في آخره",
+      "en": "A corridor lined with candle lanterns at night, a figure walking away"
+    },
+    "credit": {
+      "author": "Ameer Albahouth",
+      "authorUrl": "https://unsplash.com/@ameeralbahouth",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/o0HnFulrJMU",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
+  "place-palm-grove": {
+    "kind": "image",
+    "src": "/media/place-palm-grove.webp",
+    "width": 2400,
+    "height": 1600,
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAsAA4BaJYwCdADv3VIqAAD+67imBLqZnPT1MuK7Z28m60xSsEx6xANkd+um2RAgOwz1AXfIGkqD4zHfuGAA",
+    "focal": [
+      0.5,
+      0.6
+    ],
+    "alt": {
+      "ar": "وادٍ عامرٌ بالنخيل عند سفح الجبال، والشمسُ تطلّ من فوق القمّة",
+      "en": "A palm-filled wadi at the foot of the mountains, the sun breaking over a ridge"
+    },
+    "credit": {
+      "author": "Rafael Peier",
+      "authorUrl": "https://unsplash.com/@rafaelpeier",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/zolZAQ0PQTY",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
+  "place-palm-shadow-1": {
+    "kind": "image",
+    "src": "/media/place-palm-shadow-1.webp",
+    "width": 2400,
+    "height": 1593,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAsAA4BaJbACdAEKgkGaAAD+6ntFEvkFeBm8IpYW5VPC5dHAb5WPY/j7YK/8suW8T2Aa1xqmvYWfMbevswNmaBHAkrViKOAAAA==",
+    "focal": [
+      0.7,
+      0.5
+    ],
+    "alt": {
+      "ar": "ظلُّ نخلةٍ مروحيّة على جدارٍ مليّسٍ بلون الرمل",
+      "en": "The shadow of a fan palm on a sand-coloured plaster wall"
+    },
+    "credit": {
+      "author": "Mick Haupt",
+      "authorUrl": "https://unsplash.com/@rocinante_11",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/IBdJ0gl4sZw",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
+  "place-palm-shadow-2": {
+    "kind": "image",
+    "src": "/media/place-palm-shadow-2.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoLABAAA4BaJZACdADcYwIb9CAAAP6ZKswnF/+jIiM2vEe8tF+KMPZSQAlsWdFxoNx/RChmxpRhSby+NIcSWdo7qSyae/ts9TuoqsvzLsFJxsB/3zQAAA==",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "alt": {
+      "ar": "سعفُ النخيل يُلقي ظلالاً ناعمة على جدارٍ فاتح",
+      "en": "Palm fronds casting soft shadows across a pale wall"
+    },
+    "credit": {
+      "author": "sander traa",
+      "authorUrl": "https://unsplash.com/@sandertraa",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/RYaazyzORDE",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
+  "place-window-beam": {
+    "kind": "image",
+    "src": "/media/place-window-beam.webp",
+    "width": 1600,
+    "height": 2400,
+    "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoLABAAA4BaJZQC7AEO/1qihRAA/vhLQtJL702c5uE5CGHWtdSQsquAE29yrAAA",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "alt": {
+      "ar": "نافذةٌ بقوسٍ مدبّب ومشبّكٍ هندسيّ تتوهّج في جدارٍ معتم",
+      "en": "A pointed-arch window with a geometric lattice glowing in a dark wall"
+    },
+    "credit": {
+      "author": "Rafael Peier",
+      "authorUrl": "https://unsplash.com/@rafaelpeier",
+      "source": "Unsplash",
+      "sourceUrl": "https://unsplash.com/photos/P1D3gOwEopQ",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    "forItem": "place"
+  },
   "video-coffee": {
     "kind": "video",
     "src": "/media/video-coffee.mp4",

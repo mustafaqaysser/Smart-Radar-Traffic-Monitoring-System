@@ -310,17 +310,25 @@
   .js:not(.reveal-all) [data-reveal='rise']:not([data-revealed]) {
     transform: translate3d(calc(var(--shade-x) * -10px), 24px, 0);
   }
-  .js:not(.reveal-all) [data-reveal='shade']:not([data-revealed]) {
-    opacity: 1;
-    clip-path: inset(0 0 100% 0);
-  }
+  /* Clip reveals clip the child, not the observed element: a fully clipped element never "intersects". */
+  .js:not(.reveal-all) [data-reveal='shade']:not([data-revealed]),
   .js:not(.reveal-all) [data-reveal='wipe']:not([data-revealed]) {
     opacity: 1;
-    clip-path: inset(0 100% 0 0);
   }
-  [dir='rtl'].js:not(.reveal-all) [data-reveal='wipe']:not([data-revealed]),
-  .js:not(.reveal-all) [dir='rtl'] [data-reveal='wipe']:not([data-revealed]) {
-    clip-path: inset(0 0 0 100%);
+  [data-reveal='shade'] > *,
+  [data-reveal='wipe'] > * {
+    /* Negative insets keep cast shadows visible once revealed. */
+    clip-path: inset(-20% -20% -20% -20%);
+    transition: clip-path var(--dur-sun) var(--ease-shade) var(--reveal-delay, 0ms);
+  }
+  .js:not(.reveal-all) [data-reveal='shade']:not([data-revealed]) > * {
+    clip-path: inset(-20% -20% 120% -20%);
+  }
+  .js:not(.reveal-all) [data-reveal='wipe']:not([data-revealed]) > * {
+    clip-path: inset(-20% 120% -20% -20%);
+  }
+  [dir='rtl'].js:not(.reveal-all) [data-reveal='wipe']:not([data-revealed]) > * {
+    clip-path: inset(-20% -20% -20% 120%);
   }
   [data-reveal] {
     transition:

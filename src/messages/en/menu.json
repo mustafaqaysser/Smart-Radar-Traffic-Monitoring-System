@@ -126,7 +126,15 @@
     "unfavourite": "Remove from favourites",
     "favouriteSignIn": "Sign in to save favourites",
     "modifiers": "Ways to have it",
-    "spice": "Heat"
+    "spice": "Heat",
+    "everyDay": "Every day",
+    "addToOrder": "Add to your order",
+    "moreFrom": "More from {menu}",
+    "unavailableEverywhere": "Not on today’s menus",
+    "signInToSave": "Sign in to save",
+    "saved": "Saved to your favourites",
+    "removed": "Removed from your favourites",
+    "facts": "At a glance"
   },
   "print": {
     "title": "{menu} — {house}",

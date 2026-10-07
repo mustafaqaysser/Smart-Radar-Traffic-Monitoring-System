@@ -126,7 +126,15 @@
     "unfavourite": "أزله من المفضّلة",
     "favouriteSignIn": "سجّل الدخول لحفظ المفضّلة",
     "modifiers": "طرق تقديمه",
-    "spice": "الحرارة"
+    "spice": "الحرارة",
+    "everyDay": "كلّ يوم",
+    "addToOrder": "أضف إلى طلبك",
+    "moreFrom": "المزيد من {menu}",
+    "unavailableEverywhere": "ليس في قوائم اليوم",
+    "signInToSave": "سجّل الدخول للحفظ",
+    "saved": "حُفظ في مفضّلتك",
+    "removed": "أُزيل من مفضّلتك",
+    "facts": "في سطور"
   },
   "print": {
     "title": "{menu} — {house}",

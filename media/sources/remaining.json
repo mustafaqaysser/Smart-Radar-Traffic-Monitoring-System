@@ -102,5 +102,434 @@
     "altEn": "Leafy salad with pomegranate seeds and walnuts in a black bowl, under hard sunlight",
     "altAr": "سلطةُ أوراقٍ خضراء بحبّات الرمّان والجوز في وعاءٍ أسود تحت شمسٍ حادّة",
     "notes": "Unsplash, kimia kazemi. Stand-in for fattoush (no crisp bread or sumac visible) chosen for its hard directional sunlight and long shadow - strongly on-concept. Portrait 2800x4192."
+  },
+  {
+    "name": "craft-bread-oven",
+    "forItem": "craft-bread-oven",
+    "subject": "A gloved hand sliding a stack of sesame bread rings on a peel towards the mouth of a wood-fired oven with open flames and embers",
+    "orientation": "landscape",
+    "focal": [
+      0.55,
+      0.55
+    ],
+    "altEn": "A gloved hand slides sesame bread rings into a blazing wood-fired oven",
+    "altAr": "يدٌ بقفّازٍ تُدخل حلقاتِ الخبز بالسمسم إلى فرن حطبٍ مشتعل",
+    "notes": "Unsplash, Yasin Onus. Hand and forearm only, no face. Flame glow + dark surround = night-courtyard palette."
+  },
+  {
+    "name": "dish-karak-kaak",
+    "forItem": "karak-kaak",
+    "subject": "Close-up of a row of freshly baked sesame-crusted bread rings (ka'ak/simit) on a dark wooden board, warm side light",
+    "orientation": "landscape",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "altEn": "Freshly baked sesame bread rings stacked on a dark wooden board",
+    "altAr": "حلقاتُ كعكٍ بالسمسم خارجةٌ لتوّها من الفرن، مصفوفةٌ على لوحٍ خشبيٍّ داكن",
+    "notes": "Unsplash, Yasin Onus. Shows the ka'ak only (no karak cup in frame). Same photographer/series as craft-bread-oven - consistent grade. Crop 4:5 around x 0.35-0.75."
+  },
+  {
+    "name": "dish-kleija",
+    "forItem": "kleija",
+    "subject": "Top-down close-up of three round, crackled golden cookies studded with dates and nuts on a white plate over a stone-grey surface",
+    "orientation": "landscape",
+    "focal": [
+      0.53,
+      0.45
+    ],
+    "altEn": "Three round golden cookies studded with dates and nuts on a white plate",
+    "altAr": "ثلاثُ قرصاتٍ ذهبية مستديرة مرصّعة بالتمر والمكسّرات في طبقٍ أبيض",
+    "notes": "Unsplash, VD Photography. Reads as kleija (round, spiced, date-studded). Soft daylight; neutral plate - grade warm."
+  },
+  {
+    "name": "craft-coffee-pour",
+    "forItem": "craft-coffee-pour",
+    "subject": "A hand pouring dark coffee from a carved clay coffee pot into a small white cup on a round wooden tray with a woven ring and scattered coffee beans; warm café light",
+    "orientation": "portrait",
+    "focal": [
+      0.55,
+      0.55
+    ],
+    "altEn": "A hand pours coffee from a clay pot into a small white cup on a wooden tray",
+    "altAr": "يدٌ تصبّ القهوة من إبريقٍ فخاري في فنجانٍ أبيض صغير على صينيةٍ خشبية",
+    "notes": "Unsplash, Amanuel Kebede. Pot is a clay jebena rather than a brass dallah, but the pour, small cup and warm wood read on-concept. Hand only; sleeve top-left. Background bookshelf blurred."
+  },
+  {
+    "name": "craft-kneading",
+    "forItem": "craft-kneading",
+    "subject": "Two floured hands pressing a round of dough into a drift of flour on a worktop, warm side light",
+    "orientation": "portrait",
+    "focal": [
+      0.62,
+      0.55
+    ],
+    "altEn": "Floured hands press a round of dough into a bed of flour",
+    "altAr": "يدان مغبّرتان بالطحين تضغطان قرصَ عجينٍ فوق طبقةٍ من الدقيق",
+    "notes": "Unsplash, Aldward Castillo. Shot list asks landscape; this is portrait 2800x4200 - a 3:2 landscape crop centred at y 0.55 still holds both hands and the dough."
+  },
+  {
+    "name": "craft-embers",
+    "forItem": "craft-embers",
+    "subject": "Glowing orange-red charcoal embers in darkness, full frame",
+    "orientation": "landscape",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "altEn": "Glowing charcoal embers in the dark",
+    "altAr": "جمرُ فحمٍ متوهّجٌ في العتمة",
+    "notes": "Unsplash, Gaby Fishman Fosbery. Panoramic 2800x1293 - suits wide bands/backgrounds; not croppable to 4:5 at full height."
+  },
+  {
+    "name": "craft-plating",
+    "forItem": "craft-plating",
+    "subject": "A chef's hand spooning a dark berry sauce beside a piece of seared meat in a white-glazed, rough grey stoneware bowl, on a riveted metal counter",
+    "orientation": "portrait",
+    "focal": [
+      0.42,
+      0.55
+    ],
+    "altEn": "A chef's hand spoons dark sauce onto a plated dish in a stoneware bowl",
+    "altAr": "يدُ طاهٍ تسكب صلصةً داكنة بالملعقة على طبقٍ في وعاءٍ حجري",
+    "notes": "Unsplash, Ambitious Studio* / Rick Barrett. Hand and forearm only. Water glass blurred behind (not alcohol)."
+  },
+  {
+    "name": "craft-spices",
+    "forItem": "craft-spices",
+    "subject": "Rows of round metal bowls of whole and ground spices (sumac-red, chilli, cardamom, cumin, dried rose, bark) on the ground before an old ochre wooden door",
+    "orientation": "portrait",
+    "focal": [
+      0.5,
+      0.62
+    ],
+    "altEn": "Metal bowls of whole and ground spices laid out before an old wooden door",
+    "altAr": "أطباقٌ معدنية من التوابل الكاملة والمطحونة مصفوفةٌ أمام بابٍ خشبيٍّ عتيق",
+    "notes": "Unsplash, Agnieszka Stankiewicz (Dubai). No hands in frame (shot list asks hands) but strongly on-concept: souq spices, ochre wood, warm light. Portrait; landscape crop around y 0.55-0.85."
+  },
+  {
+    "name": "craft-server-hands",
+    "forItem": "craft-server-hands",
+    "subject": "A server in a black shirt holding a long white plate of sliced tomato and white cheese with basil; torso and hands only",
+    "orientation": "portrait",
+    "focal": [
+      0.55,
+      0.72
+    ],
+    "altEn": "A server's hands carry a white plate of sliced tomatoes and cheese",
+    "altAr": "يدا نادلٍ تحملان طبقًا أبيض من شرائح الطماطم والجبن",
+    "notes": "Unsplash, gustavo nacht. Cropped torso/hands, no face. Dark shirt reads as night service."
+  },
+  {
+    "name": "craft-pour-over",
+    "forItem": "craft-pour-over",
+    "subject": "A hand pouring freshly brewed coffee from a glass pour-over carafe with wooden collar into a black mug, soft-focus kitchen behind",
+    "orientation": "portrait",
+    "focal": [
+      0.62,
+      0.4
+    ],
+    "altEn": "A hand pours brewed coffee from a glass pour-over carafe into a black mug",
+    "altAr": "يدٌ تصبّ القهوة المقطّرة من إبريقٍ زجاجي في كوبٍ أسود",
+    "notes": "Unsplash, Jakob Owens. Serving pour rather than the brewing step. Pale kitchen cabinets behind - grade warm; crop tighter on carafe + mug."
+  },
+  {
+    "name": "craft-dates-palm",
+    "forItem": "craft-dates-palm",
+    "subject": "Close-up of strands of yellow and amber khalal dates hanging among palm fronds, sun-warmed, shallow depth of field",
+    "orientation": "portrait",
+    "focal": [
+      0.45,
+      0.45
+    ],
+    "altEn": "Strands of yellow and amber dates hanging among palm fronds",
+    "altAr": "عذوقُ بلحٍ أصفر وكهرماني تتدلّى بين سعف النخيل",
+    "notes": "Unsplash, Raúl Mermans García. 2080x3120 (long edge >= 2000). Warm golden palette."
+  },
+  {
+    "name": "craft-fish-ice",
+    "forItem": "craft-fish-ice",
+    "subject": "A pile of whole fresh mackerel with iridescent striped backs lying on crushed ice, warm light",
+    "orientation": "landscape",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "altEn": "Whole fresh mackerel laid on crushed ice",
+    "altAr": "أسماكُ إسقمريٍّ طازجة كاملة على جريش الثلج",
+    "notes": "Unsplash, Sam Farallon. Full-frame fish, no labels or price tags."
+  },
+  {
+    "name": "ing-saffron",
+    "forItem": "ing-saffron",
+    "subject": "Saffron threads in a small ornate silver-and-enamel dish on a cut tree-trunk slab, green cardamom pods spilling from a tipped glass jar behind",
+    "orientation": "landscape",
+    "focal": [
+      0.65,
+      0.55
+    ],
+    "altEn": "Saffron threads in a small ornate dish beside spilled green cardamom pods on wood",
+    "altAr": "خيوطُ زعفرانٍ في صحنٍ صغيرٍ مزخرف، وبجانبها حبّاتُ هيلٍ أخضر منثورة على الخشب",
+    "notes": "Unsplash, Mohammad Amiri. Warm wood; doubles as a cardamom frame. Keep the saffron dish in crop."
+  },
+  {
+    "name": "ing-dried-lime",
+    "forItem": "ing-dried-lime",
+    "subject": "Full-frame pile of whole dried black limes (loomi), wrinkled tan-to-brown skins, warm low-key light",
+    "orientation": "landscape",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "altEn": "A pile of whole dried limes with wrinkled brown skins",
+    "altAr": "كومةٌ من حبّات اللومي المجفّف بقشورها البنّية المتجعّدة",
+    "notes": "Unsplash, Ashkan Forouzani. True loomi. Full-frame texture - any crop works."
+  },
+  {
+    "name": "ing-roses",
+    "forItem": "ing-roses",
+    "subject": "Full-frame close-up of loose pink rose petals and buds",
+    "orientation": "landscape",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "altEn": "Loose pink rose petals and buds filling the frame",
+    "altAr": "بتلاتُ وردٍ وردية وبراعمُ متراكمة تملأ الإطار",
+    "notes": "Unsplash, Zulfugar Karimov. Pink reads as Taif rose. Saturated - pull magenta slightly toward warm in grade."
+  },
+  {
+    "name": "ing-coffee-beans",
+    "forItem": "ing-coffee-beans",
+    "subject": "Roasted coffee beans spilling from an open burlap sack against a dark background, soft side light",
+    "orientation": "landscape",
+    "focal": [
+      0.4,
+      0.55
+    ],
+    "altEn": "Roasted coffee beans in an open burlap sack",
+    "altAr": "حبوبُ قهوةٍ محمّصة في كيسٍ من الخيش",
+    "notes": "Unsplash, Tina Guina. Low-key, warm brown; generous dark negative space top/right for text."
+  },
+  {
+    "name": "ing-honey",
+    "forItem": "ing-honey",
+    "subject": "Macro of a glistening piece of honeycomb resting in a pool of golden honey on a white surface, hard sunlight casting a warm shadow",
+    "orientation": "portrait",
+    "focal": [
+      0.6,
+      0.45
+    ],
+    "altEn": "A piece of honeycomb glistening in a pool of golden honey",
+    "altAr": "قطعةُ شهدٍ تلمع وسط بركةٍ من العسل الذهبي",
+    "notes": "Unsplash, Giorgio Trovato. Hard directional light and cast shadow - on-concept. Rejected a floating-honeycomb studio shot that read as CGI."
+  },
+  {
+    "name": "ing-dates",
+    "forItem": "ing-dates",
+    "subject": "Glossy dark-red dates heaped in a small white bowl with a few scattered in front, on a warm golden surface, shallow depth of field",
+    "orientation": "landscape",
+    "focal": [
+      0.62,
+      0.5
+    ],
+    "altEn": "Glossy dark dates in a small white bowl, a few scattered in front",
+    "altAr": "تمراتٌ داكنة لامعة في وعاءٍ أبيض صغير، وبعضها منثورٌ أمامه",
+    "notes": "Unsplash, VD Photography. Warm golden background; generous space left for type."
+  },
+  {
+    "name": "dish-dates-laban",
+    "forItem": "dates-laban",
+    "subject": "Dates arranged on a round wooden slice beside a small turned-wood cup and wheat stalks, on a soft grey-brown throw; dappled plant shadow across the corner",
+    "orientation": "landscape",
+    "focal": [
+      0.55,
+      0.45
+    ],
+    "altEn": "Dates on a round wooden board beside a small wooden cup",
+    "altAr": "تمراتٌ على لوحٍ خشبيٍّ مستدير بجانب كوبٍ خشبيٍّ صغير",
+    "notes": "Unsplash, Masjid Pogung Dalangan. No laban or fresh fruit visible - the wooden cup stands in for the laban cup. Soft dappled shade fits the concept. Crop 4:5 around x 0.3-0.8."
+  },
+  {
+    "name": "place-candle-table",
+    "forItem": "place-candle-table",
+    "subject": "Dim, warm restaurant corner: a single candle in a frosted holder glowing on a white-clothed table, bentwood chairs, wood-panelled walls; out-of-focus warm highlight in the foreground",
+    "orientation": "portrait",
+    "focal": [
+      0.4,
+      0.48
+    ],
+    "altEn": "A single candle glowing on a white-clothed table in a dim, wood-panelled room",
+    "altAr": "شمعةٌ واحدة تتوهّج على مائدةٍ بمفرشٍ أبيض في قاعةٍ خافتةٍ مكسوّةٍ بالخشب",
+    "notes": "Unsplash, Sara Abilova. No glasses or bottles visible. Portrait (shot list asks landscape) - landscape crop at y 0.35-0.65 holds the table. Blurred orange blob bottom-left can be cropped."
+  },
+  {
+    "name": "dish-luqaimat",
+    "forItem": "luqaimat",
+    "subject": "Golden sesame-crusted fried dough balls in a patterned blue-and-white bowl with a spoon, on a warm wooden table with small handmade ceramic cups behind",
+    "orientation": "landscape",
+    "focal": [
+      0.42,
+      0.62
+    ],
+    "altEn": "Golden sesame-coated dough balls in a patterned bowl on a wooden table",
+    "altAr": "لقيماتٌ ذهبية مكسوّة بالسمسم في زبديةٍ مزخرفة على طاولةٍ خشبية",
+    "notes": "Unsplash, Andreas Haubold. Sesame balls (East Asian jian dui) standing in for luqaimat - same golden spheres + sesame; no date syrup visible. Warm, low light; crop 4:5 around the bowl."
+  },
+  {
+    "name": "dish-qursan",
+    "forItem": "qursan",
+    "subject": "Top-down: a dark bowl of meat stew with potato and carrot chunks in brown gravy, beside torn crusty bread and a whole loaf, on a blue-and-white checked cloth with marigolds and a spoon",
+    "orientation": "landscape",
+    "focal": [
+      0.48,
+      0.55
+    ],
+    "altEn": "A bowl of meat and vegetable stew beside torn pieces of bread",
+    "altAr": "زبديةُ مرقِ لحمٍ وخضار بجانب قطعٍ من الخبز المقطّع",
+    "notes": "Unsplash, Laura Ohlman. Stand-in for qursan (stew + bread; bread is a crusty loaf rather than thin qursan sheets). Blue check cloth is a cool accent - grade warm or crop 4:5 tight to bowl + bread."
+  },
+  {
+    "name": "dish-mataziz",
+    "forItem": "mataziz",
+    "subject": "A white floral-rimmed bowl of red-orange lamb stew with whole potatoes, on hessian over a warm wooden board, 45-degree view",
+    "orientation": "square",
+    "focal": [
+      0.5,
+      0.5
+    ],
+    "altEn": "A bowl of red lamb stew with potatoes on a wooden table",
+    "altAr": "زبديةُ مرقِ لحمٍ أحمر مع البطاطس على طاولةٍ خشبية",
+    "notes": "Unsplash, Rimsha Noor. Stand-in for mataziz: no dough squares visible - reads as a home-style lamb & vegetable stew with the right colour (tomato/pumpkin red). 2800x2800."
+  },
+  {
+    "name": "dish-sundial-morning",
+    "forItem": "sundial-morning",
+    "subject": "Minimal top-down still life: two slices of open-crumb bread above three spoons trailing butter, a glossy amber preserve and a golden crumble, on a pale surface with wide negative space",
+    "orientation": "portrait",
+    "focal": [
+      0.55,
+      0.45
+    ],
+    "altEn": "Two slices of rustic bread above three spoons of butter, amber preserve and golden crumble",
+    "altAr": "شريحتا خبزٍ ريفي فوق ثلاث ملاعق: زبدةٌ ومربّى كهرماني وفتاتٌ ذهبي",
+    "notes": "Unsplash, Alice Pasqual. Tasting-course stand-in for tannour bread, ghee and honey: minimal and composed, but on a pale surface, not dark stoneware. 2000x3000."
+  },
+  {
+    "name": "place-majlis",
+    "forItem": "place-majlis",
+    "subject": "Long majlis hall with a carved, painted timber ceiling, plastered walls with arched niches and wall lamps, floor cushions in red sadu-pattern lining both sides over red patterned carpets; bookshelves on the right",
+    "orientation": "portrait",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "altEn": "A long majlis hall with floor cushions along both walls, red carpets and a carved wooden ceiling",
+    "altAr": "مجلسٌ طويل تصطفّ على جانبيه الجلساتُ الأرضية، بسجّادٍ أحمر وسقفٍ خشبيٍّ منقوش",
+    "notes": "Unsplash, Rafael Peier (Oman fort majlis). Shot list asks landscape; this is portrait 2800x4200 - a 3:2 crop at y 0.45-0.8 keeps cushions + carpet. Book spines on the right are tiny and unreadable; crop x<0.85 to drop them entirely."
+  },
+  {
+    "name": "dish-labneh-zaatar",
+    "forItem": "labneh-zaatar",
+    "subject": "Top-down: a stoneware bowl of swirled, creamy pale dip pooled with olive oil, sprinkled with dried herbs and dill, cucumber wedges on the side, on pale travertine",
+    "orientation": "portrait",
+    "focal": [
+      0.5,
+      0.42
+    ],
+    "altEn": "A creamy dip swirled with olive oil and dried herbs, cucumber wedges on the side",
+    "altAr": "صحنٌ من غموسٍ كريمي تتخلّله دوّاماتُ زيت الزيتون والأعشاب المجفّفة، وبجانبه شرائحُ خيار",
+    "notes": "Unsplash, Andrea Niebuhr. Stand-in: actually hummus (beige rather than labneh-white); the oil + herb sprinkle reads like labneh with za'atar. Shares a look with dish-hummus-ghee - consider a slight cooler/whiter grade to differentiate. No bread or olives visible."
+  },
+  {
+    "name": "dish-masoub",
+    "forItem": "masoub",
+    "subject": "A white plate of small golden pancakes topped with banana slices beside a glass of frothy banana milk, on a bamboo board with a linen napkin, fork and knife",
+    "orientation": "landscape",
+    "focal": [
+      0.4,
+      0.5
+    ],
+    "altEn": "Golden pancakes topped with banana slices beside a glass of banana milk",
+    "altAr": "فطائرُ ذهبية صغيرة تعلوها شرائحُ الموز، وبجانبها كأسٌ من حليب الموز",
+    "notes": "Unsplash, Trinh Le Nguyen Ai. Loose stand-in for masoub (banana + bread + cream); not mashed and served on a plate rather than a bowl. Bright daylight - grade warmer; crop 4:5 on the plate."
+  },
+  {
+    "name": "craft-chef-back",
+    "forItem": "craft-chef-back",
+    "subject": "A baker in a flat cap and white shirt, seen from behind over his shoulder, tending a blazing wood-fired oven with long tongs; glowing embers in the firebox below",
+    "orientation": "portrait",
+    "focal": [
+      0.4,
+      0.5
+    ],
+    "altEn": "A baker seen from behind tends the flames of a wood-fired oven with long tongs",
+    "altAr": "خبّازٌ من الخلف يقلّب لهيبَ فرن الحطب بملقطٍ طويل",
+    "notes": "Unsplash, DDP. Shot over the shoulder - face turned away (only ear and glasses arm visible); crop the top ~12% to drop the head entirely if needed. Rejected two frames with T-shirt print / signage and stemware."
+  },
+  {
+    "name": "place-long-table",
+    "forItem": "place-long-table",
+    "subject": "Quiet courtyard with a weathered, patched plaster wall, gravel floor and two long dark-wood tables with benches; olive and leafy plants in the foreground, soft daylight, no people",
+    "orientation": "landscape",
+    "focal": [
+      0.5,
+      0.62
+    ],
+    "altEn": "Long wooden tables in a quiet courtyard with a weathered plaster wall and potted plants",
+    "altAr": "موائدُ خشبية طويلة في فناءٍ هادئ بجدارٍ جصّيٍّ عتيق ونباتاتٍ في الأصص",
+    "notes": "Unsplash, Elist Nguyen. Tables are not laid for dinner - chosen because every set-table candidate showed wine bottles or stemware. Strongly on-concept courtyard (plaster, gravel, greenery); grade warmer, add hard light in grade if desired."
+  },
+  {
+    "name": "dish-areeka",
+    "forItem": "areeka",
+    "subject": "A hand pouring a thin stream of honey/date syrup from a small glass bottle onto a sage-green bowl of grain porridge topped with flaked almonds, on a woven placemat",
+    "orientation": "portrait",
+    "focal": [
+      0.5,
+      0.55
+    ],
+    "altEn": "Honey poured over a bowl of grain porridge topped with flaked almonds",
+    "altAr": "عسلٌ يُسكب على زبديةِ عصيدةٍ من الحبوب يعلوها لوزٌ مبشور",
+    "notes": "Unsplash, K8. Stand-in for areeka: porridge texture + honey pour; no dates or visible ghee. Bottle has no visible label. Fingertips only at top edge."
+  },
+  {
+    "name": "place-mudbrick",
+    "forItem": "place-mudbrick",
+    "subject": "Sun-baked earthen (mud-brick) parapet with rounded merlons, hard sun and deep shadow, palm tops beyond, blue sky with light cloud",
+    "orientation": "portrait",
+    "focal": [
+      0.5,
+      0.62
+    ],
+    "altEn": "Sun-baked mud-brick parapet with rounded crenellations against a blue sky",
+    "altAr": "سورٌ طينيٌّ لوّحته الشمس بشرفاتٍ مستديرة تحت سماءٍ زرقاء",
+    "notes": "Unsplash, mathieu gauzy (North African earthen architecture, not Najdi - no triangular openings). Hard sun + shadow on clay = on-concept. Portrait; landscape crop at y 0.45-0.95. A true Najdi frame (At-Turaif, Commons CC BY) was found but carries a burned-in copyright watermark; another At-Turaif Commons original was blocked by Wikimedia rate limits."
+  },
+  {
+    "name": "dish-balaleet",
+    "forItem": "balaleet",
+    "subject": "Nests of fine shredded vermicelli pastry topped with crushed dried rose petals and rosebuds on a white plate, warm light",
+    "orientation": "landscape",
+    "focal": [
+      0.55,
+      0.42
+    ],
+    "altEn": "Nests of fine vermicelli scattered with dried rose petals and rosebuds",
+    "altAr": "أعشاشٌ من الشعيرية الرفيعة تتناثر عليها بتلاتُ الورد المجفّف وبراعمُه",
+    "notes": "Unsplash, Dad hotel. Stand-in: sweet vermicelli with rose (no omelette layer). Replace with a house photograph of balaleet when one is shot."
+  },
+  {
+    "name": "dish-saleeg",
+    "forItem": "saleeg",
+    "subject": "A glass dish of milk-white, creamy vermicelli pudding (sheer khurma), lid lifted; terracotta cups and marigolds at the edges",
+    "orientation": "landscape",
+    "focal": [
+      0.53,
+      0.45
+    ],
+    "altEn": "A creamy, milk-white dish in a glass bowl with its lid lifted",
+    "altAr": "طبقٌ كريميٌّ أبيض بالحليب في وعاءٍ زجاجيٍّ رُفع غطاؤه",
+    "notes": "Unsplash, Adil Murshed. Stand-in for saleeg (creamy white rice): the texture and colour read right at menu sizes; crop tight on the bowl to drop the marigolds (x > 0.8). Replace with a house photograph when one is shot."
   }
 ]

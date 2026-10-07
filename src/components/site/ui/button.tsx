@@ -88,3 +88,15 @@ export function ArrowLink({ className, children, ...rest }: ComponentProps<typeo
     </Link>
   );
 }
+
+/** "Back to …" link: the arrow leads, pointing toward the start of the line (mirrors in RTL). */
+export function BackLink({ className, children, ...rest }: ComponentProps<typeof Link>) {
+  return (
+    <Link className={cn('group/btn inline-flex items-center gap-2 font-label text-[0.75rem] tracking-[0.14em] uppercase rtl:text-base rtl:tracking-normal rtl:normal-case', className)} {...rest}>
+      <span aria-hidden="true" className="inline-flex transition-transform duration-[var(--dur-base)] ease-[var(--ease-shade)] group-hover/btn:-translate-x-1 rtl:group-hover/btn:translate-x-1">
+        <Icon name="arrowBack" size={18} />
+      </span>
+      <span>{children}</span>
+    </Link>
+  );
+}

@@ -1,1 +1,138 @@
-{}
+{
+  "meta": {
+    "title": "The menu",
+    "description": "Menus for every hour of the day — morning shade, the short shade, the long shade and the night courtyard — with allergens, diets and prices for both houses."
+  },
+  "title": "The menu",
+  "intro": "Each hour has its own menu. The page opens on the one being served now at {house}; turn the dial to see another hour.",
+  "now": {
+    "serving": "Served now",
+    "next": "Next: {menu}, from {time}",
+    "later": "From {when}",
+    "allDay": "Served all day",
+    "notToday": "Not served today",
+    "resting": "The kitchen is resting at this hour"
+  },
+  "scrubber": {
+    "label": "Preview the menu at another hour",
+    "now": "Now",
+    "at": "At {time}",
+    "back": "Back to now"
+  },
+  "menus": "Menus",
+  "filters": {
+    "title": "Filter",
+    "search": "Search",
+    "searchPlaceholder": "A dish or an ingredient",
+    "diet": "Diet",
+    "avoid": "Leave out",
+    "avoidHint": "Hide dishes that contain",
+    "spice": "Heat",
+    "spiceAny": "Any",
+    "spiceUpTo": "Up to {level}",
+    "clear": "Clear filters",
+    "active": "{count, plural, one {{n} filter} other {{n} filters}}",
+    "results": "{count, plural, =0 {No dishes} one {{n} dish} other {{n} dishes}}",
+    "none": "Nothing on this menu matches. Try removing a filter or searching another menu.",
+    "show": "Filters",
+    "done": "Show dishes"
+  },
+  "notes": {
+    "allergens": "Tell your host about any allergy before you order. Our kitchen handles all fourteen major allergens, so we cannot rule out traces.",
+    "prices": "Prices include 15% VAT. A 10% service charge applies to orders at the table only.",
+    "tasting": "{price} per guest · served at the table",
+    "seasonal": "Served during {season}"
+  },
+  "item": {
+    "add": "Add",
+    "addNamed": "Add {name} to your order",
+    "added": "Added to your order",
+    "soldOut": "Sold out today",
+    "unavailable": "Not served at {house}",
+    "notOrderable": "At the table only",
+    "kcal": "{n} kcal",
+    "view": "About this dish"
+  },
+  "quickAdd": {
+    "title": "Add to your order",
+    "required": "Choose {count, plural, one {{n}} other {{n}}}",
+    "optional": "Optional · up to {n}",
+    "chooseOne": "Choose one",
+    "note": "A note for the kitchen",
+    "notePlaceholder": "No onion, extra lemon…",
+    "quantity": "Quantity",
+    "addFor": "Add · {price}",
+    "missing": "Please choose: {group}",
+    "unavailableOption": "Not available today",
+    "branchNote": "Ordering from {house}",
+    "viewOrder": "View your order",
+    "switchBranch": "Your current order is from the other house. Adding this dish starts a new order at {house}."
+  },
+  "matchmaker": {
+    "open": "Help me choose",
+    "title": "Help me choose",
+    "intro": "Three questions, three dishes from the menu being served. Your diet and allergen filters still apply.",
+    "hunger": "How hungry are you?",
+    "hungerLight": "A little",
+    "hungerProper": "Properly",
+    "hungerShare": "We are sharing",
+    "mood": "What are you in the mood for?",
+    "moodSea": "Something from the sea",
+    "moodEmbers": "Something from the embers",
+    "moodGarden": "Something from the garden",
+    "moodSweet": "Something sweet",
+    "moodSurprise": "Surprise me",
+    "spice": "And heat?",
+    "spiceNone": "None, please",
+    "spiceSome": "A little",
+    "spiceAll": "Bring it",
+    "results": "Three for you",
+    "noResults": "Nothing on this menu fits all three answers. Try another hour, or loosen a filter.",
+    "again": "Start again",
+    "reasons": {
+      "signature": "One of the house’s signatures",
+      "light": "Light enough for a short visit",
+      "hearty": "A proper plate",
+      "share": "Made for the middle of the table",
+      "sea": "From the Red Sea",
+      "embers": "Cooked over embers",
+      "garden": "No meat or fish",
+      "sweet": "For the sweet tooth",
+      "mild": "No heat",
+      "hot": "Brings some heat"
+    }
+  },
+  "actions": {
+    "print": "Print this menu",
+    "pdf": "Download as PDF",
+    "order": "Order for pickup or delivery",
+    "reserve": "Book a table"
+  },
+  "dish": {
+    "back": "Back to the menu",
+    "story": "The story",
+    "ingredients": "What is in it",
+    "allergens": "Allergens",
+    "dietary": "Suits",
+    "nutrition": "Energy",
+    "served": "Served",
+    "servedIn": "{menu} · {hours}",
+    "pairings": "Goes well with",
+    "houses": "At the houses",
+    "available": "Available",
+    "soldOut": "Sold out today",
+    "notHere": "Not served here",
+    "favourite": "Save to favourites",
+    "unfavourite": "Remove from favourites",
+    "favouriteSignIn": "Sign in to save favourites",
+    "modifiers": "Ways to have it",
+    "spice": "Heat"
+  },
+  "print": {
+    "title": "{menu} — {house}",
+    "printedAt": "Printed {date}",
+    "legend": "Allergens: {list}",
+    "button": "Print or save as PDF",
+    "footer": "Prices in Saudi riyals, including VAT. Please tell us about any allergy."
+  }
+}

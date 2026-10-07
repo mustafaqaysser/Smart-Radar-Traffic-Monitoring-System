@@ -35,5 +35,5 @@ export const getServingContext = cache(async (branch: BranchDTO | null): Promise
 /** Names of the menus being served now, excluding all-day lists (drinks, children) unless nothing else is on. */
 export function servingNames(ctx: ServingContext, locale: string): string[] {
   const timed = ctx.serving.filter((m) => m.schedule.length > 0);
-  return (timed.length ? timed : []).map((m) => tr(m.hour ?? m.name, locale));
+  return timed.map((m) => tr(m.name, locale));
 }

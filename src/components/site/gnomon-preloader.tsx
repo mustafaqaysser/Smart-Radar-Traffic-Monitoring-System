@@ -44,7 +44,8 @@ export function GnomonPreloader({ angle, length }: { angle: number; length: numb
             const a = Math.PI + (Math.PI * i) / 12;
             const r1 = 168;
             const r2 = i % 3 === 0 ? 150 : 158;
-            return <line key={i} x1={200 + Math.cos(a) * r1} y1={300 + Math.sin(a) * r1 * 0.42} x2={200 + Math.cos(a) * r2} y2={300 + Math.sin(a) * r2 * 0.42} />;
+            const r = (v: number) => Math.round(v * 100) / 100;
+            return <line key={i} x1={r(200 + Math.cos(a) * r1)} y1={r(300 + Math.sin(a) * r1 * 0.42)} x2={r(200 + Math.cos(a) * r2)} y2={r(300 + Math.sin(a) * r2 * 0.42)} />;
           })}
         </g>
         <line x1="40" y1="300" x2="360" y2="300" stroke="currentColor" strokeWidth="1.5" opacity="0.4" />

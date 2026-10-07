@@ -701,3 +701,34 @@
     outline-offset: 6px;
   }
 }
+
+@layer components {
+  .toast {
+    animation: toast-in var(--dur-calm) var(--ease-shade) both;
+    box-shadow: calc(var(--shade-x) * 6px) calc(var(--shade-y) * 6px) 0 0 var(--c-shade);
+  }
+}
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(12px); }
+}
+
+@layer components {
+  .sundial:has(.sundial-range:focus-visible) svg {
+    outline: 2px solid var(--c-ink);
+    outline-offset: 8px;
+  }
+}
+
+@layer components {
+  .trailing-window {
+    opacity: 0;
+    scale: 0.92;
+    transition:
+      opacity var(--dur-base) var(--ease-shade),
+      scale var(--dur-calm) var(--ease-shade);
+  }
+  .trailing-window[data-visible] {
+    opacity: 1;
+    scale: 1;
+  }
+}

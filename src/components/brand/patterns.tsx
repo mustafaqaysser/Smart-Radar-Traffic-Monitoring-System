@@ -58,12 +58,13 @@ export function HourMarks({
     <svg viewBox={`0 0 ${size} ${size / 2 + 40}`} className={className} aria-hidden="true" focusable="false">
       {labels.map((label, i) => {
         const angle = ((from + ((to - from) * i) / steps) * Math.PI) / 180;
-        const x1 = c + Math.cos(angle) * radius;
-        const y1 = c + Math.sin(angle) * radius;
-        const x2 = c + Math.cos(angle) * (radius - 14);
-        const y2 = c + Math.sin(angle) * (radius - 14);
-        const tx = c + Math.cos(angle) * (radius + 22);
-        const ty = c + Math.sin(angle) * (radius + 22);
+        const r = (v: number) => Math.round(v * 100) / 100;
+        const x1 = r(c + Math.cos(angle) * radius);
+        const y1 = r(c + Math.sin(angle) * radius);
+        const x2 = r(c + Math.cos(angle) * (radius - 14));
+        const y2 = r(c + Math.sin(angle) * (radius - 14));
+        const tx = r(c + Math.cos(angle) * (radius + 22));
+        const ty = r(c + Math.sin(angle) * (radius + 22));
         return (
           <g key={`${label}-${i}`}>
             <line x1={x1} y1={y1} x2={x2} y2={y2} stroke="currentColor" strokeWidth={1.5} />

@@ -25,6 +25,7 @@ import { GnomonPreloader } from '@/components/site/gnomon-preloader';
 import { HeadScript } from '@/components/site/head-script';
 import { SeasonBanner } from '@/components/site/season-banner';
 import { MaintenanceView } from '@/components/site/maintenance-view';
+import { Toaster } from '@/components/site/ui/toast';
 import '@/styles/site.css';
 
 export function generateStaticParams() {
@@ -138,6 +139,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
                     {children}
                   </main>
                   <SiteFooter />
+                  <Toaster closeLabel={t('a11y.close')} />
                 </>
               )}
             </AtmosphereProvider>

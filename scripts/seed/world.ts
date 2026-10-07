@@ -320,9 +320,9 @@ export const seedWorld: Seeder = async ({ db, now, log, warn }) => {
       createdAt: new Date(now.getTime() - r.daysAgo * 864e5),
     })),
   );
-  await db.insert(s.galleryItems).values(
-    gallery.filter((g) => manifest[g.media]).map((g, i) => ({ id: `gl_${i}`, mediaId: ids.media(g.media), caption: g.caption, hour: g.hour, sortOrder: i })),
-  );
+  const galleryRows = gallery.filter((g) => manifest[g.media]).map((g, i) => ({ id: `gl_${i}`, mediaId: ids.media(g.media), caption: g.caption, hour: g.hour, sortOrder: i }));
+  if (galleryRows.length < gallery.length) warn(`gallery: ${gallery.length - galleryRows.length} photographs missing from the manifest (run npm run media:build)`);
+  if (galleryRows.length) await db.insert(s.galleryItems).values(galleryRows);
   log(`content: ${journalPosts.length} posts, ${faqs.length} faqs, ${team.length} team, ${reviews.length} reviews, ${press.length} press, ${jobs.length} jobs`);
 
   // ——— events ———

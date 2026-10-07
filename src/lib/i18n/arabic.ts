@@ -28,10 +28,19 @@ export function normalizeForSearch(input: string): string {
     .trim();
 }
 
-/** True when every query token appears in the haystack (both normalised). */
-export function matchesSearch(haystack: string, query: string): boolean {
+/** Leading Arabic article and attached particles (ال، وال، بال، كال، فال، لل) are dropped from query words. */
+const ARTICLE = /^(?:وال|بال|كال|فال|لل|ال)(?=..)/;
+
+/** Normalised query words, with the Arabic definite article removed so «الحمص» finds «حمص». */
+export function searchTokens(query: string): string[] {
   const q = normalizeForSearch(query);
-  if (!q) return true;
+  return q ? q.split(' ').map((t) => t.replace(ARTICLE, '')) : [];
+}
+
+/** True when every query word appears in the haystack (both normalised). */
+export function matchesSearch(haystack: string, query: string): boolean {
+  const tokens = searchTokens(query);
+  if (!tokens.length) return true;
   const h = normalizeForSearch(haystack);
-  return q.split(' ').every((token) => h.includes(token));
+  return tokens.every((token) => h.includes(token));
 }

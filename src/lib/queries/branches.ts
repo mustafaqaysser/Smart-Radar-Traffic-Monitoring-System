@@ -48,7 +48,7 @@ async function loadBranches(): Promise<BranchDTO[]> {
     kitchenHours: hours.filter((h) => h.branchId === b.id && h.kind === 'kitchen').map((h) => ({ weekday: h.weekday, opens: h.opens, closes: h.closes })),
     specials: specials
       .filter((sp) => sp.branchId === b.id)
-      .map((sp) => ({ date: sp.date, closed: sp.closed, ranges: sp.ranges, label: sp.label.en ?? sp.label.ar ?? '', reservationsBlocked: sp.reservationsBlocked })),
+      .map((sp) => ({ date: sp.date, closed: sp.closed, ranges: sp.ranges, label: sp.label.en ?? sp.label.ar ?? '', name: sp.label, reservationsBlocked: sp.reservationsBlocked })),
     periods: periods
       .filter((p) => p.branchId === b.id)
       .map((p) => ({ key: p.key, name: p.name, weekdays: p.weekdays, start: p.start, end: p.end, maxCoversPerSlot: p.maxCoversPerSlot })),

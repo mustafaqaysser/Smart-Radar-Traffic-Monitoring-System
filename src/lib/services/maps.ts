@@ -1,6 +1,8 @@
 /** Keyless maps: OpenFreeMap vector tiles styled for the brand, plus deep links to navigation apps. */
 
 export const MAP_STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
+/** Night counterpart, used while the site is in its dusk and night phases. */
+export const MAP_STYLE_URL_DARK = 'https://tiles.openfreemap.org/styles/dark';
 
 export interface GeoPoint {
   lat: number;

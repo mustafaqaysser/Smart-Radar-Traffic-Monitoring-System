@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next';
 import { notFound } from 'next/navigation';
 import { headers } from 'next/headers';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import restaurantConfig from '@config';
 import { routing } from '@/i18n/routing';
 import { siteFontVariables } from '@/lib/fonts';
@@ -24,6 +24,8 @@ import { HeadScript } from '@/components/site/head-script';
 import { MaintenanceView } from '@/components/site/maintenance-view';
 import { Toaster } from '@/components/site/ui/toast';
 import '@/styles/site.css';
+
+const SERVER_ONLY_NAMESPACES = new Set(['legal', 'admin']);
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -73,14 +75,17 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
-  const [nonce, settings, branch, branches, user, t] = await Promise.all([
+  const [nonce, settings, branch, branches, user, t, messages] = await Promise.all([
     headers().then((h) => h.get('x-nonce') ?? undefined),
     getSettings(),
     getSelectedBranch(),
     getBranches(),
     getCurrentUser(),
     getTranslations('common'),
+    getMessages(),
   ]);
+  // Client components only receive the namespaces they use (long-form legal copy and the admin stay on the server).
+  const clientMessages = Object.fromEntries(Object.entries(messages).filter(([ns]) => !SERVER_ONLY_NAMESPACES.has(ns)));
   // Children of the (site) group render the header, footer and seasonal notice; bare routes (print, table) do not.
   const serving = await getServingContext(branch);
   const location = branch ?? { lat: 21.4854, lng: 39.1869, timeZone: restaurantConfig.defaultTimeZone };
@@ -109,7 +114,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
         <HeadScript nonce={nonce} preloader={settings.features.preloader && !maintenance} />
       </head>
       <body>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={clientMessages}>
           <MotionProvider>
             <AtmosphereProvider
               branch={branch ? { slug: branch.slug, name: tr(branch.name, locale), city: tr(branch.city, locale), lat: branch.lat, lng: branch.lng, timeZone: branch.timeZone } : null}

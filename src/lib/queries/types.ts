@@ -71,7 +71,7 @@ export interface BranchDTO {
   busyMode: boolean;
   venueHours: WeeklyRange[];
   kitchenHours: WeeklyRange[];
-  specials: SpecialDay[];
+  specials: (SpecialDay & { name: LocalizedText })[];
   periods: { key: string; name: LocalizedText; weekdays: number[]; start: string; end: string; maxCoversPerSlot: number | null }[];
   zones: ZoneDTO[];
 }

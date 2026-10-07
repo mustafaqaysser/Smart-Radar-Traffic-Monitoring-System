@@ -43,6 +43,8 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     optimizePackageImports: ['gsap', 'motion', 'lucide-react', 'recharts'],
+    // CV uploads (up to 5 MB) are sent through server actions; leave room for multipart overhead.
+    serverActions: { bodySizeLimit: '6mb' },
   },
   async headers() {
     return [

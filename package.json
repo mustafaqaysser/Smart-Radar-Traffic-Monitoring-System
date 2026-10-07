@@ -12,6 +12,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "postinstall": "node scripts/vendor.mjs",
     "setup": "node scripts/setup.mjs",
     "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc --noEmit",

@@ -1,1 +1,94 @@
-{}
+{
+  "locations": {
+    "meta": { "title": "Our houses", "description": "Two courtyard houses — Al-Balad in Jeddah and Wadi Hanifah in Riyadh — with live opening hours, directions, parking and access." },
+    "eyebrow": "Our houses",
+    "title": "Two courtyards, one clock",
+    "intro": "Both houses keep the same hours and the same menus. The light is different: Jeddah’s sun sets some twenty minutes after Riyadh’s.",
+    "details": "Opening hours, directions and access",
+    "today": "Today",
+    "weekTitle": "The week ahead",
+    "closed": "Closed",
+    "seasonal": "Seasonal hours",
+    "noReservations": "No online bookings this day",
+    "mapTitle": "On the map",
+    "mapShow": "Show the interactive map",
+    "mapNote": "The map loads from OpenFreeMap when you open it.",
+    "mapLoading": "Loading the map…",
+    "mapError": "The map could not load. The address and directions above still work.",
+    "directions": "Directions",
+    "google": "Google Maps",
+    "apple": "Apple Maps",
+    "waze": "Waze",
+    "contact": "Contact",
+    "parking": "Parking",
+    "access": "Access",
+    "rooms": "Private rooms in this house",
+    "seated": "{count, plural, one {{n} seated} other {{n} seated}}",
+    "events": "Gatherings in this house",
+    "reserveHere": "Book a table at {house}",
+    "orderHere": "Order from {house}",
+    "sun": {
+      "title": "The sun over {house} today",
+      "sunrise": "Sunrise",
+      "noon": "Solar noon",
+      "sunset": "Sunset",
+      "maghrib": "Maghrib",
+      "shadow": "At noon a person’s shadow is {percent} of their height.",
+      "noShadow": "At noon today the sun stands overhead and a person casts no shadow at all.",
+      "southShadow": "At noon today the sun is to the north, so shadows fall towards the south — {percent} of a person’s height."
+    }
+  },
+  "contact": {
+    "meta": { "title": "Contact", "description": "Write to Zill — bookings, gatherings, private dining, press and anything else. We reply within one working day." },
+    "eyebrow": "Contact",
+    "title": "Write to the house",
+    "intro": "We read every message and reply within one working day. For a table tonight, calling the house is quicker.",
+    "subject": "What is it about?",
+    "subjects": {
+      "general": "A general question",
+      "reservations": "A booking",
+      "events": "A gathering or ticket",
+      "privateDining": "Private dining or catering",
+      "press": "Press",
+      "feedback": "Feedback on a visit",
+      "other": "Something else"
+    },
+    "privateHint": "For private dining and catering, the private dining page has a form with everything we need to quote.",
+    "direct": "Or write directly",
+    "emails": {
+      "general": "General",
+      "press": "Press",
+      "events": "Gatherings and private dining",
+      "careers": "Careers"
+    },
+    "houses": "Call a house",
+    "submit": "Send message"
+  },
+  "careers": {
+    "meta": { "title": "Careers", "description": "Open positions in the kitchens and dining rooms of Zill, in Jeddah and Riyadh." },
+    "eyebrow": "Careers",
+    "title": "Join the houses",
+    "intro": "We are a small team in two houses. We look for people who notice things — the light, the temperature of a room, the moment a guest needs nothing more.",
+    "open": "Open positions",
+    "none": "No positions are open right now. Send us a note anyway at the address below; we keep it for the next opening.",
+    "employment": { "full_time": "Full time", "part_time": "Part time", "seasonal": "Seasonal" },
+    "both": "Both houses",
+    "view": "Read and apply",
+    "back": "All positions",
+    "apply": "Apply",
+    "applyIntro": "Tell us a little about yourself and attach your CV. We reply to every application within two weeks.",
+    "message": "Why this position?",
+    "cv": "Your CV",
+    "cvHint": "PDF or Word, up to 5 MB.",
+    "submit": "Send application",
+    "done": "Thank you — your application is with us. A copy is on its way to {email}.",
+    "write": "Write to us"
+  },
+  "newsletter": {
+    "meta": { "title": "The seasonal letter", "description": "Four letters a year: what has come into season, the gatherings ahead, and a recipe from the kitchen." },
+    "eyebrow": "The seasonal letter",
+    "title": "A letter at the change of season",
+    "intro": "Four times a year, never more: what has come into season, the gatherings ahead, and a recipe from the kitchen.",
+    "promise": "We never share your address, and every letter has a one-click way out."
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "title": "Legal",
+    "description": "Privacy, terms, cookies, allergens and accessibility at Zill, in plain language: what we keep, what we promise and what we ask of you."
+  },
+  "updated": "Last updated {date}",
+  "demo": "This is a demonstration site: the restaurant, its people and its data are fictional, and every booking and payment is simulated.",
+  "contents": "On this page",
+  "docs": {
+    "privacy": {
+      "title": "Privacy notice",
+      "summary": "What we keep about you, why, for how long, and how to see, correct or delete it. We ask only for what each task needs, and we never sell it.",
+      "sections": [
+        {
+          "heading": "Who we are",
+          "paragraphs": [
+            "Zill Hospitality runs this website and the two houses of Zill: Al-Balad in Jeddah and Wadi Hanifah in Riyadh. We decide how your personal data is used, and we answer for it under the Saudi Personal Data Protection Law.",
+            "This notice covers the site, both houses and the emails we send. For anything about your data, write to privacy@zill.test."
+          ],
+          "list": []
+        },
+        {
+          "heading": "What we collect",
+          "paragraphs": [
+            "Most of what we hold is what you give us, and we ask only for what the task in hand needs. Depending on what you do with us, it can include:"
+          ],
+          "list": [
+            "Your name, email address and mobile number",
+            "The details of your bookings and orders: house, date, time, party size, dishes and notes",
+            "Dietary notes and allergies, when you choose to tell us",
+            "Delivery addresses",
+            "Your Shade Circle history: points earned and spent, and your tier",
+            "Messages you send through the site’s forms",
+            "Your CV and the details of your application, when you apply for a job",
+            "The name and email address of someone you send a gift card to, and your message to them",
+            "When you sign in, the IP address and browser of each session, to help keep your account secure"
+          ]
+        },
+        {
+          "heading": "Why we use it",
+          "paragraphs": [
+            "We use personal data only for the purposes below. Service emails belong to the booking or order they concern, so they are not marketing; the seasonal letter is the only marketing we send."
+          ],
+          "list": [
+            "Taking and managing your bookings",
+            "Preparing and delivering your orders, and telling you how they are going",
+            "Taking payments and deposits, and making refunds",
+            "Issuing gift cards and event tickets, and accepting them when they are used",
+            "Running the Shade Circle, our loyalty programme",
+            "Replying to your messages and enquiries",
+            "Considering job applications",
+            "Sending service emails: confirmations, a reminder 24 hours before a booking, and updates on an order",
+            "Sending the seasonal letter, only after you subscribe and confirm through the link we email you",
+            "Preventing fraud and keeping the site safe from abuse",
+            "Keeping the legal and tax records the law requires"
+          ]
+        },
+        {
+          "heading": "The grounds we rely on",
+          "paragraphs": [
+            "Most of what we do is what you ask of us: a table, an order, a gift card, a reply. We keep tax and accounting records because the law requires them, and we use some data to protect guests and the site from fraud.",
+            "We rely on your consent for two things: the seasonal letter, and any dietary note or allergy you share. We treat allergies as health information and use them only to cook and serve for you safely.",
+            "You can withdraw your consent at any time. That stops any further use; it does not undo what came before."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Card payments",
+          "paragraphs": [
+            "You enter card details into the payment provider’s secure form, and they go straight to the provider. They never reach Zill, and we never store them.",
+            "We keep only what we need to account for a payment: its status and amount and, where the provider shares them, the card brand and last four digits."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Who else handles it",
+          "paragraphs": [
+            "A few service providers help us run the site, each only when it is connected. Each receives only what its task needs and may use it for nothing else.",
+            "We do not sell personal data or share it for advertising, and we disclose it to authorities only when the law requires. Some providers may process data outside the Kingdom; where they do, it is under the safeguards the Personal Data Protection Law requires."
+          ],
+          "list": [
+            "A payment provider, for payments, deposits and refunds",
+            "An email delivery provider, for confirmations, reminders and the seasonal letter",
+            "Cloud file storage, for files such as CVs",
+            "A database host, where our records are kept",
+            "Cloudflare Turnstile, which checks that a person, not a bot, is sending our public forms",
+            "OpenFreeMap, which serves the map tiles on the ‘Our houses’ pages from tiles.openfreemap.org and, like any website, receives your IP address"
+          ]
+        },
+        {
+          "heading": "Counting visits",
+          "paragraphs": [
+            "We count visits ourselves, without cookies and without an outside analytics service. We record page views and a few events, such as a completed booking, to learn which pages help and which get in the way.",
+            "Our analytics never store your IP address. To count unique visits for a single day, they use a salted hash that changes daily, so today’s visit cannot be linked to tomorrow’s, or to you."
+          ],
+          "list": []
+        },
+        {
+          "heading": "How long we keep it",
+          "paragraphs": [
+            "We keep personal data only as long as its purpose needs. Then we delete it, or make it anonymous where the law asks us to keep the record."
+          ],
+          "list": [
+            "Reservation records: 24 months",
+            "Orders and invoices: six years, as Saudi tax law requires",
+            "Messages sent through our forms: 24 months",
+            "Job applications that do not succeed: 12 months",
+            "The seasonal letter: until you unsubscribe",
+            "Your account: until you delete it, when the orders we must keep for tax are anonymised"
+          ]
+        },
+        {
+          "heading": "Your rights",
+          "paragraphs": [
+            "The Personal Data Protection Law gives you the rights below. If you have an account, you can download your data or delete the account yourself, from ‘Your account’.",
+            "For anything else, write to privacy@zill.test. We may ask you to confirm who you are, and we reply within 30 days."
+          ],
+          "list": [
+            "To be told how your data is used, which is what this notice is for",
+            "To see the personal data we hold about you",
+            "To receive a copy of it in a clear, readable format",
+            "To have it corrected, completed or brought up to date",
+            "To ask us to delete it once it is no longer needed",
+            "To withdraw your consent at any time, for example to the seasonal letter",
+            "To complain to the Saudi Data & AI Authority (SDAIA) if our reply does not satisfy you"
+          ]
+        },
+        {
+          "heading": "Children",
+          "paragraphs": [
+            "This site is not meant for children under 13, and we do not knowingly collect their data. Parents and guardians book for their children and tell us what we need to know, such as an allergy.",
+            "If you think a child has sent us personal data, write to privacy@zill.test and we delete it."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Keeping it safe",
+          "paragraphs": [
+            "The site runs over an encrypted connection, and passwords are stored only in a scrambled form that cannot be reversed. You can also sign in with a one-time code sent to your email. Forms and sign-in limit repeated attempts from the same IP address, and each member of our team sees only what their role needs.",
+            "When this notice changes, the date at the top changes with it. If a change affects data you have already given us, we tell account holders by email before it takes effect."
+          ],
+          "list": []
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms and conditions",
+      "summary": "The terms for booking a table, ordering, paying, gift cards, event tickets and the Shade Circle. By booking, ordering or buying through this site, you accept them.",
+      "sections": [
+        {
+          "heading": "Reservations and deposits",
+          "paragraphs": [
+            "Reservations open online 60 days ahead, for up to eight guests. For nine or more, write to us through the private dining page.",
+            "For six guests or more, we take a deposit of SAR 100 per guest when you book, and deduct it in full from the bill.",
+            "While you complete a booking, we hold the table for seven minutes. The booking is confirmed when we send the confirmation email, and a reminder follows 24 hours before your time.",
+            "We note the area you prefer and keep to it where we can, though the weather or a full evening may ask us to seat you elsewhere in the house."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Changes, cancellations and no-shows",
+          "paragraphs": [
+            "You can change or cancel a booking through the link in your confirmation email, up to four hours before your time. After that, call the house and we will do what we can.",
+            "A deposit is refunded in full if you cancel at least four hours ahead. If you cancel later, or do not come, the deposit is kept: the table was held for you that evening.",
+            "If you are running late, call the house, so that we can keep your table as long as the evening allows. If we ever have to cancel your booking, we tell you as soon as we know and refund any deposit in full."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Orders, delivery and pickup",
+          "paragraphs": [
+            "Both houses deliver to the neighbourhoods around them, and you can collect from the door. The delivery fee and minimum order for your area appear at checkout, and you can schedule an order up to three days ahead.",
+            "You see an estimated time before you pay, and it updates as you follow the order. It is an estimate, not a promise: when the kitchen is busy, we lengthen it rather than hurry the pot.",
+            "To change or cancel an order, call the house straight away; once the kitchen has started, we may not be able to. If something is missing or not right, tell the house that prepared it and we will put it right."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Prices and payment",
+          "paragraphs": [
+            "Prices are in Saudi riyals and include 15% VAT; our VAT registration number is 300000000000003. Menus and prices change with the seasons, and the price you pay is the one shown when you confirm.",
+            "A 10% service charge applies to orders at the table only, never to delivery or pickup. A tip is always optional, wherever you order.",
+            "Online payments are made by card through the payment provider’s secure form. A gift card balance or Shade Circle points can pay for part of the bill."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Gift cards",
+          "paragraphs": [
+            "A gift card can carry SAR 200, 350, 500 or 1,000, or any amount from SAR 100 to SAR 5,000. It arrives by email and stays valid for 24 months from the day it is issued.",
+            "It works in both houses and on delivery and pickup orders. Each use takes only what you spend, and the balance waits for the next; you can check it at any time with the card number.",
+            "A gift card cannot be exchanged for cash, and any balance left when it expires lapses. Keep the card number private, as you would cash."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Event tickets",
+          "paragraphs": [
+            "Each ticket carries a guest’s name and covers everything served on the night. If you have a dietary need, tell us 48 hours ahead so that we can prepare your plate.",
+            "You can give your seat to someone else at any time: just send us their name. Tickets cancelled 72 hours or more before the event are refunded in full. After that, we have already started cooking for you, and the ticket is not refunded.",
+            "If we have to cancel an event, we tell you at once and refund your ticket in full."
+          ],
+          "list": []
+        },
+        {
+          "heading": "The Shade Circle and offers",
+          "paragraphs": [
+            "Membership comes free with an account, and joining brings 100 points. You earn one point for every riyal you pay, in either house or on your orders. At 1,500 points earned you reach Long Shade, with one and a quarter points per riyal; at 5,000, Night Courtyard, with one and a half.",
+            "Every 20 points are worth SAR 1, and points can pay for up to half of any order, in whole riyals. Points have no cash value, cannot be passed to anyone else and end with the account that holds them.",
+            "Offer codes carry their own conditions, such as dates, a minimum order, or the house and kind of order they apply to, and each offer shows them. One code applies per order."
+          ],
+          "list": []
+        },
+        {
+          "heading": "In the houses and on this site",
+          "paragraphs": [
+            "We ask every guest for the courtesy we try to offer: to the team, to other guests and to the houses themselves. We may decline service to anyone who makes the courtyard unsafe or unpleasant for others.",
+            "Please use the site as a guest would. Automated or false bookings, reselling tables and attempts to reach other people’s accounts are not allowed, and bookings made that way may be cancelled.",
+            "Keep your sign-in details to yourself; you are responsible for what is done through your account. The words, marks and design of this site belong to Zill Hospitality, and the photographs to us or to the photographers credited, so please ask before reusing them."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Our responsibility",
+          "paragraphs": [
+            "We take care over every plate and every page. Even so, the site may sometimes be unavailable, and hours, menus and prices can change; the house can always confirm what holds today.",
+            "We are not responsible for losses we could not reasonably foresee, or for delays caused by events beyond our control. Nothing in these terms limits a right you have under Saudi law that cannot be limited.",
+            "If you have an allergy, read our allergen information before you order. We mark every dish, but we cannot promise that any dish is free of traces."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Governing law",
+          "paragraphs": [
+            "These terms are governed by the laws of the Kingdom of Saudi Arabia, and any dispute falls to the competent courts of the Kingdom. We would always rather talk first; most things are settled by a call to the house.",
+            "The Arabic and English versions are each written in their own language. If they ever seem to differ, the Arabic version prevails.",
+            "We may update these terms, and the date at the top shows the current version. A booking or purchase keeps the terms that applied when you made it."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Contact",
+          "paragraphs": [
+            "These terms are offered by Zill Hospitality, which runs Zill · Al-Balad in Jeddah and Zill · Wadi Hanifah in Riyadh. For a booking or an order already made, call the house; for anything else, write to us and we reply within one working day."
+          ],
+          "list": [
+            "General enquiries: hello@zill.test",
+            "Privacy and your data: privacy@zill.test",
+            "Zill · Al-Balad, Jeddah: +966 12 555 0170",
+            "Zill · Wadi Hanifah, Riyadh: +966 11 555 0190"
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookies",
+      "summary": "The few small files and notes this site keeps in your browser, and why each one is there. None is for advertising or tracking, so there is nothing to accept.",
+      "sections": [
+        {
+          "heading": "Only what the site needs",
+          "paragraphs": [
+            "A cookie is a small file that a website keeps in your browser. We set only the ones the site cannot work without: to keep you signed in, and to remember which house you chose.",
+            "We use no advertising cookies and no third-party tracking cookies, and even our count of visits works without them. Because everything we set is essential, there is no consent banner to click through."
+          ],
+          "list": []
+        },
+        {
+          "heading": "The cookies we set",
+          "paragraphs": [
+            "Each one is listed by name, so that you can find it in your browser’s settings."
+          ],
+          "list": [
+            "Sign-in cookies, whose names begin with ‘zill.’ — they keep you signed in, and end when you sign out or after 30 days without a visit",
+            "zill_branch — the house you chose, so that the live sun, the menu of the hour and ordering follow it; kept for 12 months",
+            "zill_admin_locale — for staff only: the language they prefer in the back office"
+          ]
+        },
+        {
+          "heading": "Stored in your browser",
+          "paragraphs": [
+            "A few notes are kept in your browser’s own storage rather than in cookies. They stay on your device until you clear them, and your order in progress reaches us only when you place it."
+          ],
+          "list": [
+            "zill_cart_v1 — your order in progress, emptied three days after you last change it",
+            "zill_seen — a note that the opening animation has been shown, so that it does not play again",
+            "zill_dismissed — the seasonal notices you have closed"
+          ]
+        },
+        {
+          "heading": "Other services on our pages",
+          "paragraphs": [
+            "The maps on the ‘Our houses’ pages load their tiles from OpenFreeMap, which receives your IP address, as any web request does.",
+            "When they are connected, the payment provider’s card form and the Cloudflare Turnstile check on our public forms may set essential cookies of their own, to work and to prevent fraud. They are not used for advertising, and the privacy notice sets out what each provider receives."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Your choices",
+          "paragraphs": [
+            "You can block or delete cookies and stored data in your browser’s settings. If you block the sign-in cookies, you cannot sign in, and clearing storage empties your order in progress.",
+            "If we ever add a cookie that is not essential, we will ask you first and list it here."
+          ],
+          "list": []
+        }
+      ]
+    },
+    "allergens": {
+      "title": "Allergens",
+      "summary": "How we mark allergens, what one shared kitchen means for you, and how to tell us what you cannot eat. If you have an allergy, tell us every time, before you order.",
+      "sections": [
+        {
+          "heading": "The fourteen major allergens",
+          "paragraphs": [
+            "Every dish on our menus, online and printed, is marked against the fourteen major allergens."
+          ],
+          "list": [
+            "Cereals containing gluten, such as wheat, barley and oats",
+            "Crustaceans, such as prawns, crab and lobster",
+            "Eggs",
+            "Fish",
+            "Peanuts",
+            "Soya",
+            "Milk, including laban, butter, ghee and cheese",
+            "Tree nuts, such as almonds, pistachios, cashews and walnuts",
+            "Celery",
+            "Mustard",
+            "Sesame, including tahini",
+            "Sulphites, found in some dried fruit and vinegars",
+            "Lupin",
+            "Molluscs, such as squid, mussels and octopus"
+          ]
+        },
+        {
+          "heading": "How we mark dishes",
+          "paragraphs": [
+            "Each dish lists its allergens on the menu, on its own page and on the printed menu. The ‘Leave out’ filter hides every dish that contains the allergens you choose.",
+            "Dietary labels such as gluten-free or nut-free describe the recipe, not the kitchen. Options you add can change what a dish contains, so ask about them; and as recipes change with the seasons, their marks change with them."
+          ],
+          "list": []
+        },
+        {
+          "heading": "One kitchen, shared",
+          "paragraphs": [
+            "Each house cooks in one kitchen. Sesame, nuts, wheat and milk are in it every day, alongside the other allergens on our menus, and the same hands, surfaces and equipment prepare every dish.",
+            "We work with care, but we cannot promise that any dish is entirely free of traces. If even a trace would harm you, tell us before you order, and we will say plainly what we can and cannot make for you."
+          ],
+          "list": []
+        },
+        {
+          "heading": "How to tell us",
+          "paragraphs": [
+            "Tell us in more than one place, so that it reaches everyone who cooks and serves for you. If you ever feel unwell during a meal, tell any of us at once."
+          ],
+          "list": [
+            "When you book, in the notes on your booking",
+            "At the table, to whoever looks after you, before you order",
+            "When you order online, in the note for the kitchen, and for a serious allergy, by calling the house as well",
+            "For The Sundial and for events, 48 hours ahead, so that we can adapt the menu for you"
+          ]
+        },
+        {
+          "heading": "Children",
+          "paragraphs": [
+            "Dishes on the Small shade menu carry the same marks as every other dish. Tell us about a child’s allergy when you book and again at the table, and check each dish with us before they eat.",
+            "Children’s plates come from the same kitchen, so everything said here about traces applies to them too."
+          ],
+          "list": []
+        }
+      ]
+    },
+    "accessibility": {
+      "title": "Accessibility statement",
+      "summary": "Everyone should be able to read the menu, book a table and find the door, in either language. This is how we work towards that, where we still fall short, and how to reach us.",
+      "sections": [
+        {
+          "heading": "Our standard",
+          "paragraphs": [
+            "We aim to meet the Web Content Accessibility Guidelines (WCAG) 2.2 at level AA, in Arabic and in English. We test with automated accessibility checks and by hand with a keyboard, and we check that every control has a name and a role a screen reader can announce.",
+            "This statement covers the website. Access to the houses themselves is described further down."
+          ],
+          "list": []
+        },
+        {
+          "heading": "What we have built in",
+          "paragraphs": [
+            "Accessibility is part of how each page is made, not a separate version of the site."
+          ],
+          "list": [
+            "Everything works from a keyboard, with a clearly visible focus and a link that skips straight to the content",
+            "Headings, landmarks and labels for screen readers, and a description of every meaningful image, in both languages",
+            "When your device asks for reduced motion, the opening animation, smooth scrolling and all other non-essential movement are switched off",
+            "The colours follow the sun over each house, and at every hour, text and controls keep the contrast that level AA requires",
+            "Text grows with your browser’s settings and zoom, and pages reflow on narrow screens without sideways scrolling",
+            "Form errors are explained in words, never by colour alone"
+          ]
+        },
+        {
+          "heading": "Two languages, two directions",
+          "paragraphs": [
+            "Arabic and English are each written natively, never machine-translated. Every page declares its language, so that screen readers pronounce it correctly.",
+            "In Arabic, the whole layout reads from right to left, and arrows and horizontal scrolling turn with it, while logos, clocks, phone numbers and media controls keep their direction. Arabic text is never spaced out letter by letter or justified, and its lines are set generously apart for easy reading."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Where we fall short",
+          "paragraphs": [
+            "We know of these limitations, and this is how to work around them."
+          ],
+          "list": [
+            "The interactive maps on the ‘Our houses’ pages are hard to use with a keyboard or a screen reader. Every address, directions link and contact detail is also given as text on the same page.",
+            "While you complete a booking, we hold the table for seven minutes. If you need longer, call the house and we will make the booking with you."
+          ]
+        },
+        {
+          "heading": "At the houses",
+          "paragraphs": [
+            "Tell us about any access need when you book, and we will choose a table that is easy to reach.",
+            "At Zill · Al-Balad in Jeddah, the entrance from the lane is step-free, and the courtyard, the liwan and one restroom are wheelchair accessible; the roof is reached by stairs only. Valet parking runs from 6 pm at the end of the lane, and public parking on King Abdulaziz Road is a four-minute walk through the old town.",
+            "At Zill · Wadi Hanifah in Riyadh, there is level access throughout the ground floor, including the courtyard, the liwan and two restrooms, and a portable ramp for the private majlis. Parking in the palm-grove yard beside the house is free, with valet from 6 pm."
+          ],
+          "list": []
+        },
+        {
+          "heading": "Ask for help",
+          "paragraphs": [
+            "If something on the site gets in your way, or you would like help to book, order or read the menu, contact either house. Tell us the page and what you were trying to do, and we reply within one working day.",
+            "If you would rather write than call, both houses also answer on WhatsApp."
+          ],
+          "list": [
+            "Zill · Al-Balad, Jeddah: +966 12 555 0170, albalad@zill.test, WhatsApp +966 50 555 0170",
+            "Zill · Wadi Hanifah, Riyadh: +966 11 555 0190, wadihanifah@zill.test, WhatsApp +966 55 555 0190",
+            "About this statement: hello@zill.test"
+          ]
+        }
+      ]
+    }
+  }
+}

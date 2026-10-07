@@ -456,12 +456,12 @@ export async function seedHistory(ctx: SeedContext, people: { customers: SeededC
   // ——— job applications (with small PDF CVs in local storage) ———
   const postings = await db.select({ id: s.jobPostings.id, title: s.jobPostings.title }).from(s.jobPostings);
   const storageDir = process.env.LOCAL_STORAGE_DIR ?? './storage';
-  mkdirSync(join(storageDir, 'cv'), { recursive: true });
+  mkdirSync(join(storageDir, 'private', 'cv'), { recursive: true });
   const applications: (typeof s.jobApplications.$inferInsert)[] = [];
   for (let i = 0; i < 9 && postings.length; i++) {
     const posting = postings[i % postings.length] as (typeof postings)[number];
     const c = random.pick(customers);
-    const key = `cv/seed-${i}.pdf`;
+    const key = `private/cv/seed-${i}.pdf`;
     writeFileSync(join(storageDir, key), minimalPdf(`Curriculum vitae — ${c.email} (demo)`));
     writeFileSync(join(storageDir, `${key}.type`), 'application/pdf');
     applications.push({ id: createId(), postingId: posting.id, name: c.name, email: c.email, phone: c.phone, message: c.locale === 'ar' ? 'أحبّ العمل في المطابخ المفتوحة وأستيقظ مبكراً.' : 'I love open kitchens and early mornings.', cvKey: key, cvName: `cv-${i + 1}.pdf`, status: (['new', 'reviewing', 'interview', 'new', 'declined'] as const)[i % 5] as 'new', locale: c.locale, createdAt: new Date(now.getTime() - random.int(0, 25) * 864e5) });

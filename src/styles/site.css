@@ -853,3 +853,15 @@
     animation: fade-in var(--dur-calm) var(--ease-shade);
   }
 }
+
+@layer components {
+  /* The house on the map: the ظ monogram's sun, with its shade. */
+  .house-pin {
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: var(--c-accent);
+    border: 3px solid var(--c-bg);
+    box-shadow: calc(var(--shade-x) * 5px) calc(var(--shade-y) * 5px) 0 0 var(--c-shade);
+  }
+}

@@ -54,7 +54,7 @@ export async function subscribeNewsletter(form: FormData): Promise<ActionResult<
   } else {
     await db.insert(newsletterSubscribers).values({ id: createId(), email, locale, status: 'pending', tokenHash, source: source ?? 'footer' });
   }
-  await mail(email, { name: 'newsletter-confirm', props: { locale, confirmUrl: absoluteUrl(`/${locale}/newsletter?confirm=${encodeURIComponent(token)}`) } });
+  await mail(email, { name: 'newsletter-confirm', props: { locale, confirmUrl: absoluteUrl(`/api/newsletter/confirm?token=${encodeURIComponent(token)}&locale=${locale}`) } });
   return ok({ email });
 }
 

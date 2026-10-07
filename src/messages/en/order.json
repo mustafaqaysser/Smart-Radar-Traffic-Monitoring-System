@@ -286,7 +286,7 @@
     },
     "cancelled": {
       "headline": "Your order is cancelled",
-      "message": "Your order from {house} has been cancelled. Anything you paid is being refunded."
+      "message": "Your order from {house} has been cancelled. {reason} Anything you paid is being refunded."
     }
   }
 }

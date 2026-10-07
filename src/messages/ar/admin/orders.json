@@ -1,1 +1,193 @@
-{}
+{
+  "title": "الطلبات",
+  "views": "طرق عرض الطلبات",
+  "board": {
+    "tab": "اللوحة الحيّة",
+    "description": "يرنّ الطلب الجديد ويتوهّج. اقبله بدقائق المطبخ، ويُبلَّغ الضيف عند كل خطوة.",
+    "soundOn": "الصوت مفعّل",
+    "soundOff": "الصوت متوقّف",
+    "soundLocked": "انقر في أي مكان مرةً واحدة ليُسمح لهذه الشاشة بالرنين.",
+    "ordersOpen": "نستقبل الطلبات عبر الموقع",
+    "ordersPaused": "متوقّف",
+    "paused": "توقّف استقبال الطلبات عبر الموقع في {name}",
+    "resumed": "عاد {name} إلى استقبال الطلبات",
+    "busy": "مطبخ مزدحم (+{n} د)",
+    "busyOn": "تُضاف الآن {n} دقيقة إلى كل موعد",
+    "busyOff": "عادت المواعيد إلى طبيعتها",
+    "tally": "اليوم: {completed} مكتمل، و{declined} مرفوض أو ملغى",
+    "awaitingPayment": "{n} بانتظار الدفع بالبطاقة",
+    "columns": {
+      "new": "جديدة",
+      "kitchen": "في المطبخ",
+      "out": "جاهزة وفي الطريق"
+    },
+    "empty": {
+      "new": "لا طلبات جديدة.",
+      "kitchen": "لا شيء على النار.",
+      "out": "لا شيء بانتظار الخروج."
+    }
+  },
+  "history": {
+    "tab": "السجلّ",
+    "description": "كل الطلبات في التواريخ المختارة. افتح أيّاً منها لترى أصنافه ومراحله وصاحبه.",
+    "export": "تصدير CSV",
+    "search": "الرقم أو الاسم أو البريد أو الجوال…",
+    "empty": "لا طلبات في هذه التواريخ.",
+    "from": "من",
+    "to": "إلى",
+    "apply": "اعرض",
+    "allStatuses": "كل الحالات",
+    "allChannels": "كل الطرق",
+    "columns": {
+      "number": "الطلب",
+      "placed": "وقت الطلب",
+      "guest": "الضيف",
+      "channel": "الطريقة",
+      "house": "البيت",
+      "status": "الحالة",
+      "payment": "الدفع",
+      "total": "الإجمالي"
+    }
+  },
+  "status": {
+    "pending_payment": "بانتظار الدفع",
+    "placed": "جديد",
+    "accepted": "مقبول",
+    "preparing": "قيد التحضير",
+    "ready": "جاهز",
+    "out_for_delivery": "في الطريق",
+    "completed": "مكتمل",
+    "rejected": "مرفوض",
+    "cancelled": "ملغى"
+  },
+  "channels": {
+    "delivery": "توصيل",
+    "pickup": "استلام",
+    "dine_in": "على الطاولة",
+    "table": "الطاولة {table}"
+  },
+  "methods": {
+    "card": "بطاقة",
+    "cash": "نقداً عند الاستلام",
+    "pay_at_venue": "الدفع في البيت",
+    "gift_card": "بطاقة هدية"
+  },
+  "payment": {
+    "refunded": "مُسترَد",
+    "failed": "تعذّر الدفع",
+    "paid": {
+      "card": "مدفوع بالبطاقة",
+      "cash": "مدفوع نقداً",
+      "pay_at_venue": "مدفوع في البيت",
+      "gift_card": "مدفوع ببطاقة هدية"
+    },
+    "cash": "يُحصَّل نقداً",
+    "atTable": "يُدفع على الطاولة",
+    "atHouse": "يُدفع عند الكاونتر",
+    "pending": "الدفع معلّق"
+  },
+  "card": {
+    "age": "{n} د",
+    "scheduled": "مجدول",
+    "due": "الموعد {time} · بعد {n} د",
+    "late": "الموعد {time} · متأخر {n} د",
+    "new": "جديد",
+    "promised": "الموعد {time}"
+  },
+  "actions": {
+    "acceptFor": "اقبل · {n} د",
+    "prepChoose": "دقائق المطبخ",
+    "decline": "ارفض",
+    "cancel": "ألغِ الطلب",
+    "more": "المزيد للطلب {number}",
+    "open": "افتح الطلب",
+    "print": "اطبع البطاقة",
+    "moved": "{number}: {step}",
+    "accepted": "اقبل",
+    "preparing": "ابدأ التحضير",
+    "ready": "جاهز",
+    "readyServe": "جاهز للتقديم",
+    "out_for_delivery": "خرج للتوصيل",
+    "completed": {
+      "delivery": "وصل",
+      "pickup": "استُلم",
+      "dine_in": "قُدّم"
+    },
+    "rejected": "ارفض",
+    "cancelled": "ألغِ"
+  },
+  "stop": {
+    "description": "تصل الضيفَ رسالةٌ بلغته، وتُستردّ مدفوعات البطاقة تلقائياً.",
+    "reason": "السبب",
+    "otherLabel": "بكلماتك",
+    "otherHint": "تُدرج هذه الجملة في رسالة الضيف كما تكتبها.",
+    "keep": "أبقِ الطلب",
+    "rejected": {
+      "title": "رفض الطلب {number}؟",
+      "confirm": "ارفض الطلب",
+      "done": "رُفض الطلب {number}"
+    },
+    "cancelled": {
+      "title": "إلغاء الطلب {number}؟",
+      "confirm": "ألغِ الطلب",
+      "done": "أُلغي الطلب {number}"
+    }
+  },
+  "reasons": {
+    "capacity": "المطبخ يعمل بكامل طاقته في هذه اللحظة.",
+    "unavailable": "نفد للتوّ أحد أصناف الطلب.",
+    "area": "العنوان خارج نطاق التوصيل لدينا.",
+    "closing": "المطبخ يُغلق أبوابه الليلة.",
+    "other": "سبب آخر"
+  },
+  "detail": {
+    "title": "الطلب {number}",
+    "titleShort": "الطلب",
+    "placed": "طُلب {when} في {house}",
+    "items": "الأصناف ({n})",
+    "notes": "ملاحظة الضيف",
+    "timeline": "المراحل",
+    "by": "بواسطة {name}",
+    "guest": "الضيف",
+    "profile": "افتح الملف",
+    "whatsapp": "راسله عبر واتساب",
+    "language": "تصله الرسائل {language}.",
+    "languages": {
+      "ar": "بالعربية",
+      "en": "بالإنجليزية"
+    },
+    "fulfilment": {
+      "delivery": "التوصيل",
+      "pickup": "الاستلام",
+      "dine_in": "على الطاولة"
+    },
+    "table": "الطاولة",
+    "address": "العنوان",
+    "directions": "إرشادات الوصول",
+    "promised": "الموعد المتوقّع",
+    "scheduled": "الموعد المحدّد",
+    "prep": "دقائق المطبخ",
+    "minutes": "{n} د",
+    "map": "افتح في الخرائط",
+    "payment": "الدفع",
+    "method": "الطريقة",
+    "promo": "رمز العرض",
+    "pointsRedeemed": "نقاط مستخدمة",
+    "pointsEarned": "نقاط مكتسبة",
+    "reason": "السبب المذكور",
+    "copyTracking": "انسخ رابط التتبّع",
+    "copied": "نُسخ"
+  },
+  "ticket": {
+    "title": "بطاقة {number}",
+    "placed": "وصل {time}",
+    "due": "الموعد {time}",
+    "scheduledFor": "مجدول {time}، {date}",
+    "note": "ملاحظة",
+    "paid": "مدفوع",
+    "collectCash": "يُحصَّل نقداً",
+    "payAtHouse": "يُدفع لاحقاً",
+    "unpaid": "غير مدفوع",
+    "printed": "طُبعت {time}"
+  }
+}

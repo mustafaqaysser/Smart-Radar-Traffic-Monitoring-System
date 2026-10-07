@@ -305,6 +305,9 @@ export async function setOrderStatus(orderId: string, next: s.OrderStatus, actor
   const order = await db.query.orders.findFirst({ where: eq(s.orders.id, orderId) });
   if (!order || !allowedNext(order).includes(next)) return null;
   const extraPrep = next === 'accepted' && options.prepMinutes ? Math.max(5, Math.min(180, options.prepMinutes)) : null;
+  // A delivery promise is the arrival time: the kitchen's minutes plus the zone's journey.
+  const zone = extraPrep && order.channel === 'delivery' && order.zoneId ? await db.query.deliveryZones.findFirst({ where: eq(s.deliveryZones.id, order.zoneId), columns: { etaMinutes: true } }) : null;
+  const journey = zone?.etaMinutes ?? 0;
   const updated = await db.transaction(async (tx) => {
     const rows = await tx
       .update(s.orders)
@@ -314,8 +317,8 @@ export async function setOrderStatus(orderId: string, next: s.OrderStatus, actor
         ...(next === 'accepted' ? { acceptedAt: now } : {}),
         ...(next === 'ready' || next === 'out_for_delivery' ? { readyAt: order.readyAt ?? now } : {}),
         ...(next === 'completed' ? { completedAt: now } : {}),
-        ...(next === 'rejected' ? { rejectReason: options.note ?? null } : {}),
-        ...(extraPrep ? { prepMinutes: extraPrep, promisedAt: order.asap ? new Date(now.getTime() + extraPrep * MINUTE) : order.promisedAt } : {}),
+        ...(next === 'rejected' || next === 'cancelled' ? { rejectReason: options.note ?? null } : {}),
+        ...(extraPrep ? { prepMinutes: extraPrep, promisedAt: order.asap ? new Date(now.getTime() + (extraPrep + journey) * MINUTE) : order.promisedAt } : {}),
       })
       .where(and(eq(s.orders.id, orderId), eq(s.orders.status, order.status)))
       .returning();

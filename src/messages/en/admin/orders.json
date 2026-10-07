@@ -1,1 +1,193 @@
-{}
+{
+  "title": "Orders",
+  "views": "Orders views",
+  "board": {
+    "tab": "Live board",
+    "description": "New orders chime and glow. Accept with the kitchen's minutes; the guest is told at each step.",
+    "soundOn": "Sound on",
+    "soundOff": "Sound off",
+    "soundLocked": "Click anywhere once to let this screen chime.",
+    "ordersOpen": "Taking online orders",
+    "ordersPaused": "Paused",
+    "paused": "Online orders paused at {name}",
+    "resumed": "{name} is taking online orders again",
+    "busy": "Busy kitchen (+{n} min)",
+    "busyOn": "Promises now include {n} extra minutes",
+    "busyOff": "Promises are back to normal",
+    "tally": "Today: {completed} completed, {declined} declined or cancelled",
+    "awaitingPayment": "{n} waiting for card payment",
+    "columns": {
+      "new": "New",
+      "kitchen": "In the kitchen",
+      "out": "Ready and on the way"
+    },
+    "empty": {
+      "new": "No new orders.",
+      "kitchen": "Nothing cooking.",
+      "out": "Nothing waiting to go out."
+    }
+  },
+  "history": {
+    "tab": "History",
+    "description": "Every order in the chosen dates. Open one for its items, timeline and guest.",
+    "export": "Export CSV",
+    "search": "Number, guest, email or phone…",
+    "empty": "No orders in these dates.",
+    "from": "From",
+    "to": "To",
+    "apply": "Show",
+    "allStatuses": "Any status",
+    "allChannels": "Any channel",
+    "columns": {
+      "number": "Order",
+      "placed": "Placed",
+      "guest": "Guest",
+      "channel": "Channel",
+      "house": "House",
+      "status": "Status",
+      "payment": "Payment",
+      "total": "Total"
+    }
+  },
+  "status": {
+    "pending_payment": "Awaiting payment",
+    "placed": "New",
+    "accepted": "Accepted",
+    "preparing": "Preparing",
+    "ready": "Ready",
+    "out_for_delivery": "On the way",
+    "completed": "Completed",
+    "rejected": "Declined",
+    "cancelled": "Cancelled"
+  },
+  "channels": {
+    "delivery": "Delivery",
+    "pickup": "Pickup",
+    "dine_in": "At the table",
+    "table": "Table {table}"
+  },
+  "methods": {
+    "card": "Card",
+    "cash": "Cash on delivery",
+    "pay_at_venue": "Pay at the house",
+    "gift_card": "Gift card"
+  },
+  "payment": {
+    "refunded": "Refunded",
+    "failed": "Payment failed",
+    "paid": {
+      "card": "Paid by card",
+      "cash": "Paid in cash",
+      "pay_at_venue": "Paid at the house",
+      "gift_card": "Paid by gift card"
+    },
+    "cash": "Cash to collect",
+    "atTable": "To pay at the table",
+    "atHouse": "To pay at the counter",
+    "pending": "Payment pending"
+  },
+  "card": {
+    "age": "{n} min",
+    "scheduled": "Scheduled",
+    "due": "Due {time} · in {n} min",
+    "late": "Due {time} · {n} min late",
+    "new": "New",
+    "promised": "Due {time}"
+  },
+  "actions": {
+    "acceptFor": "Accept · {n} min",
+    "prepChoose": "Kitchen minutes",
+    "decline": "Decline",
+    "cancel": "Cancel order",
+    "more": "More for order {number}",
+    "open": "Open order",
+    "print": "Print ticket",
+    "moved": "{number}: {step}",
+    "accepted": "Accept",
+    "preparing": "Start preparing",
+    "ready": "Ready",
+    "readyServe": "Ready to serve",
+    "out_for_delivery": "Out for delivery",
+    "completed": {
+      "delivery": "Delivered",
+      "pickup": "Collected",
+      "dine_in": "Served"
+    },
+    "rejected": "Decline",
+    "cancelled": "Cancel"
+  },
+  "stop": {
+    "description": "The guest is emailed in their own language. Card payments are refunded automatically.",
+    "reason": "Reason",
+    "otherLabel": "In your words",
+    "otherHint": "This sentence goes into the guest's email as you write it.",
+    "keep": "Keep the order",
+    "rejected": {
+      "title": "Decline order {number}?",
+      "confirm": "Decline order",
+      "done": "Order {number} declined"
+    },
+    "cancelled": {
+      "title": "Cancel order {number}?",
+      "confirm": "Cancel order",
+      "done": "Order {number} cancelled"
+    }
+  },
+  "reasons": {
+    "capacity": "The kitchen is at full capacity right now.",
+    "unavailable": "A dish in the order has just run out.",
+    "area": "The address is outside the area we deliver to.",
+    "closing": "The kitchen is closing for the night.",
+    "other": "Another reason"
+  },
+  "detail": {
+    "title": "Order {number}",
+    "titleShort": "Order",
+    "placed": "Placed {when} at {house}",
+    "items": "Items ({n})",
+    "notes": "Note from the guest",
+    "timeline": "Timeline",
+    "by": "by {name}",
+    "guest": "Guest",
+    "profile": "Open profile",
+    "whatsapp": "Message on WhatsApp",
+    "language": "Emails go out in {language}.",
+    "languages": {
+      "ar": "Arabic",
+      "en": "English"
+    },
+    "fulfilment": {
+      "delivery": "Delivery",
+      "pickup": "Pickup",
+      "dine_in": "At the table"
+    },
+    "table": "Table",
+    "address": "Address",
+    "directions": "Directions",
+    "promised": "Promised for",
+    "scheduled": "Scheduled for",
+    "prep": "Kitchen minutes",
+    "minutes": "{n} min",
+    "map": "Open in Maps",
+    "payment": "Payment",
+    "method": "Method",
+    "promo": "Promo code",
+    "pointsRedeemed": "Points used",
+    "pointsEarned": "Points earned",
+    "reason": "Reason given",
+    "copyTracking": "Copy tracking link",
+    "copied": "Copied"
+  },
+  "ticket": {
+    "title": "Ticket {number}",
+    "placed": "Received {time}",
+    "due": "due {time}",
+    "scheduledFor": "for {time}, {date}",
+    "note": "Note",
+    "paid": "PAID",
+    "collectCash": "COLLECT CASH",
+    "payAtHouse": "TO PAY",
+    "unpaid": "NOT PAID",
+    "printed": "Printed {time}"
+  }
+}

@@ -2,7 +2,7 @@ import type { ComponentProps } from 'react';
 import { cn } from '@/lib/utils/cn';
 
 export const controlClass =
-  'block w-full rounded-hair border border-field bg-raised px-3 text-ink placeholder:text-muted/75 transition-[border-color] duration-[var(--dur-quick)] hover-capable:hover:border-ink/70 focus-visible:border-ink focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-ink aria-[invalid=true]:border-danger disabled:cursor-not-allowed disabled:opacity-60 read-only:bg-surface';
+  'block w-full rounded-hair border border-field bg-raised px-3 text-ink placeholder:text-muted/75 transition-[border-color] duration-[var(--dur-quick)] hover-capable:hover:border-ink/70 focus-visible:border-ink focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-ink aria-[invalid=true]:border-danger disabled:cursor-not-allowed disabled:opacity-60 [&:is(input,textarea):read-only]:bg-surface';
 
 const LTR_TYPES = new Set(['email', 'tel', 'url', 'password']);
 

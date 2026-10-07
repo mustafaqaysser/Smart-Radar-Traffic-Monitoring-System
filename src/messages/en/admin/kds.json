@@ -1,1 +1,26 @@
-{}
+{
+  "title": "Kitchen display",
+  "house": "House",
+  "exit": "Leave the kitchen display",
+  "counts": "{cooking} cooking · {ready} ready",
+  "incoming": "New on the board: {n}",
+  "clock": "Time now",
+  "soundOn": "Sound on",
+  "soundOff": "Sound off",
+  "fullscreen": "Full screen",
+  "exitFullscreen": "Leave full screen",
+  "cooking": "Cooking",
+  "ready": "Ready to go ({n})",
+  "keys": "Press the number on a ticket to bump it.",
+  "elapsed": "Time since accepted",
+  "due": "due {time}",
+  "bump": {
+    "start": "Start",
+    "ready": "Ready"
+  },
+  "empty": {
+    "title": "The pass is clear",
+    "incoming": "New orders waiting on the board: {n}.",
+    "body": "Accepted orders appear here, oldest first."
+  }
+}

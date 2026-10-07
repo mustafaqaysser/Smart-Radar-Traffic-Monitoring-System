@@ -16,6 +16,7 @@ import {
   ReservationUpdatedEmail,
   ResetPasswordEmail,
   WaitlistEmail,
+  WaitlistOfferEmail,
   WelcomeEmail,
   type ApplicationReceivedProps,
   type EventTicketProps,
@@ -30,6 +31,7 @@ import {
   type ReservationProps,
   type ResetPasswordProps,
   type WaitlistProps,
+  type WaitlistOfferProps,
   type WelcomeProps,
 } from './templates';
 
@@ -42,6 +44,7 @@ export type EmailTemplate =
   | { name: 'reservation-reminder'; props: ReservationProps }
   | { name: 'reservation-cancelled'; props: ReservationCancelledProps }
   | { name: 'waitlist'; props: WaitlistProps }
+  | { name: 'waitlist-offer'; props: WaitlistOfferProps }
   | { name: 'order-receipt'; props: OrderEmailProps }
   | { name: 'order-status'; props: OrderStatusProps }
   | { name: 'gift-card'; props: GiftCardProps }
@@ -75,6 +78,8 @@ function build(t: EmailTemplate): { subject: string; element: ReactElement } {
       return { subject: ar(l) ? `أُلغي الحجز ${t.props.code}` : `Booking ${t.props.code} cancelled`, element: <ReservationCancelledEmail {...t.props} /> };
     case 'waitlist':
       return { subject: ar(l) ? 'أنت على قائمة الانتظار' : 'You are on the waitlist', element: <WaitlistEmail {...t.props} /> };
+    case 'waitlist-offer':
+      return { subject: ar(l) ? `فرغت طاولة · ${t.props.timeLabel}` : `A table has opened · ${t.props.timeLabel}`, element: <WaitlistOfferEmail {...t.props} /> };
     case 'order-receipt':
       return { subject: ar(l) ? `طلبك ${t.props.number}` : `Your order ${t.props.number}`, element: <OrderReceiptEmail {...t.props} /> };
     case 'order-status':

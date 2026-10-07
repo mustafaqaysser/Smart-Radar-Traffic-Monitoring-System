@@ -87,6 +87,8 @@ export interface ReservationProps extends Loc {
   areaLabel: string;
   occasionLabel?: string | null;
   depositLabel?: string | null;
+  /** How long before the booking online changes close, e.g. '4 hours' / '٤ ساعات'. */
+  cutoffLabel: string;
   manageUrl: string;
   calendarUrl: string;
   whatsappUrl: string;
@@ -130,8 +132,8 @@ export function ReservationConfirmedEmail(p: ReservationProps) {
       <EText locale={locale} muted>
         {pick(
           locale,
-          'يمكنك التعديل أو الإلغاء عبر الرابط حتى أربع ساعاتٍ قبل الموعد. بعدها، اتصل بنا مباشرة.',
-          'You can change or cancel with the link up to four hours before. After that, please call us directly.',
+          `يمكنك التعديل أو الإلغاء عبر الرابط ما دام بينك وبين الموعد ${p.cutoffLabel} أو أكثر. وبعد ذلك، اتصل بنا مباشرة.`,
+          `You can change or cancel with the link until ${p.cutoffLabel} before. After that, please call us directly.`,
         )}
       </EText>
     </EmailLayout>
@@ -175,6 +177,8 @@ export interface ReservationCancelledProps extends Loc {
   timeLabel: string;
   rebookUrl: string;
   refundLabel?: string | null;
+  /** Shown when a paid deposit is kept because the booking was cancelled inside the cut-off. */
+  keptLabel?: string | null;
 }
 export function ReservationCancelledEmail(p: ReservationCancelledProps) {
   const { locale } = p;
@@ -185,6 +189,7 @@ export function ReservationCancelledEmail(p: ReservationCancelledProps) {
         {pick(locale, `ألغينا الحجز ${p.code} في ${p.branchName} يوم ${p.dateLabel} عند ${p.timeLabel}.`, `We have cancelled booking ${p.code} at ${p.branchName} on ${p.dateLabel} at ${p.timeLabel}.`)}
       </EText>
       {p.refundLabel ? <EText locale={locale}>{pick(locale, `سيُعاد العربون (${p.refundLabel}) إلى وسيلة الدفع نفسها.`, `The deposit (${p.refundLabel}) will be returned to the same payment method.`)}</EText> : null}
+      {p.keptLabel ? <EText locale={locale} muted>{p.keptLabel}</EText> : null}
       <EButton href={p.rebookUrl}>{pick(locale, 'احجز موعداً آخر', 'Book another time')}</EButton>
     </EmailLayout>
   );
@@ -214,6 +219,38 @@ export function WaitlistEmail(p: WaitlistProps) {
           { label: pick(locale, 'الضيوف', 'Guests'), value: p.partyLabel },
         ]}
       />
+    </EmailLayout>
+  );
+}
+
+export interface WaitlistOfferProps extends Loc {
+  name: string;
+  branchName: string;
+  dateLabel: string;
+  timeLabel: string;
+  partyLabel: string;
+  expiresLabel: string;
+  bookUrl: string;
+}
+export function WaitlistOfferEmail(p: WaitlistOfferProps) {
+  const { locale } = p;
+  return (
+    <EmailLayout locale={locale} preview={pick(locale, `فرغت طاولة: ${p.dateLabel}، ${p.timeLabel}`, `A table has opened: ${p.dateLabel}, ${p.timeLabel}`)}>
+      <EHeading locale={locale}>{pick(locale, `فرغت طاولةٌ لك يا ${p.name}`, `A table has opened for you, ${p.name}`)}</EHeading>
+      <ESun />
+      <EText locale={locale}>
+        {pick(locale, `نحفظها باسمك حتى ${p.expiresLabel}. أكّد الحجز بلمسة، وإن لم يناسبك الوقت فلا حاجة لأيّ إجراء.`, `We are holding it in your name until ${p.expiresLabel}. Confirm with one tap — if the time no longer suits you, there is nothing to do.`)}
+      </EText>
+      <ERows
+        locale={locale}
+        rows={[
+          { label: pick(locale, 'البيت', 'House'), value: p.branchName },
+          { label: pick(locale, 'التاريخ', 'Date'), value: p.dateLabel },
+          { label: pick(locale, 'الوقت', 'Time'), value: p.timeLabel, strong: true },
+          { label: pick(locale, 'الضيوف', 'Guests'), value: p.partyLabel },
+        ]}
+      />
+      <EButton href={p.bookUrl}>{pick(locale, 'أكّد الحجز', 'Confirm the booking')}</EButton>
     </EmailLayout>
   );
 }

@@ -2,7 +2,7 @@
   "name": "zill-restaurant-platform",
   "version": "0.1.0",
   "private": true,
-  "description": "Zill \u00b7 \u0638\u0644 \u2014 a bilingual (Arabic/English) restaurant website and operating platform. White-label by design.",
+  "description": "Zill · ظل — a bilingual (Arabic/English) restaurant website and operating platform. White-label by design.",
   "license": "UNLICENSED",
   "type": "module",
   "engines": {
@@ -31,7 +31,8 @@
     "og:build": "tsx scripts/render/og-images.ts",
     "shots": "tsx scripts/qa/screenshots.ts",
     "lighthouse": "tsx scripts/qa/lighthouse.ts",
-    "cron:reminders": "tsx scripts/cron/reminders.ts"
+    "cron:reminders": "node scripts/cron.mjs reminders",
+    "cron": "node scripts/cron.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "0.129.0",

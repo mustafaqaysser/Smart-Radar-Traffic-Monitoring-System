@@ -53,7 +53,12 @@
     "consent": "Please confirm to continue.",
     "dateInPast": "Please choose a date from today onwards.",
     "passwordShort": "Use at least 8 characters.",
-    "passwordMismatch": "The passwords do not match."
+    "passwordMismatch": "The passwords do not match.",
+    "card_invalid": "Please check the card number, expiry date and security code.",
+    "card_declined": "Your card was declined. Please try another card.",
+    "card_expired": "This card has expired.",
+    "card_funds": "The card has insufficient funds.",
+    "payment_closed": "This payment can no longer be completed. Please start again."
   },
   "consent": {
     "privacy": "I agree that Zill may use these details to reply to me, as described in the privacy notice.",
@@ -62,5 +67,23 @@
   "success": {
     "sent": "Thank you — your message is with us.",
     "sentBody": "We reply within one working day, usually sooner. A copy is on its way to {email}."
+  },
+  "payment": {
+    "title": "Payment",
+    "due": "To pay now: {amount}",
+    "cardNumber": "Card number",
+    "expiry": "Expiry (MM/YY)",
+    "cvc": "Security code",
+    "nameOnCard": "Name on card",
+    "pay": "Pay {amount}",
+    "processing": "Processing…",
+    "secure": "Card details go straight to the payment provider. Zill never sees or stores your card number.",
+    "simulatedTitle": "Demonstration payment",
+    "simulatedBody": "No money moves on this site. Use one of these test cards with any future expiry date and any three-digit code:",
+    "testSuccess": "is approved",
+    "testDecline": "is declined",
+    "testFunds": "has insufficient funds",
+    "loadingProvider": "Loading the secure payment form…",
+    "providerError": "The payment form could not load. Please reload the page and try again."
   }
 }

@@ -1,8 +1,222 @@
 {
+  "meta": {
+    "title": "Book your shade",
+    "description": "Book a table at Zill in Al-Balad, Jeddah, or Wadi Hanifah, Riyadh — choose the house, the day, the hour and the corner of the courtyard."
+  },
   "fields": {
     "branch": "House",
     "date": "Day",
     "party": "Guests",
     "time": "Time"
-  }
+  },
+  "eyebrow": "Reservations",
+  "title": "Book your shade",
+  "intro": "Tables open {n} days ahead, and we hold yours for a few minutes while you finish.",
+  "steps": {
+    "branch": "House",
+    "date": "Day",
+    "party": "Guests",
+    "time": "Time",
+    "seating": "Seating",
+    "details": "Your details",
+    "payment": "Deposit",
+    "change": "Change",
+    "continue": "Continue",
+    "stepOf": "Step {current} of {total}"
+  },
+  "date": {
+    "previousMonth": "Previous month",
+    "nextMonth": "Next month",
+    "closed": "Closed",
+    "blocked": "No online bookings",
+    "today": "Today",
+    "pick": "Choose a day"
+  },
+  "party": {
+    "more": "More than {n}?",
+    "moreBody": "For larger parties we set up a private room or the long table. Tell us what you have in mind.",
+    "moreCta": "Private dining",
+    "kids": "Children are counted as guests; high chairs are free."
+  },
+  "time": {
+    "loading": "Looking for tables…",
+    "none": "Nothing is free that day for this many guests.",
+    "noneHint": "Try another day, fewer guests — or join the waitlist and we will write if a table opens.",
+    "full": "Full",
+    "pacing": "Busy",
+    "past": "Passed",
+    "sunset": "at maghrib",
+    "periods": "Service",
+    "error": "We could not check the tables. Please try again.",
+    "maghrib": "Maghrib {time}",
+    "zoneNote": "Times are in the house’s local time.",
+    "fullLabel": "{time}, full",
+    "passedLabel": "{time}, passed"
+  },
+  "hold": {
+    "held": "Your table is held for {time}.",
+    "expired": "The hold has ended. Please choose the time again.",
+    "taken": "That table was just taken. Please choose another time.",
+    "releasing": "Releasing…"
+  },
+  "areas": {
+    "any": "No preference",
+    "courtyard": "The courtyard",
+    "liwan": "The liwan (indoors)",
+    "roof": "The roof",
+    "private": "The private room",
+    "courtyardHint": "Under the sky and the vine.",
+    "liwanHint": "The cool, covered gallery around the courtyard.",
+    "roofHint": "Open to the sky after sunset.",
+    "privateHint": "A room of your own.",
+    "anyHint": "We will seat you wherever the light is best.",
+    "unavailable": "Not free at this time"
+  },
+  "occasions": {
+    "title": "An occasion?",
+    "none": "Just dinner",
+    "birthday": "Birthday",
+    "anniversary": "Anniversary",
+    "business": "Business",
+    "date": "A date",
+    "family": "Family gathering",
+    "celebration": "Celebration"
+  },
+  "details": {
+    "notes": "Anything we should know?",
+    "notesHint": "A high chair, a step-free table, a surprise…",
+    "dietary": "Allergies or dietary needs",
+    "dietaryHint": "We pass these to the kitchen with your booking.",
+    "marketing": "Send me the seasonal letter",
+    "signedIn": "Booking as {name}",
+    "submit": "Confirm the booking",
+    "submitDeposit": "Continue to the deposit",
+    "submitting": "Booking…",
+    "privacy": "We use your details only for this booking.",
+    "privacyLink": "Privacy notice"
+  },
+  "deposit": {
+    "title": "A deposit of {amount}",
+    "body": "For parties of {n} or more we take {perGuest} per guest to hold the table. It comes off your bill, and is refunded in full if you cancel at least {hours} ahead.",
+    "pay": "Pay the deposit",
+    "later": "If the payment is not completed within {minutes} minutes, the table is released."
+  },
+  "summary": {
+    "title": "Your booking",
+    "at": "{date} at {time}",
+    "occasion": "Occasion",
+    "reference": "Reference",
+    "deposit": "Deposit",
+    "seating": "Seating",
+    "empty": "Choose a house, a day and a time — your booking takes shape here."
+  },
+  "waitlist": {
+    "title": "Join the waitlist",
+    "body": "Leave your details and how flexible you are. If a table opens, we write straight away — first come, first served.",
+    "flexible": "How flexible are you?",
+    "flex30": "Within 30 minutes",
+    "flex60": "Within an hour",
+    "flex120": "Within two hours",
+    "flexAny": "Any time that day",
+    "preferred": "Preferred time",
+    "submit": "Join the waitlist",
+    "done": "You are on the waitlist for {date}. We will write to {email} if a table opens.",
+    "open": "Join the waitlist for this day"
+  },
+  "confirmed": {
+    "meta": "Booking confirmed",
+    "eyebrow": "Booking {code}",
+    "title": "Your shade is booked",
+    "pending": "Your table is held while the deposit completes",
+    "body": "A confirmation is on its way to {email}. Show this page or the booking number when you arrive.",
+    "addCalendar": "Add to calendar",
+    "google": "Google Calendar",
+    "ics": "Apple / Outlook (.ics)",
+    "share": "Share on WhatsApp",
+    "shareText": "Booked: {house}, {date} at {time}, {guests}.",
+    "manage": "Change or cancel",
+    "directions": "Directions",
+    "policy": "You can change or cancel online until {hours} before your booking. After that, please call the house.",
+    "deposit": "Deposit paid: {amount}",
+    "lapsed": "The deposit was not completed in time, so the table was released. Anything you paid is being refunded in full.",
+    "cancelledBody": "This booking is cancelled.",
+    "payNow": "Complete the deposit",
+    "sunNote": "Maghrib that day is at {time}."
+  },
+  "manage": {
+    "meta": "Manage your booking",
+    "title": "Your booking",
+    "invalid": "This link is not valid. Use the link in your confirmation email, or call the house.",
+    "status": {
+      "pending": "Awaiting deposit",
+      "confirmed": "Confirmed",
+      "seated": "At the table",
+      "completed": "Completed",
+      "no_show": "Missed",
+      "cancelled": "Cancelled"
+    },
+    "change": "Change the day, time or guests",
+    "changeHint": "Pick a new time below. Your current table stays yours until the new one is confirmed.",
+    "save": "Move my booking",
+    "saved": "Your booking has been moved. A new confirmation is on its way.",
+    "cancel": "Cancel the booking",
+    "cancelConfirm": "Cancel this booking?",
+    "cancelBody": "Your table will be released for someone else.",
+    "cancelKeep": "Keep it",
+    "cancelYes": "Yes, cancel",
+    "cancelled": "Your booking is cancelled. We hope to see you another time.",
+    "refund": "Your deposit of {amount} is being refunded.",
+    "noRefund": "Free cancellation ends {hours} before the booking, so the deposit is kept.",
+    "locked": "Online changes close {hours} before the booking — please call the house.",
+    "call": "Call {house}",
+    "partyFixed": "The number of guests is tied to the deposit you paid; to change it, please call the house.",
+    "partyLimit": "For more than {n} guests, please make a new booking — larger parties need a deposit.",
+    "closedStatus": "This booking can no longer be changed online.",
+    "current": "Current booking",
+    "unchanged": "Choose a different day or time first.",
+    "refundWill": "Your deposit of {amount} will be refunded in full."
+  },
+  "errors": {
+    "unavailable": "That time is no longer free. Please choose another.",
+    "holdExpired": "The hold has ended. Please choose the time again.",
+    "tooLarge": "For more than {n} guests, please ask about private dining.",
+    "closed": "The house is closed that day.",
+    "window": "Bookings open {n} days ahead.",
+    "taken": "That table was just taken. Please choose another time.",
+    "unchanged": "Choose a different day or time first."
+  },
+  "questions": {
+    "branch": "Which house?",
+    "date": "Which day?",
+    "party": "How many of you?",
+    "time": "What time?",
+    "seating": "Where would you like to sit?",
+    "details": "Your details"
+  },
+  "offer": {
+    "meta": "A table has opened",
+    "eyebrow": "From the waitlist",
+    "title": "A table has opened for you",
+    "body": "We are holding it in your name until {time}. Check the details and confirm.",
+    "expired": "This offer has ended, or the table has been taken. You can still look for another time.",
+    "booked": "You have already confirmed this booking.",
+    "search": "Look for another time"
+  },
+  "light": {
+    "dawn": "At first light, while the plaster is still cool.",
+    "morning": "In the morning shade, along the east wall.",
+    "noon": "In the short shade, under the vine.",
+    "afternoon": "In the long shade, as it stretches across the floor.",
+    "dusk": "At maghrib, as the lamps are lit.",
+    "night": "By lamplight, under an open sky."
+  },
+  "sheet": {
+    "loading": "Opening the book…",
+    "error": "The booking book could not open here.",
+    "full": "Open the booking page"
+  },
+  "branch": {
+    "choose": "Choose {house}"
+  },
+  "paused": "Online booking is paused for now. Please call the house — we will gladly find you a table."
 }

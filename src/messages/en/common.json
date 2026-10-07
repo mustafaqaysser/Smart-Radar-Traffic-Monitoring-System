@@ -87,8 +87,22 @@
     "label": "Live reading of the sun over {city}"
   },
   "compass": {
-    "N": "N", "NNE": "NNE", "NE": "NE", "ENE": "ENE", "E": "E", "ESE": "ESE", "SE": "SE", "SSE": "SSE",
-    "S": "S", "SSW": "SSW", "SW": "SW", "WSW": "WSW", "W": "W", "WNW": "WNW", "NW": "NW", "NNW": "NNW"
+    "N": "N",
+    "NNE": "NNE",
+    "NE": "NE",
+    "ENE": "ENE",
+    "E": "E",
+    "ESE": "ESE",
+    "SE": "SE",
+    "SSE": "SSE",
+    "S": "S",
+    "SSW": "SSW",
+    "SW": "SW",
+    "WSW": "WSW",
+    "W": "W",
+    "WNW": "WNW",
+    "NW": "NW",
+    "NNW": "NNW"
   },
   "actions": {
     "reserve": "Book your shade",
@@ -180,7 +194,9 @@
     "guests": "{count, plural, one {{n} guest} other {{n} guests}}",
     "seats": "{count, plural, one {{n} seat} other {{n} seats}}",
     "points": "{count, plural, one {{n} point} other {{n} points}}",
-    "items": "{count, plural, one {{n} item} other {{n} items}}"
+    "items": "{count, plural, one {{n} item} other {{n} items}}",
+    "hours": "{count, plural, one {{n} hour} other {{n} hours}}",
+    "days": "{count, plural, one {{n} day} other {{n} days}}"
   },
   "footer": {
     "line": "Every hour has its shade.",

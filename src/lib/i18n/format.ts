@@ -103,7 +103,7 @@ export function formatDateString(value: string, locale: string, options: Intl.Da
 }
 
 /** Weekday name for 0 = Sunday … 6 = Saturday. */
-export function formatWeekday(weekday: number, locale: string, style: 'long' | 'short' = 'long'): string {
+export function formatWeekday(weekday: number, locale: string, style: 'long' | 'short' | 'narrow' = 'long'): string {
   // 2023-01-01 was a Sunday.
   return df(locale, { weekday: style, timeZone: 'UTC' }).format(new Date(Date.UTC(2023, 0, 1 + weekday, 12)));
 }

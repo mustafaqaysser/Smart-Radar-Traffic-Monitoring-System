@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
 import { Icon } from '@/components/brand/icon';
 import { Wordmark } from '@/components/brand/logo';
+import { ReserveDockLink } from '@/components/site/reserve/reserve-dock-link';
 import { buttonClasses } from '@/components/site/ui/button';
 import { Link, usePathname } from '@/i18n/navigation';
 import { useCartCount } from '@/lib/cart/store';
@@ -129,10 +130,10 @@ export function SiteHeader({ features, branches, selectedBranch, signedIn, servi
       {showDock ? (
         <div className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-2 border-t border-line bg-bg pb-[env(safe-area-inset-bottom)] lg:hidden" style={{ viewTransitionName: 'site-dock' }}>
           {features.reservations !== false ? (
-            <Link href="/reserve" className="flex min-h-14 items-center justify-center gap-2 bg-accent text-on-accent">
+            <ReserveDockLink className="flex min-h-14 items-center justify-center gap-2 bg-accent text-on-accent">
               <Icon name="calendar" size={20} />
               <span className="font-label text-[0.75rem] tracking-[0.14em] uppercase rtl:text-base rtl:tracking-normal rtl:normal-case">{t('nav.reserve')}</span>
-            </Link>
+            </ReserveDockLink>
           ) : null}
           {features.ordering !== false ? (
             <Link href="/order" className="flex min-h-14 items-center justify-center gap-2">

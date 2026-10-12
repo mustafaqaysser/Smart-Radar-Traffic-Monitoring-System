@@ -15,7 +15,7 @@ function Overlay({ className, ...props }: ComponentProps<typeof DialogPrimitive.
 }
 
 /** Centred modal for short tasks. Focus is trapped and returned; Escape closes. */
-export function DialogContent({ className, children, title, description, size = 'md', hideClose, ...props }: ComponentProps<typeof DialogPrimitive.Content> & { title: ReactNode; description?: ReactNode; size?: 'sm' | 'md' | 'lg'; hideClose?: boolean }) {
+export function DialogContent({ className, children, title, description, size = 'md', hideClose, ...props }: Omit<ComponentProps<typeof DialogPrimitive.Content>, 'title'> & { title: ReactNode; description?: ReactNode; size?: 'sm' | 'md' | 'lg'; hideClose?: boolean }) {
   const t = useTranslations('admin.ui');
   return (
     <DialogPrimitive.Portal>
@@ -51,7 +51,7 @@ export function DialogFooter({ className, ...props }: ComponentProps<'div'>) {
 }
 
 /** A panel that slides in from the reading direction's end — for record details and longer forms. */
-export function SheetContent({ className, children, title, description, width = 'md', ...props }: ComponentProps<typeof DialogPrimitive.Content> & { title: ReactNode; description?: ReactNode; width?: 'md' | 'lg' }) {
+export function SheetContent({ className, children, title, description, width = 'md', ...props }: Omit<ComponentProps<typeof DialogPrimitive.Content>, 'title'> & { title: ReactNode; description?: ReactNode; width?: 'md' | 'lg' }) {
   const t = useTranslations('admin.ui');
   return (
     <DialogPrimitive.Portal>

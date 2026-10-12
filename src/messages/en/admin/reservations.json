@@ -1,4 +1,37 @@
 {
+  "title": "Reservations",
+  "viewsLabel": "Reservation views",
+  "views": {
+    "timeline": "Floor timeline",
+    "list": "List",
+    "calendar": "Calendar",
+    "waitlist": "Waitlist"
+  },
+  "descriptions": {
+    "timeline": "Every table at {house} across the day. Open a booking to seat it, move it or add a note; drag a booking to another table.",
+    "list": "Bookings for the chosen day or week, with the next step beside each.",
+    "calendar": "How full each day is. Open a day to see its floor.",
+    "waitlist": "Parties waiting for a table. Free tables are offered automatically every hour; you can also book them yourself."
+  },
+  "actions": {
+    "new": "New booking",
+    "done": "{code}: {status}",
+    "seat": "Seat",
+    "completed": "Finished",
+    "no_show": "No-show",
+    "cancelled": "Cancel",
+    "confirmWithoutDeposit": "Confirm without deposit",
+    "restore": "Restore booking",
+    "unseat": "Not seated yet",
+    "arrivedNoSeat": "Back to confirmed",
+    "reopen": "Reopen table",
+    "lateArrival": "Arrived late — seat",
+    "cancelTitle": "Cancel booking {code}?",
+    "cancelBody": "The table goes back to the floor and to the waitlist. {name} keeps the reference.",
+    "cancelConfirm": "Cancel booking",
+    "refund": "Refund the {amount} deposit",
+    "notify": "Email the guest"
+  },
   "status": {
     "pending": "Awaiting deposit",
     "confirmed": "Confirmed",
@@ -6,5 +39,142 @@
     "completed": "Finished",
     "no_show": "No-show",
     "cancelled": "Cancelled"
+  },
+  "nav": {
+    "previous": "Previous day",
+    "today": "Today",
+    "next": "Next day",
+    "date": "Date",
+    "previousMonth": "Previous month",
+    "nextMonth": "Next month",
+    "oneDay": "One day",
+    "week": "Seven days",
+    "house": "House"
+  },
+  "summary": {
+    "label": "The day in numbers",
+    "bookings": "Bookings",
+    "covers": "Covers",
+    "seated": "Seated now",
+    "waitlist": "Waiting"
+  },
+  "timeline": {
+    "label": "Floor timeline",
+    "blockLabel": "{name}, {party} guests at {time}, {status}",
+    "seats": "{min}–{max}",
+    "hold": "Being booked online",
+    "now": "Now",
+    "moved": "{name} moved to table {table}",
+    "empty": "No bookings on this day yet.",
+    "cancelledNote": "Cancelled bookings are not on the floor ({n}); see them in the list."
+  },
+  "areas": {
+    "any": "Any area",
+    "courtyard": "Courtyard",
+    "liwan": "Liwan",
+    "roof": "Roof",
+    "private": "Private room"
+  },
+  "tables": {
+    "takenBy": "Taken by {name} at {time}",
+    "seats": "{n} seats",
+    "summary": "{seats} seats for {party} guests",
+    "saved": "Tables changed",
+    "save": "Use these tables"
+  },
+  "sheet": {
+    "summary": "{time} · {party} guests · {code}",
+    "notesPlaceholder": "For the team only: preferences, arrival details…",
+    "notesSaved": "Note saved",
+    "saveNotes": "Save note",
+    "moveTables": "Tables",
+    "open": "Open the full booking"
+  },
+  "fields": {
+    "tables": "Tables",
+    "area": "Area",
+    "occasion": "Occasion",
+    "source": "Booked by",
+    "deposit": "Deposit",
+    "notes": "Guest's note",
+    "dietary": "Allergies and diet",
+    "staffNotes": "Team note"
+  },
+  "occasions": {
+    "birthday": "Birthday",
+    "anniversary": "Anniversary",
+    "business": "Business",
+    "date": "Date night",
+    "family": "Family",
+    "celebration": "Celebration"
+  },
+  "sources": {
+    "web": "Website",
+    "admin": "The team",
+    "phone": "Phone",
+    "concierge": "Concierge",
+    "walk_in": "Walk-in"
+  },
+  "deposit": {
+    "none": "none",
+    "pending": "not paid yet",
+    "paid": "paid",
+    "refunded": "refunded"
+  },
+  "list": {
+    "columns": {
+      "time": "Time",
+      "guest": "Guest",
+      "party": "Guests",
+      "tables": "Tables",
+      "house": "House",
+      "status": "Status",
+      "notes": "Notes",
+      "actions": "Actions"
+    },
+    "dietary": "Diet",
+    "notes": "Note",
+    "search": "Name, phone, email or code…",
+    "empty": "No bookings for these dates.",
+    "live": "Not cancelled",
+    "all": "Every status"
+  },
+  "calendar": {
+    "bookings": "{n} bookings",
+    "covers": "{n} guests"
+  },
+  "waitlist": {
+    "bookTitle": "Book {name}",
+    "bookBody": "{party} guests, hoping for {time}.",
+    "time": "Time",
+    "reasons": {
+      "past": "passed",
+      "pacing": "kitchen pacing",
+      "full": "no table"
+    },
+    "override": "Book even if the time is not offered",
+    "overrideHint": "Ignores pacing. Tables must still be free.",
+    "sendEmail": "Email the confirmation",
+    "close": "Close",
+    "book": "Book",
+    "booked": "{name} is booked",
+    "offerHint": "Offer any free tables to the waitlist now, instead of waiting for the hourly run.",
+    "offerNow": "Offer free tables now",
+    "prefers": "Prefers {time}, {flex}",
+    "anyTime": "any time",
+    "within": "within {n} min",
+    "status": {
+      "waiting": "Waiting",
+      "offered": "Offered a table",
+      "booked": "Booked",
+      "expired": "Expired",
+      "cancelled": "Removed"
+    },
+    "remove": "Remove",
+    "removeTitle": "Remove {name} from the waitlist?",
+    "removeBody": "They will not be offered a table.",
+    "removed": "Removed from the waitlist",
+    "empty": "Nobody is waiting.",
+    "emptyBody": "When the evening is full, guests can join the waitlist from the booking page."
   }
 }

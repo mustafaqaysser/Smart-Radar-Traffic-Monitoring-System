@@ -398,10 +398,44 @@ function icsAttachment(r: Reservation, ics: string) {
   return { filename: `zill-${r.code}.ics`, content: Buffer.from(ics, 'utf8').toString('base64'), contentType: 'text/calendar; charset=utf-8; method=PUBLISH' };
 }
 
-/** Confirmation email (with the .ics) and a note for the hosts. */
-async function announceBooking(r: Reservation, branch: BranchDTO): Promise<void> {
+/** The confirmation email with its calendar file (also sent when the team books for a guest). */
+export async function emailBookingConfirmed(r: Reservation, branch: BranchDTO): Promise<void> {
+  if (!r.email) return;
   const { props, ics } = await emailProps(r, branch);
   await mail(r.email, { name: 'reservation-confirmed', props }, { attachments: [icsAttachment(r, ics)], meta: { reservation: r.code } });
+}
+
+/** The "your booking has changed" email with the updated calendar file. */
+export async function emailBookingUpdated(r: Reservation, branch: BranchDTO): Promise<void> {
+  if (!r.email) return;
+  const { props, ics } = await emailProps(r, branch);
+  await mail(r.email, { name: 'reservation-updated', props }, { attachments: [icsAttachment(r, ics)], meta: { reservation: r.code } });
+}
+
+/** The cancellation email, with the refunded deposit or the note that it was kept. */
+export async function emailBookingCancelled(r: Reservation, branch: BranchDTO, refunded: boolean): Promise<void> {
+  if (!r.email) return;
+  const labels = await describeReservation(r, branch);
+  const tm = await getTranslations({ locale: r.locale, namespace: 'reserve.manage' });
+  await mail(r.email, {
+    name: 'reservation-cancelled',
+    props: {
+      locale: r.locale,
+      name: r.name,
+      code: r.code,
+      branchName: labels.branchName,
+      dateLabel: labels.dateLabel,
+      timeLabel: labels.timeLabel,
+      rebookUrl: absoluteUrl(`/${r.locale}/reserve?branch=${branch.slug}`),
+      refundLabel: refunded ? formatMoney(r.depositAmount, r.locale) : null,
+      keptLabel: r.depositStatus === 'paid' && !refunded ? tm('noRefund', { hours: labels.cutoffLabel }) : null,
+    },
+  });
+}
+
+/** Confirmation email (with the .ics) and a note for the hosts. */
+async function announceBooking(r: Reservation, branch: BranchDTO): Promise<void> {
+  await emailBookingConfirmed(r, branch);
   await notifyStaff({
     role: 'host',
     branchId: r.branchId,
@@ -441,22 +475,7 @@ export async function cancelByGuest(r: Reservation, now: Date): Promise<{ refund
   }
   const branch = await getBranch(r.branchId);
   if (branch) {
-    const labels = await describeReservation(r, branch);
-    const tm = await getTranslations({ locale: r.locale, namespace: 'reserve.manage' });
-    await mail(r.email, {
-      name: 'reservation-cancelled',
-      props: {
-        locale: r.locale,
-        name: r.name,
-        code: r.code,
-        branchName: labels.branchName,
-        dateLabel: labels.dateLabel,
-        timeLabel: labels.timeLabel,
-        rebookUrl: absoluteUrl(`/${r.locale}/reserve?branch=${branch.slug}`),
-        refundLabel: refund ? formatMoney(r.depositAmount, r.locale) : null,
-        keptLabel: r.depositStatus === 'paid' && !refund ? tm('noRefund', { hours: labels.cutoffLabel }) : null,
-      },
-    });
+    await emailBookingCancelled(r, branch, refund);
     await notifyStaff({
       role: 'host',
       branchId: r.branchId,
@@ -487,8 +506,7 @@ export async function moveByGuest(r: Reservation, input: { date: string; time: s
     return rows[0] ?? null;
   });
   if (!moved) return null;
-  const { props, ics } = await emailProps(moved, branch);
-  await mail(moved.email, { name: 'reservation-updated', props }, { attachments: [icsAttachment(moved, ics)], meta: { reservation: moved.code } });
+  await emailBookingUpdated(moved, branch);
   await notifyStaff({
     role: 'host',
     branchId: r.branchId,
